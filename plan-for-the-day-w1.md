@@ -10,6 +10,7 @@
 ## Day 2
 
 * JavaScript Basics/Advanced
+  * [online course](https://www.educative.io/courses/javascript-fundamentals-before-learning-react)
   * var vs let and const
   * functions and es6 functions `() => {}`
   * conditional : ?
