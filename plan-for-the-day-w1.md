@@ -19,6 +19,7 @@
   * var vs let and const
   * functions and es6 functions `() => {}`
   * conditional : ?
+  * dot notation vs bracket notation.
 
 ## Day 3
 
