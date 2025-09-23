@@ -5,6 +5,7 @@
 
 * Intro to the class
 * Servers + Node.js
+* [notes](./notes/week1-notes.md#day-1)
 
 ## Day 2
 
