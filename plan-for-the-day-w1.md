@@ -56,7 +56,7 @@
 - Development environment setup
 
 ### 📝 Detailed Notes
-- **[Day 2 Notes](./notes/week1-notes.md#day-2)** - Comprehensive class notes and examples
+- **[Day 2 Notes](./notes/week1-notes.md#day-2-javascript-fundamentals-for-react-development)** - Comprehensive class notes and examples
 
 ---
 
@@ -75,7 +75,7 @@
 - Apply loops to server-side data processing
 
 ### 📝 Detailed Notes
-- **[Day 3 Notes](./notes/week1-notes.md#day-3)** - Comprehensive class notes and examples
+- **[Day 3 Notes](./notes/week1-notes.md#day-3-loops-and-patterns)** - Comprehensive class notes and examples
 
 ---
 
