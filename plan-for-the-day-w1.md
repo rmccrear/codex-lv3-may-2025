@@ -30,6 +30,7 @@
       4. use let and const
       5. Bonus: use ternary operators.
     * [sample code](https://github.com/rmccrear/node-server-demo)
+    * [slides](https://docs.google.com/presentation/d/19uCcQR8DVvdMSm5BKJEjxW62xr4-bbDhsnj9mbrb854/edit?usp=sharing)
 
 ## Day 3
 
