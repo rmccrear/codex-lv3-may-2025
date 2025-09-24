@@ -20,7 +20,7 @@ By the end of today, you'll be able to:
 - Understand the fundamentals of web development and client-server architecture
 - Set up a Node.js development environment
 - Create and run a basic HTTP server
-- Handle different HTTP methods and routes
+- Handle different HTTP routes
 - Understand the request-response cycle
 - Debug server applications effectively
 
