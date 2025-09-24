@@ -1,5 +1,13 @@
 # Week 1 Notes
 
+## Table of Contents
+
+- [Day 1](#day-1)
+- [Day 2: JavaScript Fundamentals for React Development](#day-2-javascript-fundamentals-for-react-development)
+- [Day 3: Loops and Patterns](#day-3-loops-and-patterns)
+
+---
+
 ## Day 1
 
 [slides](https://docs.google.com/presentation/d/1oeOAD7S_alHmSAVD7FGZWn4FgGcUw-RhwbrxEEZ9gO4/edit?usp=sharing)
