@@ -17,9 +17,18 @@
     * [var, let and const in React](https://www.robinwieruch.de/javascript-fundamentals-react-requirements/#var-let-and-const-in-react)
     * [Ternary Operator in React](https://www.robinwieruch.de/javascript-fundamentals-react-requirements/#ternary-operator-in-react)
   * var vs let and const
-  * functions and es6 functions `() => {}`
-  * conditional : ?
+  * functions and Arrow Functions `() => {}`
+  * ternary operator. (conditional) : ?
   * dot notation vs bracket notation.
+  * TODO:
+    * update your server to use...
+      1. String Template Literals AKA backticks and Money Curly
+      2. More than one endpoint/path
+        * app.get("/my-cat", (req, res)=> {})
+        * app.get("/my-dog", (req, res)=> {})
+      3. A POJO and bracket notation.
+      4. use let and const
+      5. Bonus: use ternary operators.
 
 ## Day 3
 
