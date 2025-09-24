@@ -4,11 +4,11 @@
 
 | Day | Topic | Status |
 |-----|-------|--------|
-| [Day 1](#day-1) | Introduction to Web Development & Server Fundamentals | ✅ Complete |
-| [Day 2](#day-2) | JavaScript Fundamentals for React Development | ✅ Complete |
-| [Day 3](#day-3) | Loops and Patterns | 📝 In Progress |
-| [Day 4](#day-4) | TBD | 🔄 Coming Soon |
-| [Day 5](#day-5) | TBD | 🔄 Coming Soon |
+| [Day 1](#day-1-introduction-to-web-development--server-fundamentals) | Introduction to Web Development & Server Fundamentals | ✅ Complete |
+| [Day 2](#day-2-javascript-fundamentals-for-react-development) | JavaScript Fundamentals for React Development | ✅ Complete |
+| [Day 3](#day-3-loops-and-patterns) | Loops and Patterns | 📝 In Progress |
+| [Day 4](#day-4-tbd) | TBD | 🔄 Coming Soon |
+| [Day 5](#day-5-tbd) | TBD | 🔄 Coming Soon |
 
 ---
 
