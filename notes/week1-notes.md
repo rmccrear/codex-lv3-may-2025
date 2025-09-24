@@ -20,7 +20,7 @@ Steps:
     * `node server.js`
     * use `^C` to restart the server when you make changes.
 
-### 🎯 Learning Objectives
+### Learning Objectives
 By the end of today, you'll be able to:
 - Understand the fundamentals of web development and client-server architecture
 - Set up a Node.js development environment
@@ -29,7 +29,7 @@ By the end of today, you'll be able to:
 - Understand the request-response cycle
 - Debug server applications effectively
 
-### 🌐 Web Development Fundamentals
+### Web Development Fundamentals
 
 #### Client-Server Architecture
 - **How the web works**: Request → Server → Response
@@ -43,7 +43,7 @@ By the end of today, you'll be able to:
 - **npm**: Package management and ecosystem
 - **Development workflow**: From code to running server
 
-### 🛠️ Hands-On Practice: Building Your First Server
+### Hands-On Practice: Building Your First Server
 
 #### Server Setup Checklist
 Create a Node.js server that demonstrates core web development concepts:
@@ -93,13 +93,13 @@ Create a Node.js server that demonstrates core web development concepts:
 - **Response Object**: Sending data back to client
 - **Ports**: How servers communicate
 
-### 📖 Learning Resources
+### Learning Resources
 - **[Node.js Official Documentation](https://nodejs.org/en/docs/)** - Comprehensive Node.js reference
 - **[Express.js Guide](https://expressjs.com/en/guide/routing.html)** - Express routing fundamentals
 - **[HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)** - Understanding response codes
 - **[npm Documentation](https://docs.npmjs.com/)** - Package management guide
 
-### 💡 Pro Tips
+### Pro Tips
 - Always test your server after making changes
 - Use `console.log()` to debug and understand what's happening
 - Start simple and add complexity gradually
@@ -109,7 +109,7 @@ Create a Node.js server that demonstrates core web development concepts:
 
 ## Day 2: JavaScript Fundamentals for React Development
 
-### 🎯 Learning Objectives
+### Learning Objectives
 By the end of today, you'll be able to:
 - Write modern JavaScript using ES6+ features
 - Understand variable declarations and their appropriate usage
@@ -118,7 +118,7 @@ By the end of today, you'll be able to:
 - Apply ternary operators for conditional logic
 - Navigate object properties using different notation styles
 
-### 📚 Core JavaScript Concepts
+### Core JavaScript Concepts
 
 #### Variable Declarations
 - **`var` vs `let` vs `const`**
@@ -144,7 +144,7 @@ By the end of today, you'll be able to:
 - **Dot notation**: `obj.property`
 - **Bracket notation**: `obj['property']`
 
-### 📖 Learning Resources
+### Learning Resources
 - **[Interactive Course](https://www.educative.io/courses/javascript-fundamentals-before-learning-react)** - Comprehensive JavaScript fundamentals
 - **[Robin Wieruch's Guide](https://www.robinwieruch.de/javascript-fundamentals-react-requirements/)** - React-specific JavaScript requirements
   - [Arrow Functions in React](https://www.robinwieruch.de/javascript-fundamentals-react-requirements/#arrow-functions-in-react)
@@ -152,7 +152,7 @@ By the end of today, you'll be able to:
   - [var, let and const in React](https://www.robinwieruch.de/javascript-fundamentals-react-requirements/#var-let-and-const-in-react)
   - [Ternary Operator in React](https://www.robinwieruch.de/javascript-fundamentals-react-requirements/#ternary-operator-in-react)
 
-### 🛠️ Hands-On Practice: Enhanced Server Project
+### Hands-On Practice: Enhanced Server Project
 
 #### Development Environment Setup
 First, let's improve your development workflow with nodemon:
@@ -209,7 +209,7 @@ Update your Node.js server to demonstrate modern JavaScript concepts:
 - **[Sample Code Repository](https://github.com/rmccrear/node-server-demo)** - Working examples
 - **[Presentation Slides](https://docs.google.com/presentation/d/19uCcQR8DVvdMSm5BKJEjxW62xr4-bbDhsnj9mbrb854/edit?usp=sharing)** - Visual learning aids
 
-### 💡 Pro Tips
+### Pro Tips
 - Practice writing arrow functions until they feel natural
 - You may always use `let` but prefer `const` unless you need to reassign the variable.
 - Use template literals for any string that includes variables
@@ -218,16 +218,16 @@ Update your Node.js server to demonstrate modern JavaScript concepts:
 
 ## Day 3: Loops and Patterns
 
-### 🎯 Learning Objectives
+### Learning Objectives
 
-### 🔄 Core Concepts
+### Core Concepts
 - **Code.org patterns**: Random List Access Pattern, List Scrolling Pattern, Update Screen Pattern
 
-### 📚 Learning Resources
+### Learning Resources
 - **[Code.org Loops Lesson](https://studio.code.org/s/course1/lessons/11/levels/1)** - Interactive loop fundamentals
 - **[MDN Loops Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)** - Comprehensive loop reference
 
-### 🛠️ Hands-On Practice
+### Hands-On Practice
 - Complete Code.org loop exercises
 - Practice loop patterns with JavaScript
 - Apply loops to server-side data processing
