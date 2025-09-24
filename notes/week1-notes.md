@@ -232,7 +232,7 @@ Update your Node.js server to demonstrate modern JavaScript concepts:
 - **Code.org patterns**: Random List Access Pattern, List Scrolling Pattern, Update Screen Pattern
 
 ### Learning Resources
-- **[Code.org Loops Lesson](https://studio.code.org/courses/csp-2025/units/6/lessons/1/levels/1)** - Interactive loop fundamentals
+- **[Code.org Lists Lesson](https://studio.code.org/courses/csp-2025/units/6/lessons/1/levels/1)** - Interactive loop fundamentals
 - **[MDN Loops Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)** - Comprehensive loop reference
 
 ### Hands-On Practice
