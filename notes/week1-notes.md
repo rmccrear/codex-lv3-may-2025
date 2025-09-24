@@ -224,7 +224,7 @@ Update your Node.js server to demonstrate modern JavaScript concepts:
 - Bracket notation is useful in some cases.
 - Ternary operators make code more concise for simple conditionals
 
-## Day 3: Loops and Patterns
+## Day 3: Lists and Patterns
 
 ### Learning Objectives
 
@@ -237,5 +237,4 @@ Update your Node.js server to demonstrate modern JavaScript concepts:
 
 ### Hands-On Practice
 - Complete Code.org loop exercises
-- Practice loop patterns with JavaScript
-- Apply loops to server-side data processing
+- Practice list patterns with JavaScript
