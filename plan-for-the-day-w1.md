@@ -217,18 +217,9 @@ Update your Node.js server to demonstrate modern JavaScript concepts:
 ## Day 3: Loops and Patterns
 
 ### 🎯 Learning Objectives
-By the end of today, you'll be able to:
-- Understand different types of loops and when to use them
-- Recognize common programming patterns
-- Apply loops to solve real-world problems
-- Debug loop-related issues effectively
 
 ### 🔄 Core Concepts
-- **For loops**: Iterating with counters
-- **While loops**: Conditional iteration
-- **Array iteration**: Working with collections
-- **Nested loops**: Complex iteration patterns
-- **Common patterns**: Accumulator, counter, search patterns
+- **Code.org patterns**: Random List Access Pattern, List Scrolling Pattern, Update Screen Pattern
 
 ### 📚 Learning Resources
 - **[Code.org Loops Lesson](https://studio.code.org/s/course1/lessons/11/levels/1)** - Interactive loop fundamentals
