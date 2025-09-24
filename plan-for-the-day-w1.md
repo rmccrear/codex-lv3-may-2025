@@ -29,6 +29,7 @@
       3. A POJO and bracket notation.
       4. use let and const
       5. Bonus: use ternary operators.
+    * [sample code](https://github.com/rmccrear/node-server-demo)
 
 ## Day 3
 
