@@ -370,44 +370,70 @@ res.send(storyTemplate);
 **User Story:** As a user, I want to read my Mad Libs story in a beautiful, easy-to-read format so that I can fully enjoy the experience.
 
 ## What You'll Do
-Style the story display with Bootstrap classes and improve the user experience.
+Style the story display with CSS and improve the user experience. Add CSS styling directly in your server route response.
 
 ## Instructions
-- Add Bootstrap classes to the story display
-- Create a card layout for the story
+- Add CSS styling to the story display HTML
+- Include Bootstrap CSS link in the HTML head
+- Create a styled layout for the story
 - Add navigation links back to the form
+- **Important:** This CSS is added inside your server route response, not in a static file
 
 ## 💡 Code Hints
 Need help with styling? Check out these snippets:
-- **Bootstrap cards:** Use `card`, `card-body` classes
-- **Navigation:** Add links with `href="/"`
-- **Responsive design:** Use Bootstrap grid classes
+- **CSS in server route:** Add complete HTML with CSS link in your `res.send()`
+- **Bootstrap CDN:** Include Bootstrap CSS link in the HTML head
+- **Navigation:** Add links with `href="/mad-libs-form.html"`
 
-Show Me: Bootstrap card structure
+Show Me: complete HTML with CSS in server route
 
-```html
-<div class="card">
-    <div class="card-body">
-        <h5 class="card-title">Your Story</h5>
-        <p class="card-text">Story content goes here...</p>
+```javascript
+const storyHTML = `
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Your Mad Libs Story</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="card-title">Your Mad Libs Story</h1>
+                <p class="card-text">${storyContent}</p>
+                <a href="/mad-libs-form.html" class="btn btn-primary">Create Another Story</a>
+            </div>
+        </div>
     </div>
-</div>
+</body>
+</html>`;
+
+res.send(storyHTML);
 ```
 
-Show Me: navigation links
+Show Me: basic story structure
 
 ```html
-<div class="mt-3">
-    <a href="/" class="btn btn-secondary">Create Another Story</a>
-    <a href="/random" class="btn btn-outline-primary">Random Story</a>
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-body">
+            <h1>Your Story</h1>
+            <p>Story content goes here...</p>
+            <a href="/mad-libs-form.html">Create Another Story</a>
+        </div>
+    </div>
 </div>
 ```
 
 ## ✅ Check
 1. Submit your form and view the story
-2. The story should be displayed in a styled card
-3. You should see navigation links
+2. The story should be displayed with Bootstrap styling
+3. You should see a navigation link back to the form
 4. The page should look professional and responsive
+5. **Important:** The CSS is loaded from the CDN link in your server response
+
+## 🚨 Important Note
+**Server Route vs Static Files:** Unlike your form HTML file (which is static), the story display HTML is generated dynamically in your server route. This means you include the CSS link directly in the HTML string that you send with `res.send()`.
 
 ---
 
