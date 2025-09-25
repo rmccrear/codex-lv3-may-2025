@@ -74,6 +74,26 @@ Need help with Express setup? Check out these snippets:
 - **Basic Express server:** See [Week 1 Notes](../notes/week1-notes.md#day-1) for server setup examples
 - **Route handling:** Use `app.get()` to create routes
 
+Show Me: the basic Express server structure
+
+```javascript
+const express = require('express');
+const app = express();
+const PORT = 3000;
+
+app.listen(PORT, () => {
+    console.log(`Server running on http://localhost:${PORT}`);
+});
+```
+
+Show Me: a simple route example
+
+```javascript
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+});
+```
+
 ## ✅ Check
 1. Run `npm install` to install dependencies
 2. Run `npx nodemon server.js` to start your server
@@ -101,6 +121,26 @@ Set up static file serving to serve HTML files from the public directory.
 Need help with static files? Check out these snippets:
 - **Static middleware:** Use `app.use(express.static('public'))`
 - **HTML structure:** Include `<!DOCTYPE html>`, `<html>`, `<head>`, `<body>`
+
+Show Me: how to add static middleware
+
+```javascript
+app.use(express.static('public'));
+```
+
+Show Me: basic HTML structure
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mad Libs Form</title>
+</head>
+<body>
+    <h1>Welcome to Mad Libs!</h1>
+</body>
+</html>
+```
 
 ## ✅ Check
 1. Create `public/mad-libs-form.html` with basic HTML
@@ -137,6 +177,26 @@ Need help with forms? Check out these snippets:
 - **Input fields:** Use `<input type="text" name="fieldName">`
 - **Labels:** Use `<label>` elements for better accessibility
 
+Show Me: form structure with inputs
+
+```html
+<form method="GET" action="/create-mad-libs">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" required>
+    
+    <label for="adjective1">Adjective:</label>
+    <input type="text" name="adjective1" id="adjective1" required>
+    
+    <button type="submit">Create Mad Libs!</button>
+</form>
+```
+
+Show Me: input field with proper attributes
+
+```html
+<input type="text" name="noun1" placeholder="Enter a noun" required>
+```
+
 ## ✅ Check
 1. Open your webpage in a browser
 2. You should see a form with 6 input fields
@@ -165,6 +225,29 @@ Need help with Bootstrap? Check out these snippets:
 - **Bootstrap CDN:** Use `https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css`
 - **Form styling:** Use `form-control` class for inputs
 - **Button styling:** Use `btn btn-primary` classes
+
+Show Me: Bootstrap CDN link in HTML head
+
+```html
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Mad Libs Form</title>
+</head>
+```
+
+Show Me: Bootstrap form styling
+
+```html
+<div class="container mt-5">
+    <form method="GET" action="/create-mad-libs" class="row g-3">
+        <div class="col-md-6">
+            <label class="form-label">Name:</label>
+            <input type="text" class="form-control" name="name">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+```
 
 ## ✅ Check
 1. Open your webpage in a browser
@@ -195,6 +278,30 @@ Need help with routes? Check out these snippets:
 - **Query parameters:** Use `req.query.fieldName` to access form data, where `fieldName` is the "name" of the input in the form. For example for "properNoun1", you would have `req.query.properNoun1`.
 - **Console logging:** Use `console.log()` to debug form data
 
+Show Me: basic route structure
+
+```javascript
+app.get('/create-mad-libs', (req, res) => {
+    // Access form data here
+    console.log('Form submitted!');
+    res.send('Form received!');
+});
+```
+
+Show Me: accessing form data
+
+```javascript
+app.get('/create-mad-libs', (req, res) => {
+    const name = req.query.name;
+    const adjective = req.query.adjective1;
+    
+    console.log('Name:', name);
+    console.log('Adjective:', adjective);
+    
+    res.send('Data received!');
+});
+```
+
 ## ✅ Check
 1. Fill out your form and submit it
 2. Check your server console for logged form data
@@ -222,6 +329,24 @@ Need help with template literals? Check out these snippets:
 - **Template literals:** Use backticks and `${variable}` syntax
 - **Story template:** Create a complete story with placeholders
 - **HTML response:** Use `res.send()` to send HTML
+
+Show Me: template literal syntax
+
+```javascript
+const name = "Alice";
+const adjective = "silly";
+const story = `Once upon a time, ${name} was feeling very ${adjective}.`;
+```
+
+Show Me: story template structure
+
+```javascript
+const storyTemplate = `
+    <h1>Your Mad Libs Story</h1>
+    <p>Once upon a time, ${name} went to the ${noun1} and found a ${adjective1} ${noun2}.</p>
+`;
+res.send(storyTemplate);
+```
 
 ## 🚀 Pro Tip
 **Practice with dummy variables first!** Before using the real form data from `req.query`, create your story template with hardcoded dummy values (like `name = "Alice"`, `adjective = "silly"`). This helps you:
@@ -258,6 +383,26 @@ Need help with styling? Check out these snippets:
 - **Navigation:** Add links with `href="/"`
 - **Responsive design:** Use Bootstrap grid classes
 
+Show Me: Bootstrap card structure
+
+```html
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Your Story</h5>
+        <p class="card-text">Story content goes here...</p>
+    </div>
+</div>
+```
+
+Show Me: navigation links
+
+```html
+<div class="mt-3">
+    <a href="/" class="btn btn-secondary">Create Another Story</a>
+    <a href="/random" class="btn btn-outline-primary">Random Story</a>
+</div>
+```
+
 ## ✅ Check
 1. Submit your form and view the story
 2. The story should be displayed in a styled card
@@ -286,6 +431,30 @@ Need help with organization? Check out these snippets:
 - **Code comments:** Use `//` for single-line comments
 - **Variable naming:** Use descriptive names like `storyContent`
 - **Route organization:** Group related routes together
+
+Show Me: code comments
+
+```javascript
+// Server setup
+const express = require('express');
+const app = express();
+
+// Static file serving
+app.use(express.static('public'));
+
+// Routes
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/public/mad-libs-form.html');
+});
+```
+
+Show Me: descriptive variable names
+
+```javascript
+const storyTemplate = `Your story here...`;
+const completedStory = storyTemplate.replace('${name}', userName);
+const storyResponse = `<div class="card">${completedStory}</div>`;
+```
 
 ## ✅ Check
 1. Your code should be well-commented
