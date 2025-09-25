@@ -86,6 +86,8 @@
 - Mad Libs Mini-Project
 - Serving static HTML files
 - Handling query strings on the backend
+  - `?search=dogs&lang=en`
+  - `const search = req.query["search"];`
 
 ### What You'll Do
 - Complete Mad Libs Levels 1-9 (Core Application)
@@ -114,5 +116,4 @@
 - Set up Git repository and push to GitHub (You can't deploy on GitHub. You may deploy on render.com as a "web service", though.)
 
 ### Resources
-- **[Mad Libs Level Files](./mad-libs-levels/)** - Individual level guides
-- **[Mad Libs Guide](./mad-libs-mini-project-guide-all.md)** - Complete project guide
+- **[Mad Libs Level Files](./mad-libs-levels/mad-libs-lv-1.md)** - Individual level guides
