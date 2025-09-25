@@ -233,8 +233,8 @@ Update your Node.js server to demonstrate modern JavaScript concepts:
 
 ### Learning Resources
 - **[Code.org Lists Lesson](https://studio.code.org/courses/csp-2025/units/6/lessons/1/levels/1)** - Interactive loop fundamentals
-- **[MDN Loops Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)** - Comprehensive loop reference
+- **[Arrays and Loops Tutorial](https://github.com/microsoft/Web-Dev-For-Beginners/tree/main/2-js-basics/4-arrays-loops)** - Basic Tutorial from Microsoft
 
 ### Hands-On Practice
-- Complete Code.org loop exercises
+- Complete Code.org list exercises
 - Practice list patterns with JavaScript
