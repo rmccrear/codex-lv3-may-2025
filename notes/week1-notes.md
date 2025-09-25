@@ -235,6 +235,8 @@ Update your Node.js server to demonstrate modern JavaScript concepts:
 - **[Code.org Lists Lesson](https://studio.code.org/courses/csp-2025/units/6/lessons/1/levels/1)** - Interactive loop fundamentals
 - **[Arrays and Loops Tutorial](https://github.com/microsoft/Web-Dev-For-Beginners/tree/main/2-js-basics/4-arrays-loops)** - Basic Tutorial from Microsoft
 
+![Video on adding data to an array](https://youtu.be/ZARmjyg7Lik?feature=shared)
+
 ### Hands-On Practice
 - Complete Code.org list exercises
 - Practice list patterns with JavaScript
