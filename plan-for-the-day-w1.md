@@ -7,8 +7,8 @@
 | [Day 1](#day-1-introduction-to-web-development--server-fundamentals) | Introduction to Web Development & Server Fundamentals | ✅ Complete |
 | [Day 2](#day-2-javascript-fundamentals-for-react-development) | JavaScript Fundamentals for React Development | ✅ Complete |
 | [Day 3](#day-3-loops-and-patterns) | Loops and Patterns | ✅ Complete |
-| [Day 4](#day-4-mad-libs-project-thursday) | Mad Libs Project - Thursday | 📝 In Progress |
-| [Day 5](#day-5-mad-libs-project-friday) | Mad Libs Project - Friday | 📝 In Progress |
+| [Day 4](#day-4-mad-libs-project---thursday) | Mad Libs Project - Thursday | 📝 In Progress |
+| [Day 5](#day-5-mad-libs-project---friday) | Mad Libs Project - Friday | 📝 In Progress |
 
 ---
 
@@ -81,71 +81,38 @@
 
 ## Day 4: Mad Libs Project - Thursday
 
-### Learning Objectives
-- Build a complete web application using Express.js
-- Implement form handling and data processing
-- Apply template literals for dynamic content generation
-- Practice professional code organization
+### Discussion
 
-### Core Concepts
-- Express.js server setup and routing
-- HTML form creation and processing
-- Template literals and string interpolation
-- Bootstrap CSS for styling
-- Code organization and best practices
+- Mad Libs Mini-Project
+- Serving static HTML files
+- Handling query strings on the backend
 
-### Hands-On Practice
+### What You'll Do
 - Complete Mad Libs Levels 1-9 (Core Application)
-- Set up project structure with npm init
-- Create Express server with static file serving
-- Build HTML form with Bootstrap styling
-- Implement form processing and story generation
-- Style story display with professional layout
+- Build Express.js server with form handling
+- Create web application
 
 ### Required Tasks
-- **Finish Code.org Lesson 1-4** (Complete by Thursday-Friday)
-- Complete Mad Libs Levels 1-9 (Core functionality)
-- Test all features and ensure proper styling
+- **Finish Code.org Lesson 1-4** (Complete by Sunday)
+- Complete Mad Libs Levels 1-9 (Complete by Sunday)
 
-### Project Resources
-- **[Mad Libs Level Files](./mad-libs-levels/)** - Individual level guides with navigation
-- **[Mad Libs Guide](./mad-libs-mini-project-guide-all.md)** - Complete project guide
+### Resources
+- **[Mad Libs Levels](./mad-libs-levels/mad-libs-lv-1.md)** - Individual level guides
 
 ---
 
 ## Day 5: Mad Libs Project - Friday
 
-### Learning Objectives
-- Extend web application with advanced features
-- Implement data storage and retrieval
-- Add navigation and user experience enhancements
-- Practice error handling and validation
-- Complete project documentation and deployment
-
-### Core Concepts
-- In-memory data storage with arrays
-- Random data access and individual item retrieval
-- Navigation between application states
-- Input validation and error handling
-- Git version control and project documentation
-
-### Hands-On Practice
-- Complete Mad Libs Levels 10-20 (Advanced Features)
-- Implement story storage and retrieval system
-- Add random story access and individual story viewing
-- Create navigation between stories
-- Add input validation and error handling
-- Complete final testing and polish
-- Set up Git repository and documentation
+### What You'll Do
+- Complete Mad Libs Levels 10-20 (Challenge Features)
+- Add advanced functionality and data storage
+- Polish and test your application
 
 ### Required Tasks
 - **Finish Code.org Lesson 1-4** (Complete by Thursday-Friday)
-- Complete Mad Libs Levels 10-20 (Challenge Features)
-- Implement advanced functionality and testing
-- Create comprehensive project documentation
-- Set up Git repository and push to GitHub
+- Complete Mad Libs Levels 10-20 (Optional)
+- Set up Git repository and push to GitHub (You can't deploy on GitHub. You may deploy on render.com as a "web service", though.)
 
-### Project Resources
-- **[Mad Libs Level Files](./mad-libs-levels/)** - Individual level guides with navigation
+### Resources
+- **[Mad Libs Level Files](./mad-libs-levels/)** - Individual level guides
 - **[Mad Libs Guide](./mad-libs-mini-project-guide-all.md)** - Complete project guide
-- **[Challenge Extensions](./mad-libs-mini-project-challenge-todo.md)** - Additional challenges
