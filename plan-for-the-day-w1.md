@@ -6,9 +6,9 @@
 |-----|-------|--------|
 | [Day 1](#day-1-introduction-to-web-development--server-fundamentals) | Introduction to Web Development & Server Fundamentals | ✅ Complete |
 | [Day 2](#day-2-javascript-fundamentals-for-react-development) | JavaScript Fundamentals for React Development | ✅ Complete |
-| [Day 3](#day-3-loops-and-patterns) | Loops and Patterns | 📝 In Progress |
-| [Day 4](#day-4-mad-libs-project-thursday) | Mad Libs Project - Thursday | 🔄 Coming Soon |
-| [Day 5](#day-5-mad-libs-project-friday) | Mad Libs Project - Friday | 🔄 Coming Soon |
+| [Day 3](#day-3-loops-and-patterns) | Loops and Patterns | ✅ Complete |
+| [Day 4](#day-4-mad-libs-project-thursday) | Mad Libs Project - Thursday | 📝 In Progress |
+| [Day 5](#day-5-mad-libs-project-friday) | Mad Libs Project - Friday | 📝 In Progress |
 
 ---
 
