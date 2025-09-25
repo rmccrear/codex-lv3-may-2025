@@ -20,45 +20,45 @@ Need help with styling? Check out these snippets:
 - **Bootstrap CDN:** Include Bootstrap CSS link in the HTML head
 - **Navigation:** Add links with `href="/mad-libs-form.html"`
 
-<details>
-<summary>Show Me: complete HTML with CSS in server route</summary>
+Show Me: complete HTML with CSS in server route
 
-<pre><code class="language-javascript">const storyHTML = `
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-    &lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
-    &lt;title&gt;Your Mad Libs Story&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;div class=&quot;container mt-5&quot;&gt;
-        &lt;div class=&quot;card&quot;&gt;
-            &lt;div class=&quot;card-body&quot;&gt;
-                &lt;h1 class=&quot;card-title&quot;&gt;Your Mad Libs Story&lt;/h1&gt;
-                &lt;p class=&quot;card-text&quot;&gt;${storyContent}&lt;/p&gt;
-                &lt;a href=&quot;/mad-libs-form.html&quot; class=&quot;btn btn-primary&quot;&gt;Create Another Story&lt;/a&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;`;
+```javascript
+const storyHTML = `
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Your Mad Libs Story</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="card-title">Your Mad Libs Story</h1>
+                <p class="card-text">${storyContent}</p>
+                <a href="/mad-libs-form.html" class="btn btn-primary">Create Another Story</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>`;
 
-res.send(storyHTML);</code></pre>
-</details>
+res.send(storyHTML);
+```
 
-<details>
-<summary>Show Me: basic story structure</summary>
+Show Me: basic story structure
 
-<pre><code class="language-html">&lt;div class=&quot;container mt-5&quot;&gt;
-    &lt;div class=&quot;card&quot;&gt;
-        &lt;div class=&quot;card-body&quot;&gt;
-            &lt;h1&gt;Your Story&lt;/h1&gt;
-            &lt;p&gt;Story content goes here...&lt;/p&gt;
-            &lt;a href=&quot;/mad-libs-form.html&quot;&gt;Create Another Story&lt;/a&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-</details>
+```html
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-body">
+            <h1>Your Story</h1>
+            <p>Story content goes here...</p>
+            <a href="/mad-libs-form.html">Create Another Story</a>
+        </div>
+    </div>
+</div>
+```
 
 ## ✅ Check
 1. Submit your form and view the story
