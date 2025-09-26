@@ -21,24 +21,24 @@ Need help with routes? Check out these snippets:
 <details>
 <summary>Show Me: basic route structure</summary>
 
-<pre><code class="language-javascript">app.get(&#x27;/create-mad-libs&#x27;, (req, res) =&gt; {
+<pre><code class="language-javascript">app.get('/create-mad-libs', (req, res) =&amp;gt; {
     // Access form data here
-    console.log(&#x27;Form submitted!&#x27;);
-    res.send(&#x27;Form received!&#x27;);
+    console.log('Form submitted!');
+    res.send('Form received!');
 });</code></pre>
 </details>
 
 <details>
 <summary>Show Me: accessing form data</summary>
 
-<pre><code class="language-javascript">app.get(&#x27;/create-mad-libs&#x27;, (req, res) =&gt; {
+<pre><code class="language-javascript">app.get('/create-mad-libs', (req, res) =&amp;gt; {
     const name = req.query.name;
     const adjective = req.query.adjective1;
     
-    console.log(&#x27;Name:&#x27;, name);
-    console.log(&#x27;Adjective:&#x27;, adjective);
+    console.log('Name:', name);
+    console.log('Adjective:', adjective);
     
-    res.send(&#x27;Data received!&#x27;);
+    res.send('Data received!');
 });</code></pre>
 </details>
 

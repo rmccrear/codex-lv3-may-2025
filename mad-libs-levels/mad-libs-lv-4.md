@@ -27,21 +27,21 @@ Need help with forms? Check out these snippets:
 <details>
 <summary>Show Me: form structure with inputs</summary>
 
-<pre><code class="language-html">&lt;form method=&quot;GET&quot; action=&quot;/create-mad-libs&quot;&gt;
-    &lt;label for=&quot;name&quot;&gt;Name:&lt;/label&gt;
-    &lt;input type=&quot;text&quot; name=&quot;name&quot; id=&quot;name&quot; required&gt;
+<pre><code class="language-html">&amp;lt;form method="GET" action="/create-mad-libs"&amp;gt;
+    &amp;lt;label for="name"&amp;gt;Name:&amp;lt;/label&amp;gt;
+    &amp;lt;input type="text" name="name" id="name" required&amp;gt;
     
-    &lt;label for=&quot;adjective1&quot;&gt;Adjective:&lt;/label&gt;
-    &lt;input type=&quot;text&quot; name=&quot;adjective1&quot; id=&quot;adjective1&quot; required&gt;
+    &amp;lt;label for="adjective1"&amp;gt;Adjective:&amp;lt;/label&amp;gt;
+    &amp;lt;input type="text" name="adjective1" id="adjective1" required&amp;gt;
     
-    &lt;button type=&quot;submit&quot;&gt;Create Mad Libs!&lt;/button&gt;
-&lt;/form&gt;</code></pre>
+    &amp;lt;button type="submit"&amp;gt;Create Mad Libs!&amp;lt;/button&amp;gt;
+&amp;lt;/form&amp;gt;</code></pre>
 </details>
 
 <details>
 <summary>Show Me: input field with proper attributes</summary>
 
-<pre><code class="language-html">&lt;input type=&quot;text&quot; name=&quot;noun1&quot; placeholder=&quot;Enter a noun&quot; required&gt;</code></pre>
+<pre><code class="language-html">&amp;lt;input type="text" name="noun1" placeholder="Enter a noun" required&amp;gt;</code></pre>
 </details>
 
 ## ✅ Check

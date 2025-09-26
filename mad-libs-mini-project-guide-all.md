@@ -20,16 +20,6 @@ This guide provides step-by-step instructions for building a Mad Libs web applic
 
 ---
 
-## 📋 **IMPORTANT: Complete Planning First!**
-
-**Before you start coding, you must work through the planning document:**
-
-👉 **[Mad Libs Mini-Project](./mad-libs-mini-project-todo.md)**
-
-**Complete all sections of the planning document before proceeding with Level 1.** This will help you understand the project requirements, technical specifications, and learning objectives.
-
----
-
 ## What You'll Do
 Create a new project folder and set up all the necessary files to get started.
 

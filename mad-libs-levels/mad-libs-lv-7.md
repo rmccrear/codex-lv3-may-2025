@@ -21,8 +21,8 @@ Need help with template literals? Check out these snippets:
 <details>
 <summary>Show Me: template literal syntax</summary>
 
-<pre><code class="language-javascript">const name = &quot;Alice&quot;;
-const adjective = &quot;silly&quot;;
+<pre><code class="language-javascript">const name = "Alice";
+const adjective = "silly";
 const story = `Once upon a time, ${name} was feeling very ${adjective}.`;</code></pre>
 </details>
 
@@ -30,8 +30,8 @@ const story = `Once upon a time, ${name} was feeling very ${adjective}.`;</code>
 <summary>Show Me: story template structure</summary>
 
 <pre><code class="language-javascript">const storyTemplate = `
-    &lt;h1&gt;Your Mad Libs Story&lt;/h1&gt;
-    &lt;p&gt;Once upon a time, ${name} went to the ${noun1} and found a ${adjective1} ${noun2}.&lt;/p&gt;
+    &amp;lt;h1&amp;gt;Your Mad Libs Story&amp;lt;/h1&amp;gt;
+    &amp;lt;p&amp;gt;Once upon a time, ${name} went to the ${noun1} and found a ${adjective1} ${noun2}.&amp;lt;/p&amp;gt;
 `;
 res.send(storyTemplate);</code></pre>
 </details>

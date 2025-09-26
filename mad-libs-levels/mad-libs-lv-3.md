@@ -20,21 +20,21 @@ Need help with static files? Check out these snippets:
 <details>
 <summary>Show Me: how to add static middleware</summary>
 
-<pre><code class="language-javascript">app.use(express.static(&#x27;public&#x27;));</code></pre>
+<pre><code class="language-javascript">app.use(express.static('public'));</code></pre>
 </details>
 
 <details>
 <summary>Show Me: basic HTML structure</summary>
 
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-    &lt;title&gt;Mad Libs Form&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h1&gt;Welcome to Mad Libs!&lt;/h1&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
+<pre><code class="language-html">&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+&amp;lt;head&amp;gt;
+    &amp;lt;title&amp;gt;Mad Libs Form&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+    &amp;lt;h1&amp;gt;Welcome to Mad Libs!&amp;lt;/h1&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;</code></pre>
 </details>
 
 ## ✅ Check

@@ -22,11 +22,11 @@ Need help with Express setup? Check out these snippets:
 <details>
 <summary>Show Me: the basic Express server structure</summary>
 
-<pre><code class="language-javascript">const express = require(&#x27;express&#x27;);
+<pre><code class="language-javascript">const express = require('express');
 const app = express();
 const PORT = 3000;
 
-app.listen(PORT, () =&gt; {
+app.listen(PORT, () =&amp;gt; {
     console.log(`Server running on http://localhost:${PORT}`);
 });</code></pre>
 </details>
@@ -34,8 +34,8 @@ app.listen(PORT, () =&gt; {
 <details>
 <summary>Show Me: a simple route example</summary>
 
-<pre><code class="language-javascript">app.get(&#x27;/&#x27;, (req, res) =&gt; {
-    res.send(&#x27;Hello World!&#x27;);
+<pre><code class="language-javascript">app.get('/', (req, res) =&amp;gt; {
+    res.send('Hello World!');
 });</code></pre>
 </details>
 

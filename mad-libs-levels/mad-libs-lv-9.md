@@ -23,15 +23,15 @@ Need help with organization? Check out these snippets:
 <summary>Show Me: code comments</summary>
 
 <pre><code class="language-javascript">// Server setup
-const express = require(&#x27;express&#x27;);
+const express = require('express');
 const app = express();
 
 // Static file serving
-app.use(express.static(&#x27;public&#x27;));
+app.use(express.static('public'));
 
 // Routes
-app.get(&#x27;/&#x27;, (req, res) =&gt; {
-    res.sendFile(__dirname + &#x27;/public/mad-libs-form.html&#x27;);
+app.get('/', (req, res) =&amp;gt; {
+    res.sendFile(__dirname + '/public/mad-libs-form.html');
 });</code></pre>
 </details>
 
@@ -39,8 +39,8 @@ app.get(&#x27;/&#x27;, (req, res) =&gt; {
 <summary>Show Me: descriptive variable names</summary>
 
 <pre><code class="language-javascript">const storyTemplate = `Your story here...`;
-const completedStory = storyTemplate.replace(&#x27;${name}&#x27;, userName);
-const storyResponse = `&lt;div class=&quot;card&quot;&gt;${completedStory}&lt;/div&gt;`;</code></pre>
+const completedStory = storyTemplate.replace('${name}', userName);
+const storyResponse = `&amp;lt;div class="card"&amp;gt;${completedStory}&amp;lt;/div&amp;gt;`;</code></pre>
 </details>
 
 ## ✅ Check
