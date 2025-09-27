@@ -507,12 +507,13 @@ Need help with arrays? Check out these snippets:
 - **Global array:** Use `let stories = [];` outside route handlers
 - **Array push:** Use `stories.push(storyContent);`
 - **Array length:** Use `stories.length` to check array size
+- **Console testing:** Use `console.log(stories);` to see stored stories
 
 ## ✅ Check
 1. Create and submit multiple stories
-2. Check that stories are being stored
+2. Check your server console to see `console.log(stories)` output
 3. Verify the array grows with each submission
-4. If stories aren't stored, check your array operations
+4. If stories aren't stored, check your array operations and console output
 
 ---
 
@@ -529,15 +530,17 @@ Create a route to display a random story from the stored stories.
 - Create `/random` route
 - Use `Math.random()` to select a random story
 - Display the random story in a styled format
+- Add 3 dummy stories to the array for testing
 
 ## 💡 Code Hints
 Need help with random selection? Check out these snippets:
 - **Random number:** Use `Math.floor(Math.random() * stories.length)`
 - **Array access:** Use `stories[randomIndex]`
 - **Empty array check:** Handle case when no stories exist
+- **Dummy stories:** Use `let stories = ['Story 1', 'Story 2', 'Story 3'];` for testing
 
 ## ✅ Check
-1. Create several stories first
+1. Add 3 dummy stories to your array for testing
 2. Navigate to `/random` route
 3. You should see a random story displayed
 4. Refresh the page to see different random stories
