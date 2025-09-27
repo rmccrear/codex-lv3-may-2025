@@ -19,11 +19,12 @@ Need help with arrays? Check out these snippets:
 - **Global array:** Use `let stories = [];` outside route handlers
 - **Array push:** Use `stories.push(storyContent);`
 - **Array length:** Use `stories.length` to check array size
+- **Console testing:** Use `console.log(stories);` to see stored stories
 
 ## ✅ Check
 1. Create and submit multiple stories
-2. Check that stories are being stored
+2. Check your server console to see `console.log(stories)` output
 3. Verify the array grows with each submission
-4. If stories aren't stored, check your array operations
+4. If stories aren't stored, check your array operations and console output
 
 ---
