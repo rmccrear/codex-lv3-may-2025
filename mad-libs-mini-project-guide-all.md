@@ -437,47 +437,52 @@ Show Me: basic story structure
 Organize your code for maintainability and follow best practices.
 
 ## Instructions
-- Add comments to explain code sections
+- Add comments to explain code sections - this helps you and others understand your code later
 - Use meaningful variable names
-- Organize routes logically
 - Test all functionality
 
 ## 💡 Code Hints
 Need help with organization? Check out these snippets:
-- **Code comments:** Use `//` for single-line comments
+- **Code comments:** Use `//` for single-line comments - they make your code much easier to understand!
 - **Variable naming:** Use descriptive names like `storyContent`
-- **Route organization:** Group related routes together
 
 Show Me: code comments
 
 ```javascript
-// Server setup
+// Server setup - this creates our Express application
 const express = require('express');
 const app = express();
 
-// Static file serving
+// Static file serving - allows us to serve HTML, CSS, and JS files
 app.use(express.static('public'));
 
-// Routes
+// Routes - this handles requests to different URLs
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/public/mad-libs-form.html');
+    res.send('Mad Libs! Start here: <a href="/mad-libs-form.html">Create New</a>');
 });
 ```
 
 Show Me: descriptive variable names
 
 ```javascript
+// Get the story template
 const storyTemplate = `Your story here...`;
-const completedStory = storyTemplate.replace('${name}', userName);
-const storyResponse = `<div class="card">${completedStory}</div>`;
+
+// Extract user input from form data
+const userName = req.query.name;
+
+// Create the personalized story content
+const storyContent = `Once upon a time, ${userName} went on an adventure.`;
+
+// Wrap the story in HTML for display
+const storyResponse = `<div class="card">${storyContent}</div>`;
 ```
 
 ## ✅ Check
-1. Your code should be well-commented
+1. Your code should be well-commented - add comments to explain what each section does
 2. Variable names should be descriptive
-3. Routes should be organized logically
-4. All functionality should work correctly
-5. Code should be easy to read and understand
+3. All functionality should work correctly
+4. Code should be easy to read and understand - comments help with this!
 
 ---
 
