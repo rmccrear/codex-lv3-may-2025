@@ -23,6 +23,7 @@ Examples:
 import os
 import re
 import sys
+import html
 from pathlib import Path
 
 def convert_show_me_sections(content):
@@ -37,8 +38,11 @@ def convert_show_me_sections(content):
     """
     
     # Pattern to match "Show Me" sections
-    # Matches: "Show Me: description" followed by code block
+    # Matches: "Show Me: description" followed by code block OR existing HTML details
     pattern = r'Show Me: ([^\n]+)\n\n(```(\w+)?\n(.*?)\n```)'
+    
+    # Also handle existing HTML details that need escaping fixes
+    html_pattern = r'(<pre><code class="language-(\w+)">)(.*?)(</code></pre>)'
     
     def replace_show_me(match):
         description = match.group(1).strip()
@@ -46,8 +50,9 @@ def convert_show_me_sections(content):
         language = match.group(3) or ''
         code_content = match.group(4)
         
-        # Use code content as-is (no HTML escaping needed in <pre><code> blocks)
-        escaped_code = code_content
+        # Escape HTML characters in code content for proper display
+        # Only escape raw < and > characters, not already escaped ones
+        escaped_code = code_content.replace('<', '&lt;').replace('>', '&gt;')
         
         # Create collapsible details
         details_html = f'''<details>
@@ -58,8 +63,23 @@ def convert_show_me_sections(content):
         
         return details_html
     
+    def fix_html_escaping(match):
+        open_tag = match.group(1)
+        language = match.group(2)
+        code_content = match.group(3)
+        close_tag = match.group(4)
+        
+        # Escape HTML characters in code content for proper display
+        # Only escape raw < and > characters, not already escaped ones
+        escaped_code = code_content.replace('<', '&lt;').replace('>', '&gt;')
+        
+        return f"{open_tag}{escaped_code}{close_tag}"
+    
     # Replace all "Show Me" sections
     converted_content = re.sub(pattern, replace_show_me, content, flags=re.DOTALL)
+    
+    # Fix HTML escaping in existing code blocks
+    converted_content = re.sub(html_pattern, fix_html_escaping, converted_content, flags=re.DOTALL)
     
     return converted_content
 
@@ -78,8 +98,8 @@ def process_file(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:
         content = f.read()
     
-    # Check if file has "Show Me" sections
-    if 'Show Me:' not in content:
+    # Check if file has "Show Me" sections or HTML code blocks that need escaping
+    if 'Show Me:' not in content and '<pre><code class=' not in content:
         return False
     
     # Convert the content
