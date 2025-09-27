@@ -26,7 +26,7 @@ Need help with Express setup? Check out these snippets:
 const app = express();
 const PORT = 3000;
 
-app.listen(PORT, () =&amp;gt; {
+app.listen(PORT, () =&gt; {
     console.log(`Server running on http://localhost:${PORT}`);
 });</code></pre>
 </details>
@@ -34,7 +34,7 @@ app.listen(PORT, () =&amp;gt; {
 <details>
 <summary>Show Me: a simple route example</summary>
 
-<pre><code class="language-javascript">app.get('/', (req, res) =&amp;gt; {
+<pre><code class="language-javascript">app.get('/', (req, res) =&gt; {
     res.send('Hello World!');
 });</code></pre>
 </details>

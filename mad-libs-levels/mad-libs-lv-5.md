@@ -21,24 +21,24 @@ Need help with Bootstrap? Check out these snippets:
 <details>
 <summary>Show Me: Bootstrap CDN link in HTML head</summary>
 
-<pre><code class="language-html">&amp;lt;head&amp;gt;
-    &amp;lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"&amp;gt;
-    &amp;lt;title&amp;gt;Mad Libs Form&amp;lt;/title&amp;gt;
-&amp;lt;/head&amp;gt;</code></pre>
+<pre><code class="language-html">&lt;head&gt;
+    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
+    &lt;title&gt;Mad Libs Form&lt;/title&gt;
+&lt;/head&gt;</code></pre>
 </details>
 
 <details>
 <summary>Show Me: Bootstrap form styling</summary>
 
-<pre><code class="language-html">&amp;lt;div class="container mt-5"&amp;gt;
-    &amp;lt;form method="GET" action="/create-mad-libs" class="row g-3"&amp;gt;
-        &amp;lt;div class="col-md-6"&amp;gt;
-            &amp;lt;label class="form-label"&amp;gt;Name:&amp;lt;/label&amp;gt;
-            &amp;lt;input type="text" class="form-control" name="name"&amp;gt;
-        &amp;lt;/div&amp;gt;
-        &amp;lt;button type="submit" class="btn btn-primary"&amp;gt;Submit&amp;lt;/button&amp;gt;
-    &amp;lt;/form&amp;gt;
-&amp;lt;/div&amp;gt;</code></pre>
+<pre><code class="language-html">&lt;div class="container mt-5"&gt;
+    &lt;form method="GET" action="/create-mad-libs" class="row g-3"&gt;
+        &lt;div class="col-md-6"&gt;
+            &lt;label class="form-label"&gt;Name:&lt;/label&gt;
+            &lt;input type="text" class="form-control" name="name"&gt;
+        &lt;/div&gt;
+        &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+    &lt;/form&gt;
+&lt;/div&gt;</code></pre>
 </details>
 
 ## ✅ Check

@@ -30,8 +30,8 @@ const story = `Once upon a time, ${name} was feeling very ${adjective}.`;</code>
 <summary>Show Me: story template structure</summary>
 
 <pre><code class="language-javascript">const storyTemplate = `
-    &amp;lt;h1&amp;gt;Your Mad Libs Story&amp;lt;/h1&amp;gt;
-    &amp;lt;p&amp;gt;Once upon a time, ${name} went to the ${noun1} and found a ${adjective1} ${noun2}.&amp;lt;/p&amp;gt;
+    &lt;h1&gt;Your Mad Libs Story&lt;/h1&gt;
+    &lt;p&gt;Once upon a time, ${name} went to the ${noun1} and found a ${adjective1} ${noun2}.&lt;/p&gt;
 `;
 res.send(storyTemplate);</code></pre>
 </details>

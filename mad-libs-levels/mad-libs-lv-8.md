@@ -24,24 +24,24 @@ Need help with styling? Check out these snippets:
 <summary>Show Me: complete HTML with CSS in server route</summary>
 
 <pre><code class="language-javascript">const storyHTML = `
-&amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;html&amp;gt;
-&amp;lt;head&amp;gt;
-    &amp;lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"&amp;gt;
-    &amp;lt;title&amp;gt;Your Mad Libs Story&amp;lt;/title&amp;gt;
-&amp;lt;/head&amp;gt;
-&amp;lt;body&amp;gt;
-    &amp;lt;div class="container mt-5"&amp;gt;
-        &amp;lt;div class="card"&amp;gt;
-            &amp;lt;div class="card-body"&amp;gt;
-                &amp;lt;h1 class="card-title"&amp;gt;Your Mad Libs Story&amp;lt;/h1&amp;gt;
-                &amp;lt;p class="card-text"&amp;gt;${storyContent}&amp;lt;/p&amp;gt;
-                &amp;lt;a href="/mad-libs-form.html" class="btn btn-primary"&amp;gt;Create Another Story&amp;lt;/a&amp;gt;
-            &amp;lt;/div&amp;gt;
-        &amp;lt;/div&amp;gt;
-    &amp;lt;/div&amp;gt;
-&amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;`;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
+    &lt;title&gt;Your Mad Libs Story&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="container mt-5"&gt;
+        &lt;div class="card"&gt;
+            &lt;div class="card-body"&gt;
+                &lt;h1 class="card-title"&gt;Your Mad Libs Story&lt;/h1&gt;
+                &lt;p class="card-text"&gt;${storyContent}&lt;/p&gt;
+                &lt;a href="/mad-libs-form.html" class="btn btn-primary"&gt;Create Another Story&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;`;
 
 res.send(storyHTML);</code></pre>
 </details>
@@ -49,15 +49,15 @@ res.send(storyHTML);</code></pre>
 <details>
 <summary>Show Me: basic story structure</summary>
 
-<pre><code class="language-html">&amp;lt;div class="container mt-5"&amp;gt;
-    &amp;lt;div class="card"&amp;gt;
-        &amp;lt;div class="card-body"&amp;gt;
-            &amp;lt;h1&amp;gt;Your Story&amp;lt;/h1&amp;gt;
-            &amp;lt;p&amp;gt;Story content goes here...&amp;lt;/p&amp;gt;
-            &amp;lt;a href="/mad-libs-form.html"&amp;gt;Create Another Story&amp;lt;/a&amp;gt;
-        &amp;lt;/div&amp;gt;
-    &amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;</code></pre>
+<pre><code class="language-html">&lt;div class="container mt-5"&gt;
+    &lt;div class="card"&gt;
+        &lt;div class="card-body"&gt;
+            &lt;h1&gt;Your Story&lt;/h1&gt;
+            &lt;p&gt;Story content goes here...&lt;/p&gt;
+            &lt;a href="/mad-libs-form.html"&gt;Create Another Story&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 </details>
 
 ## ✅ Check

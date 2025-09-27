@@ -30,7 +30,7 @@ const app = express();
 app.use(express.static('public'));
 
 // Routes
-app.get('/', (req, res) =&amp;gt; {
+app.get('/', (req, res) =&gt; {
     res.sendFile(__dirname + '/public/mad-libs-form.html');
 });</code></pre>
 </details>
@@ -40,7 +40,7 @@ app.get('/', (req, res) =&amp;gt; {
 
 <pre><code class="language-javascript">const storyTemplate = `Your story here...`;
 const completedStory = storyTemplate.replace('${name}', userName);
-const storyResponse = `&amp;lt;div class="card"&amp;gt;${completedStory}&amp;lt;/div&amp;gt;`;</code></pre>
+const storyResponse = `&lt;div class="card"&gt;${completedStory}&lt;/div&gt;`;</code></pre>
 </details>
 
 ## ✅ Check

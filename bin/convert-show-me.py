@@ -46,8 +46,8 @@ def convert_show_me_sections(content):
         language = match.group(3) or ''
         code_content = match.group(4)
         
-        # Escape HTML characters in code content
-        escaped_code = code_content.replace('<', '&lt;').replace('>', '&gt;').replace('&', '&amp;')
+        # Use code content as-is (no HTML escaping needed in <pre><code> blocks)
+        escaped_code = code_content
         
         # Create collapsible details
         details_html = f'''<details>
