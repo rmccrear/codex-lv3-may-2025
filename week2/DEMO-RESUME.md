@@ -58,34 +58,13 @@ export default function App() {
       <Name />
       <JobTitle />
 
-      {/* About */}
-      <h3>About Me</h3>
-      <AboutMe />
-
-      {/* Experience */}
-      <h3>Experience</h3>
-      <ExperienceItem role="Pokémon Catcher" company="Kanto League" years="1996–2000" />
-      <ExperienceItem role="Gym Challenger" company="Johto League" years="2000–2002" />
-      <ExperienceItem role="Pokémon Master" company="World Coronation Series" years="2002–2025" />
-
-      {/* Skills */}
-      <h3>Skills</h3>
-      <SkillItem name="Poké Ball Accuracy" />
-      <SkillItem name="Strategy Battles" />
-      <SkillItem name="Pokédex Research" />
-      <SkillItem name="Teamwork with Pikachu" />
-
-      {/* Education */}
-      <h3>Education</h3>
-      <Education />
-
       {/* Contact */}
       <h3>Contact</h3>
-      <ContactEmail email="ash.ketchum@pokemon.com" />
+
       <ContactPhone phone="(555) 123-POKE" />
 
       {/* Footer */}
-      <Footer />
+
     </div>
   );
 }
