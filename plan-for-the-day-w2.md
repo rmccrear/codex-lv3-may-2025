@@ -19,8 +19,17 @@
         * Writing markup with JSX
         * Adding styles
         * Displaying data
-    * Tic tac toe (Mini-Project)
-        * https://react.dev/learn/tutorial-tic-tac-toe
-        * [Export Default Function Yeah!](https://suno.com/s/93Jk7KbpRYmyltLT)
-        * [Export Default Function Yeah! (Remix)](https://suno.com/s/9BAZLPGqqpB9LCNt)
-        * 
+    * Components
+        * https://react.dev/learn/your-first-component
+* TODO: [Practice Resume](./week2/DEMO-RESUME.md)
+    
+## Day 2
+
+Reference: https://react.dev/learn
+
+* Components
+* JSX data with `{ }`
+* Props
+* `children` prop
+* [Example Code](https://github.com/rmccrear/pokemon-resume-demo-2025)
+* TODO: [More Practice Resume](./week2/DEMO-RESUME-PART-2.md)
