@@ -31,5 +31,5 @@ Reference: https://react.dev/learn
 * JSX data with `{ }`
 * Props
 * `children` prop
-* [Example Code](https://github.com/rmccrear/pokemon-resume-demo-2025)
+* [Example Code](https://github.com/rmccrear/pokemon-resume-demo-2025/blob/main/src/App.jsx)
 * TODO: [More Practice Resume](./week2/DEMO-RESUME-PART-2.md)
