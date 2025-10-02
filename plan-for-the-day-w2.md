@@ -37,8 +37,8 @@ Reference: https://react.dev/learn
 ## Day 3
 
 * Reference 0: https://studio.code.org/courses/course1/units/1/lessons/14/levels/1
-* Reference 2: https://studio.code.org/courses/csp-2025/units/6/lessons/6/levels/1
 * Reference 1: https://studio.code.org/courses/csp-2025/units/6/lessons/5/levels/1
+* Reference 2: https://studio.code.org/courses/csp-2025/units/6/lessons/6/levels/1
 * Reference 3: https://studio.code.org/courses/csp-2025/units/6/lessons/7/levels/1
 * Reference 4: https://studio.code.org/courses/csp-2025/units/6/lessons/8/levels/1
 
