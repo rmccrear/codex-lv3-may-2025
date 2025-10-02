@@ -50,6 +50,7 @@ Reference: https://react.dev/learn
 * TODO: Move on to [Loops Investigate](https://studio.code.org/courses/csp-2025/units/6/lessons/6/levels/1). There is not much to do, but a lot to observe and investigate.
 * TODO: Work on [Loops Practice](https://studio.code.org/courses/csp-2025/units/6/lessons/7/levels/1) and get some good practice with Loops.
 * TODO: Finally, work on [Loops Make](https://studio.code.org/courses/csp-2025/units/6/lessons/8/levels/1) to create your own app with loops.
+* Challenge: Have a look at this old lesson. Try and see how a loop might have helped. https://studio.code.org/courses/csd-2024/units/3/lessons/5/levels/8/sublevel/2
 
 Loops are one of the basic building blocks of algorithms. Being able to use loops will unlock a whole new avenue of programming!
 
