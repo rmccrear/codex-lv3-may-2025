@@ -36,11 +36,13 @@ Reference: https://react.dev/learn
 
 ## Day 3
 
-Reference 0: https://studio.code.org/courses/course1/units/1/lessons/14/levels/1
-Reference 1: https://studio.code.org/courses/csp-2025/units/6/lessons/5/levels/1
-Reference 2: https://studio.code.org/courses/csp-2025/units/6/lessons/6/levels/1
-Reference 3: https://studio.code.org/courses/csp-2025/units/6/lessons/7/levels/1
-Reference 4: https://studio.code.org/courses/csp-2025/units/6/lessons/8/levels/1
+* Reference 0: https://studio.code.org/courses/course1/units/1/lessons/14/levels/1
+* Reference 2: https://studio.code.org/courses/csp-2025/units/6/lessons/6/levels/1
+* Reference 1: https://studio.code.org/courses/csp-2025/units/6/lessons/5/levels/1
+* Reference 3: https://studio.code.org/courses/csp-2025/units/6/lessons/7/levels/1
+* Reference 4: https://studio.code.org/courses/csp-2025/units/6/lessons/8/levels/1
+
+### TODOs for Day 3
 
 * TODO: Solve the [Bee puzzles](https://studio.code.org/courses/course1/units/1/lessons/14/levels/1) as a warmup to loops. Be sure to click on "Show Code" in each lesson to see what is going on under the hood. If you are curious about for loops, have a look at the [explainer on code.org](https://studio.code.org/docs/concepts/javascript/for-loops/). We will see for-loops in the following lessons.
 * TODO: Start with [Loops Explore](https://studio.code.org/courses/course1/units/1/lessons/14/levels/1) and answer the question. Don't take too long on this!
