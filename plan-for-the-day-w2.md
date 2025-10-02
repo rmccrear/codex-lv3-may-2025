@@ -54,3 +54,11 @@ Reference: https://react.dev/learn
 Loops are one of the basic building blocks of algorithms. Being able to use loops will unlock a whole new avenue of programming!
 
 
+#### Loops Explanation
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Eeh7pxtTZ3k?si=coF23bRx9mj3Nuf0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+#### Loops Demo
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zH54MNiMgSg?si=ykKbSZ3vuKONjUle" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
