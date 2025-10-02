@@ -41,6 +41,7 @@ Reference: https://react.dev/learn
 * Reference 2: https://studio.code.org/courses/csp-2025/units/6/lessons/6/levels/1
 * Reference 3: https://studio.code.org/courses/csp-2025/units/6/lessons/7/levels/1
 * Reference 4: https://studio.code.org/courses/csp-2025/units/6/lessons/8/levels/1
+* For-loops: https://studio.code.org/docs/concepts/javascript/for-loops/
 
 ### TODOs for Day 3
 
