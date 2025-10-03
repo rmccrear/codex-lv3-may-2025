@@ -63,3 +63,9 @@ Loops are one of the basic building blocks of algorithms. Being able to use loop
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zH54MNiMgSg?si=ykKbSZ3vuKONjUle" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+
+## Day 4
+
+### TODOs
+
+* Start work on Mini-Project [Portfolio](./week2/mini-project-portfolio/README.md)
