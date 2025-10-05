@@ -2,7 +2,14 @@
 
 ## Day 1
 
+* `onClick` callbacks for click
+* `onSubmit` callbacks for forms
+* `const [count, setCount] = useState(0)` setting "global variables"
+
 ## Day 2
+
+* passing objects as props
+* conditional rendering
 
 ## Day 3
 
