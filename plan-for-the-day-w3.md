@@ -25,10 +25,12 @@
    * `npm run dev`
 2. Examine the starter code.
 3. Change the counter to use a named function called `handleClick` like we see in the diagram above.
+
 <details>
   <summary>Show Me:</summary>
   <img alt="example code" src="./assets/vite-starter-example-code-mods.png">
 </details>
+
 4. Change the starter code to count by 2's instead of 1's
 5. Create a new button and a new callback function, to increment the count by 3's
 6. Try to make one to count by other amounts.
