@@ -40,6 +40,8 @@
 
 Challenge: Use [conditional rendering](https://react.dev/learn#conditional-rendering) to make something change when the count is greater than 100.
 
+* Example demo code is [here](https://github.com/rmccrear/state-practice-demo-2025)
+
 
 ## Day 2
 
