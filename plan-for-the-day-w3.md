@@ -24,11 +24,12 @@
    * `git commit -m "initialize project"`
    * `npm run dev`
 2. Examine the starter code.
-3. Change the starter code to count by 2's instead of 1's
-4. Create a new button and a new callback function, to increment the count by 3's
-5. Try to make one to count by other amounts.
-6. Make callbacks that decrement.
-7. Make a callback that resets the count to 0.
+3. Change the counter to use a named function called `handleClick` like we see in the diagram above.
+4. Change the starter code to count by 2's instead of 1's
+5. Create a new button and a new callback function, to increment the count by 3's
+6. Try to make one to count by other amounts.
+7. Make callbacks that decrement and attach them to buttons.
+8. Make a callback that resets the count to 0 and a button called "Reset".
 
 Challenge: Use [conditional rendering](https://react.dev/learn#conditional-rendering) to make something change when the count is greater than 100.
 
