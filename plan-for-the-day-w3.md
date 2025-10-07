@@ -3,8 +3,35 @@
 ## Day 1
 
 * `onClick` callbacks for click
-* `onSubmit` callbacks for forms
 * `const [count, setCount] = useState(0)` setting "global variables"
+
+![dom-manipulation-vs-react](./assets/old-way-vs-react-way-annotated.png)
+
+### Day 1 TODO
+
+1. Create a new project with `npm create vite@latest` called "state-practice"
+   * `npm create vite@latest`
+   * Project Name: "state-practice"
+   * Framework: "React"
+   * "JavaScript"
+   * Use rolldown-vite: no
+   * Install with npm and start now: no
+   * `cd state-practice`
+   * `npm install`
+   * `code .`
+   * `git init`
+   * `git add .`
+   * `git commit -m "initialize project"`
+   * `npm run dev`
+2. Examine the starter code.
+3. Change the starter code to count by 2's instead of 1's
+4. Create a new button and a new callback function, to increment the count by 3's
+5. Try to make one to count by other amounts.
+6. Make callbacks that decrement.
+7. Make a callback that resets the count to 0.
+
+Challenge: Use [conditional rendering](https://react.dev/learn#conditional-rendering) to make something change when the count is greater than 100.
+
 
 ## Day 2
 
