@@ -33,6 +33,21 @@ Need help with ternary operators? Check out these snippets:
 
 </details>
 
+<details>
+<summary>Show Me: .win class CSS styling</summary>
+
+<pre><code class="language-css">.win {
+  position: absolute;
+  background-color: green;
+  color: red;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+}
+</code></pre>
+
+</details>
+
 ## ✅ Check
 
 1. Play the game with score below 100 - apple should be visible

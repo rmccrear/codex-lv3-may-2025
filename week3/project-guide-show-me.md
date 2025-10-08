@@ -600,72 +600,24 @@ Create dynamic styling that changes the stats bar color based on the current sco
 ## Instructions
 
 - Create a `statsStyle` object with initial backgroundColor and color properties
-- Write conditional logic (if/else statements) to change colors based on score:
-  - Score < 10: brown background, whitesmoke text
-  - Score < 20: darkGreen background, whitesmoke text
-  - Score < 30: navy background, whitesmoke text
-  - Score >= 30: black background, pink text
+- Write conditional logic (if/else statements) to change colors based on score
 - Apply the `statsStyle` object to the stats div using the `style` attribute
+- Choose your own colors and score thresholds!
 
-## 💡 Code Hints
+**Suggested Color Scheme (feel free to customize):**
+- Score 0-9: `brown` background, `whitesmoke` text
+- Score 10-19: `darkGreen` background, `whitesmoke` text
+- Score 20-29: `navy` background, `whitesmoke` text
+- Score 30+: `black` background, `pink` text
 
-Need help with conditional styling? Check out these snippets:
-
-<details>
-<summary>Show Me: statsStyle object with conditionals</summary>
-
-<pre><code class="language-jsx">const appleStyle = {
-  width: appleSize + &quot;px&quot;,
-  height: appleSize + &quot;px&quot;,
-  left: appleX + &quot;px&quot;,
-  top: appleY + &quot;px&quot;
-}
-
-// NEW: Dynamic stats styling
-const statsStyle = {
-  backgroundColor: &quot;brown&quot;,
-  color: &quot;whitesmoke&quot;
-}
-
-if(score &lt; 10) {
-  statsStyle.backgroundColor = &quot;brown&quot;
-  statsStyle.color = &quot;whitesmoke&quot;
-} else if (score &lt; 20) {
-  statsStyle.backgroundColor = &quot;darkGreen&quot;
-  statsStyle.color = &quot;whitesmoke&quot;    
-} else if (score &lt; 30) {
-  statsStyle.backgroundColor = &quot;navy&quot;
-  statsStyle.color = &quot;whitesmoke&quot;    
-} else {
-  statsStyle.backgroundColor = &quot;black&quot;
-  statsStyle.color = &quot;pink&quot;    
-}
-</code></pre>
-
-</details>
-
-<details>
-<summary>Show Me: applying style to stats div</summary>
-
-<pre><code class="language-jsx">return (
-  &lt;&gt;
-    &lt;div className=&quot;stats&quot; style={statsStyle}&gt;
-      Score: {score} Lives: {lives}
-    &lt;/div&gt;
-    {/* ... rest of JSX ... */}
-  &lt;/&gt;
-)
-</code></pre>
-
-</details>
+**Other color ideas:** `purple`, `teal`, `crimson`, `goldenrod`, `indigo`, `coral`, `forestgreen`
 
 ## ✅ Check
 
-1. At score 0-9, stats bar should be brown
-2. Click to reach score 10-19, stats should turn dark green
-3. At score 20-29, stats should turn navy blue
-4. At score 30+, stats should turn black with pink text
-5. Colors should change immediately when crossing thresholds
+1. Stats bar changes color when you reach different score milestones
+2. Colors change immediately when crossing your thresholds
+3. Text color is readable against background color
+4. You're happy with your creative color choices!
 
 **Why modify objects before rendering?**
 In React, you can create style objects and modify them based on state before the return statement. Each time state changes, the component re-renders and the conditionals run again, creating fresh style objects.
@@ -736,6 +688,9 @@ Need help with conditional rendering? Check out these snippets:
 - If false, React renders nothing
 - This is called "short-circuit evaluation"
 
+**Learn More:**  
+Read about conditional rendering in React: [React Docs - Conditional Rendering](https://react.dev/learn#conditional-rendering)
+
 ---
 
 # Level 11: Hide Apple on Win
@@ -767,6 +722,21 @@ Need help with ternary operators? Check out these snippets:
     : &lt;h1 className=&quot;win&quot;&gt; You Win!&lt;/h1&gt;
   }
 &lt;/div&gt;
+</code></pre>
+
+</details>
+
+<details>
+<summary>Show Me: .win class CSS styling</summary>
+
+<pre><code class="language-css">.win {
+  position: absolute;
+  background-color: green;
+  color: red;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+}
 </code></pre>
 
 </details>

@@ -64,4 +64,7 @@ Need help with conditional rendering? Check out these snippets:
 - If false, React renders nothing
 - This is called "short-circuit evaluation"
 
+**Learn More:**  
+Read about conditional rendering in React: [React Docs - Conditional Rendering](https://react.dev/learn#conditional-rendering)
+
 ---
