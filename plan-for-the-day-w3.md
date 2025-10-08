@@ -90,10 +90,12 @@ Challenge: Use [conditional rendering](https://react.dev/learn#conditional-rende
 * [Video on List Traversals](https://youtu.be/RQ6GJt9f2vg?si=CM08_CE12FbVULgp)
 * [Demo code for Representing Image Data as a List](./week3/arrays-and-loops/invert-images.js)
 
-![Array Whiteboard](./assets/array-demo-white-board-01.png)
-
-
 #### Overview
+
+* [For Loop Slides]([code.org slides](https://docs.google.com/presentation/d/1l_mpNKjAK73OlGNpll-0fWEPnsHaP3YeLffqHKN9oPE/edit?slide=id.g62fa39d25b_0_413#slide=id.g62fa39d25b_0_413))
+* [Mile Tracker Slides](https://docs.google.com/presentation/d/1zS7j6oCW0rzownz-Fg12M-UheRiRs7W8ENm1cZJv4VQ/template/preview)
+
+![Array Whiteboard](./assets/array-demo-white-board-01.png)
 
 * List traversals: touch every item on a list.
     * Example: A list of times for a mile run.
