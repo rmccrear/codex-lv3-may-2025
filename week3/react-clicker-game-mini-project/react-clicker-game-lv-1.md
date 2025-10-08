@@ -18,6 +18,18 @@ Your React version will have similar gameplay mechanics but with your own creati
 
 ---
 
+## 📋 Before You Start
+
+**Complete the Activity Guide first!** Work through Steps 1-4 of the [Activity Guide](../react-clicker-game-activity-guide.md) to:
+- Play the model game
+- Plan your variables and functions
+- Map out your game logic
+- Understand the project requirements
+
+This planning will help you build your game more efficiently!
+
+---
+
 ## What You'll Do
 
 Create a new React project using Vite and set up all the necessary files to get started.
