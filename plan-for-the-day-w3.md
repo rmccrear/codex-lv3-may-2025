@@ -84,6 +84,15 @@ Challenge: Use [conditional rendering](https://react.dev/learn#conditional-rende
 
 ### Code.org List Traversals.
 
+#### Warmup
+
+* [Array review--Representing Image Data as a List](https://studio.code.org/courses/csd-2025/units/6/lessons/4/levels/3)
+* [Video on List Traversals](https://youtu.be/RQ6GJt9f2vg?si=CM08_CE12FbVULgp)
+* [Demo code for Representing Image Data as a List](./week3/arrays-and-loops/invert-images.js)
+
+![Array Whiteboard](./assets/array-demo-white-board-01.png)
+
+
 #### Overview
 
 * List traversals: touch every item on a list.
