@@ -10,9 +10,9 @@ Add image files for the apple target and orchard background to your project.
 
 ## Instructions
 
-- Find or create two images:
-  - An apple image (save as `apple.png`)
-  - An orchard/nature background image (save as `orchard.png`)
+- Download the two images, or find your own:
+  - An [apple image](./apple.png) (save as `apple.png`)
+  - An [orchard background image](./orchard.png) (save as `orchard.png`)
 - Place both images in the `public/` folder
 - Delete the default `vite.svg` from `public/`
 - Delete `react.svg` from `src/assets/`
@@ -22,9 +22,8 @@ Add image files for the apple target and orchard background to your project.
 Need help with images? Check out these tips:
 
 **Where to find images:**
+- Optional: You may find your own images if you'd like a different theme.
 - Use free stock photo sites like Unsplash, Pexels, or Pixabay
-- Search for "apple transparent background" for the target
-- Search for "orchard" or "apple tree" for the background
 - Make sure images are properly licensed for use
 
 **File structure:**
