@@ -7,7 +7,11 @@
   * [Installing Bootstrap in React](https://youtu.be/SqcY0GlETPk?si=S2fpApHG6j1OOBpD&t=1330)
   * [Conditional Rendering](https://www.youtube.com/watch?v=SqcY0GlETPk&t=1991s)
   * [Props in React](https://www.youtube.com/watch?v=SqcY0GlETPk&t=3044s) (Note: we aren't using Typescript, so you won't need the `:Props` syntax or the `interface Props` statement.)
-* [Starting a new project with Vite by Bro Code](https://youtu.be/hn80mWvP-9g?si=id3HzZrL9CNiXRP3&t=493) (This video includes what you can delete from the starter code when you create a new vite app.)
+  * Bro Code React Tutorial (With timestamps)
+    * [Starting a new project with Vite by Bro Code](https://youtu.be/hn80mWvP-9g?si=id3HzZrL9CNiXRP3&t=493) (This video includes what you can delete from the starter code when you create a new vite app.)
+    * [Creating a new component in its own file.](https://youtu.be/hn80mWvP-9g?si=Rm0ySZSPLJyTUoYx&t=547)
+    * [How to use `onClick` in React](https://youtu.be/KpiiKuqNlYw?si=nDHeWyKHJqCBBMBU&t=75)
+
 
 ## Day 1
 
