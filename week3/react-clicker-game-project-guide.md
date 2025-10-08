@@ -12,6 +12,8 @@ In this project, students will build an interactive clicker game using React, Vi
 
 **Model Reference:** [Code.org Clicker Game](https://studio.code.org/courses/csp5-virtual/units/1/lessons/5/levels/1)
 
+**Student Materials:** [Activity Guide](./react-clicker-game-activity-guide.md) - Student-facing handout with step-by-step instructions, planning tables, and rubric
+
 ---
 
 ## Learning Objectives
