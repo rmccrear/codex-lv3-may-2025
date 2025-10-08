@@ -1,5 +1,13 @@
 # Week 3
 
+### Video Tutorials
+
+* [Video tutorial of React from Web Dev Simplified](https://www.youtube.com/watch?v=Rh3tobg7hEo&t=70s)
+* Mosh's React Tutorial (With timestamps)
+  * [Installing Bootstrap in React](https://youtu.be/SqcY0GlETPk?si=S2fpApHG6j1OOBpD&t=1330)
+  * [Conditional Rendering](https://www.youtube.com/watch?v=SqcY0GlETPk&t=1991s)
+  * [Props in React](https://www.youtube.com/watch?v=SqcY0GlETPk&t=3044s) (Note: we aren't using Typescript, so you won't need the `:Props` syntax or the `interface Props` statement.)
+
 ## Day 1
 
 * `onClick` callbacks for click
