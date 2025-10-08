@@ -45,8 +45,26 @@ Challenge: Use [conditional rendering](https://react.dev/learn#conditional-rende
 
 ## Day 2
 
-* passing objects as props
+* style in React
 * conditional rendering
+* multiple state variables
+
+### Day 2 TODO
+
+1. Make a new project called "game-scores"
+2. Remove all the CSS and unnecessary JSX
+3. Add Bootstrap
+4. Add scores for one team. (If basketball, have 1 point for free throw, 3 for three pointer, etc)
+5. Add some style with regular css.
+6. Add some style with JSX
+7. After X points, use conditional formatting to change something on the screen
+
+**Bonus...**
+
+8. Add timeouts, fouls or other stats to keep track of.
+9. Add scores for the other team.
+10. Add more conditional formatting. (Show who is winning, who is in foul trouble, etc...)
+
 
 ## Day 3
 
