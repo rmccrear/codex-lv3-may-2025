@@ -48,6 +48,7 @@ Challenge: Use [conditional rendering](https://react.dev/learn#conditional-rende
 * style in React
 * conditional rendering
 * multiple state variables
+* [Demo code--basketball score keeper](https://github.com/rmccrear/basketball-score)
 
 ### Day 2 TODO
 
