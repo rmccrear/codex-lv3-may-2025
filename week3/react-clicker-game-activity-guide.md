@@ -154,31 +154,7 @@ Play your game and verify it works correctly for all scenarios:
 
 ---
 
-## Step 7 - Extension Challenges (Optional)
-
-Choose one or more challenges to extend your game:
-
-**Easy:**
-- [ ] Add a "Game Over" screen when lives reach 0
-- [ ] Add a restart button to reset the game
-- [ ] Change background image based on score
-
-**Medium:**
-- [ ] Track high score using `localStorage`
-- [ ] Add sound effects for clicks, misses, and winning
-- [ ] Make stats bar show lives as emoji hearts (❤️)
-
-**Hard:**
-- [ ] Add a countdown timer (60 seconds to reach 100 points)
-- [ ] Create difficulty levels (Easy/Medium/Hard)
-- [ ] Add smooth animations using CSS transitions
-
-**Extension Notes:**
-Document which challenge you chose and how you implemented it in your README.
-
----
-
-## Step 8 - Submit
+## Step 7 - Submit
 
 Before you submit, check the rubric below to make sure your program meets the requirements.
 
@@ -204,7 +180,7 @@ Before you submit, check the rubric below to make sure your program meets the re
 
 ---
 
-## Step 9 - Reflection
+## Step 8 - Reflection
 
 Answer the following questions about your project:
 
