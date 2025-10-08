@@ -96,3 +96,7 @@ Challenge: Use [conditional rendering](https://react.dev/learn#conditional-rende
 * [List Filter Pattern](https://studio.code.org/docs/concepts/patterns/list-filter-pattern/)
 * [List Reduce Pattern](https://studio.code.org/docs/concepts/patterns/list-reduce-pattern/)
 * [code.org slides](https://docs.google.com/presentation/d/1l_mpNKjAK73OlGNpll-0fWEPnsHaP3YeLffqHKN9oPE/edit?slide=id.g62fa39d25b_0_413#slide=id.g62fa39d25b_0_413)
+
+## Day 4
+
+[Mini-Project](./week3/react-clicker-game-mini-project/react-clicker-game-lv-1.md)
