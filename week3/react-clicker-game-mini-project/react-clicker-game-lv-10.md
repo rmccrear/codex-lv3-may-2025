@@ -64,7 +64,15 @@ Need help with conditional rendering? Check out these snippets:
 - If false, React renders nothing
 - This is called "short-circuit evaluation"
 
+**Understanding CSS translate for centering:**
+- `left: 50%` and `top: 50%` move the element's **top-left corner** to the center
+- But we want the element's **center** to be in the center!
+- `translate: -50% -50%` shifts the element back by half its own width and height
+- This perfectly centers any sized element without knowing its dimensions
+- Modern alternative to the older `transform: translate(-50%, -50%)` syntax
+
 **Learn More:**  
-Read about conditional rendering in React: [React Docs - Conditional Rendering](https://react.dev/learn#conditional-rendering)
+- Conditional rendering in React: [React Docs - Conditional Rendering](https://react.dev/learn#conditional-rendering)
+- CSS translate property: [MDN - translate](https://developer.mozilla.org/en-US/docs/Web/CSS/translate)
 
 ---
