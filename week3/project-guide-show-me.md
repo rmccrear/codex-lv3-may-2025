@@ -346,6 +346,28 @@ function App() {
    - `onClick` handler is attached to apple-target
    - You're using `setScore` to update state
 
+## 🔬 Try This
+
+**Experiment with Box Sizing:**
+
+In your `App.css`, you included `box-sizing: border-box` on the universal selector. Let's see what this does!
+
+1. Remove or comment out the `box-sizing` line:
+   ```css
+   * {
+     /* box-sizing: border-box; */
+   }
+   ```
+
+2. Change the stats padding to something larger, like `20px`
+
+3. Observe what happens to the width of your stats bar
+
+**What's happening?**  
+Learn about `box-sizing: border-box` and how it affects element sizing: [MDN: box-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)
+
+**Question:** Does the stats bar stay 500px wide, or does it get wider? Why?
+
 ---
 
 # Level 6: Add Lives Tracking
