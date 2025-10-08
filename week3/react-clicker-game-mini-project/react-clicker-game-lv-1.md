@@ -71,3 +71,5 @@ npm run dev
    - `vite.config.js`
 
 ---
+
+**Attribution:** This project guide was created with assistance from Claude AI (Anthropic).

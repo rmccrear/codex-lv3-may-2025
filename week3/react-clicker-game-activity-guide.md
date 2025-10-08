@@ -271,3 +271,6 @@ When finished, make sure to:
 
 *Good luck and have fun building your game!* 🎮
 
+---
+
+**Attribution:** This activity guide was created with assistance from Claude AI (Anthropic).

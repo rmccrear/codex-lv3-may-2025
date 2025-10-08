@@ -120,3 +120,7 @@ Keep building, keep learning, and keep growing as a developer!
 ---
 
 *Built with ❤️ using React and Vite*
+
+---
+
+**Attribution:** This project guide was created with assistance from Claude AI (Anthropic).
