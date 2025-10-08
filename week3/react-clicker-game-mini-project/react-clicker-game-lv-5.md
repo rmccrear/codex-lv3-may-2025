@@ -14,7 +14,7 @@ Add React state to track the score and create a click handler for the apple.
 - Create a state variable for `score` with initial value of 0
 - Create a `clickTarget` function that:
   - Accepts an `event` parameter
-  - Calls `event.stopPropagation()` to prevent click bubbling
+  - Calls `event.stopPropagation()` to prevent click bubbling (see [Level 6](./react-clicker-game-lv-6.md) "Show Me" section for details on how this works)
   - Increments the score by 1
 - Add an `onClick` handler to the apple-target div
 - Create a stats div above the game board to display the score
