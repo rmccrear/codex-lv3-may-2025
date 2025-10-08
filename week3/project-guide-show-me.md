@@ -24,7 +24,7 @@ Create a new React project using Vite and set up all the necessary files to get 
 
 ## Instructions
 
-- Create a new Vite + React project using the command: `npm create vite@latest clicker-game -- --template react`
+- Create a new Vite + React project using the command: `npm create vite@latest`
 - Navigate to the project folder: `cd clicker-game`
 - Install dependencies: `npm install`
 - Start the development server to verify setup: `npm run dev`
@@ -36,7 +36,7 @@ Need help with Vite setup? Check out these snippets:
 
 **Creating a Vite project:**
 ```bash
-npm create vite@latest clicker-game -- --template react
+npm create vite@latest
 cd clicker-game
 npm install
 ```
@@ -1407,6 +1407,8 @@ git push -u origin main
 ---
 
 # Level 18: Challenge Extensions ⚡
+
+**CHALLENGE LEVEL**
 
 **User Story:** As a developer, I want to implement advanced features so that I can challenge myself and create a more impressive game.
 
