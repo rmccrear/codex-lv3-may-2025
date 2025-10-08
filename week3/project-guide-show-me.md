@@ -2,6 +2,11 @@
 
 This guide provides step-by-step instructions for building an interactive Apple Clicker game using React, Vite, and modern web development concepts.
 
+**Model Reference:**
+See a working example of a clicker game here: [Code.org Clicker Game](https://studio.code.org/courses/csp5-virtual/units/1/lessons/5/levels/1)
+
+Your React version will have similar gameplay mechanics but with your own creative twist!
+
 **Structure:**
 - Each level builds on the previous one
 - Clear instructions and checkpoints
