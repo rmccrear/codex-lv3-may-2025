@@ -97,6 +97,8 @@ Challenge: Use [conditional rendering](https://react.dev/learn#conditional-rende
 
 ![Array Whiteboard](./assets/array-demo-white-board-01.png)
 
+
+
 * List traversals: touch every item on a list.
     * Example: A list of times for a mile run.
     * Print each time out.
@@ -105,13 +107,21 @@ Challenge: Use [conditional rendering](https://react.dev/learn#conditional-rende
     * Find the fastest time.
     * Find the slowest time.
 
+#### Total Miles added up [Lesson 10 Level 2](https://studio.code.org/courses/csp-2025/units/6/lessons/10/levels/2)
+
+![Total Miles](./assets/total-miles-added-up.png)
+
+#### Count all miles under 8 minutes [also Lesson 10 Level 2](https://studio.code.org/courses/csp-2025/units/6/lessons/10/levels/2)
+
+![Total Miles](./assets/miles-under-8-minutes.png)
+
 #### Lessons
 
 * Lesson 9: https://studio.code.org/courses/csp-2025/units/6/lessons/9/levels/1?login_required=true
 * Lesson 10: https://studio.code.org/courses/csp-2025/units/6/lessons/10/levels/1?login_required=true
+* ~~Lesson 11: https://studio.code.org/courses/csp-2025/units/6/lessons/11/levels/1?login_required=true~~
 * Lesson 11: https://studio.code.org/courses/csp-2025/units/6/lessons/11/levels/1?login_required=true
-* Lesson 11: https://studio.code.org/courses/csp-2025/units/6/lessons/11/levels/1?login_required=true
-* Lesson 12: https://studio.code.org/courses/csp-2025/units/6/lessons/12/levels/1?login_required=true (Activity Guide: doc)
+* Lesson ~~12: https://studio.code.org/courses/csp-2025/units/6/lessons/12/levels/1?login_required=true (Activity Guide: doc)~~
 
 #### List Traversal Resources
 
