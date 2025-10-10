@@ -133,3 +133,9 @@ Challenge: Use [conditional rendering](https://react.dev/learn#conditional-rende
 ## Day 4
 
 [Mini-Project](./week3/react-clicker-game-mini-project/react-clicker-game-lv-1.md)
+
+### Review
+
+#### [Lesson 7 Level 9 Dice Roll](https://studio.code.org/courses/csp-2025/units/6/lessons/7/levels/9)
+
+![Lesson 7 Level 9 Dice Roll Whiteboard](./assets/lesson-7-9-idea-count-odd-dice-rolls.png)
