@@ -20,6 +20,8 @@
 
 ![dom-manipulation-vs-react](./assets/old-way-vs-react-way-annotated.png)
 
+*Comparison showing traditional DOM manipulation versus React's state-based approach for updating counters*
+
 ### Day 1 TODO
 
 1. Create a new project with `npm create vite@latest` called "state-practice"
@@ -42,6 +44,8 @@
 <details>
   <summary>Show Me:</summary>
   <img alt="example code" src="./assets/vite-starter-example-code-mods.png">
+  
+  *Example code modifications for the Vite starter project, showing how to implement the handleClick function*
 </details>
 
 4. Change the starter code to count by 2's instead of 1's
@@ -97,6 +101,8 @@ Challenge: Use [conditional rendering](https://react.dev/learn#conditional-rende
 
 ![Array Whiteboard](./assets/array-demo-white-board-01.png)
 
+*Whiteboard diagram demonstrating array concepts and list traversal patterns*
+
 
 
 * List traversals: touch every item on a list.
@@ -111,9 +117,13 @@ Challenge: Use [conditional rendering](https://react.dev/learn#conditional-rende
 
 ![Total Miles](./assets/total-miles-added-up.png)
 
+*Code.org screenshot showing how to sum all values in a miles array*
+
 #### Count all miles under 8 minutes [also Lesson 10 Level 2](https://studio.code.org/courses/csp-2025/units/6/lessons/10/levels/2)
 
 ![Total Miles](./assets/miles-under-8-minutes.png)
+
+*Code.org screenshot demonstrating how to count/filter values under a specific threshold (8 minutes)*
 
 #### Lessons
 
@@ -132,12 +142,22 @@ Challenge: Use [conditional rendering](https://react.dev/learn#conditional-rende
 
 ## Day 4
 
+Today you'll work on the **Apple Clicker Mini-Project** - a React game where you'll practice state management, event handling, and dynamic styling by building an interactive clicking game.
+
 [Mini-Project](./week3/react-clicker-game-mini-project/react-clicker-game-lv-1.md)
 
 ![Apple Clicker Planning Board](./assets/apple-clicker-planning-board.png)
+
+*Planning diagram showing the Apple Clicker game UI, state variables, dynamic styling, and event handlers*
 
 ### Review
 
 #### [Lesson 7 Level 9 Dice Roll](https://studio.code.org/courses/csp-2025/units/6/lessons/7/levels/9)
 
 ![Lesson 7 Level 9 Dice Roll Whiteboard](./assets/lesson-7-9-idea-count-odd-dice-rolls.png)
+
+*Whiteboard showing dice roll simulation and counting odd numbers - a conditional logic example*
+
+## Day 5
+
+Today you'll continue working on the **Apple Clicker Mini-Project** and complete the **Code.org lessons** on conditionals and list traversals. You'll finish building your React games while reinforcing concepts from the Code.org curriculum.
