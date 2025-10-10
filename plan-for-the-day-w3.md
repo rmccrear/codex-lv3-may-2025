@@ -120,7 +120,7 @@ Challenge: Use [conditional rendering](https://react.dev/learn#conditional-rende
 * Lesson 9: https://studio.code.org/courses/csp-2025/units/6/lessons/9/levels/1?login_required=true
 * Lesson 10: https://studio.code.org/courses/csp-2025/units/6/lessons/10/levels/1?login_required=true
 * ~~Lesson 11: https://studio.code.org/courses/csp-2025/units/6/lessons/11/levels/1?login_required=true~~
-* Lesson ~~12: https://studio.code.org/courses/csp-2025/units/6/lessons/12/levels/1?login_required=true (Activity Guide: doc)~~
+* ~~Lesson 12: https://studio.code.org/courses/csp-2025/units/6/lessons/12/levels/1?login_required=true (Activity Guide: doc)~~
 
 #### List Traversal Resources
 
@@ -133,3 +133,11 @@ Challenge: Use [conditional rendering](https://react.dev/learn#conditional-rende
 ## Day 4
 
 [Mini-Project](./week3/react-clicker-game-mini-project/react-clicker-game-lv-1.md)
+
+![Apple Clicker Planning Board](./assets/apple-clicker-planning-board.png)
+
+### Review
+
+#### [Lesson 7 Level 9 Dice Roll](https://studio.code.org/courses/csp-2025/units/6/lessons/7/levels/9)
+
+![Lesson 7 Level 9 Dice Roll Whiteboard](./assets/lesson-7-9-idea-count-odd-dice-rolls.png)
