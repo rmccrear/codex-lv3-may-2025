@@ -134,6 +134,8 @@ Challenge: Use [conditional rendering](https://react.dev/learn#conditional-rende
 
 [Mini-Project](./week3/react-clicker-game-mini-project/react-clicker-game-lv-1.md)
 
+![Apple Clicker Planning Board](./assets/apple-clicker-planning-board.png)
+
 ### Review
 
 #### [Lesson 7 Level 9 Dice Roll](https://studio.code.org/courses/csp-2025/units/6/lessons/7/levels/9)
