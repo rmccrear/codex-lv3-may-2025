@@ -158,6 +158,10 @@ Today you'll work on the **Apple Clicker Mini-Project** - a React game where you
 
 *Whiteboard showing dice roll simulation and counting odd numbers - a conditional logic example*
 
+![Example Code in JSX for Dice Rolls](./assets/example-code-in-JSX-for-dice-rolls.png)
+
+*React component code showing dice roll simulation with useState hook and conditional logic for counting odd numbers*
+
 ## Day 5
 
 Today you'll continue working on the **Apple Clicker Mini-Project** and complete the **Code.org lessons** on conditionals and list traversals. You'll finish building your React games while reinforcing concepts from the Code.org curriculum.
