@@ -162,6 +162,8 @@ Today you'll work on the **Apple Clicker Mini-Project** - a React game where you
 
 *React component code showing dice roll simulation with useState hook and conditional logic for counting odd numbers*
 
+**Note:** Best practice when updating state in loops is to use `setOdds(prev => prev + 1)` or accumulate in a temporary variable and call `setOdds` only once after the loop completes. Avoid calling `setOdds` directly in loops as it can lead to stale state issues.
+
 ## Day 5
 
 Today you'll continue working on the **Apple Clicker Mini-Project** and complete the **Code.org lessons** on conditionals and list traversals. You'll finish building your React games while reinforcing concepts from the Code.org curriculum.
