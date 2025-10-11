@@ -167,3 +167,6 @@ Today you'll work on the **Apple Clicker Mini-Project** - a React game where you
 ## Day 5
 
 Today you'll continue working on the **Apple Clicker Mini-Project** and complete the **Code.org lessons** on conditionals and list traversals. You'll finish building your React games while reinforcing concepts from the Code.org curriculum.
+
+* Demo code for the Dice practice [Lesson 7 Level 9](https://studio.code.org/courses/csp-2025/units/6/lessons/7/levels/9)
+https://github.com/rmccrear/basketball-score/blob/dice/src/components/Dice.jsx
