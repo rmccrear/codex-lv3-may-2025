@@ -2,6 +2,10 @@ Level Navigation: **1** | [2](./mad-libs-lv-2.md) | [3](./mad-libs-lv-3.md) | [4
 
 # Level 1: Project Setup & Planning
 
+📋 **[View Complete Activity Guide](../week1/mad-libs-mini-project-activity-guide.md)** - Includes planning templates, rubric, and reflection questions
+
+---
+
 Mad Libs is a game where you fill in the blanks of a story with random words (like nouns, verbs, and adjectives) without knowing the context. The result is usually a funny and nonsensical story!
 
 Try a game of Mad Libs here: [https://studio.code.org/courses/csp5-virtual/units/1/lessons/7/levels/1](https://studio.code.org/courses/csp5-virtual/units/1/lessons/7/levels/1)
