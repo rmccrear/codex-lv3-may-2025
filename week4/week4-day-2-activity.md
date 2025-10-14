@@ -465,3 +465,9 @@ In the next session, you'll:
 ---
 
 **Great job today!** You've built the foundation for your hackathon project and learned important collaboration skills with Git. Keep up the momentum! 🚀
+
+---
+
+#### ✍️ Attribution
+
+This guide was developed with assistance from **Anthropic's Claude (Claude 3.5 Sonnet)** to ensure clarity, accuracy, and consistency in the explanations and examples.
