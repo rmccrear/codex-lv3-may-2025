@@ -2,8 +2,6 @@
 
 Build an interactive Mad Libs web application using Node.js, Express, and Bootstrap where users fill out a form and see a funny story generated with their words.
 
-**Due:** [Insert Date] | **Points:** [Insert Points]
-
 ---
 
 ## 📚 Instructions
@@ -87,7 +85,7 @@ Your Mad Libs application must include:
 - [ ] Server starts with `npm run dev` without errors
 - [ ] Form collects input and generates stories
 - [ ] Bootstrap styling looks professional
-- [ ] At least 2 story templates work
+- [ ] At least 1 story template works
 - [ ] README is complete
 - [ ] Code is commented and clean
 
@@ -109,19 +107,8 @@ Your Mad Libs application must include:
 
 - Review the level instructions carefully
 - Check browser console (F12) for errors
-- Use `console.log()` to debug
+- Use `console.log()` to debug on the console in VSCode
 - Post questions in the discussion forum
-- Attend office hours
-
-**Common issues and solutions are detailed in the level instructions.**
-
----
-
-## 📅 Important Dates
-
-- **Start Date:** [Insert Date]
-- **Due Date:** [Insert Date]  
-- **Late Deadline:** [Insert Date] (penalty applies)
 
 ---
 
