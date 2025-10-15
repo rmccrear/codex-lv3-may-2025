@@ -1,127 +1,132 @@
 # Week 1 Assignment: Mad Libs Web Application
 
-Build an interactive Mad Libs web application using Node.js, Express, and Bootstrap.
+Build an interactive Mad Libs web application using Node.js, Express, and Bootstrap where users fill out a form and see a funny story generated with their words.
 
-## 🎯 What You'll Build
+**Due:** [Insert Date] | **Points:** [Insert Points]
 
-A web app where users fill out a form and see a funny story generated with their words.
+---
 
 ## 📚 Instructions
 
-**📖 Start:** [Level 1 - Project Setup](https://rmccrear.github.io/codex-lv3-may-2025/mad-libs-levels/mad-libs-lv-1.html)
+**📖 Start Here:** [Level 1 - Project Setup](https://rmccrear.github.io/codex-lv3-may-2025/mad-libs-levels/mad-libs-lv-1.html)
 
-**Guides:** [Activity Guide](./mad-libs-mini-project-activity-guide.md) | [Class Guide](./ASSIGNMENT_WEEK1.md)
+Follow the level-by-level instructions (Levels 1-20) to build your Mad Libs application. Each level includes detailed steps, code hints, and checkpoints.
 
-**Docs:** [Express](https://expressjs.com/) | [Bootstrap](https://getbootstrap.com/) | [Code.org Model](https://studio.code.org/courses/csp5-virtual/units/1/lessons/7/levels/1)
-
----
-
-## ✅ Requirements (Minimum for Full Credit)
-
-**Technical:**
-- ✅ Express server running on port 3000
-- ✅ HTML form with 5+ input fields
-- ✅ Server processes form data via `req.query`
-- ✅ Template literals generate dynamic story
-- ✅ Bootstrap CSS styling
-- ✅ At least 2 story templates
-
-**Code Quality:**
-- ✅ README with setup instructions
-- ✅ Clean code with comments
-- ✅ Git commits with clear messages
+**Additional Resources:**
+- [Code.org Mad Libs Model](https://studio.code.org/courses/csp5-virtual/units/1/lessons/7/levels/1) - Try the original game
+- [Express.js Documentation](https://expressjs.com/)
+- [Bootstrap 5 Documentation](https://getbootstrap.com/)
 
 ---
 
-## 🚀 Quick Start
+## ✅ Requirements
 
-```bash
-# Setup
-mkdir mad-libs-project && cd mad-libs-project
-npm init -y
-npm install express
-npm install --save-dev nodemon
+Your Mad Libs application must include:
 
-# Create files
-touch server.js
-mkdir public && touch public/mad-libs-form.html
+1. **Express Server**
+   - Running on port 3000
+   - Serves static files from `public/` folder
+   - Handles form submissions via routes
 
-# Run
-npm run dev
-```
+2. **HTML Form**
+   - Collects at least 5 word types (noun, verb, adjective, place, number)
+   - All inputs have proper `name` attributes
+   - Submits to `/story` route
 
-**Then follow:** [Level-by-Level Instructions](https://rmccrear.github.io/codex-lv3-may-2025/mad-libs-levels/mad-libs-lv-1.html)
+3. **Story Generation**
+   - Processes form data using `req.query`
+   - Uses template literals to generate dynamic stories
+   - At least 2 different story templates
 
----
+4. **Bootstrap Styling**
+   - Professional appearance
+   - Responsive design
+   - Applied to both form and story pages
 
-## 📝 Assignment Levels
+5. **Code Quality**
+   - Clean, readable code
+   - Comments explaining key sections
+   - Meaningful variable names
 
-**Core (Required):**
-- Levels 1-9: Setup, form, story generation, styling
-- Levels 15-17: Testing, README, code cleanup
-- Levels 19-20: Git commits, reflection
-
-**Challenge (Extra Credit):**
-- Levels 10-14: Story storage, display all stories, delete features
-
----
-
-## 📊 Grading
-
-| Category | Weight |
-|----------|--------|
-| Server Setup & Routes | 35% |
-| Story Generation (template literals) | 20% |
-| Bootstrap Styling | 15% |
-| Multiple Templates | 10% |
-| Code Quality & Comments | 10% |
-| Documentation (README) | 10% |
-| **Challenge Features** | **+10%** |
+6. **Documentation**
+   - README.md with setup instructions
+   - List of features implemented
+   - Description of story themes
 
 ---
 
-## 🎓 Submission
+## 📊 Grading Rubric
 
-**Submit:** GitHub repository URL with complete README (setup instructions, features, story themes)
+| Category | Weight | Description |
+|----------|--------|-------------|
+| **Server Setup & Routes** | 35% | Express configured, static files served, routes work correctly |
+| **Story Generation** | 20% | Template literals used properly, dynamic content generates |
+| **Bootstrap Styling** | 15% | Professional appearance, responsive, good UX |
+| **Multiple Templates** | 10% | At least 2 story templates with selection |
+| **Code Quality** | 10% | Clean code, good naming, helpful comments |
+| **Documentation** | 10% | Complete README with clear instructions |
+| **Challenge Features** | +10% | Extra credit: story storage, display all, delete (Levels 10-14) |
 
-**Verify:**
-- [ ] Server runs without errors
-- [ ] 2+ story templates work
-- [ ] Bootstrap styling applied
-- [ ] Code commented
-
----
-
-## 💡 Example Story Template
-
-```
-Today at [place], my [adjective] teacher asked us to [verb] our [plural noun].
-I was so [emotion] that I accidentally [past tense verb] my [noun]!
-```
-
-See Activity Guide for more examples!
+**Total:** 100% (+ up to 10% extra credit)
 
 ---
 
-## 🆘 Common Issues
+## 🎓 Deliverable
 
-- **Port in use:** Change to `PORT = 3001`
-- **Cannot GET /:** Add `app.use(express.static('public'))`
-- **No data:** Check input `name` attributes match `req.query`
-- **Styles missing:** Hard refresh (Cmd+Shift+R)
+**Submit:** GitHub repository URL containing:
+- All source code (`server.js`, HTML files, etc.)
+- `README.md` with:
+  - Project title and description
+  - Setup instructions (`npm install`, `npm run dev`)
+  - Features list
+  - Story themes
+  - Any challenges faced
+- Clear Git commit history
 
-**Need Help?** Check troubleshooting in [Detailed Guide](./ASSIGNMENT_WEEK1.md) or post in forum.
+**Before submitting, verify:**
+- [ ] Server starts with `npm run dev` without errors
+- [ ] Form collects input and generates stories
+- [ ] Bootstrap styling looks professional
+- [ ] At least 2 story templates work
+- [ ] README is complete
+- [ ] Code is commented and clean
 
 ---
 
-## ⏰ Timeline
+## 📝 Assignment Structure
 
-Session 1: Levels 1-4 | Session 2: Levels 5-7 | Session 3: Levels 8-9, 15 | Session 4: Levels 16-20
+**Core Levels (Required):**
+- Levels 1-9: Setup, form creation, story generation, Bootstrap styling
+- Levels 15-17: Testing, documentation, code cleanup
+- Levels 19-20: Git commits and reflection
 
-**Tips:** Start early, test frequently, commit often, be creative!
+**Challenge Levels (Optional +10%):**
+- Levels 10-14: Store stories, display all stories, delete features
 
 ---
 
-**Good luck and have fun!** 🎭
+## 🆘 Need Help?
 
-*Adapted from Code.org's Mad Libs activity*
+- Review the level instructions carefully
+- Check browser console (F12) for errors
+- Use `console.log()` to debug
+- Post questions in the discussion forum
+- Attend office hours
+
+**Common issues and solutions are detailed in the level instructions.**
+
+---
+
+## 📅 Important Dates
+
+- **Start Date:** [Insert Date]
+- **Due Date:** [Insert Date]  
+- **Late Deadline:** [Insert Date] (penalty applies)
+
+---
+
+**Good luck and have fun creating silly stories!** 🎭📖
+
+---
+
+*This assignment is adapted from Code.org's Mad Libs activity for web development education.*
