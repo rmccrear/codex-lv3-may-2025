@@ -55,3 +55,5 @@ With a Partner, Create a Paper Prototype: You should draw a prototype that shows
 * Learn how to create a "branch" in git
 * Breakout Rooms
 * Demo code from today [GitHub](https://github.com/rmccrear/hackathon-demo-2025)
+    * [main branch](https://github.com/rmccrear/hackathon-demo-2025/blob/main/src/App.jsx)
+    * [feature branch](https://github.com/rmccrear/hackathon-demo-2025/blob/feature-nav/src/App.jsx)
