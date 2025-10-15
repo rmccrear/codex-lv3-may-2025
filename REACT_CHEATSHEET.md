@@ -27,6 +27,29 @@ This cheat sheet focuses on **core React concepts** and the **modern JavaScript 
   }
   ```
 
+**Importing Components:**
+
+When you organize components into separate files (typically in a `components/` folder), you import them using relative paths:
+
+```jsx
+// In App.jsx
+import Greeting from './components/Greeting';
+import Avatar from './components/Avatar';
+
+export default function App() {
+  return (
+    <>
+      <Greeting />
+      <Avatar name="Ash" />
+    </>
+  );
+}
+```
+
+* Use `./` for current directory or `./components/` for subdirectory
+* File extension `.jsx` is optional in the import statement
+* Component file must `export default` the component
+
 ---
 
 ## II. JSX (JavaScript XML) Syntax
