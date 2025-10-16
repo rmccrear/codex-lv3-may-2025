@@ -88,10 +88,12 @@ return (
 **Receiving Props:**
 
 ```jsx
-export default function Avatar(props) {
-  return <h2>{props.name}</h2>;
+export default function Avatar({ name }) {
+  return <h2>{name}</h2>;
 }
 ```
+
+**Note:** Using `{ name }` is called **destructuring** - it extracts the `name` property directly from props, making your code cleaner and easier to read.
 
 **Children Prop:**
 

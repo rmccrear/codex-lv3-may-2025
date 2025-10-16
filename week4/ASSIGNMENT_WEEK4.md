@@ -18,6 +18,7 @@ By the end of this assignment, you'll be able to:
 - 📋 [Hackathon Planning Sheet](https://docs.google.com/document/d/12QYQpFen_lD5iYS1hy4Wmtc0_QUq0cHjWwoyR-LEViw/edit?usp=sharing)
 - 💻 [Hackathon on Code.org for data access](https://studio.code.org/courses/csp-2025/units/6/lessons/13/levels/1)
 - 📊 [How to import data--Spreadsheets to JSON](./HOWTO_CODE_ORG_DATA_IMPORT.md)
+- 💡 [Example Project: Cereal Nutritional Data App](https://studio.code.org/projects/applab/QFp6BsZZdi-AOElUEcKY4ewK5ed6mAPg6vUAY08ZbXY) - See a completed hackathon app in action
 
 ## Project Requirements
 
@@ -87,6 +88,8 @@ You will submit:
 - Movie or book data
 - State/city demographics
 - Health or nutrition data
+
+**💡 Inspiration:** Check out the [Cereal Nutritional Data App](https://studio.code.org/projects/applab/QFp6BsZZdi-AOElUEcKY4ewK5ed6mAPg6vUAY08ZbXY) to see how nutrition data can be used to compare cereals, find healthy options, and display data in multiple ways.
 
 ### Step 2: Decide on Your App Concept (30 minutes)
 
