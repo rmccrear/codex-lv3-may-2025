@@ -2,6 +2,17 @@
 
 Your TA will conduct a **15-20 minute code review** with you during class time. This is your opportunity to demonstrate your understanding and explain your work.
 
+**📂 Choose Your Project:** Select **ONE project** to present during your code review:
+
+1. **Week 2: Portfolio Website** - [Project Instructions](https://rmccrear.github.io/codex-lv3-may-2025/week2/mini-project-portfolio/README.html)
+   - React components, props, and component organization
+   
+2. **Week 3: React Clicker Game** - [Project Instructions](https://rmccrear.github.io/codex-lv3-may-2025/week3/react-clicker-game-mini-project/react-clicker-game-lv-1.html)
+   - State management with `useState`, event handlers, and game logic
+   
+3. **Week 4: Hackathon Multi-Page App** - [Project Instructions](https://rmccrear.github.io/codex-lv3-may-2025/week4/week4-day-2-activity.html)
+   - Navigation, multiple components, data handling with arrays
+
 ---
 
 ## 🔍 What to Expect
@@ -37,6 +48,7 @@ Be ready to answer:
 ## ✅ How to Prepare
 
 **Before your code review:**
+- [ ] Choose which project you'll present (Week 2, 3, or 4)
 - [ ] Test your app to make sure it runs without errors
 - [ ] Review your code and understand how each part works
 - [ ] Be ready to open and navigate your code files
@@ -87,9 +99,4 @@ Code reviews will be conducted during class time. Check the schedule posted in t
 
 ---
 
-**This is a learning opportunity, not a test!** Show what you know, ask questions, and demonstrate your growth as a developer. Good luck! 🚀
-
----
-
 *Questions? Ask your TA or post in the discussion forum.*
-

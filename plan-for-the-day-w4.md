@@ -57,3 +57,20 @@ With a Partner, Create a Paper Prototype: You should draw a prototype that shows
 * Demo code from today [GitHub](https://github.com/rmccrear/hackathon-demo-2025)
     * [main branch](https://github.com/rmccrear/hackathon-demo-2025/blob/main/src/App.jsx)
     * [feature branch](https://github.com/rmccrear/hackathon-demo-2025/blob/feature-nav/src/App.jsx)
+
+## Day 3
+
+Task: Code.org [Lessons 11](https://studio.code.org/courses/csp-2025/units/6/lessons/11/levels/1) and [Lesson 12](https://studio.code.org/courses/csp-2025/units/6/lessons/12/levels/1).
+
+Review: 
+
+* Lesson 10-Level 2: https://studio.code.org/courses/csp-2025/units/6/lessons/10/levels/2
+* Video: https://youtu.be/H8bYdVsTX0A?si=ssntObr3U_ieH95Y&t=1495
+
+## Day 4
+
+Hackathon
+
+## Day 5
+
+Hackathon

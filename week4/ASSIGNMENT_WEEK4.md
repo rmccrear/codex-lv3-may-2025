@@ -122,10 +122,12 @@ Examples:
 - Count total number of songs by a specific artist
 
 ```jsx
-// Example: Calculate total
-const total = data.reduce((sum, item) => {
-  return sum + item.value;
-}, 0);
+// Example: Calculate total using a for loop
+let total = 0;
+for (let i = 0; i < data.length; i++) {
+  total = total + data[i].value;
+}
+// Now 'total' contains the sum of all values
 ```
 
 #### **FILTER** (select only a few elements out of a list)
@@ -135,10 +137,14 @@ Examples:
 - Find states with population over 1 million
 
 ```jsx
-// Example: Filter items by criteria
-const filtered = data.filter((item) => {
-  return item.category === "Rock";
-});
+// Example: Filter items by criteria using a for loop
+const filtered = [];
+for (let i = 0; i < data.length; i++) {
+  if (data[i].category === "Rock") {
+    filtered.push(data[i]);
+  }
+}
+// Now 'filtered' contains only items with category "Rock"
 ```
 
 ### Step 3: Create a Paper Prototype (45 minutes)
@@ -258,8 +264,11 @@ function DataList({ data }) {
 
 ```jsx
 function Summary({ data }) {
-  // REDUCE: Calculate total from all items
-  const total = data.reduce((sum, item) => sum + item.value, 0);
+  // REDUCE: Calculate total from all items using a for loop
+  let total = 0;
+  for (let i = 0; i < data.length; i++) {
+    total = total + data[i].value;
+  }
   
   return (
     <div>
@@ -273,8 +282,13 @@ function Summary({ data }) {
 
 ```jsx
 function FilteredList({ data, category }) {
-  // FILTER: Show only items matching criteria
-  const filtered = data.filter((item) => item.category === category);
+  // FILTER: Show only items matching criteria using a for loop
+  const filtered = [];
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].category === category) {
+      filtered.push(data[i]);
+    }
+  }
   
   return (
     <div>
@@ -303,8 +317,11 @@ Add comments to **all functions** explaining:
  * @returns {Number} - The average rating rounded to 2 decimal places
  */
 function calculateAverageRating(movies) {
-  // REDUCE: Sum all ratings
-  const total = movies.reduce((sum, movie) => sum + movie.rating, 0);
+  // REDUCE: Sum all ratings using a for loop
+  let total = 0;
+  for (let i = 0; i < movies.length; i++) {
+    total = total + movies[i].rating;
+  }
   // Calculate average
   const average = total / movies.length;
   return average.toFixed(2);
