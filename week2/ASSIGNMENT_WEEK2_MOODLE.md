@@ -32,8 +32,7 @@ Your React portfolio must include:
    - Proper import/export statements
    - Clean folder structure
 
-3. **Project Rendering**
-   - Use `.map()` to render projects from an array
+3. **Project Rendering Ideas (Try for this...)**
    - Create projects data array with images, titles, descriptions
    - No repeated code for similar elements
 
@@ -55,23 +54,6 @@ Your React portfolio must include:
 
 ---
 
-## 📊 Grading Rubric
-
-| Category | Weight | Description |
-|----------|--------|-------------|
-| **Component Architecture** | 30% | At least 7 components created with proper structure |
-| **Props Usage** | 20% | Props used correctly, children props implemented |
-| **Array Mapping** | 15% | Projects rendered from data array using `.map()` |
-| **File Organization** | 10% | Components properly organized in separate files |
-| **Personalization** | 10% | Custom content, styling, and branding |
-| **Code Quality** | 10% | Clean code, good naming, helpful comments |
-| **Documentation** | 5% | Complete README with clear instructions |
-| **Bonus Challenges** | +10% | Extra credit: advanced styling, additional features |
-
-**Total:** 100% (+ up to 10% extra credit)
-
----
-
 ## 🎓 Deliverable
 
 **Submit:** GitHub repository URL containing:
@@ -90,7 +72,6 @@ Your React portfolio must include:
 - [ ] App runs with `npm run dev` without errors
 - [ ] At least 7 components created and properly organized
 - [ ] Props are used correctly in at least 3 components
-- [ ] Projects render using `.map()` from data array
 - [ ] Content is personalized (not placeholder text)
 - [ ] README is complete with all sections
 - [ ] Code is clean and commented
@@ -111,8 +92,7 @@ Your React portfolio must include:
 
 **Phase 3: Data Management**
 - Create projects data array
-- Implement `.map()` for rendering
-- Replace all placeholder content
+- Replace all placeholder content with your own content.
 
 **Phase 4: Personalization**
 - Add your actual projects and information
