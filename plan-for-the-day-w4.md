@@ -71,6 +71,10 @@ Review:
 
 Hackathon
 
+Please complete the code.org Lessons 11 and 12 before working on the Hackathon project.
+
+* Demo of filter list in React [code](https://github.com/rmccrear/hackathon-demo-2025/blob/feature-cat-select/src/pages/Select.jsx)
+
 ## Day 5
 
 Hackathon
