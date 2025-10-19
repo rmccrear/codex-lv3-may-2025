@@ -21,19 +21,21 @@ Practice React fundamentals through focused coding exercises (katas). Choose one
 Select **ONE kata** from the list to practice:
 
 **Recommended for Beginners:**
-- Kata 1: Simple Greeting (Basic component)
-- Kata 2: Welcome with Props (Props basics)
-- Kata 3: Click Counter (useState basics)
+- [Kata 1: Simple Greeting](./kata-01-greeting.md) (Basic component)
+- [Kata 2: Welcome with Props](./kata-02-props.md) (Props basics)
+- [Kata 3: Click Counter](./kata-03-counter.md) (useState basics)
 
 **Intermediate:**
-- Kata 4: Show/Hide Toggle (Boolean state)
-- Kata 5: Fruit List (Array mapping)
-- Kata 6: Name Input (Controlled inputs)
+- [Kata 4: Show/Hide Toggle](./kata-04-toggle.md) (Boolean state)
+- [Kata 5: Fruit List](./kata-05-list.md) (Array mapping)
+- [Kata 6: Name Input](./kata-06-input.md) (Controlled inputs)
 
 **Advanced:**
-- Kata 7: Filter Even Numbers (Filter pattern)
-- Kata 8: Search/Filter Names (Filter + state)
-- Kata 9-11: Reduce pattern katas
+- [Kata 7: Filter Even Numbers](./kata-07-filter-numbers.md) (Filter pattern)
+- [Kata 8: Search/Filter Names](./kata-08-filter-search.md) (Filter + state)
+- [Kata 9: Calculate Total Score](./kata-09-reduce-sum.md) (Reduce pattern - sum)
+- [Kata 10: Calculate Average Rating](./kata-10-reduce-average.md) (Reduce pattern - average)
+- [Kata 11: Count by Category](./kata-11-reduce-count.md) (Reduce pattern - count)
 
 ### 2. Practice Multiple Times
 
@@ -201,7 +203,7 @@ A: Stick to the provided katas for this assignment, but feel free to practice ot
 A: No, but it helps create a personal connection. Screen + voice is fine.
 
 **Q: Can I edit my video?**  
-A: Light editing is okay (trim beginning/end), but don't cut out the coding process.
+A: Light editing is okay (trim beginning/end), but don't cut out the coding process. (I recommend you don't waste your time editing unless you'd like to share with your network outside of class.)
 
 **Q: What if my kata is very short (like Kata 1)?**  
 A: Great! Spend more time explaining concepts in depth and discussing variations.
