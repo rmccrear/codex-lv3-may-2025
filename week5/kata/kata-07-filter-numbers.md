@@ -69,7 +69,10 @@ export default function FilterEvens() {
 - **Filter pattern**: Loop through array and select items matching a condition
 - Create empty array, check condition, push matching items
 - `% 2 === 0` checks if number is divisible by 2 (even)
-- This is what `.filter()` does under the hood!
+- This is the **List Filter Pattern** from Code.org - see [Code.org List Filter Pattern](https://studio.code.org/docs/concepts/patterns/list-filter-pattern/)
+- The built-in `.filter()` method does this automatically
+
+**Note:** Learn more about the built-in `.filter()` method at [MDN: Array.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 
 ## Challenge Variation
 

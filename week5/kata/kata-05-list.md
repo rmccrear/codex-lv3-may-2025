@@ -1,13 +1,13 @@
 # Kata 5: Fruit List
 
-**Concept:** Array .map() to render lists
+**Concept:** List pattern - displaying arrays in JSX
 
 ## Challenge
 
 Create a `FruitList` component that:
 1. Has an array of fruits: `['Apple', 'Banana', 'Orange', 'Grape']`
 2. Displays them as an unordered list (`<ul>`) with list items (`<li>`)
-3. Uses `.map()` to render the list items
+3. Uses a **for loop** to build an array of JSX elements
 
 ## Expected Output
 
@@ -24,9 +24,11 @@ Create a `FruitList` component that:
 export default function FruitList() {
   const fruits = ['Apple', 'Banana', 'Orange', 'Grape'];
   
+  // Build array of list items using a for loop
+  
   return (
     <ul>
-      {/* Use .map() here */}
+      {/* Display the array of list items here */}
     </ul>
   );
 }
@@ -34,9 +36,11 @@ export default function FruitList() {
 
 ## Hints
 
-- Use `.map()` to transform each fruit into an `<li>` element
-- Remember to add a `key` prop to each `<li>`
-- Syntax: `{fruits.map((fruit, index) => <li key={index}>{fruit}</li>)}`
+- Create an empty array to store JSX elements: `const listItems = [];`
+- Use a for loop to go through each fruit
+- Push `<li>` elements into the array
+- Remember to add a `key` prop to each `<li>`: `<li key={i}>{fruits[i]}</li>`
+- Display the array in JSX using curly braces: `{listItems}`
 
 ## Solution
 
@@ -47,21 +51,33 @@ export default function FruitList() {
 export default function FruitList() {
   const fruits = ['Apple', 'Banana', 'Orange', 'Grape'];
   
+  // Build list items using a for loop
+  const listItems = [];
+  for (let i = 0; i < fruits.length; i++) {
+    listItems.push(<li key={i}>{fruits[i]}</li>);
+  }
+  
   return (
     <ul>
-      {fruits.map((fruit, index) => (
-        <li key={index}>{fruit}</li>
-      ))}
+      {listItems}
     </ul>
   );
 }
 ```
 
+**Note:** You can also use `.map()` as a shortcut:
+```jsx
+{fruits.map((fruit, index) => <li key={index}>{fruit}</li>)}
+```
+
 </details>
 
 ## Concept Review
-- `.map()` transforms each item in an array
-- Each rendered item needs a unique `key` prop
-- Use `index` as key when items don't have unique IDs
-- Wrap the map in curly braces `{}` to embed in JSX
+- Use a for loop to build an array of JSX elements
+- Each rendered item needs a unique `key` prop for React to track changes
+- Push JSX elements into an array, then display the array in curly braces
+- This is the foundation of the **List Pattern** - see [Code.org List Patterns](https://studio.code.org/docs/concepts/patterns/list-filter-pattern/)
+- `.map()` is a built-in method that does this automatically
+
+**Note:** Learn more about the built-in `.map()` method at [MDN: Array.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 

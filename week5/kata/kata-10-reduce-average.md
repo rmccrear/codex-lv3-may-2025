@@ -84,6 +84,8 @@ export default function AverageRating() {
 - `Math.round()` rounds to nearest integer
 - `.repeat(n)` repeats string n times
 
+**Note:** Learn more about the built-in `.reduce()` method at [MDN: Array.reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
+
 ## Challenge Variation
 
 Try:

@@ -94,6 +94,9 @@ export default function SearchNames() {
 - `.toLowerCase()` makes search case-insensitive
 - `.includes()` checks if string contains substring
 - Empty search matches all items (all names include "")
+- This follows the **List Filter Pattern** from Code.org - see [Code.org List Filter Pattern](https://studio.code.org/docs/concepts/patterns/list-filter-pattern/)
+
+**Note:** Learn more about the built-in `.filter()` method at [MDN: Array.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 
 ## Challenge Variation
 

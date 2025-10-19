@@ -97,6 +97,8 @@ export default function CategoryCount() {
 - Check condition and increment appropriate counter
 - Can count multiple categories in one loop
 
+**Note:** Learn more about the built-in `.reduce()` method at [MDN: Array.reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
+
 ## Challenge Variation
 
 Try:

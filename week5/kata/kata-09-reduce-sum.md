@@ -70,6 +70,8 @@ export default function TotalScore() {
 - Loop through array and accumulate result
 - This is what `.reduce()` does under the hood!
 
+**Note:** Learn more about the built-in `.reduce()` method at [MDN: Array.reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
+
 ## Challenge Variation
 
 Try calculating:
