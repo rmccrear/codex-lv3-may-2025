@@ -26,3 +26,12 @@ Further Reading...
 * [Operators (Including +, -, *, /, and %)](https://www.educative.io/courses/introduction-to-javascript-first-steps/operators)
 * [Type Coercion when combining Strings and Numbers](https://www.educative.io/courses/introduction-to-javascript-first-steps/using-operators-with-different-types)
 * [For-in Loops](https://www.educative.io/courses/introduction-to-javascript-first-steps/for-in-loops)
+
+## Practice Set 3 
+
+(Intermediate Level)
+
+* [Variable Scope](https://www.educative.io/courses/step-up-your-js-a-comprehensive-guide-to-intermediate-javascript/variable-scope)
+* [Value vs. Reference](https://www.educative.io/courses/step-up-your-js-a-comprehensive-guide-to-intermediate-javascript/value-vs-reference)
+* [.map method on Arrays](https://www.educative.io/courses/step-up-your-js-a-comprehensive-guide-to-intermediate-javascript/map)
+
