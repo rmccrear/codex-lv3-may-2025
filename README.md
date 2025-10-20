@@ -7,6 +7,8 @@
 - [Week 4 Plan for the Day](plan-for-the-day-w4.md)
 - [Week 5 Plan for the Day](plan-for-the-day-w5.md)
 
+- [JavaScript Practice](./javascript-practice/README.md)
+
 ## Resources
 - [React Cheatsheet](REACT_CHEATSHEET.md)
 
