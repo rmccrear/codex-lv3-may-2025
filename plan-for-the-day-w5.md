@@ -4,6 +4,8 @@
 
 Setting up a Database on Supabase
 
+* [Supabase Setup Guide](./week5/supabase-setup/SUPABASE_SETUP_GUIDE.md)
+
 ## Day 2
 
 Interacting with a database from React. 
