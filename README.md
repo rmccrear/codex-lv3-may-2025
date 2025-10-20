@@ -16,7 +16,7 @@
 
 ### React Intro
 
-### React Styles and Components
+### React Components, Styles and Events
 
 ### List Patterns and Loops: Filter, Reduce, and Map
 
