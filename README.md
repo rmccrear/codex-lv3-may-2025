@@ -5,6 +5,7 @@
 - [Week 2 Plan for the Day](plan-for-the-day-w2.md)
 - [Week 3 Plan for the Day](plan-for-the-day-w3.md)
 - [Week 4 Plan for the Day](plan-for-the-day-w4.md)
+- [Week 5 Plan for the Day](plan-for-the-day-w5.md)
 
 ## Resources
 - [React Cheatsheet](REACT_CHEATSHEET.md)
@@ -17,8 +18,8 @@
 
 ### React Styles and Components
 
-### Testing fetching and state
+### List Patterns and Loops: Filter, Reduce, and Map
 
-### Firebase
+### Databases
 
 ### Capstone Project
