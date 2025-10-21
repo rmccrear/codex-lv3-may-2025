@@ -185,10 +185,22 @@ Click on **"RLS"** (Row Level Security) or **"Policies"** tab, then click **"New
 
 <details>
 <summary>Show Me</summary>
-<img src="./assets/image-09.png" alt="Allow Public to Read">
+<img src="./assets/image-09a.png" alt="RLS Policies Button">
+</details>
+
+This opens the policy creation screen where you can configure security rules.
+
+<details>
+<summary>Show Me</summary>
+<img src="./assets/image-09b.png" alt="Policy Creation Screen">
 </details>
 
 **Select the first template** on the left: **"Enable read access for all users"**
+
+<details>
+<summary>Show Me</summary>
+<img src="./assets/image-09.png" alt="Template Selection">
+</details>
 
 This allows anyone to **read** your data (perfect for demo apps and learning projects).
 
