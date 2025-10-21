@@ -6,11 +6,24 @@ Setting up a Database on Supabase
 
 * [Supabase Setup Guide](./week5/supabase-setup/SUPABASE_SETUP_GUIDE.md)
 
-## Day 2
-
 Interacting with a database from React. 
 
 * [Supabase React Setup Guide](./week5/supabase-setup/SUPABASE_REACT_SETUP_GUIDE.md) - Complete guide with code examples
+
+Goals for the day:
+
+These goals are not an assignment, but are good practice for what comes next.
+
+1. Setup Supabase and one table
+2. Add at least 3 rows to your table
+3. Access the rows from your table in a React App
+4. Challenge: Try making a second table and repeating the process.
+5. Challenge Try filtering your data.
+
+
+## Day 2
+
+
 
 **Video Tutorials:**
 * [Connecting to Supabase](https://www.youtube.com/watch?v=Gz9bvYybaws&list=PL4cUxeGkcC9hUb6sHthUEwG7r9VDPBMKO&index=2)
