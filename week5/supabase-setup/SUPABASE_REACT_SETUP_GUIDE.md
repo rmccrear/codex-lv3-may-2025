@@ -67,47 +67,46 @@ Supabase provides three files to get you started. Copy these into your React pro
 <img src="./assets/image-13.png" alt="Copy Starter Files">
 </details>
 
-**The three files you'll get:**
+**The three files you'll need to modify:**
 
-1. **`utils/supabase.js`** - Supabase client configuration
+1. **`.env`** - Environment variables file
+   - Stores your Supabase URL and API key securely
+   - Keeps sensitive data out of your code
+   - Create in your project root: `.env`
+
+2. **`src/utils/supabase.js`** - Supabase client configuration
    - Creates connection to your database
-   - Uses your project URL and API key
+   - Uses environment variables for API credentials
    - Copy to: `src/utils/supabase.js`
 
-2. **`actions.js`** - Data fetching functions
-   - Pre-written functions to get data from your table
-   - Uses the Supabase client to query the database
-   - Copy to: `src/actions.js`
-
-3. **`Page.jsx`** - Example component
-   - Shows how to use the actions to display data
-   - Demonstrates useState and useEffect with Supabase
-   - Copy to: `src/components/Page.jsx` (or use in App.jsx)
+3. **`src/App.jsx`** - Main React component
+   - Shows how to fetch and display data from Supabase
+   - Demonstrates useState and useEffect with database
+   - Modify your existing App.jsx file
 
 **File Structure:**
 ```
-src/
-├── utils/
-│   └── supabase.js      # Supabase client config
-├── actions.js           # Data fetching functions
-├── components/
-│   └── Page.jsx         # Example component
-└── App.jsx
+project-root/
+├── .env                 # Environment variables
+├── src/
+│   ├── utils/
+│   │   └── supabase.js  # Supabase client config
+│   └── App.jsx          # Main component (modified)
+└── package.json
 ```
 
 **💡 Tip:** Create the `utils` folder first: `mkdir src/utils`
 
-**How to copy:**
-- Create the folders and files in your React project
-- Copy the code from each Supabase file
-- Paste into your project files
-- Save all files
+**How to set up:**
+- Create `.env` file in project root
+- Create `src/utils/supabase.js` with client config
+- Modify your existing `App.jsx` to fetch data
 
 ---
 
 ## Step 4: Customize for Your Table Schema
 
-The starter code uses a generic "todos" table. Change it to match **your** table name and columns.
+The starter code uses a generic "todos" table. Change it to match **your** table name and columns. We'll use "employees" as an example.
 
 <details>
 <summary>Show Me</summary>
@@ -116,15 +115,14 @@ The starter code uses a generic "todos" table. Change it to match **your** table
 
 **What to change:**
 
-1. **In `actions.js`:**
-   - Change `'todos'` to your table name (e.g., `'products'`, `'students'`)
+1. **In `src/App.jsx`:**
+   - Update the table name in your queries (e.g., `'employees'`, `'products'`, `'students'`)
    - Update column names in the `.select()` query
-   - Example: `.select('id, name, price')` for a products table
-
-2. **In `Page.jsx`:**
    - Update the variable names to match your data
    - Change how you display the data in JSX
-   - Example: `item.task` → `item.name` for different column names
+   - Example: `item.task` → `item.first_name` for different column names
+
+**Note:** The `src/utils/supabase.js` file only contains the client configuration and doesn't need table-specific changes.
 
 **Example:**
 
@@ -135,11 +133,11 @@ const { data, error } = await supabase
   .select('id, task, completed');
 ```
 
-After (products):
+After (employees):
 ```javascript
 const { data, error } = await supabase
-  .from('products')
-  .select('id, name, price, category');
+  .from('employees')
+  .select('id, first_name, last_name, department');
 ```
 
 ---
@@ -154,28 +152,70 @@ const { data, error } = await supabase
 </details>
 
 **The Problem:**
-The starter code might use a named import when it should use a default import.
+The starter code uses a named import when it should use a default import, and has the wrong path.
 
-**Wrong (will cause errors):**
+**Wrong (from starter code):**
 ```javascript
 import { supabase } from '../utils/supabase'
 ```
 
 **Correct:**
 ```javascript
-import supabase from '../utils/supabase'
+import supabase from './utils/supabase'
 ```
 
 **Where to fix:**
-- Check `actions.js`
-- Check `Page.jsx` (or wherever you're importing supabase)
+- Check `src/utils/supabase.js`
+- Check `src/App.jsx` (or wherever you're importing supabase)
 - Remove the curly braces `{ }` around `supabase`
 
 **💡 Why?** The `supabase.js` file uses `export default`, so you need a default import, not a named import.
 
+### Fix 2: Add `async` to Functions Using `await`
+
+**The Problem:**
+Functions that use `await` must be declared as `async`. The starter code is missing the `async` keyword.
+
+**Wrong (from starter code):**
+```javascript
+function getTodos() {
+  const { data: todos } = await supabase.from('todos').select()
+  // ... rest of function
+}
+```
+
+**Correct:**
+```javascript
+async function getEmployees() {
+  const { data: employees } = await supabase.from('employees').select()
+  // ... rest of function
+}
+```
+
+**Where to fix:**
+- Any function that uses `await` must be `async`
+- This includes functions in `App.jsx` and any utility functions
+
+### Fix 3: Environment Variables Format
+
+**The Problem:**
+The `.env` file uses `VITE_` prefix for environment variables in Vite projects.
+
+**Correct `.env` format (from starter code):**
+```env
+VITE_SUPABASE_URL=https://your-project.supabase.co
+VITE_SUPABASE_ANON_KEY=your-anon-key-here
+```
+
+**Important:** 
+- Use `VITE_` prefix for all environment variables in Vite projects
+- Replace the placeholder values with your actual Supabase credentials
+- **Security Tip:** Rename `.env` to `.env.local` for better security (automatically ignored by git)
+- Never commit `.env` or `.env.local` files to version control
+
 ---
 
-## Step 6: Install Supabase Client Library
+## Step 7: Install Supabase Client Library
 
 Before your code will work, you need to install the Supabase JavaScript client.
 
@@ -185,10 +225,16 @@ Before your code will work, you need to install the Supabase JavaScript client.
 npm install @supabase/supabase-js
 ```
 
+**If using JavaScript (not TypeScript), also install:**
+```bash
+npm install tslib
+```
+
 **What this does:**
 - Installs the Supabase JavaScript library
 - Adds it to your `package.json` dependencies
 - Allows your code to communicate with Supabase
+- `tslib` is needed for JavaScript projects (not just TypeScript)
 
 **Verify installation:**
 - Check `package.json` for `"@supabase/supabase-js"` in dependencies
@@ -196,7 +242,7 @@ npm install @supabase/supabase-js
 
 ---
 
-## Step 7: Test Your Connection
+## Step 8: Test Your Connection
 
 Now test that everything is working!
 
@@ -210,25 +256,32 @@ Now test that everything is working!
 2. **Import and use the data in App.jsx:**
    ```jsx
    import { useState, useEffect } from 'react';
-   import { getTodos } from './actions';  // Or your custom function name
+   import supabase from './utils/supabase';
    
    function App() {
      const [data, setData] = useState([]);
      
      useEffect(() => {
        async function fetchData() {
-         const result = await getTodos();
-         setData(result);
+         const { data, error } = await supabase
+           .from('employees')
+           .select('*');
+         
+         if (error) {
+           console.error('Error:', error);
+         } else {
+           setData(data);
+         }
        }
        fetchData();
      }, []);
      
      return (
        <div>
-         <h1>My Data</h1>
-         {data.map((item) => (
-           <div key={item.id}>
-             <p>{item.task}</p>  {/* Change to match your columns */}
+         <h1>Employee Directory</h1>
+         {data.map((employee) => (
+           <div key={employee.id}>
+             <p>{employee.first_name} {employee.last_name}</p>
            </div>
          ))}
        </div>
@@ -256,8 +309,8 @@ Now test that everything is working!
 ### Fetching All Data
 
 ```javascript
-// In actions.js
-export async function getAllItems() {
+// In your React component or utils file
+async function getAllItems() {
   const { data, error } = await supabase
     .from('your_table_name')
     .select('*');  // * means all columns
@@ -275,11 +328,11 @@ export async function getAllItems() {
 
 ```javascript
 // Get items matching criteria
-export async function getCompletedTodos() {
+async function getEmployeesByDepartment() {
   const { data, error } = await supabase
-    .from('todos')
+    .from('employees')
     .select('*')
-    .eq('completed', true);  // Only completed items
+    .eq('department', 'Engineering');  // Only Engineering employees
     
   if (error) {
     console.error('Error:', error);
@@ -294,16 +347,16 @@ export async function getCompletedTodos() {
 
 ```javascript
 // Create a new row
-export async function createTodo(task, priority) {
+async function createEmployee(firstName, lastName, department) {
   const { data, error } = await supabase
-    .from('todos')
+    .from('employees')
     .insert([
-      { task: task, priority: priority, completed: false }
+      { first_name: firstName, last_name: lastName, department: department }
     ])
     .select();
     
   if (error) {
-    console.error('Error creating todo:', error);
+    console.error('Error creating employee:', error);
     return null;
   }
   
@@ -314,32 +367,46 @@ export async function createTodo(task, priority) {
 ### Using in React Component
 
 ```jsx
-function TodoForm() {
-  const [task, setTask] = useState('');
-  const [todos, setTodos] = useState([]);
+function EmployeeForm() {
+  const [employees, setEmployees] = useState([]);
   
   async function handleSubmit(e) {
     e.preventDefault();
     
-    // Create new todo
-    const newTodo = await createTodo(task, 'medium');
+    // Get form data using event.target
+    const formData = new FormData(e.target);
+    const firstName = formData.get('firstName');
+    const lastName = formData.get('lastName');
+    const department = formData.get('department');
+    
+    // Create new employee
+    const newEmployee = await createEmployee(firstName, lastName, department);
     
     // Refresh the list
-    const allTodos = await getAllItems();
-    setTodos(allTodos);
+    const { data } = await supabase
+      .from('employees')
+      .select('*');
+    setEmployees(data);
     
     // Clear form
-    setTask('');
+    e.target.reset();
   }
   
   return (
     <form onSubmit={handleSubmit}>
       <input 
-        value={task}
-        onChange={(e) => setTask(e.target.value)}
-        placeholder="New task..."
+        name="firstName"
+        placeholder="First Name..."
       />
-      <button type="submit">Add Todo</button>
+      <input 
+        name="lastName"
+        placeholder="Last Name..."
+      />
+      <input 
+        name="department"
+        placeholder="Department..."
+      />
+      <button type="submit">Add Employee</button>
     </form>
   );
 }
@@ -348,6 +415,32 @@ function TodoForm() {
 ---
 
 ## 🆘 Troubleshooting
+
+### Issue: "Could not resolve 'tslib'" error
+**Solution:**
+- This happens when `tslib` is missing from your dependencies
+- Install tslib: `npm install tslib`
+- Restart your dev server: `npm run dev`
+
+**Example Error:**
+```
+✘ [ERROR] Could not resolve "tslib"
+node_modules/@supabase/storage-js/dist/module/lib/fetch.js:1:26:
+1 │ import { __awaiter } from "tslib";
+  ╵                           ~~~~~~~
+```
+
+### Issue: "Outdated Optimize Dep" error after installing packages
+**Solution:**
+- This happens when Vite's dependency cache is outdated
+- Stop your dev server (Ctrl+C)
+- Restart with: `npm run dev`
+- The error should disappear on the next startup
+
+**Example Error:**
+```
+GET http://localhost:5173/node_modules/.vite/deps/@supabase... net::ERR_ABORTED 504 (Outdated Optimize Dep)
+```
 
 ### Issue: "supabase is not defined"
 **Solution:** 
@@ -472,7 +565,7 @@ You've successfully connected React to Supabase if you can:
 ## 💡 Best Practices
 
 **Organization:**
-- Keep Supabase functions in `actions.js` or similar file
+- Keep Supabase functions in `src/utils/supabase.js` or similar file
 - Don't put API keys directly in components
 - Use environment variables for production apps
 
