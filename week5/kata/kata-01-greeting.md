@@ -9,28 +9,22 @@ Create a React component called `Greeting` that displays "Hello, World!" in an `
 ## Expected Output
 
 When rendered, it should display:
-```
-Hello, World!
-```
+<pre><code>Hello, World!</code></pre>
 
 ## Starter Code
 
-```jsx
-export default function Greeting() {
+<pre><code class="language-jsx">export default function Greeting() {
   // Your code here
-}
-```
+}</code></pre>
 
 ## Solution
 
 <details>
 <summary>Click to reveal solution</summary>
 
-```jsx
-export default function Greeting() {
-  return <h1>Hello, World!</h1>;
-}
-```
+<pre><code class="language-jsx">export default function Greeting() {
+  return &lt;h1&gt;Hello, World!&lt;/h1&gt;;
+}</code></pre>
 
 </details>
 

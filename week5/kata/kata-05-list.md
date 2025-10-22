@@ -11,28 +11,24 @@ Create a `FruitList` component that:
 
 ## Expected Output
 
-```
-• Apple
+<pre><code>• Apple
 • Banana
 • Orange
-• Grape
-```
+• Grape</code></pre>
 
 ## Starter Code
 
-```jsx
-export default function FruitList() {
-  const fruits = ['Apple', 'Banana', 'Orange', 'Grape'];
+<pre><code class="language-jsx">export default function FruitList() {
+  const fruits = [&#x27;Apple&#x27;, &#x27;Banana&#x27;, &#x27;Orange&#x27;, &#x27;Grape&#x27;];
   
   // Build array of list items using a for loop
   
   return (
-    <ul>
+    &lt;ul&gt;
       {/* Display the array of list items here */}
-    </ul>
+    &lt;/ul&gt;
   );
-}
-```
+}</code></pre>
 
 ## Hints
 
@@ -47,28 +43,24 @@ export default function FruitList() {
 <details>
 <summary>Click to reveal solution</summary>
 
-```jsx
-export default function FruitList() {
-  const fruits = ['Apple', 'Banana', 'Orange', 'Grape'];
+<pre><code class="language-jsx">export default function FruitList() {
+  const fruits = [&#x27;Apple&#x27;, &#x27;Banana&#x27;, &#x27;Orange&#x27;, &#x27;Grape&#x27;];
   
   // Build list items using a for loop
   const listItems = [];
-  for (let i = 0; i < fruits.length; i++) {
-    listItems.push(<li key={i}>{fruits[i]}</li>);
+  for (let i = 0; i &lt; fruits.length; i++) {
+    listItems.push(&lt;li key={i}&gt;{fruits[i]}&lt;/li&gt;);
   }
   
   return (
-    <ul>
+    &lt;ul&gt;
       {listItems}
-    </ul>
+    &lt;/ul&gt;
   );
-}
-```
+}</code></pre>
 
 **Note:** You can also use `.map()` as a shortcut:
-```jsx
-{fruits.map((fruit, index) => <li key={index}>{fruit}</li>)}
-```
+<pre><code class="language-jsx">{fruits.map((fruit, index) =&gt; &lt;li key={index}&gt;{fruit}&lt;/li&gt;)}</code></pre>
 
 </details>
 

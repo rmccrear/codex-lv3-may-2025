@@ -11,25 +11,21 @@ Create a `FilterEvens` component that:
 
 ## Expected Output
 
-```
-Even numbers: 2, 4, 6, 8, 10
-```
+<pre><code>Even numbers: 2, 4, 6, 8, 10</code></pre>
 
 ## Starter Code
 
-```jsx
-export default function FilterEvens() {
+<pre><code class="language-jsx">export default function FilterEvens() {
   const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   
   // Filter even numbers using a for loop
   
   return (
-    <div>
+    &lt;div&gt;
       {/* Display filtered numbers */}
-    </div>
+    &lt;/div&gt;
   );
-}
-```
+}</code></pre>
 
 ## Hints
 
@@ -43,25 +39,23 @@ export default function FilterEvens() {
 <details>
 <summary>Click to reveal solution</summary>
 
-```jsx
-export default function FilterEvens() {
+<pre><code class="language-jsx">export default function FilterEvens() {
   const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   
   // FILTER: Select only even numbers using a for loop
   const evenNumbers = [];
-  for (let i = 0; i < numbers.length; i++) {
+  for (let i = 0; i &lt; numbers.length; i++) {
     if (numbers[i] % 2 === 0) {
       evenNumbers.push(numbers[i]);
     }
   }
   
   return (
-    <div>
-      <p>Even numbers: {evenNumbers.join(', ')}</p>
-    </div>
+    &lt;div&gt;
+      &lt;p&gt;Even numbers: {evenNumbers.join(&#x27;, &#x27;)}&lt;/p&gt;
+    &lt;/div&gt;
   );
-}
-```
+}</code></pre>
 
 </details>
 

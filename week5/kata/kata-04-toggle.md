@@ -13,20 +13,15 @@ Create a `Toggle` component that:
 ## Expected Behavior
 
 Initial state:
-```
-[Show Message]
-```
+<pre><code>[Show Message]</code></pre>
 
 After clicking:
-```
-[Hide Message]
-Hello! 👋
-```
+<pre><code>[Hide Message]
+Hello! 👋</code></pre>
 
 ## Starter Code
 
-```jsx
-import { useState } from 'react';
+<pre><code class="language-jsx">import { useState } from &#x27;react&#x27;;
 
 export default function Toggle() {
   // Create boolean state here
@@ -34,13 +29,12 @@ export default function Toggle() {
   // Create toggle function here
   
   return (
-    <div>
+    &lt;div&gt;
       {/* Add button */}
       {/* Conditionally show message */}
-    </div>
+    &lt;/div&gt;
   );
-}
-```
+}</code></pre>
 
 ## Hints
 
@@ -52,8 +46,7 @@ export default function Toggle() {
 <details>
 <summary>Click to reveal solution</summary>
 
-```jsx
-import { useState } from 'react';
+<pre><code class="language-jsx">import { useState } from &#x27;react&#x27;;
 
 export default function Toggle() {
   const [isVisible, setIsVisible] = useState(false);
@@ -63,15 +56,14 @@ export default function Toggle() {
   }
   
   return (
-    <div>
-      <button onClick={handleToggle}>
-        {isVisible ? "Hide Message" : "Show Message"}
-      </button>
-      {isVisible && <p>Hello! 👋</p>}
-    </div>
+    &lt;div&gt;
+      &lt;button onClick={handleToggle}&gt;
+        {isVisible ? &quot;Hide Message&quot; : &quot;Show Message&quot;}
+      &lt;/button&gt;
+      {isVisible &amp;&amp; &lt;p&gt;Hello! 👋&lt;/p&gt;}
+    &lt;/div&gt;
   );
-}
-```
+}</code></pre>
 
 </details>
 

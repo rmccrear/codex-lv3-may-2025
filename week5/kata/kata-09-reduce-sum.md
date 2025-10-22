@@ -11,26 +11,22 @@ Create a `TotalScore` component that:
 
 ## Expected Output
 
-```
-Scores: 85, 92, 78, 90, 88
-Total: 433
-```
+<pre><code>Scores: 85, 92, 78, 90, 88
+Total: 433</code></pre>
 
 ## Starter Code
 
-```jsx
-export default function TotalScore() {
+<pre><code class="language-jsx">export default function TotalScore() {
   const scores = [85, 92, 78, 90, 88];
   
   // Calculate total using a for loop
   
   return (
-    <div>
+    &lt;div&gt;
       {/* Display scores and total */}
-    </div>
+    &lt;/div&gt;
   );
-}
-```
+}</code></pre>
 
 ## Hints
 
@@ -43,24 +39,22 @@ export default function TotalScore() {
 <details>
 <summary>Click to reveal solution</summary>
 
-```jsx
-export default function TotalScore() {
+<pre><code class="language-jsx">export default function TotalScore() {
   const scores = [85, 92, 78, 90, 88];
   
   // REDUCE: Sum all scores using a for loop
   let total = 0;
-  for (let i = 0; i < scores.length; i++) {
+  for (let i = 0; i &lt; scores.length; i++) {
     total = total + scores[i];
   }
   
   return (
-    <div>
-      <p>Scores: {scores.join(', ')}</p>
-      <p>Total: {total}</p>
-    </div>
+    &lt;div&gt;
+      &lt;p&gt;Scores: {scores.join(&#x27;, &#x27;)}&lt;/p&gt;
+      &lt;p&gt;Total: {total}&lt;/p&gt;
+    &lt;/div&gt;
   );
-}
-```
+}</code></pre>
 
 </details>
 

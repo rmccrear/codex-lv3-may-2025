@@ -12,16 +12,13 @@ Create an `AverageRating` component that:
 
 ## Expected Output
 
-```
-Ratings: 4.5, 5.0, 3.5, 4.0, 4.5, 5.0
+<pre><code>Ratings: 4.5, 5.0, 3.5, 4.0, 4.5, 5.0
 Average: 4.4
-⭐⭐⭐⭐
-```
+⭐⭐⭐⭐</code></pre>
 
 ## Starter Code
 
-```jsx
-export default function AverageRating() {
+<pre><code class="language-jsx">export default function AverageRating() {
   const ratings = [4.5, 5.0, 3.5, 4.0, 4.5, 5.0];
   
   // Calculate average using a for loop
@@ -29,12 +26,11 @@ export default function AverageRating() {
   // Create star display
   
   return (
-    <div>
+    &lt;div&gt;
       {/* Display ratings, average, and stars */}
-    </div>
+    &lt;/div&gt;
   );
-}
-```
+}</code></pre>
 
 ## Hints
 
@@ -48,13 +44,12 @@ export default function AverageRating() {
 <details>
 <summary>Click to reveal solution</summary>
 
-```jsx
-export default function AverageRating() {
+<pre><code class="language-jsx">export default function AverageRating() {
   const ratings = [4.5, 5.0, 3.5, 4.0, 4.5, 5.0];
   
   // REDUCE: Sum all ratings using a for loop
   let total = 0;
-  for (let i = 0; i < ratings.length; i++) {
+  for (let i = 0; i &lt; ratings.length; i++) {
     total = total + ratings[i];
   }
   
@@ -63,17 +58,16 @@ export default function AverageRating() {
   
   // Create star display (rounded to nearest whole number)
   const starCount = Math.round(average);
-  const stars = '⭐'.repeat(starCount);
+  const stars = &#x27;⭐&#x27;.repeat(starCount);
   
   return (
-    <div>
-      <p>Ratings: {ratings.join(', ')}</p>
-      <p>Average: {average.toFixed(1)}</p>
-      <p>{stars}</p>
-    </div>
+    &lt;div&gt;
+      &lt;p&gt;Ratings: {ratings.join(&#x27;, &#x27;)}&lt;/p&gt;
+      &lt;p&gt;Average: {average.toFixed(1)}&lt;/p&gt;
+      &lt;p&gt;{stars}&lt;/p&gt;
+    &lt;/div&gt;
   );
-}
-```
+}</code></pre>
 
 </details>
 

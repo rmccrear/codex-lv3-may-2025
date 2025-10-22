@@ -10,32 +10,26 @@ Use **destructuring** to extract the `name` prop.
 
 ## Expected Usage
 
-```jsx
-<Welcome name="Ash" />
+<pre><code class="language-jsx">&lt;Welcome name=&quot;Ash&quot; /&gt;
 // Should display: Welcome, Ash!
 
-<Welcome name="Misty" />
-// Should display: Welcome, Misty!
-```
+&lt;Welcome name=&quot;Misty&quot; /&gt;
+// Should display: Welcome, Misty!</code></pre>
 
 ## Starter Code
 
-```jsx
-export default function Welcome(/* add props here */) {
+<pre><code class="language-jsx">export default function Welcome(/* add props here */) {
   // Your code here
-}
-```
+}</code></pre>
 
 ## Solution
 
 <details>
 <summary>Click to reveal solution</summary>
 
-```jsx
-export default function Welcome({ name }) {
-  return <h2>Welcome, {name}!</h2>;
-}
-```
+<pre><code class="language-jsx">export default function Welcome({ name }) {
+  return &lt;h2&gt;Welcome, {name}!&lt;/h2&gt;;
+}</code></pre>
 
 </details>
 

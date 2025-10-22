@@ -6,28 +6,24 @@
 
 Create a `CategoryCount` component that:
 1. Has an array of items with categories:
-   ```javascript
-   const items = [
-     { name: 'Apple', category: 'Fruit' },
-     { name: 'Carrot', category: 'Vegetable' },
-     { name: 'Banana', category: 'Fruit' },
-     { name: 'Broccoli', category: 'Vegetable' },
-     { name: 'Orange', category: 'Fruit' }
+   <pre><code class="language-javascript">   const items = [
+     { name: &#x27;Apple&#x27;, category: &#x27;Fruit&#x27; },
+     { name: &#x27;Carrot&#x27;, category: &#x27;Vegetable&#x27; },
+     { name: &#x27;Banana&#x27;, category: &#x27;Fruit&#x27; },
+     { name: &#x27;Broccoli&#x27;, category: &#x27;Vegetable&#x27; },
+     { name: &#x27;Orange&#x27;, category: &#x27;Fruit&#x27; }
    ];
    ```
 2. Counts how many items are in each category using a **for loop**
 3. Displays the counts
 
 ## Expected Output
-
-```
+</code></pre>
 Fruit: 3
 Vegetable: 2
-```
-
+<pre><code>
 ## Starter Code
-
-```jsx
+</code></pre>jsx
 export default function CategoryCount() {
   const items = [
     { name: 'Apple', category: 'Fruit' },
@@ -45,8 +41,7 @@ export default function CategoryCount() {
     </div>
   );
 }
-```
-
+<pre><code>
 ## Hints
 
 - Create variables to count each category: `let fruitCount = 0;`
@@ -55,10 +50,9 @@ export default function CategoryCount() {
 
 ## Solution
 
-<details>
-<summary>Click to reveal solution</summary>
-
-```jsx
+&lt;details&gt;
+&lt;summary&gt;Click to reveal solution&lt;/summary&gt;
+</code></pre>jsx
 export default function CategoryCount() {
   const items = [
     { name: 'Apple', category: 'Fruit' },

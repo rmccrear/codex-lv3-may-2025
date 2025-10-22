@@ -17,8 +17,7 @@ Create a `Counter` component that:
 
 ## Starter Code
 
-```jsx
-import { useState } from 'react';
+<pre><code class="language-jsx">import { useState } from &#x27;react&#x27;;
 
 export default function Counter() {
   // Create state here
@@ -26,21 +25,19 @@ export default function Counter() {
   // Create handler function here
   
   return (
-    <div>
+    &lt;div&gt;
       {/* Display count */}
       {/* Add button */}
-    </div>
+    &lt;/div&gt;
   );
-}
-```
+}</code></pre>
 
 ## Solution
 
 <details>
 <summary>Click to reveal solution</summary>
 
-```jsx
-import { useState } from 'react';
+<pre><code class="language-jsx">import { useState } from &#x27;react&#x27;;
 
 export default function Counter() {
   const [count, setCount] = useState(0);
@@ -50,13 +47,12 @@ export default function Counter() {
   }
   
   return (
-    <div>
-      <p>Count: {count}</p>
-      <button onClick={handleClick}>Click me!</button>
-    </div>
+    &lt;div&gt;
+      &lt;p&gt;Count: {count}&lt;/p&gt;
+      &lt;button onClick={handleClick}&gt;Click me!&lt;/button&gt;
+    &lt;/div&gt;
   );
-}
-```
+}</code></pre>
 
 </details>
 

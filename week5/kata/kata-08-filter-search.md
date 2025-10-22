@@ -13,36 +13,30 @@ Create a `SearchNames` component that:
 ## Expected Behavior
 
 When user types "a":
-```
-Search: [input showing: a]
-Results: Alice, Charlie, David
-```
+<pre><code>Search: [input showing: a]
+Results: Alice, Charlie, David</code></pre>
 
 When user types "e":
-```
-Search: [input showing: e]
-Results: Alice, Charlie, Eve
-```
+<pre><code>Search: [input showing: e]
+Results: Alice, Charlie, Eve</code></pre>
 
 ## Starter Code
 
-```jsx
-import { useState } from 'react';
+<pre><code class="language-jsx">import { useState } from &#x27;react&#x27;;
 
 export default function SearchNames() {
-  const names = ['Alice', 'Bob', 'Charlie', 'David', 'Eve'];
-  const [search, setSearch] = useState('');
+  const names = [&#x27;Alice&#x27;, &#x27;Bob&#x27;, &#x27;Charlie&#x27;, &#x27;David&#x27;, &#x27;Eve&#x27;];
+  const [search, setSearch] = useState(&#x27;&#x27;);
   
   // Filter names using a for loop
   
   return (
-    <div>
+    &lt;div&gt;
       {/* Add search input */}
       {/* Display filtered results */}
-    </div>
+    &lt;/div&gt;
   );
-}
-```
+}</code></pre>
 
 ## Hints
 
@@ -55,16 +49,15 @@ export default function SearchNames() {
 <details>
 <summary>Click to reveal solution</summary>
 
-```jsx
-import { useState } from 'react';
+<pre><code class="language-jsx">import { useState } from &#x27;react&#x27;;
 
 export default function SearchNames() {
-  const names = ['Alice', 'Bob', 'Charlie', 'David', 'Eve'];
-  const [search, setSearch] = useState('');
+  const names = [&#x27;Alice&#x27;, &#x27;Bob&#x27;, &#x27;Charlie&#x27;, &#x27;David&#x27;, &#x27;Eve&#x27;];
+  const [search, setSearch] = useState(&#x27;&#x27;);
   
   // FILTER: Find names matching search using a for loop
   const filtered = [];
-  for (let i = 0; i < names.length; i++) {
+  for (let i = 0; i &lt; names.length; i++) {
     const nameLower = names[i].toLowerCase();
     const searchLower = search.toLowerCase();
     
@@ -74,18 +67,17 @@ export default function SearchNames() {
   }
   
   return (
-    <div>
-      <input 
-        type="text"
+    &lt;div&gt;
+      &lt;input 
+        type=&quot;text&quot;
         value={search}
-        onChange={(e) => setSearch(e.target.value)}
-        placeholder="Search names..."
-      />
-      <p>Results: {filtered.join(', ')}</p>
-    </div>
+        onChange={(e) =&gt; setSearch(e.target.value)}
+        placeholder=&quot;Search names...&quot;
+      /&gt;
+      &lt;p&gt;Results: {filtered.join(&#x27;, &#x27;)}&lt;/p&gt;
+    &lt;/div&gt;
   );
-}
-```
+}</code></pre>
 
 </details>
 

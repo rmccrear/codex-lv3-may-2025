@@ -12,15 +12,12 @@ Create a `NameInput` component that:
 ## Expected Behavior
 
 When user types "Ash":
-```
-[text input showing: Ash]
-Your name is: Ash
-```
+<pre><code>[text input showing: Ash]
+Your name is: Ash</code></pre>
 
 ## Starter Code
 
-```jsx
-import { useState } from 'react';
+<pre><code class="language-jsx">import { useState } from &#x27;react&#x27;;
 
 export default function NameInput() {
   // Create state for name
@@ -28,13 +25,12 @@ export default function NameInput() {
   // Create handler for input change
   
   return (
-    <div>
+    &lt;div&gt;
       {/* Add input */}
       {/* Display name */}
-    </div>
+    &lt;/div&gt;
   );
-}
-```
+}</code></pre>
 
 ## Hints
 
@@ -47,29 +43,27 @@ export default function NameInput() {
 <details>
 <summary>Click to reveal solution</summary>
 
-```jsx
-import { useState } from 'react';
+<pre><code class="language-jsx">import { useState } from &#x27;react&#x27;;
 
 export default function NameInput() {
-  const [name, setName] = useState('');
+  const [name, setName] = useState(&#x27;&#x27;);
   
   function handleChange(event) {
     setName(event.target.value);
   }
   
   return (
-    <div>
-      <input 
-        type="text" 
+    &lt;div&gt;
+      &lt;input 
+        type=&quot;text&quot; 
         value={name} 
         onChange={handleChange}
-        placeholder="Enter your name"
-      />
-      <p>Your name is: {name}</p>
-    </div>
+        placeholder=&quot;Enter your name&quot;
+      /&gt;
+      &lt;p&gt;Your name is: {name}&lt;/p&gt;
+    &lt;/div&gt;
   );
-}
-```
+}</code></pre>
 
 </details>
 
