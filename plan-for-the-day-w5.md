@@ -23,6 +23,21 @@ These goals are not an assignment, but are good practice for what comes next.
 
 ## Day 2
 
+We worked on forms in React and insert into our database.
+
+Demo code...
+
+- `main` - Basic Supabase setup and configuration
+  - [View main branch App.jsx](https://github.com/rmccrear/practice-with-db/blob/main/src/App.jsx)
+- `add-form` - Implementation of forms for data input
+  - [View add-form branch App.jsx](https://github.com/rmccrear/practice-with-db/blob/add-form/src/App.jsx)
+- `add-employee` - Employee management functionality
+  - [View add-employee branch App.jsx](https://github.com/rmccrear/practice-with-db/blob/add-employee/src/App.jsx)
+
+
+Reference: 
+* [Input in JSX](https://react.dev/reference/react-dom/components/input#displaying-inputs-of-different-types)
+* [Deep dive on Forms in React](https://dev.to/ajones_codes/a-better-guide-to-forms-in-react-47f0)
 
 
 **Video Tutorials:**
