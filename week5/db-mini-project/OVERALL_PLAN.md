@@ -145,6 +145,8 @@ src/
    - Set up the Supabase client
    - Connect your React app to the database
 
+**⚠️ Important Note**: Do NOT use the starter code for `App.jsx` from the Supabase setup guide. That code puts everything in one file, but we'll be organizing our app into separate components. Follow the component structure outlined in Step 5 below instead.
+
 **For this potluck app, make sure to:**
 
 - Create a table named `potluck_meals` with these columns:
