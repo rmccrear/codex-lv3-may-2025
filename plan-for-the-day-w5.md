@@ -25,8 +25,6 @@ These goals are not an assignment, but are good practice for what comes next.
 
 We worked on forms in React and insert into our database.
 
-**Mini Project:** [Database Mini Project](./week5/db-mini-project/OVERALL_PLAN.md) - Build a complete React + Supabase potluck management app
-
 Demo code...
 
 - `main` - Basic Supabase setup and configuration
