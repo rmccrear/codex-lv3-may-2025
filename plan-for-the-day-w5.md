@@ -49,7 +49,9 @@ Forms in React and `onSubmit` [learn](https://react.dev/reference/react-dom/comp
 
 ## Day 3
 
-JavaScript Practice [link](https://learnjavascript.online/app.html?id=1435) Practice with JavaScript basics.
+Do Problem Set #2 from [JavaScript Practice](./javascript-practice/README.md)
+
+Optional: JavaScript Practice [link](https://learnjavascript.online/app.html?id=1435) Practice with JavaScript basics.
 
 * Functions
 * Strings
