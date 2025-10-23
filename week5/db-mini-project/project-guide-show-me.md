@@ -153,7 +153,12 @@ Follow the Supabase setup guides to create your database tables and configure ac
 - Set up [read policies](https://rmccrear.github.io/codex-lv3-may-2025/week5/supabase-setup/SUPABASE_SETUP_GUIDE.html#step-10-set-up-read-policy-allow-public-read-access) and [insert policies](https://rmccrear.github.io/codex-lv3-may-2025/week5/supabase-setup/SUPABASE_SETUP_GUIDE.html#step-11-set-up-write-policy-allow-public-write-access) for public access
 - Follow the [Supabase React Setup Guide](https://rmccrear.github.io/codex-lv3-may-2025/week5/supabase-setup/SUPABASE_REACT_SETUP_GUIDE.html) to configure environment variables
 
-**Screenshot Reference:** ![Sample data in database](./docs/00-screenshot-list-meals-db-table.png)
+<details>
+<summary>Show Me: Sample data in database</summary>
+
+<img src="./docs/00-screenshot-list-meals-db-table.png" alt="Sample data in database" />
+
+</details>
 
 ## ✅ Check
 
@@ -386,7 +391,12 @@ for (let i = 0; i < meals.length; i++) {
 
 </details>
 
-**Screenshot Reference:** ![Meals displayed in app](./docs/01-screenshot-list-meals.png)
+<details>
+<summary>Show Me: Meals displayed in app</summary>
+
+<img src="./docs/01-screenshot-list-meals.png" alt="Meals displayed in app" />
+
+</details>
 
 ## ✅ Check
 
@@ -484,7 +494,12 @@ Need help with form structure? Check out these snippets:
 
 </details>
 
-**Screenshot Reference:** ![Form added](./docs/02-screenshot-form.png)
+<details>
+<summary>Show Me: Form added</summary>
+
+<img src="./docs/02-screenshot-form.png" alt="Form added" />
+
+</details>
 
 ## ✅ Check
 
@@ -589,11 +604,19 @@ This allows anyone to **create** new rows in your table.
 
 **Note**: This policy is intentionally permissive for learning purposes. In production applications, you would implement proper authentication and authorization controls.
 
-**Screenshot Reference:** ![RLS Policy for inserts](./docs/03-screenshot-custom-rls-policy.png)
+<details>
+<summary>Show Me: RLS Policy for inserts</summary>
 
-**Note:** If you encounter an error, check the policy syntax. Common issues include missing quotes or incorrect syntax.
+<img src="./docs/03-screenshot-custom-rls-policy.png" alt="RLS Policy for inserts" />
 
-**Screenshot Reference:** ![Potential RLS error](./docs/04-screenshot-potential-rls-error.png)
+</details>
+
+<details>
+<summary>Show Me: Potential RLS error</summary>
+
+<img src="./docs/04-screenshot-potential-rls-error.png" alt="Potential RLS error" />
+
+</details>
 
 ## ✅ Check
 
@@ -655,7 +678,12 @@ Need help with database insertion? Check out these snippets:
 
 </details>
 
-**Screenshot Reference:** ![Verify insert in Supabase](./docs/05-screenshot-verify-insert.png)
+<details>
+<summary>Show Me: Verify insert in Supabase</summary>
+
+<img src="./docs/05-screenshot-verify-insert.png" alt="Verify insert in Supabase" />
+
+</details>
 
 ## ✅ Check
 
@@ -752,7 +780,12 @@ Need help with refreshing the list? Check out these snippets:
 
 </details>
 
-**Screenshot Reference:** ![Display meals after submit](./docs/06-display-meals-after-submit.png)
+<details>
+<summary>Show Me: Display meals after submit</summary>
+
+<img src="./docs/06-display-meals-after-submit.png" alt="Display meals after submit" />
+
+</details>
 
 ## ✅ Check
 
@@ -825,7 +858,12 @@ Need help with clearing inputs? Check out these snippets:
 
 </details>
 
-**Screenshot Reference:** ![Clear inputs after submit](./docs/07-screenshot-clear-inputs.png)
+<details>
+<summary>Show Me: Clear inputs after submit</summary>
+
+<img src="./docs/07-screenshot-clear-inputs.png" alt="Clear inputs after submit" />
+
+</details>
 
 ## ✅ Check
 
@@ -879,7 +917,12 @@ Need help with select dropdown? Check out these snippets:
 
 </details>
 
-**Screenshot Reference:** ![Option select dropdown](./docs/08-screenshot-option-select.png)
+<details>
+<summary>Show Me: Option select dropdown</summary>
+
+<img src="./docs/08-screenshot-option-select.png" alt="Option select dropdown" />
+
+</details>
 
 ## ✅ Check
 
