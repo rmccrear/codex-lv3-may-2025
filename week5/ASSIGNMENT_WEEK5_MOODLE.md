@@ -22,13 +22,14 @@ Follow the level-by-level instructions (Levels 1-20) to build your potluck manag
 Your potluck management app must include:
 
 1. **Database Setup**
-   - Supabase project with at least 2 tables (meals and beverages)
+   - Supabase project with at least 3 tables (meals, beverages, utensils)
    - Row Level Security (RLS) policies configured
    - Sample data inserted
 
 2. **React Components**
    - PotluckMeals component for displaying and adding meals
    - PotluckBeverages component for beverages
+   - PotluckUtensils component for utensils
    - Form handling with proper validation
    - State management using useState
 
@@ -50,7 +51,11 @@ Your potluck management app must include:
    - Comments explaining key sections
    - Meaningful variable names
 
-6. **Documentation**
+6. **Required Challenges**
+   - Select dropdown for dish types (Level 16)
+   - Third table and component (utensils) (Level 17)
+
+7. **Documentation**
    - README.md with setup instructions
    - Database schema documentation
    - List of features implemented
@@ -61,15 +66,16 @@ Your potluck management app must include:
 
 | Category | Weight | Description |
 |----------|--------|-------------|
-| **Database Setup** | 25% | Supabase configured, tables created, RLS policies working |
-| **React Integration** | 25% | Components fetch and display data correctly |
-| **Form Functionality** | 20% | Forms submit data and update UI properly |
-| **Data Display** | 15% | Data rendered using for loops, clean presentation |
+| **Database Setup** | 20% | Supabase configured, 3 tables created, RLS policies working |
+| **React Integration** | 20% | Components fetch and display data correctly |
+| **Form Functionality** | 15% | Forms submit data and update UI properly |
+| **Data Display** | 10% | Data rendered using for loops, clean presentation |
+| **Required Challenge 1** | 10% | Select dropdown for dish types (Level 16) |
+| **Required Challenge 2** | 10% | Third table and utensils component (Level 17) |
 | **Code Quality** | 10% | Clean code, good naming, helpful comments |
 | **Documentation** | 5% | Complete README with setup instructions |
-| **Challenge Features** | +10% | Extra credit: third table, filtering, dropdowns (Levels 16-19) |
 
-**Total:** 100% (+ up to 10% extra credit)
+**Total:** 100%
 
 ---
 
@@ -91,7 +97,9 @@ Your potluck management app must include:
 - [ ] Can fetch and display data from database
 - [ ] Forms submit new data successfully
 - [ ] Data updates immediately after submission
-- [ ] At least 2 tables implemented
+- [ ] All 3 tables implemented (meals, beverages, utensils)
+- [ ] Select dropdown for dish types working
+- [ ] Utensils component and table functional
 - [ ] README is complete
 - [ ] Code is commented and clean
 
@@ -103,10 +111,12 @@ Your potluck management app must include:
 - Levels 1-3: Planning, project setup, database configuration
 - Levels 4-8: Basic component creation and data fetching
 - Levels 9-15: Form implementation and data insertion
+- Level 16: Select dropdown challenge (Required Challenge 1)
+- Level 17: Third table and utensils component (Required Challenge 2)
 - Level 20: Project completion and documentation
 
-**Challenge Levels (Optional +10%):**
-- Levels 16-19: Advanced features (dropdowns, third table, filtering)
+**Optional Levels:**
+- Levels 18-19: Additional features (filtering, advanced functionality)
 
 ---
 
