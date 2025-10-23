@@ -120,6 +120,23 @@ Your potluck management app must include:
 
 ---
 
+## 📤 TURN IN
+
+**Submit the following:**
+
+1. **GitHub Repository URL** - Share the link to your completed project repository
+2. **Deployed Site URL** (Optional) - If you deployed your app to Vercel, Netlify, or similar platform
+
+**Repository should contain:**
+- Complete React + Supabase potluck management app
+- All 3 tables implemented (meals, beverages, utensils)
+- Select dropdown functionality
+- Utensils component working
+- Complete README with setup instructions
+- Clear commit history showing your progress IMPORTANT!
+
+---
+
 ## 🆘 Need Help?
 
 - Review the Supabase setup guides carefully
