@@ -10,6 +10,10 @@ This guide provides step-by-step instructions for building a React application w
 
 ---
 
+---
+
+<!-- LEVEL_START -->
+
 # Level 1: Planning
 
 **Goal:** Plan your potluck app using the structured activity guide.
@@ -58,6 +62,10 @@ Take time to plan your potluck app using the structured activity guide.
 5. You have set clear success criteria
 
 ---
+
+---
+
+<!-- LEVEL_START -->
 
 # Level 2: Project Setup
 
@@ -129,6 +137,10 @@ npm install
 
 ---
 
+---
+
+<!-- LEVEL_START -->
+
 # Level 3: Database Setup
 
 **Goal:** Configure your Supabase database with tables and security policies.
@@ -170,6 +182,10 @@ Follow the Supabase setup guides to create your database tables and configure ac
 6. You can see your data in the Supabase dashboard
 
 ---
+
+---
+
+<!-- LEVEL_START -->
 
 # Level 4: Create Basic Component Structure
 
@@ -243,6 +259,10 @@ export default App
 
 ---
 
+---
+
+<!-- LEVEL_START -->
+
 # Level 5: Create Button and Handler (Console Log)
 
 **Goal:** Add a fetch meals function with console logging.
@@ -294,6 +314,10 @@ Need help with the button handler? Check out these snippets:
 
 ---
 
+---
+
+<!-- LEVEL_START -->
+
 # Level 6: Select Data and Console Log
 
 **Goal:** Update the fetch function to actually retrieve data from Supabase.
@@ -341,6 +365,10 @@ Need help with data fetching? Check out these snippets:
 5. Data is successfully retrieved from Supabase
 
 ---
+
+---
+
+<!-- LEVEL_START -->
 
 # Level 7: Display Data with For Loop
 
@@ -408,6 +436,10 @@ for (let i = 0; i < meals.length; i++) {
 
 ---
 
+---
+
+<!-- LEVEL_START -->
+
 # Level 8: Test Data Fetching
 
 **Goal:** Verify that your data fetching and display is working correctly.
@@ -437,6 +469,10 @@ Test your data fetching functionality and verify the results.
 5. The functionality works consistently
 
 ---
+
+---
+
+<!-- LEVEL_START -->
 
 # Level 9: Add Form Structure
 
@@ -511,6 +547,10 @@ Need help with form structure? Check out these snippets:
 
 ---
 
+---
+
+<!-- LEVEL_START -->
+
 # Level 10: Add Event Handler
 
 **Goal:** Create the handleAddMeal function to process form submissions.
@@ -573,6 +613,10 @@ Need help with the form handler? Check out these snippets:
 
 ---
 
+---
+
+<!-- LEVEL_START -->
+
 # Level 11: Create Insert RLS Policy
 
 **Goal:** Set up a write policy for your potluck_meals table.
@@ -627,6 +671,10 @@ This allows anyone to **create** new rows in your table.
 5. You understand the security implications
 
 ---
+
+---
+
+<!-- LEVEL_START -->
 
 # Level 12: Add Insert Statement
 
@@ -695,6 +743,10 @@ Need help with database insertion? Check out these snippets:
 
 ---
 
+---
+
+<!-- LEVEL_START -->
+
 # Level 13: Test Insert and Verify in Supabase Dashboard
 
 **Goal:** Verify that your insert functionality is working correctly.
@@ -724,6 +776,10 @@ Test your insert functionality and verify the results in the Supabase dashboard.
 5. Multiple submissions work correctly
 
 ---
+
+---
+
+<!-- LEVEL_START -->
 
 # Level 14: Select Data Back Out and Update List
 
@@ -796,6 +852,10 @@ Need help with refreshing the list? Check out these snippets:
 5. No manual refresh is needed
 
 ---
+
+---
+
+<!-- LEVEL_START -->
 
 # Level 15: Clear Inputs After Submit
 
@@ -875,6 +935,10 @@ Need help with clearing inputs? Check out these snippets:
 
 ---
 
+---
+
+<!-- LEVEL_START -->
+
 # Level 16: Add Select Dropdown (Challenge)
 
 **Goal:** Replace the text input for dish type with a dropdown for better data consistency.
@@ -934,6 +998,10 @@ Need help with select dropdown? Check out these snippets:
 
 ---
 
+---
+
+<!-- LEVEL_START -->
+
 # Level 17: Create Beverages Table and Component
 
 **Goal:** Create another table and component for Beverages following the same pattern as meals.
@@ -963,6 +1031,10 @@ Create a beverages table and component following the same pattern as the meals c
 
 ---
 
+---
+
+<!-- LEVEL_START -->
+
 # Level 18: Create Utensils Table and Component
 
 **Goal:** Create a table and component for Utensils following the same pattern.
@@ -991,6 +1063,10 @@ Create a utensils table and component for managing potluck utensils.
 5. The form works for adding new utensils
 
 ---
+
+---
+
+<!-- LEVEL_START -->
 
 # Level 19: Bonus Challenges ⚡
 
@@ -1035,6 +1111,10 @@ Have an option to upload a file. Consider using Cloudinary and an "upload url". 
 5. Consider adding screenshots or GIFs
 
 ---
+
+---
+
+<!-- LEVEL_START -->
 
 # Level 20: Project Complete! 🎉
 

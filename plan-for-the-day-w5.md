@@ -60,3 +60,9 @@ Optional: JavaScript Practice [link](https://learnjavascript.online/app.html?id=
 * Numbers
 
 Katas [link](./week5/kata/README.md). Choose ONE kata to master. Master important patterns with intentional, focused practice.
+
+## Day 4
+
+**Database Mini Project:** [Level 1 - Planning](https://rmccrear.github.io/codex-lv3-may-2025/week5/db-mini-project/db-levels/db-mini-project-lv-1.html)
+
+Start working on the complete potluck management application. Follow the level-by-level instructions to build a full React + Supabase app.
