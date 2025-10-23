@@ -16,9 +16,9 @@ Review the Supabase setup guides and try the database interface.
 
 **Discuss with a Partner:**
 - What is a database table?
-- What are Row Level Security (RLS) policies?
+- What are Row Level Security (RLS) policies and why do we need them?
 - How does a React app connect to a database?
-- What are CRUD operations?
+- What are SELECT and INSERT operations?
 
 ---
 
@@ -70,7 +70,37 @@ Review the Supabase setup guides and try the database interface.
 
 ---
 
-## Step 4 - Setup Your Project
+## Step 4 - Create Wireframes
+
+**Wireframes:** Sketch the layout of your app pages. Use simple boxes and labels to show where elements will go.
+
+**Main App Layout:**
+```
+┌─────────────────────────────────────┐
+│           Potluck App               │
+├─────────────────────────────────────┤
+│  [Fetch Meals] Button               │
+│                                     │
+│  • Meal 1 by Guest serves 4        │
+│  • Meal 2 by Guest serves 6        │
+│  • Meal 3 by Guest serves 2        │
+│                                     │
+│  ┌─────────────────────────────────┐ │
+│  │        Add Meal Form            │ │
+│  │  Meal: [_____________]          │ │
+│  │  Guest: [_____________]         │ │
+│  │  Serves: [_____]               │ │
+│  │  Type: [Dropdown ▼]            │ │
+│  │  [Add Meal] Button             │ │
+│  └─────────────────────────────────┘ │
+└─────────────────────────────────────┘
+```
+
+**Additional Components:** Sketch similar layouts for Beverages and Utensils components.
+
+---
+
+## Step 5 - Setup Your Project
 
 **Create React App:**
 1. Run: `npm create vite@latest practice-with-db -- --template react`
@@ -80,8 +110,8 @@ Review the Supabase setup guides and try the database interface.
 5. Start dev server: `npm run dev`
 
 **Environment Setup:**
-1. Create `.env.local` file in project root
-2. Add your Supabase credentials:
+1. Create `.env.local` file in project root (not `.env`)
+2. Add your Supabase credentials (you can find these in the supabase dashboard):
    ```
    VITE_SUPABASE_URL=your-project-url
    VITE_SUPABASE_ANON_KEY=your-anon-key
@@ -89,7 +119,9 @@ Review the Supabase setup guides and try the database interface.
 
 ---
 
-## Step 5 - Build Your App
+## Step 6 - Build Your App
+
+**📖 [Complete Project Guide](./project-guide-show-me.md)** - Step-by-step instructions with code examples
 
 Follow the step-by-step guide to build your potluck app. Complete each step before moving to the next.
 
@@ -126,7 +158,7 @@ Follow the step-by-step guide to build your potluck app. Complete each step befo
 
 ---
 
-## Step 6 - Test Your App
+## Step 7 - Test Your App
 
 Test your app and verify it works correctly for all scenarios:
 
@@ -149,7 +181,7 @@ Test your app and verify it works correctly for all scenarios:
 
 ---
 
-## Step 7 - Submit
+## Step 8 - Submit
 
 Before you submit, check the rubric below to make sure your program meets the requirements.
 
