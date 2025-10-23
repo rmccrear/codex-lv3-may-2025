@@ -29,8 +29,8 @@ Review the Supabase setup guides and try the database interface.
 | Table Name | Purpose | Columns Needed |
 | :---- | :---- | :---- |
 | potluck_meals | Store meal information | meal_name, guest_name, serves, kind_of_dish |
-| beverages | Store drink information | beverage_name, guest_name, quantity, type_of_drink |
-| utensils | Store utensil information | item_name, guest_name, quantity, item_type |
+|  |  |  |
+|  |  |  |
 |  |  |  |
 
 **Security Policies:** List the policies you'll need for each table.
@@ -39,10 +39,9 @@ Review the Supabase setup guides and try the database interface.
 | :---- | :---- | :---- |
 | potluck_meals | SELECT | Allow everyone to read meals |
 | potluck_meals | INSERT | Allow everyone to add meals |
-| beverages | SELECT | Allow everyone to read beverages |
-| beverages | INSERT | Allow everyone to add beverages |
-| utensils | SELECT | Allow everyone to read utensils |
-| utensils | INSERT | Allow everyone to add utensils |
+|  |  |  |
+|  |  |  |
+|  |  |  |
 
 ---
 
@@ -53,8 +52,8 @@ Review the Supabase setup guides and try the database interface.
 | Component Name | Purpose | Props Needed | State Variables |
 | :---- | :---- | :---- | :---- |
 | PotluckMeals | Display and add meals | none | meals (array) |
-| Beverages | Display and add beverages | none | beverages (array) |
-| Utensils | Display and add utensils | none | utensils (array) |
+|  |  |  |  |
+|  |  |  |  |
 |  |  |  |  |
 
 **Functions:** List the functions you'll need to create.
@@ -63,10 +62,9 @@ Review the Supabase setup guides and try the database interface.
 | :---- | :---- | :---- |
 | handleFetchMeals | PotluckMeals | Fetch meals from database |
 | handleAddMeal | PotluckMeals | Add new meal to database |
-| handleFetchBeverages | Beverages | Fetch beverages from database |
-| handleAddBeverage | Beverages | Add new beverage to database |
-| handleFetchUtensils | Utensils | Fetch utensils from database |
-| handleAddUtensil | Utensils | Add new utensil to database |
+|  |  |  |
+|  |  |  |
+|  |  |  |
 
 ---
 
