@@ -29,3 +29,5 @@ Test your insert functionality and verify the results in the Supabase dashboard.
 5. Multiple submissions work correctly
 
 ---
+
+---

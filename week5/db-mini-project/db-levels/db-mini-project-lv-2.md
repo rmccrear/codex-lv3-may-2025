@@ -69,3 +69,5 @@ npm install
 5. Open your project folder in VS Code and verify you can see the basic file structure
 
 ---
+
+---

@@ -11,7 +11,7 @@ Level Navigation: **1** | [2](./db-mini-project-lv-2.md) | [3](./db-mini-project
 ## 📋 Before You Start
 
 **Complete the Activity Guide first!** Work through Steps 1-4 of the Activity Guide to:
-- Plan your database tables and relationships
+- Plan your database tables
 - Design your component structure
 - Map out your app's features
 - Set success criteria
@@ -46,5 +46,7 @@ Take time to plan your potluck app using the structured activity guide.
 3. You have planned your database structure
 4. You have designed your component architecture
 5. You have set clear success criteria
+
+---
 
 ---

@@ -65,3 +65,5 @@ for (let i = 0; i &lt; meals.length; i++) {
 5. If no data appears, check your Supabase connection and RLS policies
 
 ---
+
+---

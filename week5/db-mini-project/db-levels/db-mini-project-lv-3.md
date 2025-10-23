@@ -24,6 +24,8 @@ Follow the Supabase setup guides to create your database tables and configure ac
 - Set up [read policies](https://rmccrear.github.io/codex-lv3-may-2025/week5/supabase-setup/SUPABASE_SETUP_GUIDE.html#step-10-set-up-read-policy-allow-public-read-access) and [insert policies](https://rmccrear.github.io/codex-lv3-may-2025/week5/supabase-setup/SUPABASE_SETUP_GUIDE.html#step-11-set-up-write-policy-allow-public-write-access) for public access
 - Follow the [Supabase React Setup Guide](https://rmccrear.github.io/codex-lv3-may-2025/week5/supabase-setup/SUPABASE_REACT_SETUP_GUIDE.html) to configure environment variables
 
+**⚠️ Important Note**: Do NOT use the starter code for `App.jsx` from the Supabase setup guide. That code puts everything in one file, but we'll be organizing our app into separate components. Follow the component structure outlined in Levels 4-6 below instead.
+
 <details>
 <summary>Show Me: Sample data in database</summary>
 
@@ -39,5 +41,7 @@ Follow the Supabase setup guides to create your database tables and configure ac
 4. RLS policies are enabled and configured
 5. Environment variables are set up in your React project
 6. You can see your data in the Supabase dashboard
+
+---
 
 ---

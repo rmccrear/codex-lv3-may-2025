@@ -47,3 +47,5 @@ Need help with data fetching? Check out these snippets:
 5. Data is successfully retrieved from Supabase
 
 ---
+
+---
