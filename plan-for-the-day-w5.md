@@ -25,6 +25,8 @@ These goals are not an assignment, but are good practice for what comes next.
 
 We worked on forms in React and insert into our database.
 
+**Mini Project:** [Database Mini Project](./week5/db-mini-project/OVERALL_PLAN.md) - Build a complete React + Supabase potluck management app
+
 Demo code...
 
 - `main` - Basic Supabase setup and configuration
@@ -57,4 +59,4 @@ Optional: JavaScript Practice [link](https://learnjavascript.online/app.html?id=
 * Strings
 * Numbers
 
-Katas [link](./week5/kata/README.md). Master important patterns with intentional, focused practice.
+Katas [link](./week5/kata/README.md). Choose ONE kata to master. Master important patterns with intentional, focused practice.
