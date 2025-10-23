@@ -16,7 +16,7 @@ This guide provides step-by-step instructions for building a React application w
 
 # Level 1: Planning
 
-**Goal:** Plan your potluck app using the structured activity guide.
+**Goal:** Plan your potluck app using the [activity guide](https://rmccrear.github.io/codex-lv3-may-2025/week5/db-mini-project/ACTIVITY_GUIDE.html).
 
 **User Story:** As a developer, I want to plan my database structure and components so that I can build my potluck management app efficiently.
 
