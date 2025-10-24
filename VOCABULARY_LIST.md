@@ -387,6 +387,9 @@ A structured place to store and organize data so applications can save, read, up
 
 When data stays saved even after refreshing the page or restarting the app/server — unlike variables in JavaScript which disappear on reload.
 
+**📺 Learn More:** [Understanding Data Persistence](https://www.youtube.com/watch?v=yJAsyKjhKIY)  
+**📺 Learn More:** [Data Persistence Explained](https://www.youtube.com/watch?v=fkf28stMSr8)
+
 ### Supabase
 
 A backend-as-a-service that gives you a PostgreSQL database, authentication, storage, and APIs. Works like an open-source Firebase.
