@@ -1093,22 +1093,25 @@ Choose from these advanced challenges to extend your potluck app.
 
 Complete at least 2 of the following challenges:
 
-### Challenge 1: Creative Table
+### Challenge 1: Select Dropdown
+Remember that [Level 16](./db-mini-project-lv-16.md) (select dropdown) is also a challenge that you can implement!
+
+### Challenge 2: Creative Table
 Create another table that you think would improve your app (e.g., dietary restrictions, allergies, etc.). Decide on the columns yourself.
 
-### Challenge 2: Styling
+### Challenge 3: Styling
 Style your app using CSS or Bootstrap to make it more visually appealing.
 
-### Challenge 3: Conditional Styling
+### Challenge 4: Conditional Styling
 Add conditional styling based on the type of dish or other data.
 
-### Challenge 4: Creative Display
+### Challenge 5: Creative Display
 Use elements other than `<li>` tags to display your items (cards, tables, etc.).
 
-### Challenge 5: Component Breakdown
+### Challenge 6: Component Breakdown
 Break your app into smaller, reusable components with props.
 
-### Challenge 6: File Upload
+### Challenge 7: File Upload
 Have an option to upload a file. Consider using Cloudinary and an "upload url". This will take some research.
 
 ## ✅ Check
