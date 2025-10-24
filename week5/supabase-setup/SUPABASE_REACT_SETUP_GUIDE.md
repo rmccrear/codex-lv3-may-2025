@@ -196,21 +196,25 @@ async function getEmployees() {
 - Any function that uses `await` must be `async`
 - This includes functions in `App.jsx` and any utility functions
 
-### Fix 3: Environment Variables Format
+### Fix 3: Use `.env.local` for Better Security
 
 **The Problem:**
-The `.env` file uses `VITE_` prefix for environment variables in Vite projects.
+The starter code creates a `.env` file, but `.env.local` is more secure.
 
-**Correct `.env` format (from starter code):**
+**Recommended change:**
+- Rename `.env` to `.env.local` 
+- This file is automatically ignored by git (better security)
+
+**Correct `.env.local` format:**
 ```env
 VITE_SUPABASE_URL=https://your-project.supabase.co
 VITE_SUPABASE_ANON_KEY=your-anon-key-here
 ```
 
 **Important:** 
-- Use `VITE_` prefix for all environment variables in Vite projects
+- The `VITE_` prefix is correct and required for Vite projects
 - Replace the placeholder values with your actual Supabase credentials
-- **Security Tip:** Rename `.env` to `.env.local` for better security (automatically ignored by git)
+- **Security Tip:** Use `.env.local` instead of `.env` (automatically ignored by git)
 - Never commit `.env` or `.env.local` files to version control
 
 ---
