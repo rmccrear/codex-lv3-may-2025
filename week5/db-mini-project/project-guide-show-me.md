@@ -85,8 +85,11 @@ Create a new React project using Vite and install the Supabase client library.
 - Navigate to the project folder: `cd practice-with-db`
 - Install dependencies: `npm install`
 - Install Supabase client: `npm install @supabase/supabase-js`
+- Install tslib to support the Supabase client: `npm install tslib`
 - Start the development server to verify setup: `npm run dev`
 - Open the project in your code editor
+
+See here for installation details: [Install Supabase Client](https://rmccrear.github.io/codex-lv3-may-2025/week5/supabase-setup/SUPABASE_REACT_SETUP_GUIDE.html#step-7-install-supabase-client-library)
 
 ## 💡 Code Hints
 

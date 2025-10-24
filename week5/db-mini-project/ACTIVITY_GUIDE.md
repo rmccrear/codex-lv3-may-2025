@@ -22,53 +22,7 @@ Review the Supabase setup guides and try the database interface.
 
 ---
 
-## Step 2 - Plan Your Database
-
-**Database Tables:** Fill in the table below for each table you'll need to create.
-
-| Table Name | Purpose | Columns Needed |
-| :---- | :---- | :---- |
-| potluck_meals | Store meal information | meal_name, guest_name, serves, kind_of_dish |
-| potluck_beverages |  |  |
-| potluck_utensils |  |  |
-
-**Security Policies:** List the policies you'll need for each table.
-
-| Table | Policy Type | Purpose |
-| :---- | :---- | :---- |
-| potluck_meals | SELECT | Allow everyone to read meals |
-| potluck_meals | INSERT | Allow everyone to add meals |
-| potluck_beverages |  |  |
-| potluck_beverages |  |  |
-| potluck_utensils |  |  |
-| potluck_utensils |  |  |
-
----
-
-## Step 3 - Plan Your Components
-
-**React Components:** Fill in the table below for each component you'll create.
-
-| Component Name | Purpose | Props Needed | State Variables |
-| :---- | :---- | :---- | :---- |
-| PotluckMeals | Display and add meals | none | meals (array) |
-| PotluckBeverages |  |  |  |
-| PotluckUtensils |  |  |  |
-
-**Functions:** List the functions you'll need to create.
-
-| Function Name | Component | What It Does |
-| :---- | :---- | :---- |
-| handleFetchMeals | PotluckMeals | Fetch meals from database |
-| handleAddMeal | PotluckMeals | Add new meal to database |
-| handleFetchBeverages | PotluckBeverages |  |
-| handleAddBeverage | PotluckBeverages |  |
-| handleFetchUtensils | PotluckUtensils |  |
-| handleAddUtensil | PotluckUtensils |  |
-
----
-
-## Step 4 - Create Wireframes
+## Step 2 - Create Wireframes
 
 **Wireframes:** Sketch the layout of your app pages. Use simple boxes and labels to show where elements will go.
 
@@ -95,6 +49,52 @@ Review the Supabase setup guides and try the database interface.
 ```
 
 **Additional Components:** Sketch similar layouts for Beverages and Utensils components.
+
+---
+
+## Step 3 - Plan Your Database
+
+**Database Tables:** Fill in the table below for each table you'll need to create.
+
+| Table Name | Purpose | Columns Needed |
+| :---- | :---- | :---- |
+| potluck_meals | Store meal information | meal_name, guest_name, serves, kind_of_dish |
+| potluck_beverages |  |  |
+| potluck_utensils |  |  |
+
+**Security Policies:** List the policies you'll need for each table.
+
+| Table | Policy Type | Purpose |
+| :---- | :---- | :---- |
+| potluck_meals | SELECT | Allow everyone to read meals |
+| potluck_meals | INSERT | Allow everyone to add meals |
+| potluck_beverages |  |  |
+| potluck_beverages |  |  |
+| potluck_utensils |  |  |
+| potluck_utensils |  |  |
+
+---
+
+## Step 4 - Plan Your Components
+
+**React Components:** Fill in the table below for each component you'll create.
+
+| Component Name | Purpose | Props Needed | State Variables |
+| :---- | :---- | :---- | :---- |
+| PotluckMeals | Display and add meals | none | meals (array) |
+| PotluckBeverages |  |  |  |
+| PotluckUtensils |  |  |  |
+
+**Functions:** List the functions you'll need to create.
+
+| Function Name | Component | What It Does |
+| :---- | :---- | :---- |
+| handleFetchMeals | PotluckMeals | Fetch meals from database |
+| handleAddMeal | PotluckMeals | Add new meal to database |
+| handleFetchBeverages | PotluckBeverages |  |
+| handleAddBeverage | PotluckBeverages |  |
+| handleFetchUtensils | PotluckUtensils |  |
+| handleAddUtensil | PotluckUtensils |  |
 
 ---
 
