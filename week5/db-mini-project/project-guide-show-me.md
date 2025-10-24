@@ -1,8 +1,6 @@
 <!-- LEVEL_START -->
 
-# 🎯 React + Supabase Potluck App Project Guide
-
-# React + Supabase Potluck App
+# React + Supabase Potluck App Project Guide
 
 Welcome! You're about to build your first full-stack React application with a real database. By the end of this project, you'll have created a potluck meal management app that can store, display, and manage data - just like the apps you use every day!
 
@@ -77,6 +75,8 @@ Take time to plan your potluck app using the structured activity guide.
 5. You have set clear success criteria
 
 ---
+
+**Attribution:** This project guide was created with assistance from Claude AI (Anthropic).
 
 ---
 
@@ -1569,8 +1569,6 @@ Keep building, keep learning, and keep growing as a developer!
 
 ---
 
-*Built with ❤️ using React, Supabase, and Vite*
+**Attribution:** This project guide was created with assistance from Claude AI (Anthropic).
 
 ---
-
-**Attribution:** This project guide was created with assistance from Claude AI (Anthropic).
