@@ -1,20 +1,35 @@
-# 🎯 React + Supabase Potluck App Project Guide
-
-This guide provides step-by-step instructions for building a React application with Supabase database integration. You'll create a potluck meal management app that demonstrates CRUD operations, form handling, and database security policies.
-
-**Structure:**
-- Each level builds on the previous one
-- Clear instructions and checkpoints
-- Code examples and hints provided
-- Progressive complexity from basic to advanced
-
----
-
----
-
 <!-- LEVEL_START -->
 
-# Level 1: Planning
+# 🎯 React + Supabase Potluck App Project Guide
+
+# React + Supabase Potluck App
+
+Welcome! You're about to build your first full-stack React application with a real database. By the end of this project, you'll have created a potluck meal management app that can store, display, and manage data - just like the apps you use every day!
+
+**What you'll learn:**
+- Connect React to a real database (Supabase)
+- Build forms that save data permanently
+- Display data from a database in your app
+- Handle user interactions and events
+- Work with database security and permissions
+
+**How this works:**
+- Each level builds on what you learned before
+- Follow the instructions step-by-step
+- Use the code hints when you get stuck
+- Check your work with the verification steps
+- Start simple and gradually add more features
+
+**Each level includes:**
+- **User Story**: What you're building and why it matters
+- **Instructions**: Step-by-step guidance to complete the task
+- **Code Hints**: Examples and snippets to help you along (use only if you need it.)
+- **Diving Deeper**: Extra explanations and videos for curious minds
+- **Check**: Verification steps to make sure everything works
+
+---
+
+## Level 1: Planning
 
 **Goal:** Plan your potluck app using the [activity guide](https://rmccrear.github.io/codex-lv3-may-2025/week5/db-mini-project/ACTIVITY_GUIDE.html).
 
@@ -22,7 +37,7 @@ This guide provides step-by-step instructions for building a React application w
 
 ---
 
-## 📋 Before You Start
+### 📋 Before You Start
 
 **Complete the Activity Guide first!** Work through Steps 1-4 of the Activity Guide to:
 - Plan your database tables
@@ -34,11 +49,11 @@ This planning will help you build your app more efficiently!
 
 ---
 
-## What You'll Do
+### What You'll Do
 
 Take time to plan your potluck app using the structured activity guide.
 
-## Instructions
+### Instructions
 
 - **Understand the Requirements**: Review what you need to build
 - **Plan Your Database**: Design your tables and relationships
@@ -53,7 +68,7 @@ Take time to plan your potluck app using the structured activity guide.
 
 **Time Investment**: Spend 15-20 minutes on planning - it will save you hours of debugging later!
 
-## ✅ Check
+### ✅ Check
 
 1. You have reviewed the activity guide
 2. You understand the project requirements
