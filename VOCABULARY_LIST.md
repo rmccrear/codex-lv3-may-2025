@@ -14,7 +14,7 @@
 
 ### Server
 
-A computer program that delivers things (like files or data) to your browser when you ask for them—like a waiter bringing food at a restaurant.
+A computer program or device that provides services, resources, or data to other programs (called clients) over a network. In web development, servers deliver things like files or data to your browser when you ask for them—like a waiter bringing food at a restaurant.
 
 ### Node.js (Node)
 
@@ -44,9 +44,41 @@ Short for Node Package Manager. A tool that helps you add extra code "packages" 
 
 ### Module
 
-A chunk of code you can bring into your project. Example: Express is a module that helps you make a server.
+In programming, **modules** are self-contained units of code that can be imported and used in other parts of a program. They help organize code into logical, reusable pieces and enable better code organization, testing, and maintenance.
 
-**📺 Learn More:** [JavaScript Modules in 100 Seconds](https://www.youtube.com/watch?v=qgRUr-YUk1Q)
+In JavaScript specifically, **modules** are chunks of code you can bring into your project. Example: Express is a module that helps you make a server.
+
+**Two ways to import/export modules in JavaScript:**
+
+**1. CommonJS (Node.js style):**
+```javascript
+// File: util/helpers.js
+const helloWorld = () => console.log('Hello World!');
+const API_URL = 'https://api.example.com';
+
+module.exports = { helloWorld, API_URL };
+
+// File: main.js
+const { helloWorld, API_URL } = require('./util/helpers');
+```
+
+**2. ES6 Modules (Modern JavaScript):**
+```javascript
+// File: util/helpers.js
+const helloWorld = () => console.log('Hello World!');
+const API_URL = 'https://api.example.com';
+const myMainFunction = () => console.log('Main function');
+
+export { helloWorld, API_URL };
+export default myMainFunction;
+
+// File: main.js
+import { helloWorld, API_URL } from './util/helpers.js';
+import myMainFunction from './util/helpers.js';
+```
+
+**📺 Learn More:** [JavaScript Modules in 100 Seconds](https://www.youtube.com/watch?v=qgRUr-YUk1Q)  
+**🔗 Learn More:** [Module Cheatsheet](https://www.samanthaming.com/tidbits/79-module-cheatsheet/)
 
 ### Mad Libs
 
@@ -97,7 +129,9 @@ Special addresses (`localhost` or `127.0.0.1`) that let you test a server runnin
 
 ### Event Listener
 
-Code that waits for something to happen (like a button click or a request) and then runs a function in response.
+In programming, an **event listener** is a function or piece of code that waits for a specific event to occur and then executes a response. Event-driven programming allows programs to respond to user actions, system events, or other triggers as they happen.
+
+In web development specifically, an **event listener** is code that waits for something to happen (like a button click or a request) and then runs a function in response.
 
 ### Scoping
 
@@ -174,7 +208,9 @@ myList.splice(0, 0, "first"); // insert at top
 
 ### Components
 
-The building blocks of React. Everything in React is made from components. They help organize code and keep programs from becoming too complicated.
+In programming, **components** are reusable pieces of code that encapsulate specific functionality and can be combined to build larger applications. They promote modularity, reusability, and maintainability by breaking complex systems into smaller, manageable parts.
+
+In React specifically, **components** are the building blocks of React applications. Everything in React is made from components. They help organize code and keep programs from becoming too complicated by allowing you to break down complex UIs into smaller, reusable pieces.
 
 ### React
 
@@ -222,7 +258,9 @@ The folder that appears after installing dependencies. It contains all the extra
 
 ### State
 
-Component-local data React preserves between renders so a component can remember information and update the UI (e.g., a click counter).
+In computer science, **state** refers to the current condition or data of a program at any given moment. It's the information that a program remembers and can change over time, like variables that hold values, user preferences, or the current step in a process.
+
+In React specifically, **state** is component-local data that React preserves between renders so a component can remember information and update the UI (e.g., a click counter). React state allows components to be interactive and respond to user actions by maintaining and updating their internal data.
 
 **🔗 Learn More:** [State: A Component's Memory](https://react.dev/learn/state-a-components-memory)
 
@@ -379,7 +417,7 @@ React emphasizes **declarative** code because it's easier to read, maintain, and
 
 ### Database (DB)
 
-A structured place to store and organize data so applications can save, read, update, and delete information.
+An organized collection of data that can be stored, accessed, and managed efficiently. In web development, databases provide a structured place to store and organize data so applications can save, read, update, and delete information.
 
 **🔗 Learn More:** [Introduction to SQL & Databases](https://sqlbolt.com/lesson/introduction)
 
@@ -561,12 +599,47 @@ const [first, second] = items;
 
 **🔗 Learn More:** [MDN – Destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 
-### Function / Anonymous Function
+### Function
 
-Reusable block of code. Anonymous functions have no name:
+In programming, **functions** are reusable blocks of code that perform a specific task. They help organize code, avoid repetition, and make programs easier to understand and maintain. Functions can accept inputs (parameters) and return outputs.
 
+**Web programming examples:**
 ```javascript
-() => console.log('Hi');
+// Function to validate email
+function validateEmail(email) {
+  return email.includes('@');
+}
+
+// Function to format user data
+function formatUserData(user) {
+  return {
+    name: user.firstName + ' ' + user.lastName,
+    email: user.email.toLowerCase()
+  };
+}
+```
+
+**🔗 Learn More:** [MDN – Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
+
+### Anonymous Function
+
+An **anonymous function** is a function that has no name and is often used as a callback or in event handlers. They're commonly used in web development for handling user interactions and API responses.
+
+**Web programming examples:**
+```javascript
+// Event handler (anonymous function)
+button.addEventListener('click', function() {
+  console.log('Button clicked!');
+});
+
+// Array method callback (arrow function - also anonymous)
+const numbers = [1, 2, 3, 4, 5];
+const doubled = numbers.map(function(num) {
+  return num * 2;
+});
+
+// Arrow function version (also anonymous)
+const tripled = numbers.map(num => num * 3);
 ```
 
 **🔗 Learn More:** [MDN – Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
