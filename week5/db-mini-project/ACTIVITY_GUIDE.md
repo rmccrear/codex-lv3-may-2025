@@ -6,11 +6,9 @@ Name(s)________________________________________________ Period _____ Date ______
 **Overview**  
 Build a full-stack React application with Supabase database integration. Create a potluck meal management app that demonstrates CRUD operations, form handling, and database security policies.
 
-**Model:** [Supabase Setup Guide](https://rmccrear.github.io/codex-lv3-may-2025/week5/supabase-setup/SUPABASE_SETUP_GUIDE.html)
-
 ---
 
-## Step 1 - Explore the Model
+## Step 1 - Review Supabase Concepts
 
 Review the Supabase setup guides and try the database interface.
 
