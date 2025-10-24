@@ -139,4 +139,14 @@ if (error) {
 
 ---
 
+## 📚 Vocabulary
+
+- **[INSERT](#insert)** - SQL command that adds a new row into a table
+- **[Database (DB)](#database-db)** - A structured place to store and organize data
+- **[Persistence / Persist](#persistence--persist)** - When data stays saved after refreshing
+- **[Table](#table)** - Collection of related data organized into rows and columns
+- **[Row / Record](#row--record)** - One entry in a table
+
+---
+
 ---

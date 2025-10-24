@@ -265,6 +265,16 @@ VITE_SUPABASE_ANON_KEY=your-anon-key-here
 
 ---
 
+## 📚 Vocabulary
+
+- **[Database (DB)](#database-db)** - A structured place to store and organize data
+- **[Supabase](#supabase)** - Backend-as-a-service with PostgreSQL database
+- **[RLS Policy](#rls-policy-row-level-security)** - Rules controlling database access
+- **[Environment Variables](#environment-variables-env)** - Hidden configuration values
+- **[Snake Case](#snake-case)** - Naming style with underscores
+
+---
+
 ---
 
 <!-- LEVEL_START -->
@@ -483,6 +493,16 @@ if (result.error) {
 
 ---
 
+## 📚 Vocabulary
+
+- **[Async](#async)** - Keyword that makes a function return a Promise
+- **[await](#await)** - Pauses inside an async function until a Promise is done
+- **[SELECT](#select)** - SQL command that reads data from a database
+- **[Database (DB)](#database-db)** - A structured place to store and organize data
+- **[Supabase](#supabase)** - Backend-as-a-service with PostgreSQL database
+
+---
+
 ---
 
 <!-- LEVEL_START -->
@@ -588,6 +608,16 @@ const mealsDisplay = meals.map(meal => (
 3. Each meal shows: name, guest, serves count, and dish type
 4. The list updates when you click the button again
 5. If no data appears, check your Supabase connection and RLS policies
+
+---
+
+## 📚 Vocabulary
+
+- **[List Scrolling Pattern](#list-scrolling-pattern)** - Iterating through a list to process each item
+- **[JSX](#jsx)** - Special syntax used in React that looks like HTML
+- **[Template Literal](#template-literal)** - Way to put variables into strings using backticks
+- **[Array Literal](#array-literal)** - Syntax to create an array using square brackets
+- **[Index](#index)** - Number that tells you an item's position in a list
 
 ---
 
@@ -838,6 +868,16 @@ const newMeal = {
 
 ---
 
+## 📚 Vocabulary
+
+- **[Event Listener](#event-listener)** - Code that waits for something to happen and runs a function
+- **[Function / Anonymous Function](#function--anonymous-function)** - Reusable block of code
+- **[String](#string)** - A piece of text inside quotes
+- **[Triple Equals (===)](#triple-equals-)** - Strict comparison that checks both value and type
+- **[Scoping](#scoping)** - Rules that decide where variables can be used
+
+---
+
 ---
 
 <!-- LEVEL_START -->
@@ -1037,6 +1077,16 @@ if (error) {
 3. Check your Supabase dashboard - the new meal should appear
 4. No console errors occur during insertion
 5. The data is successfully saved to the database
+
+---
+
+## 📚 Vocabulary
+
+- **[INSERT](#insert)** - SQL command that adds a new row into a table
+- **[Database (DB)](#database-db)** - A structured place to store and organize data
+- **[Persistence / Persist](#persistence--persist)** - When data stays saved after refreshing
+- **[Table](#table)** - Collection of related data organized into rows and columns
+- **[Row / Record](#row--record)** - One entry in a table
 
 ---
 

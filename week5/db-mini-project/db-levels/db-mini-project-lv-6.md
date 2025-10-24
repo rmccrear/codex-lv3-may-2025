@@ -83,4 +83,14 @@ if (result.error) {
 
 ---
 
+## 📚 Vocabulary
+
+- **[Async](#async)** - Keyword that makes a function return a Promise
+- **[await](#await)** - Pauses inside an async function until a Promise is done
+- **[SELECT](#select)** - SQL command that reads data from a database
+- **[Database (DB)](#database-db)** - A structured place to store and organize data
+- **[Supabase](#supabase)** - Backend-as-a-service with PostgreSQL database
+
+---
+
 ---

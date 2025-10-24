@@ -90,4 +90,14 @@ VITE_SUPABASE_ANON_KEY=your-anon-key-here
 
 ---
 
+## 📚 Vocabulary
+
+- **[Database (DB)](#database-db)** - A structured place to store and organize data
+- **[Supabase](#supabase)** - Backend-as-a-service with PostgreSQL database
+- **[RLS Policy](#rls-policy-row-level-security)** - Rules controlling database access
+- **[Environment Variables](#environment-variables-env)** - Hidden configuration values
+- **[Snake Case](#snake-case)** - Naming style with underscores
+
+---
+
 ---

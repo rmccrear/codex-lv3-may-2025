@@ -104,4 +104,14 @@ const mealsDisplay = meals.map(meal => (
 
 ---
 
+## 📚 Vocabulary
+
+- **[List Scrolling Pattern](#list-scrolling-pattern)** - Iterating through a list to process each item
+- **[JSX](#jsx)** - Special syntax used in React that looks like HTML
+- **[Template Literal](#template-literal)** - Way to put variables into strings using backticks
+- **[Array Literal](#array-literal)** - Syntax to create an array using square brackets
+- **[Index](#index)** - Number that tells you an item's position in a list
+
+---
+
 ---

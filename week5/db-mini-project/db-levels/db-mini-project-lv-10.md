@@ -132,4 +132,14 @@ const newMeal = {
 
 ---
 
+## 📚 Vocabulary
+
+- **[Event Listener](#event-listener)** - Code that waits for something to happen and runs a function
+- **[Function / Anonymous Function](#function--anonymous-function)** - Reusable block of code
+- **[String](#string)** - A piece of text inside quotes
+- **[Triple Equals (===)](#triple-equals-)** - Strict comparison that checks both value and type
+- **[Scoping](#scoping)** - Rules that decide where variables can be used
+
+---
+
 ---
