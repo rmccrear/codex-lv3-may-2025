@@ -77,7 +77,7 @@ fi
 echo ""
 
 echo -e "${BLUE}Step 3: Converting Show Me sections to collapsible details...${NC}"
-python3 capstone/convert-show-me.py "$OUTPUT_DIR"
+python3 bin/convert-show-me.py "$OUTPUT_DIR"
 if [ $? -ne 0 ]; then
     echo -e "${RED}❌ Error: Failed to convert Show Me sections${NC}"
     exit 1

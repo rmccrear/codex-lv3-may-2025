@@ -185,4 +185,37 @@ Before you submit, check the rubric below to make sure your program meets the re
 | :---- | :---- | :---- | :---- | :---- |
 | **Project Setup** | React + Supabase project correctly set up and runs without errors. | Project mostly works but has minor setup issues. | Project has significant setup problems. | Project does not run. |
 | **Database Design** | All three tables created with appropriate columns and RLS policies. | Most tables created with some policy issues. | Some tables created but missing policies. | Database not set up or missing tables. |
-| **State Management** | All state variables properly created with `useState` and updated correctly. | Most state variables work correctly b
+| **State Management** | All state variables properly created with `useState` and updated correctly. | Most state variables work correctly but some issues. | Some state variables missing or not updating. | State management not implemented. |
+| **Form Handling** | All forms work correctly with proper validation and data submission. | Forms mostly work with minor issues. | Forms have significant problems. | Forms do not work or are missing. |
+| **Database Operations** | All CRUD operations (SELECT, INSERT) work correctly. | Most operations work with minor issues. | Some operations missing or broken. | Database operations not implemented. |
+| **Code Quality** | Code is clean, well-organized, and includes helpful comments. | Code is mostly clean with some organization issues. | Code has significant quality issues. | Code is poorly written or incomplete. |
+| **Testing** | All features tested and working correctly. | Most features tested and working. | Some features not tested or broken. | App not tested or major issues. |
+
+**Total Points:** ___/40
+
+---
+
+## Reflection Questions
+
+1. **What was the most challenging part of building this app?**
+
+2. **How did you handle errors and debugging?**
+
+3. **What would you do differently if you built this app again?**
+
+4. **What database concepts did you learn?**
+
+5. **How does this project connect to real-world applications?**
+
+---
+
+## Vocabulary
+
+- **Database**: A structured collection of data
+- **Table**: A collection of related data organized in rows and columns
+- **Row Level Security (RLS)**: Database security feature that restricts access to rows
+- **CRUD**: Create, Read, Update, Delete operations
+- **State**: Data that can change in a React component
+- **Props**: Data passed from parent to child components
+- **Event Handler**: Function that responds to user interactions
+- **Async/Await**: JavaScript syntax for handling asynchronous operations
