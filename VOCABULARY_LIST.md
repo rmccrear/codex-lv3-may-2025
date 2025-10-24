@@ -282,6 +282,12 @@ Core JS structure often paired with loops or array methods (`map`, `filter`) to 
 
 Common approaches for working with lists, such as **Random List Access** and **List Scrolling Pattern**.
 
+**📺 Learn More:** [Code.org Unit 5 Lesson 11.6 - Reduce and Filter | Traversals Practice](https://www.youtube.com/watch?v=erFdoVvkTLc)  
+**🔗 Learn More:** [List Filter Pattern](https://studio.code.org/docs/concepts/patterns/list-filter-pattern/)  
+**🔗 Learn More:** [List Reduce Pattern](https://studio.code.org/docs/concepts/patterns/list-reduce-pattern/)  
+**🔗 Learn More:** [List Scrolling Pattern](https://studio.code.org/docs/concepts/patterns/list-scrolling-pattern/)  
+**🔗 Learn More:** [Code.org Unit 6 Lesson 11.6](https://studio.code.org/courses/csp-2025/units/6/lessons/11/levels/6)
+
 ### List Scrolling Pattern
 
 Iterating from index `0` to `list.length - 1` (e.g., `for` loop or `array.map`) to process or render each item.
@@ -291,7 +297,8 @@ Iterating from index `0` to `list.length - 1` (e.g., `for` loop or `array.map`) 
 Selecting an item by index (often random):
 
 ```javascript
-list[Math.floor(Math.random()*list.length)]
+let randomIndex = Math.floor(Math.random() * list.length);
+let item = list[randomIndex];
 ```
 
 **🔗 Learn More:** [Rendering Lists](https://react.dev/learn/rendering-lists)
@@ -581,6 +588,13 @@ Adds a value to the *end* of an array.
 Removes the *last* value from an array and returns it.
 
 **🔗 Learn More:** [MDN – pop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)
+
+### Kata
+
+A coding exercise where you practice implementing a specific feature or pattern repeatedly to build muscle memory and fluency. In our course, you'll work through React Katas to master component creation, state management, and event handling.
+
+**📺 Learn More:** [What is a Coding Kata?](https://www.youtube.com/watch?v=ZW4AEKbHE28)  
+**🔗 Learn More:** [React Katas](../week5/kata/README.md)
 
 ### import/export Module Cheatsheet
 

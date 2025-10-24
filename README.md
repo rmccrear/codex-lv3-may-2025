@@ -1,6 +1,6 @@
 # codex-lv3-may-2025
 
-This repository contains comprehensive learning materials for a Level 3 React development course spanning 7 weeks. Students progress from building simple server-side applications with Node.js and Express to creating full-stack React applications with database integration using Supabase. The curriculum emphasizes hands-on learning through mini-projects, coding exercises (katas), and a culminating capstone project that demonstrates mastery of modern web development skills.
+This repository contains comprehensive learning materials for a Level 3 React development course spanning 7 weeks. In this course, You'll learn how to create full-stack React applications with database integration using Supabase. The curriculum emphasizes hands-on learning through mini-projects, coding exercises (katas), and a culminating capstone project that demonstrates mastery of modern web development skills.
 
 ## Quick Links
 
@@ -28,10 +28,10 @@ You'll dive into React's component-based architecture and learn how to use [prop
 You'll master React [state](VOCABULARY_LIST.md#state) management with the [`useState`](VOCABULARY_LIST.md#usestate) hook and learn how to handle user interactions. You'll build an interactive clicker game that teaches you how to update component state, respond to user events, and create dynamic user interfaces. This week establishes the core patterns you'll use for building interactive React applications.
 
 ### Week 4: List Patterns and Data Manipulation
-You'll work with arrays and implement common list traversal patterns ([map](VOCABULARY_LIST.md#map), [reduce](VOCABULARY_LIST.md#reduce), [filter](VOCABULARY_LIST.md#filter)) using explicit for loops before exploring built-in array methods. You'll participate in a hackathon-style project where you build multi-page applications with complex data manipulation, putting all the patterns you've learned into practice.
+You'll work with arrays and implement common list traversal patterns ([map](VOCABULARY_LIST.md#list-scrolling-pattern), [reduce](VOCABULARY_LIST.md#list-patterns), [filter](VOCABULARY_LIST.md#list-patterns)) using explicit for loops before exploring built-in array methods. You'll participate in a hackathon-style project where you build multi-page applications with complex data manipulation, putting all the patterns you've learned into practice.
 
 ### Week 5: Database Integration with Supabase
-You'll learn modern database development using [Supabase](VOCABULARY_LIST.md#supabase) (PostgreSQL) and integrate databases with your React applications. You'll master database design, [Row Level Security (RLS)](VOCABULARY_LIST.md#row-level-security-rls), [CRUD](VOCABULARY_LIST.md#crud) operations, and build full-stack applications. The week includes hands-on practice with React Katas and culminates in your own comprehensive database mini-project.
+You'll learn modern database development using [Supabase](VOCABULARY_LIST.md#supabase) (PostgreSQL) and integrate databases with your React applications. You'll master database design, [Row Level Security (RLS)](VOCABULARY_LIST.md#row-level-security-rls), CRUD operations, and build full-stack applications. The week includes hands-on practice with React [Katas](VOCABULARY_LIST.md#kata) and culminates in your own comprehensive database mini-project.
 
 ### Weeks 6-7: Capstone Project
 You'll apply everything you've learned to build your own comprehensive React + Supabase application with multiple tables, forms, and list patterns. Your capstone project will demonstrate your mastery of full-stack development skills, including database design, authentication, data visualization, and deployment. You'll present your project and reflect on your incredible learning journey.
