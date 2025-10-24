@@ -85,7 +85,8 @@ Create a 5-10 minute video where you:
 
 2. **Coding (3-7 minutes)**
    - Code the kata from scratch
-   - Explain as you type
+   - **Choose your style**: Talk while you code OR code first then explain later
+   - Explain as you type OR explain after coding
    - Think out loud about your decisions
 
 3. **Testing (1 minute)**
@@ -106,6 +107,8 @@ Create a 5-10 minute video where you:
 - ✅ If you make a mistake, explain how you'd fix it
 - ✅ Don't worry about perfect code - focus on explanation
 - ✅ Keep it under 10 minutes
+- ✅ **You don't need multiple takes!** Use your first or second attempt - even with mistakes, if you can fix them, the video is good to submit
+- ✅ **Choose your explanation style**: Talk while coding OR code first then explain - both approaches are perfectly fine!
 
 ---
 
@@ -194,7 +197,7 @@ You've succeeded if you can:
 A: No, the goal is to demonstrate fluency. Practice until you can do it without references.
 
 **Q: What if I make a mistake in the video?**  
-A: That's okay! Explain what went wrong and how you'd fix it. This shows problem-solving skills.
+A: That's okay! Explain what went wrong and how you'd fix it. This shows problem-solving skills. You don't need to re-record - just fix the mistake and continue.
 
 **Q: Can I choose a kata not on the list?**  
 A: Stick to the provided katas for this assignment, but feel free to practice others!
@@ -204,6 +207,12 @@ A: No, but it helps create a personal connection. Screen + voice is fine.
 
 **Q: Can I edit my video?**  
 A: Light editing is okay (trim beginning/end), but don't cut out the coding process. (I recommend you don't waste your time editing unless you'd like to share with your network outside of class.)
+
+**Q: Do I need to record multiple perfect takes?**  
+A: No! Use your first or second attempt. Even if you make mistakes, if you can fix them during the recording, that's perfect. We want to see your real problem-solving process.
+
+**Q: Do I have to talk while I'm coding?**  
+A: No! You can choose to either talk while coding OR code first then explain afterward. Both approaches work great - pick what feels most comfortable for you.
 
 **Q: What if my kata is very short (like Kata 1)?**  
 A: Great! Spend more time explaining concepts in depth and discussing variations.
