@@ -52,7 +52,7 @@ for (let i = 0; i &lt; meals.length; i++) {
 <details>
 <summary>Show Me: Meals displayed in app</summary>
 
-<img src="./docs/01-screenshot-list-meals.png" alt="Meals displayed in app" />
+<img src="../docs/01-screenshot-list-meals.png" alt="Meals displayed in app" />
 
 </details>
 

@@ -29,7 +29,7 @@ Follow the Supabase setup guides to create your database tables and configure ac
 <details>
 <summary>Show Me: Sample data in database</summary>
 
-<img src="./docs/00-screenshot-list-meals-db-table.png" alt="Sample data in database" />
+<img src="../docs/00-screenshot-list-meals-db-table.png" alt="Sample data in database" />
 
 </details>
 

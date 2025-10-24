@@ -59,7 +59,7 @@ Need help with form structure? Check out these snippets:
 <details>
 <summary>Show Me: Form added</summary>
 
-<img src="./docs/02-screenshot-form.png" alt="Form added" />
+<img src="../docs/02-screenshot-form.png" alt="Form added" />
 
 </details>
 

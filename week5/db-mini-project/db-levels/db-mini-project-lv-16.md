@@ -45,7 +45,7 @@ Need help with select dropdown? Check out these snippets:
 <details>
 <summary>Show Me: Option select dropdown</summary>
 
-<img src="./docs/08-screenshot-option-select.png" alt="Option select dropdown" />
+<img src="../docs/08-screenshot-option-select.png" alt="Option select dropdown" />
 
 </details>
 

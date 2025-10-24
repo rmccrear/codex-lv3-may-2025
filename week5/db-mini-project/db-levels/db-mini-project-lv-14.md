@@ -58,7 +58,7 @@ Need help with refreshing the list? Check out these snippets:
 <details>
 <summary>Show Me: Display meals after submit</summary>
 
-<img src="./docs/06-display-meals-after-submit.png" alt="Display meals after submit" />
+<img src="../docs/06-display-meals-after-submit.png" alt="Display meals after submit" />
 
 </details>
 

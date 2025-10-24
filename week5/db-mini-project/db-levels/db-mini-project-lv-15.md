@@ -64,7 +64,7 @@ Need help with clearing inputs? Check out these snippets:
 <details>
 <summary>Show Me: Clear inputs after submit</summary>
 
-<img src="./docs/07-screenshot-clear-inputs.png" alt="Clear inputs after submit" />
+<img src="../docs/07-screenshot-clear-inputs.png" alt="Clear inputs after submit" />
 
 </details>
 

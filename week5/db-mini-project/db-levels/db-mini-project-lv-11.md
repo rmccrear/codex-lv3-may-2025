@@ -34,14 +34,14 @@ This allows anyone to **create** new rows in your table.
 <details>
 <summary>Show Me: RLS Policy for inserts</summary>
 
-<img src="./docs/03-screenshot-custom-rls-policy.png" alt="RLS Policy for inserts" />
+<img src="../docs/03-screenshot-custom-rls-policy.png" alt="RLS Policy for inserts" />
 
 </details>
 
 <details>
 <summary>Show Me: Potential RLS error</summary>
 
-<img src="./docs/04-screenshot-potential-rls-error.png" alt="Potential RLS error" />
+<img src="../docs/04-screenshot-potential-rls-error.png" alt="Potential RLS error" />
 
 </details>
 

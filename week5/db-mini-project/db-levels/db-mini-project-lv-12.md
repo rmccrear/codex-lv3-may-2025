@@ -53,7 +53,7 @@ Need help with database insertion? Check out these snippets:
 <details>
 <summary>Show Me: Verify insert in Supabase</summary>
 
-<img src="./docs/05-screenshot-verify-insert.png" alt="Verify insert in Supabase" />
+<img src="../docs/05-screenshot-verify-insert.png" alt="Verify insert in Supabase" />
 
 </details>
 
