@@ -48,6 +48,13 @@ A chunk of code you can bring into your project. Example: Express is a module th
 
 **📺 Learn More:** [JavaScript Modules in 100 Seconds](https://www.youtube.com/watch?v=qgRUr-YUk1Q)
 
+### Mad Libs
+
+A word game where players fill in blanks in a story with random words (like nouns, verbs, adjectives) without knowing the context. The result is usually a funny and nonsensical story! In our course, you'll build a web application that creates Mad Libs stories using forms.
+
+**📖 Learn More:** [Mad Libs Format - Wikipedia](https://en.wikipedia.org/wiki/Mad_Libs#Format)  
+**📺 Learn More:** [Mad Libs Gameplay Video](https://www.youtube.com/watch?v=48pP0WFjuOE)
+
 ### Express
 
 A popular module for Node.js that makes building servers and handling requests/responses much easier.

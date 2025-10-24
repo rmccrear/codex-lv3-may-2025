@@ -1,27 +1,37 @@
 # codex-lv3-may-2025
 
-## Daily Plans
+This repository contains comprehensive learning materials for a Level 3 React development course spanning 7 weeks. Students progress from building simple server-side applications with Node.js and Express to creating full-stack React applications with database integration using Supabase. The curriculum emphasizes hands-on learning through mini-projects, coding exercises (katas), and a culminating capstone project that demonstrates mastery of modern web development skills.
+
+## Quick Links
+
+### Daily Plans
 - [Week 1 Plan for the Day](plan-for-the-day-w1.md)
 - [Week 2 Plan for the Day](plan-for-the-day-w2.md)
 - [Week 3 Plan for the Day](plan-for-the-day-w3.md)
 - [Week 4 Plan for the Day](plan-for-the-day-w4.md)
 - [Week 5 Plan for the Day](plan-for-the-day-w5.md)
 
-- [JavaScript Practice](./javascript-practice/README.md)
-
-## Resources
+### Resources
 - [React Cheatsheet](REACT_CHEATSHEET.md)
+- [JavaScript Practice](./javascript-practice/README.md)
+- [Vocabulary List](VOCABULARY_LIST.md)
 
-## Topics
+## Course Topics
 
-### Node JS
+### Week 1: Server-Side Development with Node.js
+You'll learn the fundamentals of server-side programming using Node.js and Express.js. You'll build interactive web applications that handle form submissions, process user input, and generate dynamic content. By the end of the week, you'll have created your own Mad Libs game that demonstrates server routing, static file serving, and template rendering.
 
-### React Intro
+### Week 2: React Components and Props
+You'll dive into React's component-based architecture and learn how to use props to pass data between components. You'll build your own personal portfolio website using multiple React components, mastering JSX syntax, component composition, and the children prop. This foundation will prepare you for more complex React applications.
 
-### React Components, Styles and Events
+### Week 3: React State and Event Handling
+You'll master React state management with the `useState` hook and learn how to handle user interactions. You'll build an interactive clicker game that teaches you how to update component state, respond to user events, and create dynamic user interfaces. This week establishes the core patterns you'll use for building interactive React applications.
 
-### List Patterns and Loops: Filter, Reduce, and Map
+### Week 4: List Patterns and Data Manipulation
+You'll work with arrays and implement common list traversal patterns (map, reduce, filter) using explicit for loops before exploring built-in array methods. You'll participate in a hackathon-style project where you build multi-page applications with complex data manipulation, putting all the patterns you've learned into practice.
 
-### Databases
+### Week 5: Database Integration with Supabase
+You'll learn modern database development using Supabase (PostgreSQL) and integrate databases with your React applications. You'll master database design, Row Level Security (RLS), CRUD operations, and build full-stack applications. The week includes hands-on practice with React Katas and culminates in your own comprehensive database mini-project.
 
-### Capstone Project
+### Weeks 6-7: Capstone Project
+You'll apply everything you've learned to build your own comprehensive React + Supabase application with multiple tables, forms, and list patterns. Your capstone project will demonstrate your mastery of full-stack development skills, including database design, authentication, data visualization, and deployment. You'll present your project and reflect on your incredible learning journey.
