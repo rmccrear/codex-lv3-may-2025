@@ -69,10 +69,10 @@ Supabase provides three files to get you started. Copy these into your React pro
 
 **The three files you'll need to modify:**
 
-1. **`.env`** - Environment variables file
+1. **`.env.local`** - Environment variables file
    - Stores your Supabase URL and API key securely
    - Keeps sensitive data out of your code
-   - Create in your project root: `.env`
+   - Create in your project root: `.env.local`
 
 2. **`src/utils/supabase.js`** - Supabase client configuration
    - Creates connection to your database
@@ -87,7 +87,7 @@ Supabase provides three files to get you started. Copy these into your React pro
 **File Structure:**
 ```
 project-root/
-├── .env                 # Environment variables
+├── .env.local           # Environment variables
 ├── src/
 │   ├── utils/
 │   │   └── supabase.js  # Supabase client config
@@ -98,7 +98,7 @@ project-root/
 **💡 Tip:** Create the `utils` folder first: `mkdir src/utils`
 
 **How to set up:**
-- Create `.env` file in project root
+- Create `.env.local` file in project root
 - Create `src/utils/supabase.js` with client config
 - Modify your existing `App.jsx` to fetch data
 
