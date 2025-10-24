@@ -37,6 +37,48 @@ Follow the Supabase setup guides to create your database tables and configure ac
 
 </details>
 
+## 🔍 Diving Deeper
+
+**What are Row Level Security (RLS) policies?**
+
+- **Purpose**: Control who can access which rows in your database
+- **Security layer**: Prevents unauthorized access to your data
+- **Policy types**: SELECT (read), INSERT (create), UPDATE (modify), DELETE (remove)
+- **Why we need them**: Without RLS, anyone with your database URL could access all your data
+
+**Understanding our policies:**
+
+```sql
+-- Read policy: Allow everyone to read meals
+CREATE POLICY "Enable read access for all users" ON potluck_meals
+FOR SELECT USING (true);
+
+-- Insert policy: Allow everyone to add meals  
+CREATE POLICY "Enable insert for all users" ON potluck_meals
+FOR INSERT WITH CHECK (true);
+```
+
+- **`USING (true)`**: For SELECT policies, means "allow if condition is true" (always true = everyone can read)
+- **`WITH CHECK (true)`**: For INSERT policies, means "allow if condition is true" (always true = everyone can insert)
+- **`true`**: Always evaluates to true, so these policies allow public access
+
+**Environment variables explained:**
+
+```env
+VITE_SUPABASE_URL=https://your-project.supabase.co
+VITE_SUPABASE_ANON_KEY=your-anon-key-here
+```
+
+- **`VITE_` prefix**: Required for Vite to include these variables in your build
+- **`.env.local`**: More secure than `.env` (automatically ignored by git)
+- **Anon key**: Safe to use in frontend code (has limited permissions)
+- **Service key**: Never use in frontend (has full database access)
+
+**📺 Learn More:**
+- [RLS Policy (Row-Level Security)](https://www.youtube.com/shorts/YAor6JTaqXI) - Quick explanation of RLS
+- [Environment Variables](https://www.youtube.com/watch?v=jqCjflIGH1o) - How environment variables work in Vite
+- [Supabase in 100 Seconds](https://www.youtube.com/watch?v=zBZgdTb-dns) - Overview of Supabase platform
+
 ## ✅ Check
 
 1. Your Supabase project is created and accessible

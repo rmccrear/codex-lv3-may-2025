@@ -56,6 +56,44 @@ for (let i = 0; i &lt; meals.length; i++) {
 
 </details>
 
+## 🔍 Diving Deeper
+
+**Why do we need the `key` prop?**
+
+- **React requirement**: When rendering lists, React needs a unique identifier for each item
+- **Performance**: Helps React efficiently update the DOM when the list changes
+- **Best practice**: Use a unique, stable identifier (like `id`) rather than array index
+- **What happens without it**: React will show warnings and may not update efficiently
+
+**Understanding JSX in loops:**
+
+```javascript
+mealsDisplay.push(
+    <li key={meals[i].id}> 
+        {meals[i].meal_name} by {meals[i].guest_name} serves {meals[i].serves} ( {meals[i].kind_of_dish} ) 
+    </li>
+)
+```
+
+- **JSX elements**: We're creating React elements (not HTML strings)
+- **Template literals**: Using `{variable}` to insert JavaScript values into JSX
+- **Array building**: We build an array of JSX elements, then render it all at once
+
+**Alternative approaches:**
+
+You could also use `.map()` instead of a for loop:
+```javascript
+const mealsDisplay = meals.map(meal => (
+    <li key={meal.id}>
+        {meal.meal_name} by {meal.guest_name} serves {meal.serves} ({meal.kind_of_dish})
+    </li>
+));
+```
+
+**📺 Learn More:**
+- [JavaScript Modules in 100 Seconds](https://www.youtube.com/watch?v=qgRUr-YUk1Q) - Understanding modules and imports
+- [Arrow Functions - Beau teaches JavaScript](https://www.youtube.com/watch?v=22fyYvxz-do) - Modern JavaScript function syntax
+
 ## ✅ Check
 
 1. Click the "Fetch Meals" button

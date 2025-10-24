@@ -130,6 +130,37 @@ npm install
 
 </details>
 
+## 🔍 Diving Deeper
+
+**Why do we need these libraries?**
+
+- **`@supabase/supabase-js`**: This is the official JavaScript client library for Supabase. It provides all the functions we need to connect to our database, perform queries, and handle authentication. Without it, we'd have to write complex HTTP requests manually.
+
+- **`tslib`**: This is a TypeScript runtime library that Supabase depends on. Even though we're using JavaScript, Supabase's internal code uses TypeScript features, so we need this library to support those features.
+
+**Where do these libraries go?**
+
+When you run `npm install`, npm:
+1. Downloads the libraries from the npm registry
+2. Stores them in the `node_modules/` folder in your project
+3. Updates your `package.json` file to record the dependencies
+
+**How to verify installation:**
+
+1. **Check `package.json`**: Open your `package.json` file and look for the `dependencies` section:
+   ```json
+   {
+     "dependencies": {
+       "@supabase/supabase-js": "^2.x.x",
+       "tslib": "^2.x.x"
+     }
+   }
+   ```
+
+2. **Check `node_modules/`**: Look in your project folder for a `node_modules/` directory. Inside, you should see folders named `@supabase` and `tslib`.
+
+3. **Verify in terminal**: Run `npm list` to see all installed packages and their versions.
+
 ## ✅ Check
 
 1. Run `npm run dev` to start your development server
@@ -180,6 +211,48 @@ Follow the Supabase setup guides to create your database tables and configure ac
 <img src="./docs/00-screenshot-list-meals-db-table.png" alt="Sample data in database" />
 
 </details>
+
+## 🔍 Diving Deeper
+
+**What are Row Level Security (RLS) policies?**
+
+- **Purpose**: Control who can access which rows in your database
+- **Security layer**: Prevents unauthorized access to your data
+- **Policy types**: SELECT (read), INSERT (create), UPDATE (modify), DELETE (remove)
+- **Why we need them**: Without RLS, anyone with your database URL could access all your data
+
+**Understanding our policies:**
+
+```sql
+-- Read policy: Allow everyone to read meals
+CREATE POLICY "Enable read access for all users" ON potluck_meals
+FOR SELECT USING (true);
+
+-- Insert policy: Allow everyone to add meals  
+CREATE POLICY "Enable insert for all users" ON potluck_meals
+FOR INSERT WITH CHECK (true);
+```
+
+- **`USING (true)`**: For SELECT policies, means "allow if condition is true" (always true = everyone can read)
+- **`WITH CHECK (true)`**: For INSERT policies, means "allow if condition is true" (always true = everyone can insert)
+- **`true`**: Always evaluates to true, so these policies allow public access
+
+**Environment variables explained:**
+
+```env
+VITE_SUPABASE_URL=https://your-project.supabase.co
+VITE_SUPABASE_ANON_KEY=your-anon-key-here
+```
+
+- **`VITE_` prefix**: Required for Vite to include these variables in your build
+- **`.env.local`**: More secure than `.env` (automatically ignored by git)
+- **Anon key**: Safe to use in frontend code (has limited permissions)
+- **Service key**: Never use in frontend (has full database access)
+
+**📺 Learn More:**
+- [RLS Policy (Row-Level Security)](https://www.youtube.com/shorts/YAor6JTaqXI) - Quick explanation of RLS
+- [Environment Variables](https://www.youtube.com/watch?v=jqCjflIGH1o) - How environment variables work in Vite
+- [Supabase in 100 Seconds](https://www.youtube.com/watch?v=zBZgdTb-dns) - Overview of Supabase platform
 
 ## ✅ Check
 
@@ -365,6 +438,41 @@ Need help with data fetching? Check out these snippets:
 
 </details>
 
+## 🔍 Diving Deeper
+
+**What is async/await?**
+
+- **`async`**: Marks a function as asynchronous, meaning it can use `await` and will return a Promise
+- **`await`**: Pauses execution until a Promise resolves, then returns the resolved value
+- **Why we need it**: Database operations take time (network requests), so we need to wait for them to complete
+
+**Understanding Supabase queries:**
+
+```javascript
+const result = await supabase.from("potluck_meals").select()
+```
+
+- **`supabase.from("table_name")`**: Specifies which table to query
+- **`.select()`**: Retrieves all columns from the table (like `SELECT *` in SQL)
+- **`result`**: Contains both `data` and `error` properties
+- **`result.data`**: The actual data returned from the database
+- **`result.error`**: Any error that occurred during the query
+
+**Error handling pattern:**
+
+Always check for errors when working with databases:
+```javascript
+if (result.error) {
+    console.error('Database error:', result.error);
+    return; // Stop execution if there's an error
+}
+```
+
+**📺 Learn More:**
+- [The Async Await Episode I Promised](https://www.youtube.com/watch?v=vn3tm0quoqE) - Deep dive into async/await
+- [SQL Explained in 100 Seconds](https://www.youtube.com/watch?v=zsjvFFKOm3c) - Understanding SQL basics
+- [MySQL - The Basics](https://www.youtube.com/watch?v=Cz3WcZLRaWc) - Comprehensive SQL tutorial
+
 ## ✅ Check
 
 1. Click the "Fetch Meals" button
@@ -434,6 +542,44 @@ for (let i = 0; i < meals.length; i++) {
 <img src="./docs/01-screenshot-list-meals.png" alt="Meals displayed in app" />
 
 </details>
+
+## 🔍 Diving Deeper
+
+**Why do we need the `key` prop?**
+
+- **React requirement**: When rendering lists, React needs a unique identifier for each item
+- **Performance**: Helps React efficiently update the DOM when the list changes
+- **Best practice**: Use a unique, stable identifier (like `id`) rather than array index
+- **What happens without it**: React will show warnings and may not update efficiently
+
+**Understanding JSX in loops:**
+
+```javascript
+mealsDisplay.push(
+    <li key={meals[i].id}> 
+        {meals[i].meal_name} by {meals[i].guest_name} serves {meals[i].serves} ( {meals[i].kind_of_dish} ) 
+    </li>
+)
+```
+
+- **JSX elements**: We're creating React elements (not HTML strings)
+- **Template literals**: Using `{variable}` to insert JavaScript values into JSX
+- **Array building**: We build an array of JSX elements, then render it all at once
+
+**Alternative approaches:**
+
+You could also use `.map()` instead of a for loop:
+```javascript
+const mealsDisplay = meals.map(meal => (
+    <li key={meal.id}>
+        {meal.meal_name} by {meal.guest_name} serves {meal.serves} ({meal.kind_of_dish})
+    </li>
+));
+```
+
+**📺 Learn More:**
+- [JavaScript Modules in 100 Seconds](https://www.youtube.com/watch?v=qgRUr-YUk1Q) - Understanding modules and imports
+- [Arrow Functions - Beau teaches JavaScript](https://www.youtube.com/watch?v=22fyYvxz-do) - Modern JavaScript function syntax
 
 ## ✅ Check
 
@@ -612,6 +758,76 @@ Need help with the form handler? Check out these snippets:
 
 </details>
 
+## 🔍 Diving Deeper
+
+**Understanding form events:**
+
+- **`event.preventDefault()`**: Stops the browser's default form submission behavior (page refresh)
+- **`event.target`**: References the form element that triggered the event
+- **`event.target.elements`**: Collection of all form input elements with `name` attributes
+- **Why we need it**: Without preventDefault, the page would refresh and lose our React state
+
+**Exploring the event object:**
+
+To better understand how events work, try adding this to your form handler:
+
+```javascript
+function handleAddMeal(event) {
+    console.log(event); // Examine the entire event object
+    console.log(event.target); // Look at the form element
+    console.log(event.target.elements); // See all form inputs
+    
+    event.preventDefault();
+    // ... rest of your code
+}
+```
+
+**What you'll see in the console:**
+- **`event`**: A large object with many properties (type, target, preventDefault, etc.)
+- **`event.target`**: The `<form>` element that was submitted
+- **`event.target.elements`**: A collection of all inputs with `name` attributes
+
+**Form data extraction pattern:**
+
+```javascript
+const mealName = event.target.elements.mealName.value
+const guestName = event.target.elements.guestName.value
+```
+
+- **`elements.mealName`**: Gets the input with `name="mealName"`
+- **`.value`**: Gets the current value from that input
+- **Uncontrolled inputs**: We're not using React state to control the input values
+- **Alternative**: Could use `useState` for each field (controlled inputs), but this is simpler
+
+**Data type conversion:**
+
+```javascript
+serves: parseInt(serves)
+```
+
+- **`parseInt()`**: Converts string to integer
+- **Why needed**: HTML form inputs always return strings, but our database expects numbers
+- **Error handling**: `parseInt("abc")` returns `NaN` - in production, you'd validate this
+
+**Object creation pattern:**
+
+```javascript
+const newMeal = {
+    meal_name: mealName,
+    guest_name: guestName,
+    serves: parseInt(serves),
+    kind_of_dish: kindOfDish
+}
+```
+
+- **Property mapping**: Database column names (`meal_name`) vs. form field names (`mealName`)
+- **Data structure**: Creating an object that matches our database schema
+- **Consistency**: This object structure must match what Supabase expects
+
+**📺 Learn More:**
+- [JavaScript Visualized - Event Loop](https://www.youtube.com/watch?v=eiC58R16hb8) - Understanding how events work
+- [Learn JavaScript STRICT EQUALITY](https://www.youtube.com/watch?v=O7aUm0AuUy4) - Data type comparisons
+
 ## ✅ Check
 
 1. Fill out the form with test data
@@ -741,6 +957,78 @@ Need help with database insertion? Check out these snippets:
 <img src="./docs/05-screenshot-verify-insert.png" alt="Verify insert in Supabase" />
 
 </details>
+
+## 🔍 Diving Deeper
+
+**Understanding CRUD operations:**
+
+- **C**reate: `INSERT` - Adding new records to the database
+- **R**ead: `SELECT` - Retrieving data from the database  
+- **U**pdate: `UPDATE` - Modifying existing records
+- **D**elete: `DELETE` - Removing records from the database
+
+**Database insertion explained:**
+
+```javascript
+await supabase.from("potluck_meals").insert(newMeal)
+```
+
+- **`supabase.from("table_name")`**: Specifies which table to insert into
+- **`.insert(data)`**: Inserts the provided data as a new row
+- **`await`**: Waits for the insertion to complete before continuing
+- **No return value needed**: We're not using the returned data, just inserting
+
+**Exploring network requests:**
+
+To see what's actually being sent to Supabase, open your browser's Developer Tools:
+
+1. **Open Developer Tools**: Press `F12` or right-click → "Inspect"
+2. **Go to Network Tab**: Click on the "Network" tab
+3. **Submit your form**: Fill out and submit the form
+4. **Look for the request**: You'll see a request to your Supabase URL
+5. **Examine the data**: Click on the request to see:
+   - **Request Payload**: The data being sent (your `newMeal` object)
+   - **Response**: What Supabase sends back
+   - **Headers**: Authentication and other metadata
+
+**What you'll see:**
+- **Request URL**: `https://your-project.supabase.co/rest/v1/potluck_meals`
+- **Request Method**: `POST` (for inserting data)
+- **Request Payload**: Your form data as JSON
+- **Response**: Confirmation that the data was inserted
+
+**Data persistence:**
+
+- **Before insert**: Data only exists in your React component's memory
+- **After insert**: Data is permanently stored in the Supabase database
+- **Verification**: You can check the Supabase dashboard to see the new record
+- **Retrieval**: The data will be available even after refreshing the page
+
+**Error handling considerations:**
+
+In production apps, you'd want to handle potential errors:
+```javascript
+const { data, error } = await supabase.from("potluck_meals").insert(newMeal)
+if (error) {
+    console.error('Insert failed:', error);
+    // Show user-friendly error message
+} else {
+    console.log('Meal added successfully:', data);
+    // Update UI to show success
+}
+```
+
+**Database constraints:**
+
+- **Required fields**: Database will reject inserts if required columns are missing
+- **Data types**: Database will reject inserts if data types don't match (e.g., string in integer column)
+- **Unique constraints**: Database will reject duplicate values in unique columns
+- **Foreign keys**: Database will reject inserts that violate relationship rules
+
+**📺 Learn More:**
+- [MySQL - The Basics](https://www.youtube.com/watch?v=Cz3WcZLRaWc) - Comprehensive SQL tutorial including INSERT
+- [SQL Explained in 100 Seconds](https://www.youtube.com/watch?v=zsjvFFKOm3c) - Quick SQL overview
+- [Supabase in 100 Seconds](https://www.youtube.com/watch?v=zBZgdTb-dns) - Understanding the platform
 
 ## ✅ Check
 

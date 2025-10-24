@@ -63,6 +63,37 @@ npm install
 
 </details>
 
+## 🔍 Diving Deeper
+
+**Why do we need these libraries?**
+
+- **`@supabase/supabase-js`**: This is the official JavaScript client library for Supabase. It provides all the functions we need to connect to our database, perform queries, and handle authentication. Without it, we'd have to write complex HTTP requests manually.
+
+- **`tslib`**: This is a TypeScript runtime library that Supabase depends on. Even though we're using JavaScript, Supabase's internal code uses TypeScript features, so we need this library to support those features.
+
+**Where do these libraries go?**
+
+When you run `npm install`, npm:
+1. Downloads the libraries from the npm registry
+2. Stores them in the `node_modules/` folder in your project
+3. Updates your `package.json` file to record the dependencies
+
+**How to verify installation:**
+
+1. **Check `package.json`**: Open your `package.json` file and look for the `dependencies` section:
+   ```json
+   {
+     "dependencies": {
+       "@supabase/supabase-js": "^2.x.x",
+       "tslib": "^2.x.x"
+     }
+   }
+   ```
+
+2. **Check `node_modules/`**: Look in your project folder for a `node_modules/` directory. Inside, you should see folders named `@supabase` and `tslib`.
+
+3. **Verify in terminal**: Run `npm list` to see all installed packages and their versions.
+
 ## ✅ Check
 
 1. Run `npm run dev` to start your development server

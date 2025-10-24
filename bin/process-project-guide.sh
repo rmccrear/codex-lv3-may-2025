@@ -84,6 +84,14 @@ if [ $? -ne 0 ]; then
 fi
 echo ""
 
+echo -e "${BLUE}Step 4: Fixing image paths in level files...${NC}"
+python3 bin/fix-image-paths.py "$OUTPUT_DIR"
+if [ $? -ne 0 ]; then
+    echo -e "${RED}❌ Error: Failed to fix image paths${NC}"
+    exit 1
+fi
+echo ""
+
 # Count the number of level files created
 LEVEL_COUNT=$(find "$OUTPUT_DIR" -name "${PROJECT_NAME}-lv-*.md" | wc -l)
 
@@ -93,6 +101,7 @@ echo ""
 echo -e "✅ Created ${YELLOW}$LEVEL_COUNT${NC} individual level files for ${YELLOW}$PROJECT_NAME${NC}"
 echo -e "✅ Added navigation between all levels"
 echo -e "✅ Converted Show Me sections to collapsible details"
+echo -e "✅ Fixed image paths in level files"
 echo ""
 echo -e "📁 Level files are now available in: ${YELLOW}$OUTPUT_DIR${NC}"
 echo ""

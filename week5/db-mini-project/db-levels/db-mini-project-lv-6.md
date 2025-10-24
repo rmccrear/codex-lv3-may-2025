@@ -38,6 +38,41 @@ Need help with data fetching? Check out these snippets:
 
 </details>
 
+## 🔍 Diving Deeper
+
+**What is async/await?**
+
+- **`async`**: Marks a function as asynchronous, meaning it can use `await` and will return a Promise
+- **`await`**: Pauses execution until a Promise resolves, then returns the resolved value
+- **Why we need it**: Database operations take time (network requests), so we need to wait for them to complete
+
+**Understanding Supabase queries:**
+
+```javascript
+const result = await supabase.from("potluck_meals").select()
+```
+
+- **`supabase.from("table_name")`**: Specifies which table to query
+- **`.select()`**: Retrieves all columns from the table (like `SELECT *` in SQL)
+- **`result`**: Contains both `data` and `error` properties
+- **`result.data`**: The actual data returned from the database
+- **`result.error`**: Any error that occurred during the query
+
+**Error handling pattern:**
+
+Always check for errors when working with databases:
+```javascript
+if (result.error) {
+    console.error('Database error:', result.error);
+    return; // Stop execution if there's an error
+}
+```
+
+**📺 Learn More:**
+- [The Async Await Episode I Promised](https://www.youtube.com/watch?v=vn3tm0quoqE) - Deep dive into async/await
+- [SQL Explained in 100 Seconds](https://www.youtube.com/watch?v=zsjvFFKOm3c) - Understanding SQL basics
+- [MySQL - The Basics](https://www.youtube.com/watch?v=Cz3WcZLRaWc) - Comprehensive SQL tutorial
+
 ## ✅ Check
 
 1. Click the "Fetch Meals" button
