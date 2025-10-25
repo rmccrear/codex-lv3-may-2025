@@ -78,4 +78,4 @@ Please complete the code.org Lessons 11 and 12 before working on the Hackathon p
 
 ## Day 5
 
-Hackathon
+Complete work on Hackathon

@@ -64,3 +64,7 @@ Katas [link](./week5/kata/README.md). Choose ONE kata to master. Master importan
 **Database Mini Project:** [Level 1 - Planning](https://rmccrear.github.io/codex-lv3-may-2025/week5/db-mini-project/db-levels/db-mini-project-lv-1.html)
 
 Start working on the complete potluck management application. Follow the level-by-level instructions to build a full React + Supabase app.
+
+## Day 5
+
+Complete your Mini-Project

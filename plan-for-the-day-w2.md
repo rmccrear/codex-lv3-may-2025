@@ -69,3 +69,7 @@ Loops are one of the basic building blocks of algorithms. Being able to use loop
 ### TODOs
 
 * Start work on Mini-Project [Portfolio](./week2/mini-project-portfolio/README.md)
+
+## Day 5
+
+* Complete your Mini-Project
