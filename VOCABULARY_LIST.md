@@ -522,7 +522,7 @@ Hidden configuration values like API keys, database URLs, or secrets that you do
 
 **📺 Learn More:** 
 - [Builds with Vite #16 - Environment variables](https://www.youtube.com/watch?v=jqCjflIGH1o)
-- [What are Environment variables? [10 of 20] | Bash for Beginners](https://www.youtube.com/watch?v=aKghi0hI1OA)
+- [What are Environment variables? [10 of 20] Bash for Beginners](https://www.youtube.com/watch?v=aKghi0hI1OA)
 
 **🔗 Learn More:** [Environment Variables – Supabase Docs](https://supabase.com/docs/guides/cli/local-development#environment-variables)
 
