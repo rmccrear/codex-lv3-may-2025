@@ -40,7 +40,7 @@ A style of programming where the server waits for events (like a request) and th
 
 Short for Node Package Manager. A tool that helps you add extra code "packages" (like apps or helpers) into your project.
 
-**📺 Learn More:** [What is NPM, and why do we need it? | Tutorial for beginners](https://www.youtube.com/watch?v=P3aKRdUyr0s)
+**📺 Learn More:** [What is NPM, and why do we need it? - Tutorial for beginners](https://www.youtube.com/watch?v=P3aKRdUyr0s)
 
 ### Module
 
@@ -95,7 +95,7 @@ A popular module for Node.js that makes building servers and handling requests/r
 
 A "door number" on your computer where your server listens for requests. Example: [http://localhost:3000](http://localhost:3000/).
 
-### ES6 Function / Arrow Function
+### ES6 Function-Arrow Function
 
 A shorter way to write functions in JavaScript. Example:
 
