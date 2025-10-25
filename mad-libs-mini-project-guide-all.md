@@ -18,6 +18,11 @@ This guide provides step-by-step instructions for building a Mad Libs web applic
 
 **User Story:** As a developer, I want to create a new project folder with all necessary files so that I can start building my Mad Libs application.
 
+Mad Libs is a word game where players fill in blanks in a story with random words (like nouns, verbs, and adjectives) without knowing the context. The result is usually a funny and nonsensical story!
+
+**📖 Learn More:** [Mad Libs Format - Wikipedia](https://en.wikipedia.org/wiki/Mad_Libs#Format)  
+**📺 Learn More:** [Mad Libs Gameplay Video](https://www.youtube.com/watch?v=48pP0WFjuOE)
+
 ---
 
 ## What You'll Do
