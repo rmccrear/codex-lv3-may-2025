@@ -135,7 +135,8 @@ A way to put variables into strings using backticks (`). Example:
 
 Special addresses (`localhost` or `127.0.0.1`) that let you test a server running on your own computer.
 
-**📺 Learn More:** [Understanding Loopback URLs](https://youtu.be/MDu6hWknk70?si=NFtxi-vgoXi1lsiC&t=13)
+**📺 Learn More:** [Understanding Loopback URLs](https://youtu.be/MDu6hWknk70?si=NFtxi-vgoXi1lsiC&t=13)  
+**📺 Learn More:** [What is an IP Address?](https://www.youtube.com/watch?v=5WfiTHiU4x8)
 
 ### Event Listener
 
