@@ -95,6 +95,8 @@ A popular module for Node.js that makes building servers and handling requests/r
 
 A "door number" on your computer where your server listens for requests. Example: [http://localhost:3000](http://localhost:3000/).
 
+**📺 Learn More:** [What is a Port?](https://www.youtube.com/watch?v=h5vq9hFROEA)
+
 ### ES6 Function-Arrow Function
 
 A shorter way to write functions in JavaScript. Example:
@@ -111,9 +113,13 @@ A shorter way to write functions in JavaScript. Example:
 
 The address you type after the main website, like `/about` or `/login`. It tells the server what part you want.
 
+**📺 Learn More:** [Understanding Paths and Routes](https://youtu.be/-LPe4tYckkg?si=eqhHlex2KRb1H-ny&t=30)
+
 ### Counter Pattern
 
 A coding pattern where you use a variable to keep track of counts (like adding 1 in a loop). It's often the first loop pattern students learn.
+
+**📺 Learn More:** [Understanding Counter Pattern](https://www.youtube.com/watch?v=S2UdAfZbWMs)
 
 ### Template Literal
 
@@ -123,9 +129,13 @@ A way to put variables into strings using backticks (`). Example:
 `Hello, ${name}!`
 ```
 
+**📺 Learn More:** [Understanding Template Literals](https://www.youtube.com/watch?v=NgF9-pdTDGs)
+
 ### Loopback URL / IP
 
 Special addresses (`localhost` or `127.0.0.1`) that let you test a server running on your own computer.
+
+**📺 Learn More:** [Understanding Loopback URLs](https://youtu.be/MDu6hWknk70?si=NFtxi-vgoXi1lsiC&t=13)
 
 ### Event Listener
 
@@ -154,6 +164,8 @@ A way to access object properties using square brackets. Example:
 ```javascript
 myDog["age"];
 ```
+
+**📺 Learn More:** [Understanding Bracket Notation](https://youtu.be/AzVvBO65SMc?si=LPbBBvnCTJGi5ayd&t=151)
 
 ### String
 
@@ -228,13 +240,19 @@ A tool to quickly start a React project. By default, it runs on port 5173 (which
 
 Called the "essence of programming." In React, using components is a way to control complexity by breaking big problems into smaller, reusable pieces.
 
+**📖 Learn More:** [Brian Kernighan Quote on Controlling Complexity](https://www.comp.nus.edu.sg/~damithch/quotes/quote148.htm)
+
 ### Props (Properties)
 
 Attributes you can give to components to make them more powerful. Props are like HTML attributes but for your own custom components.
 
 ### Return
 
-In a React component function, the return statement sends back the JSX that should be shown on the screen. It's similar to `res.send` in a server.
+In programming, **return** ends a function and sends a value back to wherever it was called. In JavaScript functions, you use `return` to pass data back to the code that called the function.
+
+In a React component function, the return statement sends back the JSX that should be shown on the screen. 
+
+**🔗 Learn More:** [Return Statements in JavaScript](https://www.educative.io/courses/introduction-to-javascript-first-steps/return-statements)
 
 ### Nesting
 
@@ -376,7 +394,8 @@ Special prop containing nested JSX between a component's opening and closing tag
 </MyCard>
 ```
 
-**🔗 Learn More:** [Passing JSX as Children](https://react.dev/learn/passing-props-to-a-component#passing-jsx-as-children)
+**🔗 Learn More:** [Passing JSX as Children](https://react.dev/learn/passing-props-to-a-component#passing-jsx-as-children)  
+**🔗 Learn More:** [React Props Children - W3Schools](https://www.w3schools.com/react/react_props_children.asp)
 
 ### Prop
 
