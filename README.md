@@ -16,6 +16,15 @@ This repository contains comprehensive learning materials for a Level 3 React de
 - [JavaScript Practice](./javascript-practice/README.md)
 - [Vocabulary List](VOCABULARY_LIST.md)
 
+## Table of Contents
+
+- [Week 1: Server-Side Development with Node.js](#week-1-server-side-development-with-nodejs)
+- [Week 2: React Components and Props](#week-2-react-components-and-props)
+- [Week 3: React State and Event Handling](#week-3-react-state-and-event-handling)
+- [Week 4: List Patterns and Data Manipulation](#week-4-list-patterns-and-data-manipulation)
+- [Week 5: Database Integration with Supabase](#week-5-database-integration-with-supabase)
+- [Weeks 6-7: Capstone Project](#weeks-6-7-capstone-project)
+
 ## Course Topics
 
 ---
