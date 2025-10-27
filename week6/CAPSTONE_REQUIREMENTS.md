@@ -1,8 +1,8 @@
-# React + Supabase CRUD Project
+# React + Supabase Create & Read Project
 
 ## Objective
 
-Create a React project connected to Supabase using the Supabase JavaScript client library to perform CRUD (Create, Read, Update, Delete) operations on multiple tables. Your project will include navigation and a structured user interface to manage records across different data sources.
+Create a React project connected to Supabase using the Supabase JavaScript client library to perform Create and Read operations on multiple tables. Your project will include navigation and a structured user interface to manage records across different data sources.
 
 ---
 
@@ -18,7 +18,6 @@ Create a React project connected to Supabase using the Supabase JavaScript clien
 
 #### Report Page
 - Display records from both tables using list patterns (map, reduce, or filter)
-- Include options to update and delete records
 
 #### Form Page
 - Provide at least one form to add new records to the user data table
@@ -152,7 +151,7 @@ You can also use any of these datasets from Code.org's App Lab data tab:
 1. **Create at least 2 tables** - One must contain external data (from Code.org's data tab or another source), and one must contain user-generated data. Create them in Supabase with proper relationships.
 
 2. **Create a React app** with the following navigation:
-   - **Report Page**: Fetch records from both tables and display them using at least 2 list patterns (map, reduce, or filter). Include options to update and delete records.
+   - **Report Page**: Fetch records from both tables and display them using list patterns (map, reduce, or filter).
    - **Form Page**: Add at least one form for creating new records in the user data table. Ensure validation for required fields.
    - **Log In Page (Challenge)**: Authenticate users and store their details locally.
 
@@ -180,7 +179,7 @@ You can also use any of these datasets from Code.org's App Lab data tab:
 
 - Submit your **completed planning worksheet** (shared Google Doc link)
 - Submit your project repository link on the provided platform
-- Ensure all functionality (CRUD) is working as expected
+- Ensure all functionality (Create and Read) is working as expected
 - Include a **README.md file** explaining the project's purpose, setup, and usage
 - **Deploy the project** on Netlify or Vercel
 

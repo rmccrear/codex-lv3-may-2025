@@ -1,8 +1,8 @@
-# React + Supabase CRUD Capstone Project
+# React + Supabase Create & Read Capstone Project
 
 ## Objective
 
-Create a React project connected to Supabase using the Supabase JavaScript client library to perform CRUD (Create, Read, Update, Delete) operations on multiple tables. Your project will include navigation and a structured user interface to manage records across different data sources.
+Create a React project connected to Supabase using the Supabase JavaScript client library to perform Create and Read operations on multiple tables. Your project will include navigation and a structured user interface to manage records across different data sources.
 
 ---
 
@@ -18,7 +18,6 @@ Create a React project connected to Supabase using the Supabase JavaScript clien
 
 #### Report Page
 - Display records from both tables using list patterns (map, reduce, filter)
-- Include options to update and delete records
 
 #### Form Page
 - Provide at least one form to add new records to the user data table
@@ -175,7 +174,7 @@ Submit all of the following through Moodle:
 | **Planning** | 10 | Completed planning worksheet is thorough and detailed |
 | **External Data Table** | 15 | Successfully imports Code.org data with 50+ records |
 | **User Data Table** | 15 | Stores user-generated content related to external data |
-| **CRUD Operations** | 20 | Create, Read, Update, Delete all working correctly |
+| **Create & Read** | 20 | Create and Read operations both working correctly |
 | **List Patterns** | 15 | Map, Filter, and Reduce all implemented |
 | **For-Loops** | 5 | At least one for-loop implemented |
 | **Navigation** | 5 | Working navigation bar with all pages |
@@ -213,7 +212,7 @@ Submit all of the following through Moodle:
 - Needs documentation improvements
 
 ### Needs Improvement (D - 60-69)
-- Core CRUD operations working
+- Core Create and Read operations working
 - Missing some required features
 - Minimal styling
 - Incomplete planning
