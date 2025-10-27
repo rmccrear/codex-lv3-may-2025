@@ -105,7 +105,3 @@ Choose from Code.org's App Lab data tab. See the [complete list of 97 available 
 
 *Choose datasets that have enough records (50+) and multiple useful columns.*
 
----
-
-*This document was created with AI assistance using Claude Sonnet 4.5 for curriculum development.*
-
