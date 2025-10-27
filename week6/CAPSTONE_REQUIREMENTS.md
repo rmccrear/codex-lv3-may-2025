@@ -38,20 +38,19 @@ Here are some suggested table structures you can implement, or you can create yo
 
 ### External Data Examples
 
-#### 1. Book Database (External)
-Import book data from Code.org's data tab or another source:
+#### 1. New York Times Bestsellers (External)
+Import book data from Code.org's "New York Times Bestsellers" dataset:
 
 | Column Name | Data Type | Constraints | Description |
 |-------------|-----------|-------------|-------------|
 | id | int | Primary Key, Auto-increment | Unique identifier for each book |
 | title | text | Not Null | Title of the book |
 | author | text | Not Null | Author of the book |
-| genre | text | | Genre of the book |
-| publication_year | int | | Year of publication |
+| bestseller_date | text | | Date it was on bestseller list |
 | created_at | timestamp | Default: now() | Record creation timestamp |
 
-#### 2. Movie Database (External)
-Import movie data from external source:
+#### 2. IMDB Top 1000 Movies (External)
+Import movie data from Code.org's "IMDB Top 1000" dataset:
 
 | Column Name | Data Type | Constraints | Description |
 |-------------|-----------|-------------|-------------|
@@ -87,42 +86,67 @@ Track user's favorite items:
 | item_type | text | Not Null | Type of item (book, movie, etc.) |
 | created_at | timestamp | Default: now() | Record creation timestamp |
 
-### 3. Pokémon Cards
+#### 3. Cereal Nutrition (External)
+Import cereal nutrition data from Code.org's "Cereal Nutrition" dataset:
 
 | Column Name | Data Type | Constraints | Description |
 |-------------|-----------|-------------|-------------|
-| id | int | Primary Key, Auto-increment | Unique identifier for each card |
-| name | text | Not Null | Name of the Pokémon |
-| type | text | | Type (e.g., Fire, Water, Grass) |
-| hp | int | | Hit points of the Pokémon |
-| rarity | text | | Rarity level of the card |
+| id | int | Primary Key, Auto-increment | Unique identifier for each cereal |
+| name | text | Not Null | Name of the cereal |
+| calories | int | | Calories per serving |
+| fiber | float | | Fiber content (grams) |
+| sugar | float | | Sugar content (grams) |
 | created_at | timestamp | Default: now() | Record creation timestamp |
 
-### 4. Employee Register
+#### 4. Dogs (External)
+Import dog breed data from Code.org's "Dogs" dataset:
 
 | Column Name | Data Type | Constraints | Description |
 |-------------|-----------|-------------|-------------|
-| id | int | Primary Key, Auto-increment | Unique identifier for each employee |
-| name | text | Not Null | Name of the employee |
-| position | text | | Job title of the employee |
-| department | text | | Department the employee belongs to |
-| hire_date | date | | Date the employee was hired |
+| id | int | Primary Key, Auto-increment | Unique identifier for each dog |
+| breed | text | Not Null | Dog breed name |
+| size | text | | Size category (Small, Medium, Large) |
+| group | text | | Breed group (Sporting, Working, etc.) |
+| intelligence | int | | Intelligence ranking |
 | created_at | timestamp | Default: now() | Record creation timestamp |
 
-### 5. Airbnb Apartment List
+#### 5. FIFA World Cup Results (External)
+Import soccer data from Code.org's "FIFA World Cup Results" or "FIFA World Cup 2022" dataset:
 
 | Column Name | Data Type | Constraints | Description |
 |-------------|-----------|-------------|-------------|
-| id | int | Primary Key, Auto-increment | Unique identifier for each listing |
-| title | text | Not Null | Title of the apartment |
-| location | text | Not Null | City or area where the apartment is located |
-| price_per_night | float | | Price per night |
-| available | boolean | Default: true | Whether the apartment is available for booking |
+| id | int | Primary Key, Auto-increment | Unique identifier for each match |
+| home_team | text | Not Null | Home team name |
+| away_team | text | Not Null | Away team name |
+| home_score | int | | Home team score |
+| away_score | int | | Away team score |
 | created_at | timestamp | Default: now() | Record creation timestamp |
+
+#### Other Code.org Dataset Options
+You can also use any of these datasets from Code.org's App Lab data tab:
+- **Entertainment**: Grammy Winners, Oscar Winners, Video Game Reviews
+- **Science**: Nobel Prize Winners, Periodic Table Elements, Fast Food Nutrition
+- **Sports**: NBA Teams, Olympic Medals, Paralympic Games
+- **Geography**: US National Parks, World's Tallest Buildings, Countries and Territories
+- **Culture**: Tate Museum Artworks, Bechdel Test, Netflix Content
+
+*Note: Choose datasets that have enough records (50+) and multiple useful columns.*
 
 ---
 
 ## Assignment
+
+**⚠️ REQUIRED: Planning Document**
+📋 **Complete the [Capstone Planning Worksheet](https://docs.google.com/document/d/1GT_9HHmCe1kTSk-67HErz-HNocPdi_Uqw8g698Kx5Ig/edit?usp=sharing)** before starting your project. You must fill out all sections including:
+- Brainstorming your app ideas
+- Wireframes for your screens
+- Table structure planning
+- Daily goals and milestones
+- Technical checklist
+
+*Share your completed planning worksheet with your instructor.*
+
+---
 
 1. **Create at least 2 tables** - One must contain external data (from Code.org's data tab or another source), and one must contain user-generated data. Create them in Supabase with proper relationships.
 
@@ -135,16 +159,25 @@ Track user's favorite items:
 
 4. **Include a navigation bar** that allows users to switch between the Report and Form pages (and Log In page if implemented).
 
-5. **Implement List Patterns**: Use at least 2 of the following patterns:
-   - **Map**: Transform data (e.g., format dates, calculate totals)
+5. **Implement List Patterns**: Use at least one of each of the following patterns:
+   - **Map**: Transform data (e.g., format dates, calculate totals, create lists in JSX)
    - **Reduce**: Aggregate data (e.g., count items, sum values)
    - **Filter**: Filter data (e.g., show only recent items, filter by category)
+
+6. **Implement at least one for-loop** in your code
+
+7. **Implement well thought out CSS design** using either Bootstrap or your own well-developed custom CSS
 
 ---
 
 ## Submission
 
-- Submit your project repository link on the provided platform.
-- Ensure all functionality (CRUD) is working as expected.
-- Include a README.md file explaining the project setup and usage.
-- Deploy the project on render.com
+- Submit your **completed planning worksheet** (shared Google Doc link)
+- Submit your project repository link on the provided platform
+- Ensure all functionality (CRUD) is working as expected
+- Include a **README.md file** explaining the project's purpose, setup, and usage
+- **Deploy the project** on Netlify or Vercel
+
+---
+
+*This document was created with AI assistance using Claude Sonnet 4.5 for curriculum development.*

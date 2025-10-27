@@ -86,3 +86,7 @@ This repository contains comprehensive learning materials for a Level 3 React de
 > **Technical Focus:** You'll integrate all learned technologies ([React](VOCABULARY_LIST.md#react), [Supabase](VOCABULARY_LIST.md#supabase), [Node.js](VOCABULARY_LIST.md#nodejs-node) concepts) to build a production-ready application with authentication, complex data relationships, advanced [state](VOCABULARY_LIST.md#state) management, and deployment strategies.
 
 **What You'll Build:** You'll apply everything you've learned to build your own comprehensive React + Supabase application with multiple tables, forms, and list patterns. Your capstone project will demonstrate your mastery of full-stack development skills, including database design, authentication, data visualization, and deployment. You'll present your project and reflect on your incredible learning journey.
+
+#### Capstone Resources
+- 📋 [Capstone Project Requirements](week6/CAPSTONE_REQUIREMENTS.md) - Complete project specifications and technical requirements
+- 📝 [Capstone Planning Guide](week6/CAPSTONE_PLANNING.md) - Step-by-step guide for planning your capstone project
