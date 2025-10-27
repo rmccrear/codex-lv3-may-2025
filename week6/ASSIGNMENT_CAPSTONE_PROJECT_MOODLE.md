@@ -2,7 +2,7 @@
 
 ## Objective
 
-Create a React project connected to Supabase using the Fetch API to perform CRUD (Create, Read, Update, Delete) operations on multiple tables. Your project will include navigation and a structured user interface to manage records across different data sources.
+Create a React project connected to Supabase using the Supabase JavaScript client library to perform CRUD (Create, Read, Update, Delete) operations on multiple tables. Your project will include navigation and a structured user interface to manage records across different data sources.
 
 ---
 
@@ -36,7 +36,7 @@ Create a React project connected to Supabase using the Fetch API to perform CRUD
 
 ## Technical Requirements
 
-1. **Use the Fetch API** with async/await to interact with the Supabase database
+1. **Use the Supabase JavaScript client library** (`@supabase/supabase-js`) with async/await to interact with the Supabase database
 
 2. **Implement List Patterns** - Use at least one of each:
    - **Map**: Transform data (e.g., format dates, calculate totals, create lists in JSX)
@@ -160,7 +160,7 @@ Submit all of the following through Moodle:
 4. **README.md** with:
    - Project title and description
    - Purpose/Value proposition ("Why?" question)
-   - Tech stack used (React, Supabase, Fetch API, etc.)
+   - Tech stack used (React, Supabase, Supabase JS client library, etc.)
    - Setup instructions (how to install and run)
    - Usage instructions (how to use the app)
    - Deployment information

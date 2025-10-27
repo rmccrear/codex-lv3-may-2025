@@ -2,7 +2,7 @@
 
 ## Objective
 
-Create a React project connected to Supabase using the Fetch API to perform CRUD (Create, Read, Update, Delete) operations on multiple tables. Your project will include navigation and a structured user interface to manage records across different data sources.
+Create a React project connected to Supabase using the Supabase JavaScript client library to perform CRUD (Create, Read, Update, Delete) operations on multiple tables. Your project will include navigation and a structured user interface to manage records across different data sources.
 
 ---
 
@@ -156,7 +156,7 @@ You can also use any of these datasets from Code.org's App Lab data tab:
    - **Form Page**: Add at least one form for creating new records in the user data table. Ensure validation for required fields.
    - **Log In Page (Challenge)**: Authenticate users and store their details locally.
 
-3. **Use the Fetch API** with async/await to interact with the Supabase database.
+3. **Use the Supabase JavaScript client library** (`@supabase/supabase-js`) with async/await to interact with the Supabase database.
 
 4. **Include a navigation bar** that allows users to switch between the Report and Form pages (and Log In page if implemented). Add an "Analytics" or "Charts" page if you complete the data visualization challenge.
 

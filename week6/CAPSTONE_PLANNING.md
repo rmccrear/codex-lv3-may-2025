@@ -144,7 +144,7 @@
      - Project title and description
      - Purpose of the project ("Why?" you identified earlier)
      - Features (CRUD operations, list patterns, etc.)
-     - Tech stack (React, Supabase, Fetch API, etc.)
+     - Tech stack (React, Supabase, Supabase JS client library, etc.)
      - Setup instructions (how to install and run)
      - Usage instructions (how to use the app)
      - Live demo link (after deployment)
