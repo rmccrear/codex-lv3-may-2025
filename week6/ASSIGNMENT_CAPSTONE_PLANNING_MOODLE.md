@@ -20,9 +20,9 @@ You will complete a comprehensive planning document that guides you through:
 ## Instructions
 
 ### Step 1: Access the Planning Worksheet
-📋 Open and make a copy of the [Capstone Planning Worksheet](https://docs.google.com/document/d/1GT_9HHmCe1kTSk-67HErz-HNocPdi_Uqw8g698Kx5Ig/edit?usp=sharing)
+📋 Open and make a copy of the [Capstone Planning Worksheet Google Doc](https://docs.google.com/document/d/1GT_9HHmCe1kTSk-67HErz-HNocPdi_Uqw8g698Kx5Ig/edit?usp=sharing)
 
-**Or use the markdown version:** [Planning Worksheet](https://rmccrear.github.io/codex-lv3-may-2025/week6/CAPSTONE_PLANNING_WORKSHEET.html)
+**Note:** You must use the Google Doc version for this assignment.
 
 ### Step 2: Complete All Sections
 Work through the worksheet systematically:
