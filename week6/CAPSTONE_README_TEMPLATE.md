@@ -63,7 +63,6 @@
 
 ### User Data
 - **Purpose:** [What user data you collect, e.g., "User book reviews"]
-- **Relationship:** [How it relates to external data, e.g., "References book IDs from bestseller dataset"]
 - **Columns:** [List user data columns]
 
 ---
@@ -228,11 +227,11 @@ src/
 ## Future Improvements
 
 - [ ] Add update and delete functionality for records
-- [ ] Implement user profiles
-- [ ] Add more data visualizations
+- [ ] Add data visualizations
 - [ ] Improve mobile responsiveness
 - [ ] Add authentication with Supabase Auth
-- [ ] Implement search functionality
+- [ ] Implement users profiles
+- [ ] Implement search functionality with SQL
 
 ---
 
@@ -256,12 +255,6 @@ src/
 - Code.org for providing datasets
 - Supabase for database hosting
 - [Any other acknowledgments]
-
----
-
-## License
-
-This project was created as part of a curriculum assignment.
 
 ---
 

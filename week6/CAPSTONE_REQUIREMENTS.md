@@ -181,6 +181,7 @@ You can also use any of these datasets from Code.org's App Lab data tab:
 - Submit your project repository link on the provided platform
 - Ensure all functionality (Create and Read) is working as expected
 - Include a **README.md file** explaining the project's purpose, setup, and usage
+  - Use the [README Template](CAPSTONE_README_TEMPLATE.md) as a guide
 - **Deploy the project** on Netlify or Vercel
 
 ---
