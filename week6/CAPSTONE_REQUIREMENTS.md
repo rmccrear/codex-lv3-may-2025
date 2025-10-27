@@ -29,6 +29,7 @@ Create a React project connected to Supabase using the Fetch API to perform CRUD
 
 #### Navigation Bar
 - Create a navigation bar to access the Report and Form pages (and Log In page if implemented)
+- Optionally include an Analytics/Charts page for data visualization (bonus challenge)
 
 ---
 
@@ -157,7 +158,7 @@ You can also use any of these datasets from Code.org's App Lab data tab:
 
 3. **Use the Fetch API** with async/await to interact with the Supabase database.
 
-4. **Include a navigation bar** that allows users to switch between the Report and Form pages (and Log In page if implemented).
+4. **Include a navigation bar** that allows users to switch between the Report and Form pages (and Log In page if implemented). Add an "Analytics" or "Charts" page if you complete the data visualization challenge.
 
 5. **Implement List Patterns**: Use at least one of each of the following patterns:
    - **Map**: Transform data (e.g., format dates, calculate totals, create lists in JSX)
@@ -167,6 +168,11 @@ You can also use any of these datasets from Code.org's App Lab data tab:
 6. **Implement at least one for-loop** in your code
 
 7. **Implement well thought out CSS design** using either Bootstrap or your own well-developed custom CSS
+
+8. **Data Visualization (Challenge Bonus)**: Add at least one data visualization chart (e.g., bar chart, pie chart, line chart) using Chart.js, Recharts, or another visualization library to display aggregated data from your tables.
+   - Examples: Total counts, averages, trends over time, category distributions
+   - Show meaningful insights about your data
+   - Consider adding a dedicated "Analytics" or "Charts" page to your app
 
 ---
 
