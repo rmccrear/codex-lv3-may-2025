@@ -192,8 +192,6 @@ Prepare to explain:
 - **Planning worksheet** accessible
 - **GitHub repository** open in browser
 - **Note-taking app** (optional) for your own notes
-- **Good internet connection** if remote
-- **Quiet space** for the interview
 
 ---
 
@@ -204,21 +202,6 @@ Prepare to explain:
 - Focus on areas for improvement
 - Continue building projects to practice
 - Use this experience to prepare for future technical interviews
-
-### Resources for Interview Practice
-- **Coding Practice:** Codewars, HackerRank, LeetCode
-- **React Practice:** Build small projects, redo your capstone features
-- **Interview Prep:** Pramp.com, InterviewBit
-- **React Docs:** [react.dev](https://react.dev) for reference during coding
-
----
-
-## Timeline
-
-- **Pre-Interview Submission Due:** [Specify date]
-- **Interview Schedule:** Sign-ups will be posted on Moodle
-- **Duration:** 45-60 minutes per student
-- **Location:** TBD (in-person or virtual)
 
 ---
 
