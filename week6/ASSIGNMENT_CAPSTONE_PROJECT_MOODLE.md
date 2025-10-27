@@ -220,15 +220,6 @@ Submit all of the following through Moodle:
 
 ---
 
-## Timeline
-
-- **Planning Due:** [Specify date]
-- **Project Due:** [Specify date]
-- **Estimated Development Time:** 2 weeks (5 days coding + testing)
-- **Late Policy:** 10% deduction per day late
-
----
-
 ## Resources
 
 - 📋 [Capstone Requirements](../week6/CAPSTONE_REQUIREMENTS.md)
@@ -240,7 +231,6 @@ Submit all of the following through Moodle:
 - [React Documentation](https://react.dev/)
 - [Supabase Documentation](https://supabase.com/docs)
 - [Chart.js Documentation](https://www.chartjs.org/)
-- [React Router](https://reactrouter.com/)
 
 ---
 
@@ -251,27 +241,3 @@ Submit all of the following through Moodle:
 - Check existing code examples from mini-projects
 - Use online documentation resources
 - Test incrementally - don't wait until the end
-
----
-
-## Frequently Asked Questions
-
-**Q: Can I work with a partner?**  
-A: Yes, working in pairs or small groups is encouraged. Coordinate your planning first.
-
-**Q: Do I need to complete all bonus features?**  
-A: No, bonus features (Login, Charts) are optional but give you extra credit.
-
-**Q: Can I use my own dataset instead of Code.org?**  
-A: Yes, but you must have approval and it must have 50+ records with multiple columns.
-
-**Q: What if I can't deploy successfully?**  
-A: Still submit your repository link and explain the deployment issue in your submission.
-
-**Q: How detailed should my README be?**  
-A: Include enough information that someone could clone and run your project.
-
----
-
-*This document was created with AI assistance using Claude Sonnet 4.5 for curriculum development.*
-
