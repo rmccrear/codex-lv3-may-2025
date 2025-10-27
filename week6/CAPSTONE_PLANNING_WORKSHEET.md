@@ -36,6 +36,8 @@
 
 **Remember:** The best projects aren't the ones with the fanciest code - they're the ones that are well-planned and thoughtfully designed. Take your time with this phase!
 
+📊 **Optional:** Consider using a [GitHub Kanban Board](CAPSTONE_GITHUB_KANBAN_GUIDE.md) to track your work and show progress professionally!
+
 ---
 
 ## Phase 1: Initial Planning & Brainstorming

@@ -2,6 +2,8 @@
 
 📋 **[Planning Worksheet](https://docs.google.com/document/d/1GT_9HHmCe1kTSk-67HErz-HNocPdi_Uqw8g698Kx5Ig/edit?usp=sharing)** - Use this worksheet to document your planning process as you work through each phase.
 
+📊 **[Optional: GitHub Kanban Board Guide](CAPSTONE_GITHUB_KANBAN_GUIDE.md)** - Learn to use GitHub Projects to track your work and show progress professionally.
+
 ---
 
 ## Phase 1: Initial Planning & Brainstorming
