@@ -93,10 +93,8 @@ Demonstrate your capstone project and discuss your implementation decisions.
 Be ready to discuss:
 - How React components work
 - The difference between props and state
-- When to use useEffect
 - How Supabase client library works
 - What list patterns do and when to use them
-- How async/await works
 - How you debugged problems
 
 ### Project Story
@@ -111,26 +109,26 @@ Prepare to explain:
 
 ## Interview Structure
 
-### Duration: 45-60 minutes
+### Duration: 30 minutes
 
-**Introduction (5 minutes)**
+**Introduction (2-3 minutes)**
 - Welcome and introduction
 - Review of submission materials
 - Interview structure overview
 
-**Live Coding Challenge (20-25 minutes)**
+**Live Coding Challenge (12-15 minutes)**
 - You'll be given a coding task
 - Complete it while thinking out loud
 - Can reference documentation if needed
 - Expected to explain your approach
 
-**Project Walkthrough (15-20 minutes)**
+**Project Walkthrough (10-12 minutes)**
 - Show your deployed site
 - Walk through your code
 - Answer technical questions
 - Discuss challenges and solutions
 
-**Q&A (5-10 minutes)**
+**Q&A (2-3 minutes)**
 - Questions about your project
 - Discussion of technical concepts
 - Feedback and next steps
