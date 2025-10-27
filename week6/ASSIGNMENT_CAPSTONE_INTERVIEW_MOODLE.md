@@ -84,7 +84,7 @@ Demonstrate your capstone project and discuss your implementation decisions.
 - Styling components with CSS
 
 **Practice on platforms like:**
-- [React Katas](../week5/kata/README.md) - Practice exercises for React and list patterns
+- [React Katas](https://rmccrear.github.io/codex-lv3-may-2025/week5/kata/README.html) - Practice exercises for React and list patterns
 - CodeSandbox.io
 - Your own project (add test features)
 - Recreate small versions of your components

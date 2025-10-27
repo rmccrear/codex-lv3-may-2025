@@ -59,7 +59,7 @@ Create a React project connected to Supabase using the Supabase JavaScript clien
 
 ## Dataset Suggestions
 
-Choose from Code.org's App Lab data tab. See the [complete list of 97 available datasets](../week6/code_org_data.md).
+Choose from Code.org's App Lab data tab. See the [complete list of 97 available datasets](https://rmccrear.github.io/codex-lv3-may-2025/week6/code_org_data.html).
 
 ### Popular Dataset Categories:
 - **Culture & Entertainment**: New York Times Bestsellers, IMDB Top 1000 Movies, Grammy Winners
@@ -102,7 +102,7 @@ Store user-generated content (e.g., Reviews):
 ## Assignment Steps
 
 ### Before You Begin
-⚠️ **REQUIRED**: Complete the [Capstone Planning Assignment](../week6/ASSIGNMENT_CAPSTONE_PLANNING_MOODLE.md) first.
+⚠️ **REQUIRED**: Complete the [Capstone Planning Assignment](https://rmccrear.github.io/codex-lv3-may-2025/week6/ASSIGNMENT_CAPSTONE_PLANNING_MOODLE.html) first.
 
 ### Development Process
 
@@ -222,9 +222,9 @@ Submit all of the following through Moodle:
 
 ## Resources
 
-- 📋 [Capstone Requirements](../week6/CAPSTONE_REQUIREMENTS.md)
-- 📝 [Capstone Planning Guide](../week6/CAPSTONE_PLANNING.md)
-- 📊 [Code.org Datasets](../week6/code_org_data.md)
+- 📋 [Capstone Requirements](https://rmccrear.github.io/codex-lv3-may-2025/week6/CAPSTONE_REQUIREMENTS.html)
+- 📝 [Capstone Planning Guide](https://rmccrear.github.io/codex-lv3-may-2025/week6/CAPSTONE_PLANNING.html)
+- 📊 [Code.org Datasets](https://rmccrear.github.io/codex-lv3-may-2025/week6/code_org_data.html)
 - 🚀 [Deployment Guide](./ASSIGNMENT_WEEK5_MOODLE.md) (reference Supabase setup)
 
 ### Key Documentation

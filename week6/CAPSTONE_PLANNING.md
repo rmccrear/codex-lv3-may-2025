@@ -140,7 +140,7 @@
    - Push to GitHub: `git push -u origin main`
 
 **5. Scaffold your README.**
-   - Use the [README Template](../week6/CAPSTONE_README_TEMPLATE.md) as a starting point
+   - Use the [README Template](CAPSTONE_README_TEMPLATE.md) as a starting point
    - Include the following sections:
      - Project title and description
      - Purpose of the project ("Why?" you identified earlier)
