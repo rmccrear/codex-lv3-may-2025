@@ -173,6 +173,24 @@ const total = data.reduce((sum, item) =>
 );
 ```
 
+## For-Loop Implementation
+
+**[Describe where you use a for-loop]:**
+
+```javascript
+// Example of your for-loop implementation
+for (let i = 0; i < items.length; i++) {
+  // Your implementation
+  processItem(items[i]);
+}
+
+// Or with for...of
+for (const item of items) {
+  // Your implementation
+  processItem(item);
+}
+```
+
 ---
 
 ## Deployment
