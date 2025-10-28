@@ -1,5 +1,9 @@
 # Code.org Data 2025
 
+📂 **[Access Data Tab in Code.org App Lab](https://studio.code.org/courses/csp-2025/units/6/lessons/13/levels/1)** - Click "Data" tab to browse and export these datasets as CSV!
+
+---
+
 ### 🐾 **Animals** (6 tables)
 
 1. 100 Birds of the World
