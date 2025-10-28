@@ -6,6 +6,8 @@ This guide will help you export your **App Lab Data Tab** data and turn it into 
 
 ## 🧠 Overview
 
+📊 **First, choose your dataset:** Browse the **[Complete Code.org Data Library](https://rmccrear.github.io/codex-lv3-may-2025/week6/code_org_data.html)** to see all 97 available datasets across 12 categories!
+
 You'll use:
 
 1. **App Lab** → to extract your data

@@ -46,6 +46,8 @@
 
 Browse through the Data Library on Code.org's App Lab data tab and identify at least 3 datasets that interest you:
 
+📊 **[Browse all 97 Code.org datasets online](https://rmccrear.github.io/codex-lv3-may-2025/week6/code_org_data.html)** - Organized by category for easy browsing!
+
 1. _______________________________________________________________________________
    - Why it interests you: _____________________________________________________
    

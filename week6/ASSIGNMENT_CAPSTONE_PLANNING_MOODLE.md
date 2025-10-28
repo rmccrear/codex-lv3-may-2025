@@ -29,6 +29,7 @@ Work through the worksheet systematically:
 
 **Phase 1: Initial Planning & Brainstorming**
 - Review at least 3 Code.org datasets that interest you
+  - 📊 **[Browse all 97 Code.org datasets](https://rmccrear.github.io/codex-lv3-may-2025/week6/code_org_data.html)** organized by category
 - Brainstorm 1-2 app ideas with target users and value propositions
 - Create a 2-minute pitch for your ideas
 - Participate in group voting on ideas

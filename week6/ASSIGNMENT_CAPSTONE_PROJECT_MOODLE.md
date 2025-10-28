@@ -12,6 +12,7 @@ Create a React project connected to Supabase using the Supabase JavaScript clien
 
 **Required Tables (Minimum 2):**
 1. **External Data Table**: Import data from Code.org's data tab
+   - 📊 **[Browse all 97 Code.org datasets](https://rmccrear.github.io/codex-lv3-may-2025/week6/code_org_data.html)** - Choose from 12 categories!
 2. **User Data Table**: Store user-generated content or user information
 
 ### Required Features

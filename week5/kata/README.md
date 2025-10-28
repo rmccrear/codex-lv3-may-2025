@@ -90,3 +90,37 @@ After completing these katas:
 
 **Attribution:** These React katas were created with assistance from Claude AI (Anthropic) to provide focused practice exercises for core React concepts.
 
+---
+
+## Glossary
+
+### Key Terms from [Vocabulary List](../../VOCABULARY_LIST.md)
+
+**[Kata](../../VOCABULARY_LIST.md#kata):** A coding exercise where you practice implementing a specific feature or pattern repeatedly to build muscle memory and fluency.
+
+**[Components](../../VOCABULARY_LIST.md#components):** In React, the building blocks of applications. Everything in React is made from components. They help organize code and keep programs from becoming too complicated.
+
+**[React](../../VOCABULARY_LIST.md#react):** A framework created by Facebook in 2013. It's built on the idea of components and is one of the most popular tools for making modern websites.
+
+**[JSX](../../VOCABULARY_LIST.md#jsx):** A special syntax used in React. It looks like HTML but isn't exactly the same. JSX must be used inside React components.
+
+**[Props (Properties)](../../VOCABULARY_LIST.md#props-properties):** Attributes you can give to components to make them more powerful. Props are like HTML attributes but for your own custom components.
+
+**[State](../../VOCABULARY_LIST.md#state):** In React, component-local data that React preserves between renders so a component can remember information and update the UI (e.g., a click counter).
+
+**[useState](../../VOCABULARY_LIST.md#usestate):** Hook that returns a state value and a setter. Initializes component state and triggers re-render when the setter is called.
+
+**[Hook](../../VOCABULARY_LIST.md#hook):** Special React function whose name starts with `use` (e.g., `useState`, `useEffect`). Must follow the Rules of Hooks.
+
+**[handleClick](../../VOCABULARY_LIST.md#handleclick):** Conventional camelCase name for a click event handler function.
+
+**[Function](../../VOCABULARY_LIST.md#function):** In programming, reusable blocks of code that perform a specific task. They help organize code, avoid repetition, and make programs easier to understand.
+
+**[Return](../../VOCABULARY_LIST.md#return):** In a React component function, the return statement sends back the JSX that should be shown on the screen.
+
+**[Conditional Rendering](../../VOCABULARY_LIST.md#conditional-rendering):** Showing different UI based on a condition using JS expressions in JSX (e.g., `{isOn ? 'On' : 'Off'}`).
+
+**[Ternary Operator](../../VOCABULARY_LIST.md#ternary-operator):** `condition ? exprIfTrue : exprIfFalse`; commonly used inside JSX for conditional rendering.
+
+**[Event Listener](../../VOCABULARY_LIST.md#event-listener):** In web development, code that waits for something to happen (like a button click or a request) and then runs a function in response.
+

@@ -187,3 +187,49 @@ You can also use any of these datasets from Code.org's App Lab data tab:
 ---
 
 *This document was created with AI assistance using Claude Sonnet 4.5 for curriculum development.*
+
+---
+
+## Glossary
+
+### Key Terms from [Vocabulary List](../VOCABULARY_LIST.md)
+
+**[Database (DB)](../VOCABULARY_LIST.md#database-db):** An organized collection of data that can be stored, accessed, and managed efficiently. In web development, databases provide a structured place to store and organize data.
+
+**[Supabase](../VOCABULARY_LIST.md#supabase):** A backend-as-a-service that gives you a PostgreSQL database, authentication, storage, and APIs. Works like an open-source Firebase.
+
+**[SQL](../VOCABULARY_LIST.md#sql):** Structured Query Language — used to communicate with relational databases like PostgreSQL and MySQL.
+
+**[Table](../VOCABULARY_LIST.md#table):** A collection of related data in the database, organized into rows and columns — similar to a spreadsheet.
+
+**[Column](../VOCABULARY_LIST.md#column):** A labeled field in a table (e.g., `email`, `price`, `user_id`) that defines one type of data.
+
+**[Row / Record](../VOCABULARY_LIST.md#row--record):** One entry in a table — like one user, one product, or one message.
+
+**[SELECT](../VOCABULARY_LIST.md#select):** SQL command that reads data from a database.
+
+**[INSERT](../VOCABULARY_LIST.md#insert):** SQL command that adds a new row into a table.
+
+**[Persistence / Persist](../VOCABULARY_LIST.md#persistence--persist):** When data stays saved even after refreshing the page or restarting the app/server — unlike variables in JavaScript which disappear on reload.
+
+**[Environment Variables (.env)](../VOCABULARY_LIST.md#environment-variables-env):** Hidden configuration values like API keys, database URLs, or secrets that you don't want hardcoded in your JavaScript.
+
+**[Components](../VOCABULARY_LIST.md#components):** In React, the building blocks of applications that help organize code and keep programs from becoming too complicated by breaking down complex UIs into smaller, reusable pieces.
+
+**[React](../VOCABULARY_LIST.md#react):** A framework created by Facebook in 2013. It's built on the idea of components and is one of the most popular tools for making modern websites.
+
+**[JSX](../VOCABULARY_LIST.md#jsx):** A special syntax used in React. It looks like HTML but isn't exactly the same. JSX must be used inside React components.
+
+**[State](../VOCABULARY_LIST.md#state):** In React, component-local data that React preserves between renders so a component can remember information and update the UI.
+
+**[Props (Properties)](../VOCABULARY_LIST.md#props-properties):** Attributes you can give to components to make them more powerful. Props are like HTML attributes but for your own custom components.
+
+**[Function](../VOCABULARY_LIST.md#function):** In programming, reusable blocks of code that perform a specific task. They help organize code, avoid repetition, and make programs easier to understand.
+
+**[List Patterns](../VOCABULARY_LIST.md#list-patterns):** Common approaches for working with lists, such as Random List Access and List Scrolling Pattern.
+
+**[async](../VOCABULARY_LIST.md#async):** A keyword that makes a function return a Promise and allows use of `await` inside it.
+
+**[await](../VOCABULARY_LIST.md#await):** Pauses inside an `async` function until a Promise is done.
+
+**[fetch](../VOCABULARY_LIST.md#fetch):** Built-in browser function that makes HTTP requests to APIs. Returns a Promise.
