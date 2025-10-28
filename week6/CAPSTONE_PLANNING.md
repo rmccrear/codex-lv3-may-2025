@@ -118,6 +118,7 @@
    - Set up primary keys (id, auto-increment)
    - Add timestamp columns (created_at, updated_at)
    - Configure row-level security (RLS) policies if needed
+   - 📚 **[Supabase JavaScript Reference](https://supabase.com/docs/reference/javascript/start)** - Complete documentation for JavaScript client library
 
 **2. Upload your data to Supabase.**
    - Use the Supabase import feature to upload your CSV file to the external data table

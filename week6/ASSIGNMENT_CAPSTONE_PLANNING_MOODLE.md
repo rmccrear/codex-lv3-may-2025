@@ -42,6 +42,7 @@ Work through the worksheet systematically:
   - Data display screen (Report Page)
   - Form page
 - Plan your Supabase table structures with columns, data types, and relationships
+  - 📚 **[Supabase JavaScript Reference](https://supabase.com/docs/reference/javascript/start)** - Complete guide to using Supabase with JavaScript
 - Download your chosen Code.org dataset as CSV
 
 **Phase 3: Coding & Implementation Planning**

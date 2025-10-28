@@ -156,6 +156,7 @@ You can also use any of these datasets from Code.org's App Lab data tab:
    - **Log In Page (Challenge)**: Authenticate users and store their details locally.
 
 3. **Use the Supabase JavaScript client library** (`@supabase/supabase-js`) with async/await to interact with the Supabase database.
+   - 📚 **[Supabase JavaScript Reference](https://supabase.com/docs/reference/javascript/start)** - Complete documentation for JavaScript client library
 
 4. **Include a navigation bar** that allows users to switch between the Report and Form pages (and Log In page if implemented). Add an "Analytics" or "Charts" page if you complete the data visualization challenge.
 
