@@ -80,7 +80,7 @@ Your are required to apply for [GitHub for Education for free access for 30 days
 
 ## More Practice with Scrimba
 
-[JavaScript Deep Dive](https://scrimba.com/javascript-deep-dive-c0a)
+[JavaScript Deep Dive (Pro)](https://scrimba.com/javascript-deep-dive-c0a)
 
 [Learn Modern JavaScript (Free)](https://scrimba.com/learn-modern-javascript-c02j)
 * [Arrow Functions](https://scrimba.com/learn-modern-javascript-c02j/~07)
@@ -88,3 +88,10 @@ Your are required to apply for [GitHub for Education for free access for 30 days
 * [Destructuring](https://scrimba.com/learn-modern-javascript-c02j/~0d)
 
 [Introduction to es6 (Free)](https://scrimba.com/introduction-to-es6-c0t)
+
+[Clean Code (Free)](https://scrimba.com/introduction-to-clean-code-c025)
+* [Functions (6 lessons)](https://scrimba.com/introduction-to-clean-code-c025/~0a)
+
+## Supabase Course
+
+[Intro To Supabase (Free)](https://scrimba.com/intro-to-supabase-c0abltfqed)
