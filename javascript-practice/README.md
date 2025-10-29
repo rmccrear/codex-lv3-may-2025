@@ -35,3 +35,24 @@ Further Reading...
 * [Value vs. Reference](https://www.educative.io/courses/step-up-your-js-a-comprehensive-guide-to-intermediate-javascript/value-vs-reference)
 * [.map method on Arrays](https://www.educative.io/courses/step-up-your-js-a-comprehensive-guide-to-intermediate-javascript/map)
 
+## Practice Set 4
+
+From [JavaScript: From Beginner to Advanced](https://www.educative.io/courses/javascript-in-detail-from-beginner-to-advanced/) (Requires GitHub For Education Membership)
+
+* [Asynchronous Functions](https://www.educative.io/courses/javascript-in-detail-from-beginner-to-advanced/what-is-asynchronous) (Requires GitHub For Education Membership)
+    * [Asynchronicity In JavaScript](https://www.educative.io/courses/javascript-in-detail-from-beginner-to-advanced/asynchronicity-in-javascript) (Requires GitHub For Education Membership)
+    * [Callback Functions](https://www.educative.io/courses/javascript-in-detail-from-beginner-to-advanced/callback-functions) (Requires GitHub For Education Membership)
+    * [Promises](https://www.educative.io/courses/javascript-in-detail-from-beginner-to-advanced/promises) (Requires GitHub For Education Membership)
+    * [Async/Await](https://www.educative.io/courses/javascript-in-detail-from-beginner-to-advanced/async-await) (Requires GitHub For Education Membership)
+    * [Error Handling](https://www.educative.io/courses/javascript-in-detail-from-beginner-to-advanced/error-handling) (Requires GitHub For Education Membership)
+    * [Events in Web Page](https://www.educative.io/courses/javascript-in-detail-from-beginner-to-advanced/events-in-web-page) (Requires GitHub For Education Membership)
+
+## Practice Set 5
+
+From: [Simplifying JavaScript: A Handy Guide for Software Engineers](https://www.educative.io/courses/simplifying-javascript-handy-guide)
+
+* [Review: Using Objects](https://www.educative.io/courses/simplifying-javascript-handy-guide/tip-10-use-objects-for-static-key-value-lookups)
+* [Spread Operator with Arrays](https://www.educative.io/courses/simplifying-javascript-handy-guide/tip-7-mold-arrays-with-the-spread-operator) (Requires GitHub For Education Membership)
+* [Spread Operator with Objects](https://www.educative.io/courses/simplifying-javascript-handy-guide/tip-12-update-information-with-object-spread) (Requires GitHub For Education Membership)
+* [Using the spread operator in Arrays instead of .push()](https://www.educative.io/courses/simplifying-javascript-handy-guide/tip-8-avoid-push-mutations-with-the-spread-operator)
+
