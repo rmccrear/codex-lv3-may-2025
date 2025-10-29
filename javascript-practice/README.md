@@ -52,6 +52,7 @@ From [JavaScript: From Beginner to Advanced](https://www.educative.io/courses/ja
 From: [Simplifying JavaScript: A Handy Guide for Software Engineers](https://www.educative.io/courses/simplifying-javascript-handy-guide)
 
 * [Review: Using Objects](https://www.educative.io/courses/simplifying-javascript-handy-guide/tip-10-use-objects-for-static-key-value-lookups)
+* [Object Creation Shortcut](https://www.educative.io/courses/simplifying-javascript-handy-guide/tip-30-simplify-key-value-assignment)
 * [Spread Operator with Arrays](https://www.educative.io/courses/simplifying-javascript-handy-guide/tip-7-mold-arrays-with-the-spread-operator) (Requires GitHub For Education Membership)
 * [Spread Operator with Objects](https://www.educative.io/courses/simplifying-javascript-handy-guide/tip-12-update-information-with-object-spread) (Requires GitHub For Education Membership)
 * [Using the spread operator in Arrays instead of .push()](https://www.educative.io/courses/simplifying-javascript-handy-guide/tip-8-avoid-push-mutations-with-the-spread-operator)
