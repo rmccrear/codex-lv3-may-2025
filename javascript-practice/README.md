@@ -62,5 +62,24 @@ From: [Simplifying JavaScript: A Handy Guide for Software Engineers](https://www
 Your are required to apply for [GitHub for Education for free access for 30 days to Scrimba's courses.](https://scrimba.com/github-education)
 
 * [Object Spread Operators](https://scrimba.com/advanced-javascript-c03kpi3kss/~026b)
+* [Object Destructuring](https://scrimba.com/advanced-javascript-c03kpi3kss/~07v6)
 * [Ternary Operators](https://scrimba.com/advanced-javascript-c03kpi3kss/~0xse)
 * [Async/Await](https://scrimba.com/advanced-javascript-c03kpi3kss/~0xki)
+* [Short Circuit with &&](https://scrimba.com/advanced-javascript-c03kpi3kss/~02qg)
+
+## Practice Set 6
+
+Your are required to apply for [GitHub for Education for free access for 30 days to Scrimba's courses.](https://scrimba.com/github-education)
+
+### Array methods
+
+* [.includes()](https://scrimba.com/advanced-javascript-c03kpi3kss/~02g5)
+* [.map()](https://scrimba.com/advanced-javascript-c03kpi3kss/~03s)
+* [.join()](https://scrimba.com/advanced-javascript-c03kpi3kss/~0zab)
+* [.filter()](https://scrimba.com/advanced-javascript-c03kpi3kss/~04x5)
+
+## More Practice with Scrimba
+
+[JavaScript Deep Dive](https://scrimba.com/javascript-deep-dive-c0a)
+
+[Learn Modern JavaScript (Free)](https://scrimba.com/learn-modern-javascript-c02j)
