@@ -95,3 +95,8 @@ Your are required to apply for [GitHub for Education for free access for 30 days
 ## Supabase Course
 
 [Intro To Supabase (Free)](https://scrimba.com/intro-to-supabase-c0abltfqed)
+
+## React Course
+
+* [Object Destructuring](https://scrimba.com/learn-react-c0e/~07ee)
+* [React Forms](https://scrimba.com/learn-react-c0e/~03yt)
