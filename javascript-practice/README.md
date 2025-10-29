@@ -57,3 +57,10 @@ From: [Simplifying JavaScript: A Handy Guide for Software Engineers](https://www
 * [Spread Operator with Objects](https://www.educative.io/courses/simplifying-javascript-handy-guide/tip-12-update-information-with-object-spread) (Requires GitHub For Education Membership)
 * [Using the spread operator in Arrays instead of .push()](https://www.educative.io/courses/simplifying-javascript-handy-guide/tip-8-avoid-push-mutations-with-the-spread-operator)
 
+## Practice Set 5
+
+Your are required to apply for [GitHub for Education for free access for 30 days to Scrimba's courses.](https://scrimba.com/github-education)
+
+* [Object Spread Operators](https://scrimba.com/advanced-javascript-c03kpi3kss/~026b)
+* [Ternary Operators](https://scrimba.com/advanced-javascript-c03kpi3kss/~0xse)
+* [Async/Await](https://scrimba.com/advanced-javascript-c03kpi3kss/~0xki)
