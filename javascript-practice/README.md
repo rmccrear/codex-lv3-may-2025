@@ -88,6 +88,14 @@ Your are required to apply for [GitHub for Education for free access for 30 days
 * [Destructuring](https://scrimba.com/learn-modern-javascript-c02j/~0d)
 
 [Introduction to es6 (Free)](https://scrimba.com/introduction-to-es6-c0t)
+* [Destructuring Objects](https://scrimba.com/introduction-to-es6-c0t/~02)
+* [Destructuring Arrays](https://scrimba.com/introduction-to-es6-c0t/~05)
+* [POJO JS Object Literal Shortcuts](https://scrimba.com/introduction-to-es6-c0t/~06)
+* [Spread Operator on Arrays and Objects](https://scrimba.com/introduction-to-es6-c0t/~06)
+* [Arrow Functions](https://scrimba.com/introduction-to-es6-c0t/~0d)
+* [Fetch](https://scrimba.com/introduction-to-es6-c0t/~0s)
+* [Async/Await](https://scrimba.com/introduction-to-es6-c0t/~0u)
+* [Import/Export](https://scrimba.com/introduction-to-es6-c0t/~0j)
 
 [Clean Code (Free)](https://scrimba.com/introduction-to-clean-code-c025)
 * [Functions (6 lessons)](https://scrimba.com/introduction-to-clean-code-c025/~0a)
