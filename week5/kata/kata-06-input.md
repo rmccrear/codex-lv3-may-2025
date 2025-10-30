@@ -9,6 +9,8 @@ Create a `NameInput` component that:
 2. Has text below that says "Your name is: [entered name]"
 3. Updates in real-time as the user types
 
+**🔗 [Practice on CodeSandbox](https://codesandbox.io/)**
+
 ## Expected Behavior
 
 When user types "Ash":
@@ -73,3 +75,6 @@ export default function NameInput() {
 - `event.target.value` gets the current input value
 - State updates cause component to re-render with new value
 
+---
+
+**← [Back to Kata Index](./README.md)**

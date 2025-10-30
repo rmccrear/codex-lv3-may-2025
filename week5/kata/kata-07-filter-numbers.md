@@ -9,6 +9,8 @@ Create a `FilterEvens` component that:
 2. Filters out only the even numbers using a **for loop**
 3. Displays the even numbers as a comma-separated list
 
+**🔗 [Practice on CodeSandbox](https://codesandbox.io/)**
+
 ## Expected Output
 
 <pre><code>Even numbers: 2, 4, 6, 8, 10</code></pre>
@@ -75,3 +77,6 @@ Try filtering for:
 - Numbers greater than 5 (`numbers[i] > 5`)
 - Numbers divisible by 3 (`numbers[i] % 3 === 0`)
 
+---
+
+**← [Back to Kata Index](./README.md)**

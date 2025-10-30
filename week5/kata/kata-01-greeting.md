@@ -6,6 +6,8 @@
 
 Create a React component called `Greeting` that displays "Hello, World!" in an `<h1>` tag.
 
+**🔗 [Practice on CodeSandbox](https://codesandbox.io/)**
+
 ## Expected Output
 
 When rendered, it should display:
@@ -33,3 +35,6 @@ When rendered, it should display:
 - Component names must start with a capital letter
 - JSX looks like HTML but is actually JavaScript
 
+---
+
+**← [Back to Kata Index](./README.md)**

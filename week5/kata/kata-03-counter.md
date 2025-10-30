@@ -9,6 +9,8 @@ Create a `Counter` component that:
 2. Has a button that says "Click me!"
 3. Increases the count by 1 each time the button is clicked
 
+**🔗 [Practice on CodeSandbox](https://codesandbox.io/)**
+
 ## Expected Behavior
 
 - Initial display: "Count: 0"
@@ -62,3 +64,6 @@ export default function Counter() {
 - Never update state directly - always use the setter function
 - `onClick={handleClick}` passes the function (no parentheses!)
 
+---
+
+**← [Back to Kata Index](./README.md)**

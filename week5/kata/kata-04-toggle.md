@@ -10,6 +10,8 @@ Create a `Toggle` component that:
 3. The button text changes to "Hide Message"
 4. When clicked again, hides the message and button text returns to "Show Message"
 
+**🔗 [Practice on CodeSandbox](https://codesandbox.io/)**
+
 ## Expected Behavior
 
 Initial state:
@@ -73,3 +75,6 @@ export default function Toggle() {
 - Ternary operator: `condition ? trueValue : falseValue`
 - `&&` operator: only renders if condition is true
 
+---
+
+**← [Back to Kata Index](./README.md)**

@@ -9,6 +9,8 @@ Create a `TotalScore` component that:
 2. Calculates the total sum of all scores using a **for loop**
 3. Displays the individual scores and the total
 
+**🔗 [Practice on CodeSandbox](https://codesandbox.io/)**
+
 ## Expected Output
 
 <pre><code>Scores: 85, 92, 78, 90, 88
@@ -74,3 +76,6 @@ Try calculating:
 - Lowest score: keep track of min value
 - Count of passing scores (>= 80)
 
+---
+
+**← [Back to Kata Index](./README.md)**

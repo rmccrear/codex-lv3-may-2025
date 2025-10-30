@@ -9,6 +9,8 @@ Create a `FruitList` component that:
 2. Displays them as an unordered list (`<ul>`) with list items (`<li>`)
 3. Uses a **for loop** to build an array of JSX elements
 
+**🔗 [Practice on CodeSandbox](https://codesandbox.io/)**
+
 ## Expected Output
 
 <pre><code>• Apple
@@ -73,3 +75,6 @@ Create a `FruitList` component that:
 
 **Note:** Learn more about the built-in `.map()` method at [MDN: Array.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 
+---
+
+**← [Back to Kata Index](./README.md)**

@@ -10,6 +10,8 @@ Create an `AverageRating` component that:
 3. Displays the average rounded to 1 decimal place
 4. Shows a star rating (⭐ for each full star)
 
+**🔗 [Practice on CodeSandbox](https://codesandbox.io/)**
+
 ## Expected Output
 
 <pre><code>Ratings: 4.5, 5.0, 3.5, 4.0, 4.5, 5.0
@@ -88,3 +90,6 @@ Try:
 - Calculate median instead of average
 - Show "Excellent!" if average > 4.5
 
+---
+
+**← [Back to Kata Index](./README.md)**

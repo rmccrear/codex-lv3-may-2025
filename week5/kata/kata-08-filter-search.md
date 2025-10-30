@@ -10,6 +10,8 @@ Create a `SearchNames` component that:
 3. Filters and displays only names that include the search text (case-insensitive)
 4. Uses a **for loop** for filtering
 
+**🔗 [Practice on CodeSandbox](https://codesandbox.io/)**
+
 ## Expected Behavior
 
 When user types "a":
@@ -97,3 +99,6 @@ Try:
 - Add a count: "Found 3 results"
 - Filter products, movies, or other data types
 
+---
+
+**← [Back to Kata Index](./README.md)**

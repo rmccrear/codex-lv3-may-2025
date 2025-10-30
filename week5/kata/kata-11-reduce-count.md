@@ -17,6 +17,8 @@ Create a `CategoryCount` component that:
 2. Counts how many items are in each category using a **for loop**
 3. Displays the counts
 
+**🔗 [Practice on CodeSandbox](https://codesandbox.io/)**
+
 ## Expected Output
 </code></pre>
 Fruit: 3
@@ -101,3 +103,6 @@ Try:
 - Calculate percentage of each category
 - Find which category has the most items
 
+---
+
+**← [Back to Kata Index](./README.md)**

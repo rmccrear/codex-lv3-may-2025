@@ -8,6 +8,8 @@ Create a `Welcome` component that accepts a `name` prop and displays "Welcome, [
 
 Use **destructuring** to extract the `name` prop.
 
+**🔗 [Practice on CodeSandbox](https://codesandbox.io/)**
+
 ## Expected Usage
 
 <pre><code class="language-jsx">&lt;Welcome name=&quot;Ash&quot; /&gt;
@@ -38,3 +40,6 @@ Use **destructuring** to extract the `name` prop.
 - Use `{ name }` to destructure props (modern React pattern)
 - Use curly braces `{}` to embed JavaScript in JSX
 
+---
+
+**← [Back to Kata Index](./README.md)**
