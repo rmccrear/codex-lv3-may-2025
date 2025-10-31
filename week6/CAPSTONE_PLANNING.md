@@ -105,6 +105,7 @@
    - Clean the data if needed (check for missing values, format consistency)
    - Save the CSV file in a location you can easily access
    - Name it something descriptive (e.g., `bestsellers.csv`, `imdb_movies.csv`, `cereal_nutrition.csv`, `dogs.csv`)
+   - 📚 **[Complete Guide: Importing Code.org Data to Supabase](../../HOW_TO_IMPORT_DATA_DATA_FROM_CODE_ORG_TO_SUPABASE.md)** - Detailed instructions for exporting, cleaning, and importing your data
 
 ---
 
