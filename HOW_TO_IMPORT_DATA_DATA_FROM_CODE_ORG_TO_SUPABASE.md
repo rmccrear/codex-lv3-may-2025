@@ -70,7 +70,7 @@ You'll use:
 
    ![Supabase Primary Key](/assets/import-data-screenshots/supabase-import-create-primary-key.png)
 
-7. Your data is now imported and ready to use in your application! 🎉
+7. Don't forget to add an RLS Policy to allow your users to access your data. Follow the instructions in the [Supabase Setup Guide](https://rmccrear.github.io/codex-lv3-may-2025/week5/supabase-setup/SUPABASE_SETUP_GUIDE.html#step-10-set-up-read-policy-allow-public-read-access)
 
 ---
 
