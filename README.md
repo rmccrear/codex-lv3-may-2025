@@ -14,6 +14,7 @@ This repository contains comprehensive learning materials for a Level 3 React de
 ### Resources
 - [React Cheatsheet](REACT_CHEATSHEET.md)
 - [JavaScript Practice](./javascript-practice/README.md)
+- [React Katas](./week5/kata/README.md)
 - [Vocabulary List](VOCABULARY_LIST.md)
 
 ## Table of Contents
