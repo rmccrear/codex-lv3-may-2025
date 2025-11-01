@@ -78,6 +78,10 @@ Your are required to apply for [GitHub for Education for free access for 30 days
 * [.join()](https://scrimba.com/advanced-javascript-c03kpi3kss/~0zab)
 * [.filter()](https://scrimba.com/advanced-javascript-c03kpi3kss/~04x5)
 
+## Code Katas
+
+* [React Katas](../week5/kata/README.md) - Practice React concepts with focused coding exercises
+
 ## More Practice with Scrimba.com
 
 [JavaScript Deep Dive (Pro)](https://scrimba.com/javascript-deep-dive-c0a)
