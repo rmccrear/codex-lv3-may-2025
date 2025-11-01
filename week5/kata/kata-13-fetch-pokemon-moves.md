@@ -51,8 +51,8 @@ export default function PokemonMoves() {
     &lt;div&gt;
       &lt;h3&gt;Moves:&lt;/h3&gt;
       &lt;ul&gt;
-        {moveList.map((move, index) => (
-          &lt;li key={index}&gt;{move}&lt;/li&gt;
+        {moveList.map((move) => (
+          &lt;li key={move}&gt;{move}&lt;/li&gt;
         ))}
       &lt;/ul&gt;
     &lt;/div&gt;
@@ -67,7 +67,8 @@ export default function PokemonMoves() {
 - Use a for loop in `useEffect`: `for (let i = 0; i < data.moves.length; i++)`
 - Access move name: `data.moves[i].move.name`
 - Store move names: `moveNames.push(data.moves[i].move.name)`
-- Use `.map()` in JSX to render: `moveList.map((move, index) => ...)`
+- Use `.map()` in JSX to render: `moveList.map((move) => ...)`
+- Use `move` as the key: `key={move}` (each move name is unique for this pokemon)
 
 ## Solution
 
@@ -104,8 +105,8 @@ export default function PokemonMoves() {
     &lt;div&gt;
       &lt;h3&gt;Moves:&lt;/h3&gt;
       &lt;ul&gt;
-        {moveList.map((move, index) => (
-          &lt;li key={index}&gt;{move}&lt;/li&gt;
+        {moveList.map((move) => (
+          &lt;li key={move}&gt;{move}&lt;/li&gt;
         ))}
       &lt;/ul&gt;
     &lt;/div&gt;
@@ -129,16 +130,23 @@ export default function PokemonMoves() {
 ### Using .map() Method for Rendering
 
 - **Built-in `.map()` method**: Transform array items into JSX elements for display
-- Used in the JSX return: `moveList.map((move, index) => <li>...</li>)`
+- Used in the JSX return: `moveList.map((move) => <li key={move}>...</li>)`
 - A popular shorthand alternative in React that can be used directly in JSX
 - Cleaner and more concise than a for loop for rendering
 - Automatically handles creating an array of JSX elements
 - The `.map()` method is the built-in JavaScript way to do the map pattern
 
-### Why Use Both?
+### Using Move Name as Key
+
+- **Using the move name as key**: In this kata, we use `key={move}` (the move name itself)
+- **This is acceptable** because each move name is unique for a given pokemon.
+- **When this works**: When the property you're using as a key is guaranteed to be unique within the list
+- **Note**: In general, prefer unique IDs when available (like we do in Kata 14), but unique strings like names are fine when uniqueness is guaranteed
+
+### Why Use Both a for loop and `.map()`?
 
 - **For loop in useEffect**: Good for algorithmically transforming data. Also great for practice and understanding the underlying pattern.
-- **.map() in JSX**: Ideal for rendering because it's clean, readable, and React-optimized. This is the popular shorthand you'll see in most React code.
+- **`.map()` in JSX**: Ideal for rendering because it's clean, readable, and React-optimized. This is the popular shorthand you'll see in most React code.
 - Storing data (not JSX) in state allows you to manipulate/filter/sort the data before rendering
 
 **Note:** Learn more about the built-in `.map()` method at [MDN: Array.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)

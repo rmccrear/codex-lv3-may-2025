@@ -35,7 +35,7 @@ export default function PokemonList() {
       const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=20');
       const data = await response.json();
       
-      // Step 2: MAP: Fetch each pokemon and extract name/height using for loop
+      // Step 2: MAP: Fetch each pokemon and extract id, name, and height using for loop
       const pokemonData = [];
       // Your for loop here
       
@@ -53,8 +53,8 @@ export default function PokemonList() {
     &lt;div&gt;
       &lt;h3&gt;Pokemon List:&lt;/h3&gt;
       &lt;ul&gt;
-        {pokemonList.map((pokemon, index) => (
-          &lt;li key={index}&gt;{pokemon.name}: height {pokemon.height}&lt;/li&gt;
+        {pokemonList.map((pokemon) => (
+          &lt;li key={pokemon.id}&gt;{pokemon.name}: height {pokemon.height}&lt;/li&gt;
         ))}
       &lt;/ul&gt;
     &lt;/div&gt;
@@ -67,8 +67,9 @@ export default function PokemonList() {
 - Each result has a `url` property: `data.results[i].url`
 - Inside the loop, fetch each pokemon: `await fetch(data.results[i].url)`
 - Parse each response: `await response.json()`
-- Store data objects: `pokemonData.push({ name: pokemon.name, height: pokemon.height })`
-- Use `.map()` in JSX to render: `pokemonList.map((pokemon, index) => ...)`
+- Store data objects with id: `pokemonData.push({ id: pokemon.id, name: pokemon.name, height: pokemon.height })`
+- Use `.map()` in JSX to render: `pokemonList.map((pokemon) => ...)`
+- Use `pokemon.id` as the key: `key={pokemon.id}`
 - Use `Promise.all()` is optional but helps with performance
 
 ## Solution
@@ -87,12 +88,13 @@ export default function PokemonList() {
       const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=20');
       const data = await response.json();
       
-      // Step 2: MAP: Fetch each pokemon and extract name/height using for loop
+      // Step 2: MAP: Fetch each pokemon and extract id, name, and height using for loop
       const pokemonData = [];
       for (let i = 0; i &lt; data.results.length; i++) {
         const pokemonResponse = await fetch(data.results[i].url);
         const pokemon = await pokemonResponse.json();
         pokemonData.push({
+          id: pokemon.id,
           name: pokemon.name,
           height: pokemon.height
         });
@@ -112,8 +114,8 @@ export default function PokemonList() {
     &lt;div&gt;
       &lt;h3&gt;Pokemon List:&lt;/h3&gt;
       &lt;ul&gt;
-        {pokemonList.map((pokemon, index) => (
-          &lt;li key={index}&gt;{pokemon.name}: height {pokemon.height}&lt;/li&gt;
+        {pokemonList.map((pokemon) => (
+          &lt;li key={pokemon.id}&gt;{pokemon.name}: height {pokemon.height}&lt;/li&gt;
         ))}
       &lt;/ul&gt;
     &lt;/div&gt;
@@ -129,8 +131,8 @@ export default function PokemonList() {
 - **Map pattern with for loop**: Transform each item to create a new array with different structure
 - Loop through `data.results` array using a for loop
 - For each result, fetch the full pokemon data
-- Extract and transform data: `{ name: ..., height: ... }`
-- Push transformed objects into new array: `pokemonData.push({ name: pokemon.name, height: pokemon.height })`
+- Extract and transform data: `{ id: ..., name: ..., height: ... }`
+- Push transformed objects into new array: `pokemonData.push({ id: pokemon.id, name: pokemon.name, height: pokemon.height })`
 - Store the transformed data in state
 - This is the **List Scrolling Pattern** from Code.org - see [Code.org List Scrolling Pattern](https://studio.code.org/docs/concepts/patterns/list-scrolling-pattern/)
 - **Using for loop**: Good for practice and keeping sharp with list patterns. This helps you understand what's happening under the hood and reinforces the fundamental pattern.
@@ -138,11 +140,29 @@ export default function PokemonList() {
 ### Using .map() Method for Rendering
 
 - **Built-in `.map()` method**: Transform array items into JSX elements for display
-- Used in the JSX return: `pokemonList.map((pokemon, index) => <li>...</li>)`
+- Used in the JSX return: `pokemonList.map((pokemon) => <li key={pokemon.id}>...</li>)`
 - A popular shorthand alternative in React that can be used directly in JSX
 - Cleaner and more concise than a for loop for rendering
 - Automatically handles creating an array of JSX elements
 - The `.map()` method is the built-in JavaScript way to do the map pattern
+
+### Understanding Unique Keys in React
+
+- **Why keys are important**: React uses keys to identify which items have changed, been added, or removed
+- **Unique keys**: Each key must be unique among siblings (items in the same list)
+- **Using index as key**: While `key={index}` works, it's not ideal because:
+  - Index can change if items are reordered, filtered, or removed
+  - React can't efficiently track which item is which when the list changes
+  - Can cause performance issues and bugs with component state
+- **Using unique IDs**: Using `key={pokemon.id}` is better because:
+  - Each pokemon has a unique, stable ID that doesn't change
+  - React can correctly identify each item even when the list order changes
+  - Better performance when rendering dynamic lists
+  - Prevents bugs with component state persistence
+- **Best practices**:
+  - Always use unique, stable identifiers when available (like database IDs)
+  - Only use index as key when the list is static (never reordered or filtered)
+  - When no unique ID exists, create one or use a combination of unique properties
 
 ### Why Use Both?
 
