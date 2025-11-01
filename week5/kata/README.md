@@ -27,6 +27,9 @@ Katas are small, focused coding exercises designed to build muscle memory and re
 10. **[Kata 10: Calculate Average Rating](./kata-10-reduce-average.md)** - Reduce pattern to average
 11. **[Kata 11: Count by Category](./kata-11-reduce-count.md)** - Reduce pattern to count
 
+### Intermediate: API Integration (12-16)
+📡 **[Intermediate Katas: API Integration](./INTERMEDIATE_KATAS.md)** - Async/await, fetch API, and list patterns with real data
+
 ## How to Use These Katas
 
 ### Option 1: In Your Own Project
@@ -74,6 +77,16 @@ These katas reinforce:
 - ✅ Controlled inputs
 - ✅ **Filter pattern** - Select items matching criteria (using for loops)
 - ✅ **Reduce pattern** - Summarize/calculate from arrays (using for loops)
+- ✅ **Async/await** - Handling asynchronous operations with fetch API
+- ✅ **useEffect hook** - Fetching data when components load
+- ✅ **Combining patterns** - Filter then map, fetch then process
+
+**Note on Array Methods:** While these katas use for loops to practice the underlying patterns, you'll often see the built-in array methods in real code:
+- `.map()` - Transforms each item in an array (List Scrolling Pattern)
+- `.filter()` - Selects items matching criteria (List Filter Pattern)
+- `.reduce()` - Combines all items into a single value (List Patterns)
+
+Learn more: [MDN: Array Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 ## Next Steps
 
@@ -123,4 +136,12 @@ After completing these katas:
 **[Ternary Operator](../../VOCABULARY_LIST.md#ternary-operator):** `condition ? exprIfTrue : exprIfFalse`; commonly used inside JSX for conditional rendering.
 
 **[Event Listener](../../VOCABULARY_LIST.md#event-listener):** In web development, code that waits for something to happen (like a button click or a request) and then runs a function in response.
+
+**[useEffect](../../VOCABULARY_LIST.md#useeffect):** Hook that runs code after a component renders. Commonly used to fetch data when a component first loads.
+
+**[Async](../../VOCABULARY_LIST.md#async):** Keyword that creates asynchronous functions, allowing the use of `await` inside.
+
+**[Await](../../VOCABULARY_LIST.md#await):** Keyword used inside async functions to wait for a promise to resolve before continuing.
+
+**[Fetch](../../VOCABULARY_LIST.md#fetch):** JavaScript function that makes HTTP requests to APIs and returns a promise.
 
