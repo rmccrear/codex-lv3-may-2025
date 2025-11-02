@@ -4,35 +4,7 @@ This file tests all permutations of `<details>` and `<summary>` elements with pl
 
 **Note:** Example 1 (`<pre><code class="...">` with unescaped HTML, no markdown attribute) was removed because it does not work correctly - the unescaped HTML gets parsed as actual HTML elements instead of displaying as code.
 
-## Example 2: <pre><code class="..." markdown="1"> unescaped HTML
-
-<details>
-<summary>Show Me: HTML Button (pre+code with class and markdown="1", unescaped)</summary>
-
-<pre><code class="language-html" markdown="1">
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Counter</title>
-</head>
-<body>
-    <div>
-        <p>Count: <span id="count">0</span></p>
-        <button onclick="increment()">Increment</button>
-    </div>
-    <script>
-        function increment() {
-            let count = parseInt(document.getElementById('count').textContent);
-            document.getElementById('count').textContent = count + 1;
-        }
-    </script>
-</body>
-</html>
-</code></pre>
-
-**Configuration:** `<pre><code class="language-html" markdown="1">` with unescaped HTML
-
-</details>
+**Note:** Example 2 (`<pre><code class="..." markdown="1">` with unescaped HTML) was removed because it does not work correctly.
 
 ## Example 3: <pre><code class="..."> escaped HTML
 
@@ -400,10 +372,9 @@ All examples use **plain HTML (not JSX)** with the same counter functionality. C
 
 **Permutations tested:**
 
-**Note:** Example 1 (`<pre><code class="...">` with unescaped HTML) was removed because it does not work correctly.
+**Note:** Example 1 (`<pre><code class="...">` with unescaped HTML) and Example 2 (`<pre><code class="..." markdown="1">` with unescaped HTML) were removed because they do not work correctly.
 
 **HTML `<pre>` tags:**
-2. `<pre><code class="..." markdown="1">` unescaped HTML
 3. `<pre><code class="...">` escaped HTML
 4. `<pre><code markdown="1">` unescaped HTML (no class)
 5. `<pre><code>` unescaped HTML (no class, no markdown)
