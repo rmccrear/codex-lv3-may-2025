@@ -1,14 +1,14 @@
 # Testing Details/Summary with markdown="1" - All Permutations (Plain HTML)
 
-This file tests all permutations of `<details>` and `<summary>` elements with plain HTML (not JSX) examples.
+This file tests all permutations of `&lt;details&gt;` and `&lt;summary&gt;` elements with plain HTML (not JSX) examples.
 
-**Note:** Example 1 (`<pre><code class="...">` with unescaped HTML, no markdown attribute) was removed because it does not work correctly - the unescaped HTML gets parsed as actual HTML elements instead of displaying as code.
+**Note:** Example 1 (`&lt;pre&gt;&lt;code class="..."&gt;` with unescaped HTML, no markdown attribute) was removed because it does not work correctly - the unescaped HTML gets parsed as actual HTML elements instead of displaying as code.
 
-**Note:** Example 2 (`<pre><code class="..." markdown="1">` with unescaped HTML) was removed because it does not work correctly.
+**Note:** Example 2 (`&lt;pre&gt;&lt;code class="..." markdown="1"&gt;` with unescaped HTML) was removed because it does not work correctly.
 
-**Note:** Example 4 (`<pre><code markdown="1">` with unescaped HTML, no class) was removed because it does not work correctly.
+**Note:** Example 4 (`&lt;pre&gt;&lt;code markdown="1"&gt;` with unescaped HTML, no class) was removed because it does not work correctly.
 
-**Note:** Example 5 (`<pre><code>` with unescaped HTML, no class, no markdown) was removed because it does not work correctly.
+**Note:** Example 5 (`&lt;pre&gt;&lt;code&gt;` with unescaped HTML, no class, no markdown) was removed because it does not work correctly.
 
 ## Example 3: &lt;pre&gt;&lt;code class="..."&gt; escaped HTML
 
@@ -36,7 +36,7 @@ This file tests all permutations of `<details>` and `<summary>` elements with pl
 &lt;/html&gt;
 </code></pre>
 
-**Configuration:** `<pre><code class="language-html">` with escaped HTML
+**Configuration:** `&lt;pre&gt;&lt;code class="language-html"&gt;` with escaped HTML
 
 </details>
 
@@ -66,7 +66,7 @@ This file tests all permutations of `<details>` and `<summary>` elements with pl
 &lt;/html&gt;
 </code></pre>
 
-**Configuration:** `<pre><code>` (no class) with escaped HTML
+**Configuration:** `&lt;pre&gt;&lt;code&gt;` (no class) with escaped HTML
 
 </details>
 
@@ -96,7 +96,7 @@ This file tests all permutations of `<details>` and `<summary>` elements with pl
 </html>
 </pre>
 
-**Configuration:** `<pre class="language-html">` (no code element) with unescaped HTML
+**Configuration:** `&lt;pre class="language-html"&gt;` (no code element) with unescaped HTML
 
 </details>
 
@@ -126,7 +126,7 @@ This file tests all permutations of `<details>` and `<summary>` elements with pl
 &lt;/html&gt;
 </pre>
 
-**Configuration:** `<pre class="language-html">` (no code element) with escaped HTML
+**Configuration:** `&lt;pre class="language-html"&gt;` (no code element) with escaped HTML
 
 </details>
 
@@ -156,7 +156,7 @@ This file tests all permutations of `<details>` and `<summary>` elements with pl
 </html>
 </pre>
 
-**Configuration:** `<pre>` (no class, no code) with unescaped HTML
+**Configuration:** `&lt;pre&gt;` (no class, no code) with unescaped HTML
 
 </details>
 
@@ -186,7 +186,7 @@ This file tests all permutations of `<details>` and `<summary>` elements with pl
 &lt;/html&gt;
 </pre>
 
-**Configuration:** `<pre>` (no class, no code) with escaped HTML
+**Configuration:** `&lt;pre&gt;` (no class, no code) with escaped HTML
 
 </details>
 
@@ -317,18 +317,18 @@ All examples use **plain HTML (not JSX)** with the same counter functionality. C
 **Permutations tested:**
 
 **Note:** Examples 1, 2, 4, and 5 were removed because they do not work correctly:
-- Example 1: `<pre><code class="...">` with unescaped HTML
-- Example 2: `<pre><code class="..." markdown="1">` with unescaped HTML
-- Example 4: `<pre><code markdown="1">` with unescaped HTML (no class)
-- Example 5: `<pre><code>` with unescaped HTML (no class, no markdown)
+- Example 1: `&lt;pre&gt;&lt;code class="..."&gt;` with unescaped HTML
+- Example 2: `&lt;pre&gt;&lt;code class="..." markdown="1"&gt;` with unescaped HTML
+- Example 4: `&lt;pre&gt;&lt;code markdown="1"&gt;` with unescaped HTML (no class)
+- Example 5: `&lt;pre&gt;&lt;code&gt;` with unescaped HTML (no class, no markdown)
 
-**HTML `<pre>` tags:**
-3. `<pre><code class="...">` escaped HTML
-6. `<pre><code>` escaped HTML (no class)
-7. `<pre class="...">` unescaped HTML (no code)
-8. `<pre class="...">` escaped HTML (no code)
-9. `<pre>` unescaped HTML (no class, no code)
-10. `<pre>` escaped HTML (no class, no code)
+**HTML `&lt;pre&gt;` tags:**
+3. `&lt;pre&gt;&lt;code class="..."&gt;` escaped HTML
+6. `&lt;pre&gt;&lt;code&gt;` escaped HTML (no class)
+7. `&lt;pre class="..."&gt;` unescaped HTML (no code)
+8. `&lt;pre class="..."&gt;` escaped HTML (no code)
+9. `&lt;pre&gt;` unescaped HTML (no class, no code)
+10. `&lt;pre&gt;` escaped HTML (no class, no code)
 
 **Markdown triple backticks:**
 11. Triple backticks with language tag, unescaped HTML
@@ -337,8 +337,8 @@ All examples use **plain HTML (not JSX)** with the same counter functionality. C
 14. Triple backticks without language tag, escaped HTML
 
 **Key variables:**
-- **HTML vs Markdown syntax** (`<pre>` tags vs triple backticks)
-- **With/without `<code>` element**
+- **HTML vs Markdown syntax** (`&lt;pre&gt;` tags vs triple backticks)
+- **With/without `&lt;code&gt;` element**
 - **With/without `class` attribute (or language tag)**
 - **With/without `markdown="1"` attribute**
 - **Escaped vs unescaped HTML**
