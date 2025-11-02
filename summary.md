@@ -70,7 +70,7 @@ This file tests all permutations of `<details>` and `<summary>` elements with pl
 
 </details>
 
-## Example 7: &lt;pre class="..."&gt; unescaped HTML (no code)
+## Example 7: &lt;pre class="..."&gt; no code tag, with unescaped HTML
 
 <details>
 <summary>Show Me: HTML Button (pre with class, no code, unescaped)</summary>
@@ -100,7 +100,7 @@ This file tests all permutations of `<details>` and `<summary>` elements with pl
 
 </details>
 
-## Example 8: &lt;pre class="..."&gt; escaped HTML (no code)
+## Example 8: &lt;pre class="..."&gt; no code tag, with escaped HTML
 
 <details>
 <summary>Show Me: HTML Button (pre with class, no code, escaped)</summary>
@@ -130,7 +130,7 @@ This file tests all permutations of `<details>` and `<summary>` elements with pl
 
 </details>
 
-## Example 9: &lt;pre&gt; unescaped HTML (no class, no code)
+## Example 9: &lt;pre&gt; no code tag, with unescaped HTML
 
 <details>
 <summary>Show Me: HTML Button (pre only, no class, no code, unescaped)</summary>
@@ -160,7 +160,7 @@ This file tests all permutations of `<details>` and `<summary>` elements with pl
 
 </details>
 
-## Example 10: &lt;pre&gt; escaped HTML (no class, no code)
+## Example 10: &lt;pre&gt; no code tag, with escaped HTML
 
 <details>
 <summary>Show Me: HTML Button (pre only, no class, no code, escaped)</summary>
