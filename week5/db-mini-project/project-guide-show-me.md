@@ -322,19 +322,20 @@ Need help with component structure? Check out these snippets:
 <details>
 <summary>Show Me: PotluckMeals component</summary>
 
-<pre><code class="language-javascript">import { useState } from "react"
+<pre><code class="language-javascript">
+import { useState } from "react"
 import supabase from "../utils/supabase"
 
 export default function PotluckMeals() {
     const [meals, setMeals] = useState([])
 
-    return <>
-        <h1>Potluck meals</h1>
-        <button>Fetch Meals</button>
-        <ul>
+    return &lt;&gt;
+        &lt;h1&gt;Potluck meals&lt;/h1&gt;
+        &lt;button&gt;Fetch Meals&lt;/button&gt;
+        &lt;ul&gt;
             {/* Meals will be displayed here */}
-        </ul>
-    </>
+        &lt;/ul&gt;
+    &lt;/&gt;
 }
 </code></pre>
 
