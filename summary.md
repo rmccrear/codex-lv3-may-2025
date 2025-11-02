@@ -6,6 +6,8 @@ This file tests all permutations of `<details>` and `<summary>` elements with pl
 
 **Note:** Example 2 (`<pre><code class="..." markdown="1">` with unescaped HTML) was removed because it does not work correctly.
 
+**Note:** Example 4 (`<pre><code markdown="1">` with unescaped HTML, no class) was removed because it does not work correctly.
+
 ## Example 3: <pre><code class="..."> escaped HTML
 
 <details>
@@ -33,36 +35,6 @@ This file tests all permutations of `<details>` and `<summary>` elements with pl
 </code></pre>
 
 **Configuration:** `<pre><code class="language-html">` with escaped HTML
-
-</details>
-
-## Example 4: <pre><code markdown="1"> unescaped HTML (no class)
-
-<details>
-<summary>Show Me: HTML Button (pre+code with markdown="1", no class, unescaped)</summary>
-
-<pre><code markdown="1">
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Counter</title>
-</head>
-<body>
-    <div>
-        <p>Count: <span id="count">0</span></p>
-        <button onclick="increment()">Increment</button>
-    </div>
-    <script>
-        function increment() {
-            let count = parseInt(document.getElementById('count').textContent);
-            document.getElementById('count').textContent = count + 1;
-        }
-    </script>
-</body>
-</html>
-</code></pre>
-
-**Configuration:** `<pre><code markdown="1">` (no class) with unescaped HTML
 
 </details>
 
@@ -372,11 +344,13 @@ All examples use **plain HTML (not JSX)** with the same counter functionality. C
 
 **Permutations tested:**
 
-**Note:** Example 1 (`<pre><code class="...">` with unescaped HTML) and Example 2 (`<pre><code class="..." markdown="1">` with unescaped HTML) were removed because they do not work correctly.
+**Note:** Examples 1, 2, and 4 were removed because they do not work correctly:
+- Example 1: `<pre><code class="...">` with unescaped HTML
+- Example 2: `<pre><code class="..." markdown="1">` with unescaped HTML
+- Example 4: `<pre><code markdown="1">` with unescaped HTML (no class)
 
 **HTML `<pre>` tags:**
 3. `<pre><code class="...">` escaped HTML
-4. `<pre><code markdown="1">` unescaped HTML (no class)
 5. `<pre><code>` unescaped HTML (no class, no markdown)
 6. `<pre><code>` escaped HTML (no class)
 7. `<pre class="...">` unescaped HTML (no code)
