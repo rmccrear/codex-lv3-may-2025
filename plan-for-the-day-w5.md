@@ -68,3 +68,20 @@ Start working on the complete potluck management application. Follow the level-b
 ## Day 5
 
 Complete your Mini-Project
+
+---
+
+## Week Summary
+
+### Assignments Overview
+
+1. **Day 1-2: Non-graded practice material**
+   - Day 1: Supabase setup and database interaction practice
+   - Day 2: Forms in React and database inserts practice
+
+2. **Day 3: Graded assignment**
+   - JavaScript Practice Set #2
+   - Choose ONE kata to master
+
+3. **Day 4-5: Graded mini-project**
+   - Database Mini-Project (Potluck management app with Supabase)

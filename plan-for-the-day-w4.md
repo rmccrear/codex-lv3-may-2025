@@ -80,3 +80,19 @@ Please complete the code.org Lessons 11 and 12 before working on the Hackathon p
 ## Day 5
 
 Complete work on Hackathon
+
+---
+
+## Week Summary
+
+### Assignments Overview
+
+1. **Day 1-2: Non-graded practice material**
+   - Day 1: Hackathon planning, dataset selection, paper prototyping
+   - Day 2: Multi-page React and Git collaboration practice
+
+2. **Day 3: Graded Code.org assignment**
+   - Code.org Lessons 11 and 12 (list traversals)
+
+3. **Day 4-5: Graded mini-project**
+   - React Hackathon - Data-Driven App (multi-screen app with dataset)

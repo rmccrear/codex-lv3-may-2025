@@ -73,3 +73,20 @@ Loops are one of the basic building blocks of algorithms. Being able to use loop
 ## Day 5
 
 * Complete your Mini-Project
+
+---
+
+## Week Summary
+
+### Assignments Overview
+
+1. **Day 1-2: Non-graded practice material**
+   - Day 1: React basics, JSX, components, Practice Resume
+   - Day 2: Props, children prop, More Practice Resume
+
+2. **Day 3: Graded Code.org assignment**
+   - Bee puzzles warmup
+   - Loops Investigate, Practice, and Make lessons on Code.org
+
+3. **Day 4-5: Graded mini-project**
+   - Portfolio Mini-Project

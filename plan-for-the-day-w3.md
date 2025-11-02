@@ -170,3 +170,19 @@ Today you'll continue working on the **Apple Clicker Mini-Project** and complete
 
 * Demo code for the Dice practice [Lesson 7 Level 9](https://studio.code.org/courses/csp-2025/units/6/lessons/7/levels/9)
 https://github.com/rmccrear/basketball-score/blob/dice/src/components/Dice.jsx
+
+---
+
+## Week Summary
+
+### Assignments Overview
+
+1. **Day 1-2: Non-graded practice material**
+   - Day 1: useState, onClick callbacks, state practice
+   - Day 2: Conditional rendering, multiple state variables, game scores practice
+
+2. **Day 3: Graded Code.org assignment**
+   - Code.org List Traversals (Lessons 9 and 10)
+
+3. **Day 4-5: Graded mini-project**
+   - Apple Clicker Mini-Project (React Clicker Game)

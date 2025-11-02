@@ -117,3 +117,19 @@
 
 ### Resources
 - **[Mad Libs Level Files](./mad-libs-levels/mad-libs-lv-1.md)** - Individual level guides
+
+---
+
+## Week Summary
+
+### Assignments Overview
+
+1. **Day 1-2: Non-graded practice material**
+   - Day 1: Introduction to Web Development & Server Fundamentals
+   - Day 2: JavaScript Fundamentals for React Development
+
+2. **Day 3: Graded Code.org assignment**
+   - Complete Code.org Lesson 1-4 (loops and patterns)
+
+3. **Day 4-5: Graded mini-project**
+   - Mad Libs Mini-Project (Levels 1-9 required, 10-20 optional)
