@@ -3,6 +3,7 @@
 ## Day 1
 
 * [Hackathon Planning Sheet](https://docs.google.com/document/d/12QYQpFen_lD5iYS1hy4Wmtc0_QUq0cHjWwoyR-LEViw/edit?usp=sharing)
+* [Hackathon Guide Level 1](./week4/hackathon-guide-lv-1.md)
 * [Hackathon on Code.org for data access](https://studio.code.org/courses/csp-2025/units/6/lessons/13/levels/1)
 * [How to import data--Spreadsheets to JSON](./HOWTO_CODE_ORG_DATA_IMPORT.md)
 
