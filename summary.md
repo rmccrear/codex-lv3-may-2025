@@ -89,12 +89,72 @@ export default function Counter() {
 
 </details>
 
+## Example 4: Without <code> element (just <pre> with escaped HTML)
+
+<details>
+<summary>Show Me: Counter Component (no code tag, escaped HTML)</summary>
+
+<pre class="language-javascript">
+import { useState } from 'react';
+
+export default function Counter() {
+  const [count, setCount] = useState(0);
+
+  return (
+    &lt;&gt;
+      &lt;p&gt;Count: {count}&lt;/p&gt;
+      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
+        Increment
+      &lt;/button&gt;
+    &lt;/&gt;
+  );
+}
+</pre>
+
+**Key points:**
+- Uses `useState` hook
+- Button updates state on click
+- State persists across renders
+
+</details>
+
+## Example 5: Without <code> element (just <pre> with unescaped HTML)
+
+<details>
+<summary>Show Me: Counter Component (no code tag, unescaped HTML)</summary>
+
+<pre class="language-javascript">
+import { useState } from 'react';
+
+export default function Counter() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <>
+      <p>Count: {count}</p>
+      <button onClick={() => setCount(count + 1)}>
+        Increment
+      </button>
+    </>
+  );
+}
+</pre>
+
+**Key points:**
+- Uses `useState` hook
+- Button updates state on click
+- State persists across renders
+
+</details>
+
 ## Testing Notes
 
-Compare how the code blocks and markdown formatting render in all three examples above:
+Compare how the code blocks and markdown formatting render in all five examples above:
 
-1. **Example 1**: No markdown attribute, unescaped HTML (may be parsed as HTML)
-2. **Example 2**: With `markdown="1"` attribute (processes content as markdown)
-3. **Example 3**: No markdown attribute, escaped HTML characters (`&lt;`, `&gt;`, `=&gt;`) - safe for display
+1. **Example 1**: `<pre><code>` with unescaped HTML (may be parsed as HTML)
+2. **Example 2**: `<pre><code markdown="1">` with `markdown="1"` attribute (processes content as markdown)
+3. **Example 3**: `<pre><code>` with escaped HTML characters (`&lt;`, `&gt;`, `=&gt;`) - safe for display
+4. **Example 4**: `<pre>` only (no `<code>`) with escaped HTML characters
+5. **Example 5**: `<pre>` only (no `<code>`) with unescaped HTML (may be parsed as HTML)
 
 The `markdown="1"` attribute tells some markdown processors to process the content inside as markdown. Escaped HTML characters ensure the code displays correctly without being interpreted as HTML tags.
