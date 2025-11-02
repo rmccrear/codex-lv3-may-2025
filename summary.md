@@ -2,9 +2,9 @@
 
 This file tests all permutations of `<details>` and `<summary>` elements with plain HTML (not JSX) examples.
 
-**Note:** Example 1 (`<pre><code class="...">` with unescaped HTML) was removed because it does not work correctly - the unescaped HTML gets parsed as actual HTML elements instead of displaying as code.
+**Note:** Example 1 (`<pre><code class="...">` with unescaped HTML, no markdown attribute) was removed because it does not work correctly - the unescaped HTML gets parsed as actual HTML elements instead of displaying as code.
 
-## Example 1: <pre><code class="..." markdown="1"> unescaped HTML
+## Example 2: <pre><code class="..." markdown="1"> unescaped HTML
 
 <details>
 <summary>Show Me: HTML Button (pre+code with class and markdown="1", unescaped)</summary>
@@ -34,7 +34,7 @@ This file tests all permutations of `<details>` and `<summary>` elements with pl
 
 </details>
 
-## Example 2: <pre><code class="..."> escaped HTML
+## Example 3: <pre><code class="..."> escaped HTML
 
 <details>
 <summary>Show Me: HTML Button (pre+code with class, escaped)</summary>
@@ -64,7 +64,7 @@ This file tests all permutations of `<details>` and `<summary>` elements with pl
 
 </details>
 
-## Example 3: <pre><code markdown="1"> unescaped HTML (no class)
+## Example 4: <pre><code markdown="1"> unescaped HTML (no class)
 
 <details>
 <summary>Show Me: HTML Button (pre+code with markdown="1", no class, unescaped)</summary>
@@ -94,7 +94,7 @@ This file tests all permutations of `<details>` and `<summary>` elements with pl
 
 </details>
 
-## Example 4: <pre><code> unescaped HTML (no class, no markdown)
+## Example 5: <pre><code> unescaped HTML (no class, no markdown)
 
 <details>
 <summary>Show Me: HTML Button (pre+code, no class, no markdown, unescaped)</summary>
@@ -124,7 +124,7 @@ This file tests all permutations of `<details>` and `<summary>` elements with pl
 
 </details>
 
-## Example 5: <pre><code> escaped HTML (no class)
+## Example 6: <pre><code> escaped HTML (no class)
 
 <details>
 <summary>Show Me: HTML Button (pre+code, no class, escaped)</summary>
@@ -154,7 +154,7 @@ This file tests all permutations of `<details>` and `<summary>` elements with pl
 
 </details>
 
-## Example 6: <pre class="..."> unescaped HTML (no code)
+## Example 7: <pre class="..."> unescaped HTML (no code)
 
 <details>
 <summary>Show Me: HTML Button (pre with class, no code, unescaped)</summary>
@@ -184,7 +184,7 @@ This file tests all permutations of `<details>` and `<summary>` elements with pl
 
 </details>
 
-## Example 7: <pre class="..."> escaped HTML (no code)
+## Example 8: <pre class="..."> escaped HTML (no code)
 
 <details>
 <summary>Show Me: HTML Button (pre with class, no code, escaped)</summary>
@@ -214,7 +214,7 @@ This file tests all permutations of `<details>` and `<summary>` elements with pl
 
 </details>
 
-## Example 8: <pre> unescaped HTML (no class, no code)
+## Example 9: <pre> unescaped HTML (no class, no code)
 
 <details>
 <summary>Show Me: HTML Button (pre only, no class, no code, unescaped)</summary>
@@ -244,7 +244,7 @@ This file tests all permutations of `<details>` and `<summary>` elements with pl
 
 </details>
 
-## Example 9: <pre> escaped HTML (no class, no code)
+## Example 10: <pre> escaped HTML (no class, no code)
 
 <details>
 <summary>Show Me: HTML Button (pre only, no class, no code, escaped)</summary>
@@ -274,7 +274,7 @@ This file tests all permutations of `<details>` and `<summary>` elements with pl
 
 </details>
 
-## Example 10: Triple backticks with language, unescaped HTML
+## Example 11: Triple backticks with language, unescaped HTML
 
 <details>
 <summary>Show Me: HTML Button (triple backticks with language, unescaped)</summary>
@@ -304,7 +304,7 @@ This file tests all permutations of `<details>` and `<summary>` elements with pl
 
 </details>
 
-## Example 11: Triple backticks with language, escaped HTML
+## Example 12: Triple backticks with language, escaped HTML
 
 <details>
 <summary>Show Me: HTML Button (triple backticks with language, escaped)</summary>
@@ -334,7 +334,7 @@ This file tests all permutations of `<details>` and `<summary>` elements with pl
 
 </details>
 
-## Example 12: Triple backticks without language, unescaped HTML
+## Example 13: Triple backticks without language, unescaped HTML
 
 <details>
 <summary>Show Me: HTML Button (triple backticks, no language, unescaped)</summary>
@@ -364,7 +364,7 @@ This file tests all permutations of `<details>` and `<summary>` elements with pl
 
 </details>
 
-## Example 13: Triple backticks without language, escaped HTML
+## Example 14: Triple backticks without language, escaped HTML
 
 <details>
 <summary>Show Me: HTML Button (triple backticks, no language, escaped)</summary>
@@ -400,24 +400,24 @@ All examples use **plain HTML (not JSX)** with the same counter functionality. C
 
 **Permutations tested:**
 
-**Note:** The original Example 1 (`<pre><code class="...">` with unescaped HTML) was removed because it does not work correctly.
+**Note:** Example 1 (`<pre><code class="...">` with unescaped HTML) was removed because it does not work correctly.
 
-**HTML `<pre>` tags (Examples 1-9):**
-1. `<pre><code class="..." markdown="1">` unescaped HTML
-2. `<pre><code class="...">` escaped HTML
-3. `<pre><code markdown="1">` unescaped HTML (no class)
-4. `<pre><code>` unescaped HTML (no class, no markdown)
-5. `<pre><code>` escaped HTML (no class)
-6. `<pre class="...">` unescaped HTML (no code)
-7. `<pre class="...">` escaped HTML (no code)
-8. `<pre>` unescaped HTML (no class, no code)
-9. `<pre>` escaped HTML (no class, no code)
+**HTML `<pre>` tags:**
+2. `<pre><code class="..." markdown="1">` unescaped HTML
+3. `<pre><code class="...">` escaped HTML
+4. `<pre><code markdown="1">` unescaped HTML (no class)
+5. `<pre><code>` unescaped HTML (no class, no markdown)
+6. `<pre><code>` escaped HTML (no class)
+7. `<pre class="...">` unescaped HTML (no code)
+8. `<pre class="...">` escaped HTML (no code)
+9. `<pre>` unescaped HTML (no class, no code)
+10. `<pre>` escaped HTML (no class, no code)
 
-**Markdown triple backticks (Examples 10-13):**
-10. Triple backticks with language tag, unescaped HTML
-11. Triple backticks with language tag, escaped HTML
-12. Triple backticks without language tag, unescaped HTML
-13. Triple backticks without language tag, escaped HTML
+**Markdown triple backticks:**
+11. Triple backticks with language tag, unescaped HTML
+12. Triple backticks with language tag, escaped HTML
+13. Triple backticks without language tag, unescaped HTML
+14. Triple backticks without language tag, escaped HTML
 
 **Key variables:**
 - **HTML vs Markdown syntax** (`<pre>` tags vs triple backticks)
