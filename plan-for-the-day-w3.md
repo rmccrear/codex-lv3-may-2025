@@ -182,7 +182,7 @@ https://github.com/rmccrear/basketball-score/blob/dice/src/components/Dice.jsx
    - Day 2: Conditional rendering, multiple state variables, game scores practice
 
 2. **Day 3: Graded Code.org assignment**
-   - Code.org List Traversals (Lessons 9 and 10)
+   - [Code.org List Traversals Lessons 9-10](https://studio.code.org/courses/csp-2025/units/6/lessons/9/student) (List Traversals)
 
 3. **Day 4-5: Graded mini-project**
-   - Apple Clicker Mini-Project (React Clicker Game)
+   - [Apple Clicker Mini-Project](./week3/react-clicker-game-mini-project/react-clicker-game-lv-1.md) (React Clicker Game)

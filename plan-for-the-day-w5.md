@@ -80,8 +80,8 @@ Complete your Mini-Project
    - Day 2: Forms in React and database inserts practice
 
 2. **Day 3: Graded assignment**
-   - JavaScript Practice Set #2
-   - Choose ONE kata to master
+   - [JavaScript Practice Set #2](./javascript-practice/README.md)
+   - [Choose ONE kata to master](./week5/kata/README.md)
 
 3. **Day 4-5: Graded mini-project**
-   - Database Mini-Project (Potluck management app with Supabase)
+   - [Database Mini-Project](./week5/db-mini-project/db-levels/db-mini-project-lv-1.md) (Potluck management app with Supabase)

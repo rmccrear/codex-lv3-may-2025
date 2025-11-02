@@ -92,7 +92,7 @@ Complete work on Hackathon
    - Day 2: Multi-page React and Git collaboration practice
 
 2. **Day 3: Graded Code.org assignment**
-   - Code.org Lessons 11 and 12 (list traversals)
+   - [Code.org Lessons 11-12](https://studio.code.org/courses/csp-2025/units/6/lessons/11/student) (list traversals)
 
 3. **Day 4-5: Graded mini-project**
-   - React Hackathon - Data-Driven App (multi-screen app with dataset)
+   - [React Hackathon - Data-Driven App](./week4/ASSIGNMENT_WEEK4.md) (multi-screen app with dataset)

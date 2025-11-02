@@ -129,7 +129,7 @@
    - Day 2: JavaScript Fundamentals for React Development
 
 2. **Day 3: Graded Code.org assignment**
-   - Complete Code.org Lesson 1-4 (loops and patterns)
+   - [Complete Code.org Lesson 1-4](https://studio.code.org/courses/csp-2025/units/6/lessons/1/student) (loops and patterns)
 
 3. **Day 4-5: Graded mini-project**
-   - Mad Libs Mini-Project (Levels 1-9 required, 10-20 optional)
+   - [Mad Libs Mini-Project](./mad-libs-levels/mad-libs-lv-1.md) (Levels 1-9 required, 10-20 optional)

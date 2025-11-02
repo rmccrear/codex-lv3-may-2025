@@ -85,8 +85,7 @@ Loops are one of the basic building blocks of algorithms. Being able to use loop
    - Day 2: Props, children prop, More Practice Resume
 
 2. **Day 3: Graded Code.org assignment**
-   - Bee puzzles warmup
-   - Loops Investigate, Practice, and Make lessons on Code.org
+   - [Code.org Loops Lessons 6-8](https://studio.code.org/courses/csp-2025/units/6/lessons/6/student) (Loops Investigate, Practice, and Make)
 
 3. **Day 4-5: Graded mini-project**
-   - Portfolio Mini-Project
+   - [Portfolio Mini-Project](./week2/mini-project-portfolio/README.md)
