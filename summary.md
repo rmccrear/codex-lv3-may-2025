@@ -10,7 +10,7 @@ This file tests all permutations of `<details>` and `<summary>` elements with pl
 
 **Note:** Example 5 (`<pre><code>` with unescaped HTML, no class, no markdown) was removed because it does not work correctly.
 
-## Example 3: <pre><code class="..."> escaped HTML
+## Example 3: &lt;pre&gt;&lt;code class="..."&gt; escaped HTML
 
 <details>
 <summary>Show Me: HTML Button (pre+code with class, escaped)</summary>
@@ -40,7 +40,7 @@ This file tests all permutations of `<details>` and `<summary>` elements with pl
 
 </details>
 
-## Example 6: <pre><code> escaped HTML (no class)
+## Example 6: &lt;pre&gt;&lt;code&gt; escaped HTML (no class)
 
 <details>
 <summary>Show Me: HTML Button (pre+code, no class, escaped)</summary>
@@ -70,7 +70,7 @@ This file tests all permutations of `<details>` and `<summary>` elements with pl
 
 </details>
 
-## Example 7: <pre class="..."> unescaped HTML (no code)
+## Example 7: &lt;pre class="..."&gt; unescaped HTML (no code)
 
 <details>
 <summary>Show Me: HTML Button (pre with class, no code, unescaped)</summary>
@@ -100,7 +100,7 @@ This file tests all permutations of `<details>` and `<summary>` elements with pl
 
 </details>
 
-## Example 8: <pre class="..."> escaped HTML (no code)
+## Example 8: &lt;pre class="..."&gt; escaped HTML (no code)
 
 <details>
 <summary>Show Me: HTML Button (pre with class, no code, escaped)</summary>
@@ -130,7 +130,7 @@ This file tests all permutations of `<details>` and `<summary>` elements with pl
 
 </details>
 
-## Example 9: <pre> unescaped HTML (no class, no code)
+## Example 9: &lt;pre&gt; unescaped HTML (no class, no code)
 
 <details>
 <summary>Show Me: HTML Button (pre only, no class, no code, unescaped)</summary>
@@ -160,7 +160,7 @@ This file tests all permutations of `<details>` and `<summary>` elements with pl
 
 </details>
 
-## Example 10: <pre> escaped HTML (no class, no code)
+## Example 10: &lt;pre&gt; escaped HTML (no class, no code)
 
 <details>
 <summary>Show Me: HTML Button (pre only, no class, no code, escaped)</summary>
