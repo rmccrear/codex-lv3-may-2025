@@ -112,3 +112,8 @@ Your are required to apply for [GitHub for Education for free access for 30 days
 
 * [Object Destructuring](https://scrimba.com/learn-react-c0e/~07ee)
 * [React Forms](https://scrimba.com/learn-react-c0e/~03yt)
+
+## Mini Lessons
+
+* [Changing a String to Snake Case](./string-convert.md) - Learn how to write functions that convert strings to snake_case format
+* [Importing Functions with Node.js](./string-convert-imports.md) - Learn how to organize code into separate files and import functions using ES6 modules
