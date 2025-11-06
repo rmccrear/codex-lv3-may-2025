@@ -22,19 +22,19 @@ In this guide, you'll learn how to:
 
 ## Setup Steps
 
-### 1. Initialize npm project
+## Step 1: Initialize npm project
 
 ```bash
 npm init -y
 ```
 
-### 2. Install Vitest
+## Step 2: Install Vitest
 
 ```bash
 npm install --save-dev vitest
 ```
 
-### 3. Create function files
+## Step 3: Create function files
 
 Create `utils.js` with your functions:
 
@@ -51,7 +51,7 @@ export function toSnakeCase(text) {
 }
 ```
 
-### 4. Create test files
+## Step 4: Create test files
 
 We add `.test.` to the filename (like `utils.test.js`) to indicate this is a test file. Vitest automatically finds and runs files that match the pattern `*.test.js` or `*.spec.js`.
 
@@ -88,7 +88,7 @@ describe('toSnakeCase function', () => {
 });
 ```
 
-### 5. Update package.json
+## Step 5: Update package.json
 
 Add a test script to your `package.json`:
 
@@ -101,7 +101,7 @@ Add a test script to your `package.json`:
 }
 ```
 
-### 6. Run your tests
+## Step 6: Run your tests
 
 ```bash
 npm test
