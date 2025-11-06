@@ -35,7 +35,7 @@ def extract_level_number(filename, project_name="capstone"):
     match = re.search(pattern, filename)
     return int(match.group(1)) if match else 0
 
-def create_navigation_html(total_levels, current_level, project_name="capstone", challenge_levels=None):
+def create_navigation_html(total_levels, current_level, project_name="capstone", challenge_levels=None, informative_levels=None):
     """
     Create navigation HTML for the current level.
     
@@ -44,6 +44,7 @@ def create_navigation_html(total_levels, current_level, project_name="capstone",
         current_level (int): Current level number (1-based)
         project_name (str): Project name for file naming
         challenge_levels (set): Set of level numbers that are challenge levels
+        informative_levels (set): Set of level numbers that are informative-only levels
     
     Returns:
         str: Navigation HTML
@@ -51,22 +52,37 @@ def create_navigation_html(total_levels, current_level, project_name="capstone",
     
     if challenge_levels is None:
         challenge_levels = set()
+    if informative_levels is None:
+        informative_levels = set()
     
     nav_parts = []
     
     for level_num in range(1, total_levels + 1):
         filename = f"{project_name}-lv-{level_num}.md"
         
-        # Check if this is a challenge level
-        is_challenge = level_num in challenge_levels
-        challenge_icon = "⚡" if is_challenge else ""
+        # Build icon string
+        icons = []
+        if level_num in challenge_levels:
+            icons.append("⚡")
+        if level_num in informative_levels:
+            icons.append("ℹ️")
+        icon_str = "".join(icons)
+        
+        # Check if this is an informative-only level
+        is_informative = level_num in informative_levels
         
         if level_num == current_level:
             # Current level - bold and highlighted
-            nav_parts.append(f"**{level_num}{challenge_icon}**")
+            if is_informative:
+                nav_parts.append(f"**({level_num}{icon_str})**")
+            else:
+                nav_parts.append(f"**{level_num}{icon_str}**")
         else:
             # Other levels - linked
-            nav_parts.append(f"[{level_num}{challenge_icon}](./{filename})")
+            if is_informative:
+                nav_parts.append(f"[({level_num}{icon_str})](./{filename})")
+            else:
+                nav_parts.append(f"[{level_num}{icon_str}](./{filename})")
     
     nav_line = "Level Navigation: " + " | ".join(nav_parts)
     return nav_line
@@ -93,13 +109,41 @@ def detect_challenge_levels(level_files, project_name="capstone"):
         with open(file_path, 'r', encoding='utf-8') as f:
             content = f.read()
         
-        # Check if the title contains "CHALLENGE LEVEL"
-        if "CHALLENGE LEVEL" in content:
+        # Check if the title contains "(Challenge)" or "CHALLENGE LEVEL"
+        if "(Challenge)" in content or "CHALLENGE LEVEL" in content:
             challenge_levels.add(level_num)
     
     return challenge_levels
 
-def add_navigation_to_file(file_path, total_levels, project_name="capstone", challenge_levels=None):
+def detect_informative_levels(level_files, project_name="capstone"):
+    """
+    Detect which levels are informative-only by checking for INFORMATIVE_ONLY marker.
+    
+    Args:
+        level_files (list): List of level file paths
+        project_name (str): Project name for file pattern matching
+    
+    Returns:
+        set: Set of level numbers that are informative-only levels
+    """
+    informative_levels = set()
+    
+    for file_path in level_files:
+        level_num = extract_level_number(os.path.basename(file_path), project_name)
+        if level_num == 0:
+            continue
+            
+        # Read the file to check for INFORMATIVE_ONLY marker
+        with open(file_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        # Check for INFORMATIVE_ONLY marker
+        if "<!-- INFORMATIVE_ONLY -->" in content:
+            informative_levels.add(level_num)
+    
+    return informative_levels
+
+def add_navigation_to_file(file_path, total_levels, project_name="capstone", challenge_levels=None, informative_levels=None):
     """
     Add navigation to a single level file.
     
@@ -108,6 +152,7 @@ def add_navigation_to_file(file_path, total_levels, project_name="capstone", cha
         total_levels (int): Total number of levels
         project_name (str): Project name for file pattern matching
         challenge_levels (set): Set of level numbers that are challenge levels
+        informative_levels (set): Set of level numbers that are informative-only levels
     
     Returns:
         bool: True if file was modified, False if skipped
@@ -115,6 +160,8 @@ def add_navigation_to_file(file_path, total_levels, project_name="capstone", cha
     
     if challenge_levels is None:
         challenge_levels = set()
+    if informative_levels is None:
+        informative_levels = set()
     
     current_level = extract_level_number(os.path.basename(file_path), project_name)
     if current_level == 0:
@@ -124,12 +171,25 @@ def add_navigation_to_file(file_path, total_levels, project_name="capstone", cha
     with open(file_path, 'r', encoding='utf-8') as f:
         content = f.read()
     
-    # Check if navigation already exists
+    # Check if navigation already exists - if it does, replace it
     if "Level Navigation:" in content:
-        return False
+        # Remove existing navigation (everything up to and including the first blank line after navigation)
+        lines = content.split('\n')
+        new_lines = []
+        skip_until_blank = False
+        for i, line in enumerate(lines):
+            if "Level Navigation:" in line:
+                skip_until_blank = True
+                continue
+            if skip_until_blank and line.strip() == '':
+                skip_until_blank = False
+                continue
+            if not skip_until_blank:
+                new_lines.append(line)
+        content = '\n'.join(new_lines)
     
     # Create navigation
-    navigation = create_navigation_html(total_levels, current_level, project_name, challenge_levels)
+    navigation = create_navigation_html(total_levels, current_level, project_name, challenge_levels, informative_levels)
     
     # Add navigation at the beginning of the file
     new_content = navigation + "\n\n" + content
@@ -178,6 +238,14 @@ def main():
         print(f"⚡ Detected challenge levels: {', '.join(map(str, challenge_list))}")
     else:
         print("📝 No challenge levels detected")
+    
+    # Detect informative-only levels
+    informative_levels = detect_informative_levels(level_files, project_name)
+    if informative_levels:
+        info_list = sorted(list(informative_levels))
+        print(f"ℹ️  Detected informative-only levels: {', '.join(map(str, info_list))}")
+    else:
+        print("📖 No informative-only levels detected")
     print()
     
     modified_count = 0
@@ -186,7 +254,7 @@ def main():
         filename = os.path.basename(file_path)
         current_level = extract_level_number(filename, project_name)
         
-        if add_navigation_to_file(file_path, total_levels, project_name, challenge_levels):
+        if add_navigation_to_file(file_path, total_levels, project_name, challenge_levels, informative_levels):
             print(f"✅ Added navigation to: {filename}")
             modified_count += 1
         else:

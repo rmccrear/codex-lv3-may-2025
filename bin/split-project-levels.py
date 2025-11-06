@@ -60,7 +60,8 @@ def extract_levels_from_file(input_file, output_dir, project_name="capstone"):
         level_content = match.group(1).strip()
         
         # Extract level number from the content
-        level_match = re.search(r'# Level (\d+):', level_content)
+        # Match "Level X:" or "Level X (Challenge):" patterns
+        level_match = re.search(r'# Level (\d+)(?:\s*\([^)]+\))?:', level_content)
         if not level_match:
             print(f"⚠️  Skipping block - no level number found")
             continue
