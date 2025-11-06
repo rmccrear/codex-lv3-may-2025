@@ -27,7 +27,7 @@ Katas are small, focused coding exercises designed to build muscle memory and re
 10. **[Kata 10: Calculate Average Rating](./kata-10-reduce-average.md)** - Reduce pattern to average
 11. **[Kata 11: Count by Category](./kata-11-reduce-count.md)** - Reduce pattern to count
 
-### Intermediate: API Integration (12-16)
+### Intermediate: API Integration (12-17)
 📡 **[Intermediate Katas: API Integration](./INTERMEDIATE_KATAS.md)** - Async/await, fetch API, and list patterns with real data
 
 ## How to Use These Katas
