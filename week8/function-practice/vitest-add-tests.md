@@ -193,38 +193,38 @@ it('should handle numbers in text', () => {
 
 ---
 
-## Practice: Your Turn!
+## Practice, Key Takeaways, and Next Steps
+
+### Practice: Your Turn!
 
 Now it's your turn to add some tests! Try adding tests for these scenarios:
 
-### For the `add` function:
+**For the `add` function:**
 1. **Test with two negative numbers** - What happens when you add `-1` and `-2`?
 2. **Test with very small decimal numbers** - Try adding `0.001` and `0.002`
 3. **Test with one number being zero** - What about `add(0, 10)`?
 
-### For the `toSnakeCase` function:
+**For the `toSnakeCase` function:**
 1. **Test with text that has no spaces** - What happens with `'HELLOWORLD'`?
 2. **Test with text that is only spaces** - Try `'   '` (three spaces)
 3. **Test with mixed case** - What about `'HeLLo WoRLd'`?
 
 **Challenge:** Write each test, run it, and see if it passes. If it fails, think about why!
 
----
-
-## Key Takeaways
+### Key Takeaways
 
 - Test edge cases: zero, empty strings, very large numbers
 - Use `toBeCloseTo()` for decimal/fraction testing
 - Test unusual inputs: special characters, multiple spaces, mixed case
 - Think about real-world scenarios your function might encounter
 
-## Next Steps
+### Next Steps
 
 - Try writing tests that you think might fail - this helps you understand your function's behavior
 - Test with `undefined` or `null` - what happens?
 - Can you think of other edge cases we haven't covered?
 
-## Resources
+### Resources
 
 - **[Vitest Documentation](https://vitest.dev/)** - Official Vitest documentation and API reference
 - **[Vitest API Reference](https://vitest.dev/api/)** - Complete API documentation for all Vitest functions
