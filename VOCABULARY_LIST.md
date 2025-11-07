@@ -532,6 +532,42 @@ Hidden configuration values like API keys, database URLs, or secrets that you do
 Naming style using lowercase letters and underscores:  
 `first_name`, `user_id`, `total_price`
 
+### Data Format
+
+The structure or organization of data, determining how information is stored, transmitted, and interpreted. Common data formats include CSV, JSON, XML, and others. Different formats are suited for different purposes — some are human-readable, others are optimized for machines.
+
+**📺 Learn More:** [CSV Data Formats Explained](https://www.youtube.com/watch?v=PiO2dDvMiJo)
+
+### CSV (Comma-Separated Values)
+
+A simple text format for storing tabular data where each line represents a row, and values are separated by commas. Commonly used for spreadsheets and data exchange.
+
+**Example:**
+```csv
+name,age,email
+Alice,25,alice@example.com
+Bob,30,bob@example.com
+```
+
+**📺 Learn More:** [CSV Files Explained](https://www.youtube.com/watch?v=5Zf0QozqF1c)  
+**🔗 Learn More:** [MDN – CSV](https://developer.mozilla.org/en-US/docs/Glossary/CSV)
+
+### JSON (JavaScript Object Notation)
+
+A lightweight data format that uses JavaScript-like syntax to represent structured data. It's the most common format for APIs and data exchange in web development. JSON is human-readable and easy for both humans and machines to parse.
+
+**Example:**
+```json
+{
+  "name": "Alice",
+  "age": 25,
+  "email": "alice@example.com"
+}
+```
+
+**📺 Learn More:** [Understanding JSON](https://www.youtube.com/watch?v=GpOO5iKzOmY&t=163s)  
+
+
 ---
 
 ## Advanced JavaScript Syntax
