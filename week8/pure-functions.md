@@ -264,7 +264,6 @@ function updateDisplay(items) {
 ## Resources
 
 - **[MDN: Pure Functions](https://developer.mozilla.org/en-US/docs/Glossary/Pure_function)** - Official MDN definition and explanation of pure functions
-- **[MDN: Immutability](https://developer.mozilla.org/en-US/docs/Glossary/Mutable)** - MDN explanation of mutability and immutability
 - **[Professor Frisby's Mostly Adequate Guide: Pure Happiness with Pure Functions](https://mostly-adequate-guide.netlify.app/ch03)** - Excellent chapter on pure functions, side effects, and immutability
 - **[Functional Programming Concepts](https://www.freecodecamp.org/news/functional-programming-concepts/)** - FreeCodeCamp guide to functional programming concepts including pure functions
 - **[JavaScript.info: Pure Functions](https://javascript.info/function-basics#pure-functions)** - Clear explanation with examples from JavaScript.info
