@@ -95,6 +95,20 @@ export default function PokemonDisplay() {
 - Use `useEffect` to fetch data when component loads
 - Show loading state while data is being fetched
 
+## Why We Wrap Async Logic Inside `useEffect`
+
+`useEffect`, cannot take an async function as a callback.
+
+```javascript
+  useEffect(async () => { // Wrong!!
+        const response = await fetch('https://pokeapi.co/api/v2/pokemon/pikachu');
+        // ...
+    }
+  }
+```
+
+Why? `useEffect` expects its callback to return either nothing or a cleanup function—not a Promise. Declaring the effect callback as `async` would make it return a Promise implicitly, which React treats as a cleanup and warns about. The common pattern is to define an `async` helper inside the effect (or an immediately invoked async function) and call it right away, leaving the outer effect synchronous. See the React docs for more on [what effect callbacks should return](https://react.dev/reference/react/useEffect#connecting-to-an-external-system).
+
 ---
 
 **← [Back to Kata Index](./README.md)**
