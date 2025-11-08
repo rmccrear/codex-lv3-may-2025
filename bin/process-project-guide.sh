@@ -7,22 +7,26 @@
 # into individual level files with navigation and collapsible Show Me sections.
 #
 # Usage:
-#   ./process-project-guide.sh [input_file] [output_dir] [project_name]
+#   ./process-project-guide.sh [input_file] [output_dir] [project_name] [--clean]
 #
 # Arguments:
 #   input_file    - Path to the concatenated guide file
 #   output_dir    - Directory to write individual level files  
 #   project_name  - Project name (e.g., 'capstone', 'mad-libs') for file naming
+#   --clean, -c    - Optional: Clean output directory before processing (removes old level files)
 #
 # Examples:
 #   # Capstone project
 #   ./process-project-guide.sh capstone/capstone-guide-all-todo.md capstone/capstone-levels capstone
 #
-#   # Mad Libs project
-#   ./process-project-guide.sh mad-libs-guide-all.md mad-libs/mad-libs-levels mad-libs
+#   # Mad Libs project with cleanup
+#   ./process-project-guide.sh mad-libs-guide-all.md mad-libs/mad-libs-levels mad-libs --clean
 #
 #   # Use defaults (capstone)
 #   ./process-project-guide.sh
+#
+#   # Use defaults with cleanup
+#   ./process-project-guide.sh --clean
 
 set -e  # Exit on any error
 
@@ -38,10 +42,25 @@ DEFAULT_INPUT="capstone/capstone-guide-all-todo.md"
 DEFAULT_OUTPUT="capstone/capstone-levels"
 DEFAULT_PROJECT="capstone"
 
-# Get command line arguments
-INPUT_FILE="${1:-$DEFAULT_INPUT}"
-OUTPUT_DIR="${2:-$DEFAULT_OUTPUT}"
-PROJECT_NAME="${3:-$DEFAULT_PROJECT}"
+# Parse command line arguments
+CLEAN_DIR=false
+ARGS=()
+
+for arg in "$@"; do
+    case $arg in
+        --clean|-c)
+            CLEAN_DIR=true
+            ;;
+        *)
+            ARGS+=("$arg")
+            ;;
+    esac
+done
+
+# Get command line arguments (excluding flags)
+INPUT_FILE="${ARGS[0]:-$DEFAULT_INPUT}"
+OUTPUT_DIR="${ARGS[1]:-$DEFAULT_OUTPUT}"
+PROJECT_NAME="${ARGS[2]:-$DEFAULT_PROJECT}"
 
 echo -e "${BLUE}🎯 Project Guide Processing Pipeline${NC}"
 echo -e "${BLUE}====================================${NC}"
@@ -49,6 +68,9 @@ echo ""
 echo -e "📖 Input file: ${YELLOW}$INPUT_FILE${NC}"
 echo -e "📁 Output directory: ${YELLOW}$OUTPUT_DIR${NC}"
 echo -e "🏷️  Project name: ${YELLOW}$PROJECT_NAME${NC}"
+if [ "$CLEAN_DIR" = true ]; then
+    echo -e "🧹 Clean mode: ${YELLOW}Enabled${NC} (will remove old level files)"
+fi
 echo ""
 
 # Check if input file exists
@@ -59,6 +81,19 @@ fi
 
 # Create output directory if it doesn't exist
 mkdir -p "$OUTPUT_DIR"
+
+# Clean output directory if requested
+if [ "$CLEAN_DIR" = true ]; then
+    echo -e "${YELLOW}🧹 Cleaning output directory...${NC}"
+    OLD_FILES=$(find "$OUTPUT_DIR" -name "${PROJECT_NAME}-lv-*.md" 2>/dev/null | wc -l)
+    if [ "$OLD_FILES" -gt 0 ]; then
+        find "$OUTPUT_DIR" -name "${PROJECT_NAME}-lv-*.md" -delete
+        echo -e "  → Removed ${YELLOW}$OLD_FILES${NC} old level files"
+    else
+        echo -e "  → No old level files found"
+    fi
+    echo ""
+fi
 
 echo -e "${BLUE}Step 1: Splitting levels from concatenated guide...${NC}"
 python3 bin/split-project-levels.py "$INPUT_FILE" "$OUTPUT_DIR" "$PROJECT_NAME"

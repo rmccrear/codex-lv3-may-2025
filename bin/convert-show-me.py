@@ -23,8 +23,16 @@ Examples:
 import os
 import re
 import sys
-import html
 from pathlib import Path
+
+def escape_code_content(code_content):
+    """Escape HTML-sensitive characters inside code blocks."""
+    return (
+        code_content
+        .replace("&", "&amp;")
+        .replace("<", "&lt;")
+        .replace(">", "&gt;")
+    )
 
 def convert_show_me_sections(content):
     """
@@ -37,31 +45,66 @@ def convert_show_me_sections(content):
         str: Converted content
     """
     
-    # Pattern to match "Show Me" sections
-    # Matches: "Show Me: description" followed by code block OR existing HTML details
-    pattern = r'Show Me: ([^\n]+)\n\n(```(\w+)?\n(.*?)\n```)'
+    # Pattern to match "Show Me" sections with fenced code blocks
+    marker_pattern = r'Show Me(?::\s*([^\n]+))?\n\n```([\w+-]+)?\n(.*?)\n```'
+    
+    # Pattern to match <details> blocks that still contain fenced code blocks
+    details_fence_pattern = (
+        r'(<details>\s*<summary>\s*Show Me(?::\s*([^<]+))?\s*</summary>\s*)'
+        r'```([\w+-]+)?\n(.*?)\n```'
+        r'(\s*</details>)'
+    )
     
     # Also handle existing HTML details that need escaping fixes
     html_pattern = r'(<pre><code class="language-(\w+)">)(.*?)(</code></pre>)'
     
-    def replace_show_me(match):
-        description = match.group(1).strip()
-        code_block = match.group(2)
-        language = match.group(3) or ''
-        code_content = match.group(4)
+    def replace_show_me_marker(match):
+        description = (match.group(1) or '').strip()
+        language = (match.group(2) or '').strip()
+        code_content = match.group(3)
         
-        # Escape HTML characters in code content for proper display
-        # Only escape raw < and > characters, not already escaped ones
-        escaped_code = code_content.replace('<', '&lt;').replace('>', '&gt;')
+        if description:
+            summary_line = f"Show Me: {description}"
+        else:
+            summary_line = "Show Me"
         
-        # Create collapsible details
-        details_html = f'''<details>
-<summary>Show Me: {description}</summary>
-
-<pre><code class="language-{language}">{escaped_code}</code></pre>
-</details>'''
+        language_suffix = language if language else ''
+        fence_open = f"```{language_suffix}\n"
+        fence_close = "```"
+        
+        details_html = (
+            "<details>\n"
+            f"<summary>{summary_line}</summary>\n\n"
+            f"{fence_open}{code_content}\n{fence_close}\n\n"
+            "</details>"
+        )
         
         return details_html
+    
+    def convert_details_fence(match):
+        prefix = match.group(1)
+        description = (match.group(2) or '').strip()
+        language = (match.group(3) or '').strip()
+        code_content = match.group(4)
+        suffix = match.group(5)
+        
+        escaped_code = escape_code_content(code_content)
+        
+        if description:
+            summary_line = f"Show Me: {description}"
+        else:
+            summary_line = "Show Me"
+        
+        # Rebuild prefix with normalized summary (to ensure consistent formatting)
+        normalized_prefix = (
+            "<details>\n"
+            f"<summary>{summary_line}</summary>\n\n"
+        )
+        
+        language_attr = f' class="language-{language}"' if language else ''
+        pre_block = f"<pre><code{language_attr}>\n{escaped_code}\n</code></pre>"
+        
+        return f"{normalized_prefix}{pre_block}\n{suffix}"
     
     def fix_html_escaping(match):
         open_tag = match.group(1)
@@ -69,14 +112,19 @@ def convert_show_me_sections(content):
         code_content = match.group(3)
         close_tag = match.group(4)
         
-        # Escape HTML characters in code content for proper display
-        # Only escape raw < and > characters, not already escaped ones
-        escaped_code = code_content.replace('<', '&lt;').replace('>', '&gt;')
+        escaped_code = escape_code_content(code_content)
         
         return f"{open_tag}{escaped_code}{close_tag}"
     
-    # Replace all "Show Me" sections
-    converted_content = re.sub(pattern, replace_show_me, content, flags=re.DOTALL)
+    # Step 1: Replace marker-based Show Me sections with <details> wrappers.
+    converted_content = re.sub(
+        marker_pattern, replace_show_me_marker, content, flags=re.DOTALL
+    )
+    
+    # Step 2 & 3: Convert fenced code within details into escaped <pre><code> blocks.
+    converted_content = re.sub(
+        details_fence_pattern, convert_details_fence, converted_content, flags=re.DOTALL
+    )
     
     # Fix HTML escaping in existing code blocks
     converted_content = re.sub(html_pattern, fix_html_escaping, converted_content, flags=re.DOTALL)
@@ -99,7 +147,7 @@ def process_file(file_path):
         content = f.read()
     
     # Check if file has "Show Me" sections or HTML code blocks that need escaping
-    if 'Show Me:' not in content and '<pre><code class=' not in content:
+    if 'Show Me' not in content and '<pre><code class=' not in content:
         return False
     
     # Convert the content
