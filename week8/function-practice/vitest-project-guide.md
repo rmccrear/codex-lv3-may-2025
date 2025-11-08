@@ -200,10 +200,15 @@ function-practice/
 ---
 
 <!-- LEVEL_START -->
+<!-- INFORMATIVE_ONLY -->
 
 ## Level 8: Adding More Tests
 
 Once you have basic tests working, it's time to add more test cases! Testing different scenarios helps ensure your functions work correctly in all situations.
+
+Thoughtful tests confirm behavior and also serve as living documentation for teammates who depend on these functions.
+
+In the next levels we'll lean into this mindset by layering on robust tests that stress your functions from every angle.
 
 ---
 
