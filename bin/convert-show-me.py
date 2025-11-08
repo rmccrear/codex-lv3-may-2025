@@ -23,6 +23,7 @@ Examples:
 import os
 import re
 import sys
+import html
 from pathlib import Path
 
 def escape_code_content(code_content):
@@ -48,11 +49,9 @@ def convert_show_me_sections(content):
     # Pattern to match "Show Me" sections with fenced code blocks
     marker_pattern = r'Show Me(?::\s*([^\n]+))?\n\n```([\w+-]+)?\n(.*?)\n```'
     
-    # Pattern to match <details> blocks that still contain fenced code blocks
-    details_fence_pattern = (
-        r'(<details>\s*<summary>\s*Show Me(?::\s*([^<]+))?\s*</summary>\s*)'
-        r'```([\w+-]+)?\n(.*?)\n```'
-        r'(\s*</details>)'
+    # Pattern to match <details> blocks (we'll process their inner markdown)
+    details_block_pattern = (
+        r'(<details>\s*<summary>\s*Show Me(?::\s*([^<]+))?\s*</summary>)([\s\S]*?)(</details>)'
     )
     
     # Also handle existing HTML details that need escaping fixes
@@ -81,30 +80,97 @@ def convert_show_me_sections(content):
         
         return details_html
     
-    def convert_details_fence(match):
+    def convert_details_block(match):
         prefix = match.group(1)
         description = (match.group(2) or '').strip()
-        language = (match.group(3) or '').strip()
-        code_content = match.group(4)
-        suffix = match.group(5)
-        
-        escaped_code = escape_code_content(code_content)
+        body = match.group(3)
+        suffix = match.group(4)
         
         if description:
             summary_line = f"Show Me: {description}"
         else:
             summary_line = "Show Me"
         
-        # Rebuild prefix with normalized summary (to ensure consistent formatting)
+        # Normalize prefix to ensure consistent formatting
         normalized_prefix = (
             "<details>\n"
-            f"<summary>{summary_line}</summary>\n\n"
+            f"<summary>{summary_line}</summary>\n"
         )
         
-        language_attr = f' class="language-{language}"' if language else ''
-        pre_block = f"<pre><code{language_attr}>\n{escaped_code}\n</code></pre>"
+        code_pattern = r'```([\w+-]+)?\n(.*?)\n```'
+        code_block_regex = re.compile(r'<pre><code.*?</code></pre>', re.DOTALL)
         
-        return f"{normalized_prefix}{pre_block}\n{suffix}"
+        def replace_code_block(code_match):
+            language = (code_match.group(1) or '').strip()
+            code_content = code_match.group(2)
+            escaped_code = escape_code_content(code_content)
+            language_attr = f' class="language-{language}"' if language else ''
+            return f"\n<pre><code{language_attr}>\n{escaped_code}\n</code></pre>\n"
+        
+        converted_body = re.sub(code_pattern, replace_code_block, body, flags=re.DOTALL)
+        
+        def convert_inline_markdown(text):
+            if not text:
+                return ''
+            escaped = html.escape(text)
+            # Inline code
+            escaped = re.sub(
+                r'`([^`]+)`',
+                lambda m: f"<code>{m.group(1)}</code>",
+                escaped
+            )
+            # Bold text
+            escaped = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', escaped)
+            return escaped
+        
+        def render_text_chunk(text_chunk):
+            lines = text_chunk.split('\n')
+            html_lines = []
+            in_list = False
+            
+            for line in lines:
+                stripped = line.strip()
+                if not stripped:
+                    if in_list:
+                        html_lines.append('</ul>')
+                        in_list = False
+                    continue
+                if stripped.startswith('- '):
+                    if not in_list:
+                        html_lines.append('<ul>')
+                        in_list = True
+                    item = convert_inline_markdown(stripped[2:].strip())
+                    html_lines.append(f'<li>{item}</li>')
+                else:
+                    if in_list:
+                        html_lines.append('</ul>')
+                        in_list = False
+                    paragraph = convert_inline_markdown(stripped)
+                    html_lines.append(f'<p>{paragraph}</p>')
+            if in_list:
+                html_lines.append('</ul>')
+            return '\n'.join(html_lines)
+        
+        segments = []
+        last_index = 0
+        for code_match in code_block_regex.finditer(converted_body):
+            text_segment = converted_body[last_index:code_match.start()]
+            if text_segment.strip():
+                rendered_text = render_text_chunk(text_segment)
+                if rendered_text:
+                    segments.append(rendered_text)
+            segments.append(code_match.group(0))
+            last_index = code_match.end()
+        
+        remaining_text = converted_body[last_index:]
+        if remaining_text.strip():
+            rendered_remaining = render_text_chunk(remaining_text)
+            if rendered_remaining:
+                segments.append(rendered_remaining)
+        
+        converted_body = '\n'.join(segments).strip()
+        
+        return f"{normalized_prefix}{converted_body.strip()}\n{suffix}"
     
     def fix_html_escaping(match):
         open_tag = match.group(1)
@@ -121,9 +187,9 @@ def convert_show_me_sections(content):
         marker_pattern, replace_show_me_marker, content, flags=re.DOTALL
     )
     
-    # Step 2 & 3: Convert fenced code within details into escaped <pre><code> blocks.
+    # Step 2 & 3: Convert markdown within details into HTML-friendly blocks.
     converted_content = re.sub(
-        details_fence_pattern, convert_details_fence, converted_content, flags=re.DOTALL
+        details_block_pattern, convert_details_block, converted_content, flags=re.DOTALL
     )
     
     # Fix HTML escaping in existing code blocks

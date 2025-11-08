@@ -22,10 +22,8 @@ Then, update your `package.json` to add the test script and set the module type:
 
 <details>
 <summary>Show Me: What the full package.json might look like</summary>
-
-When you run `npm init -y`, it creates a basic `package.json`. After adding the `type` and `scripts` fields, your complete `package.json` might look like this:
-
-```json
+<p>When you run <code>npm init -y</code>, it creates a basic <code>package.json</code>. After adding the <code>type</code> and <code>scripts</code> fields, your complete <code>package.json</code> might look like this:</p>
+<pre><code class="language-json">
 {
   "name": "function-practice",
   "version": "1.0.0",
@@ -42,14 +40,14 @@ When you run `npm init -y`, it creates a basic `package.json`. After adding the 
     "vitest": "^1.0.0"
   }
 }
-```
-
-**Key points:**
-- The `"type": "module"` field enables ES6 module syntax (import/export)
-- The `"scripts"` section includes your test command
-- `vitest` appears in `devDependencies` after installation
-- Other fields (name, version, etc.) are created by `npm init -y`
-
+</code></pre>
+<p><strong>Key points:</strong></p>
+<ul>
+<li>The <code>&quot;type&quot;: &quot;module&quot;</code> field enables ES6 module syntax (import/export)</li>
+<li>The <code>&quot;scripts&quot;</code> section includes your test command</li>
+<li><code>vitest</code> appears in <code>devDependencies</code> after installation</li>
+<li>Other fields (name, version, etc.) are created by <code>npm init -y</code></li>
+</ul>
 </details>
 
 Now run the test command to verify Vitest is set up correctly (it will show no tests found, which is expected):

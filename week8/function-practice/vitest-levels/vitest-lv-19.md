@@ -8,15 +8,12 @@ Plan: validate long strings stay consistent by mapping `"This Is A Very Long Sen
 
 <details>
 <summary>Show Me</summary>
-
 <pre><code class="language-javascript">
-it('should handle very long text', () =&amp;gt; {
+it('should handle very long text', () =&amp;amp;amp;gt; {
   const result = toSnakeCase('This Is A Very Long Sentence With Many Words');
   expect(result).toBe('this_is_a_very_long_sentence_with_many_words');
 });
 </code></pre>
-
-
 </details>
 
 **Try it:** Add this test and see if it handles long text correctly!

@@ -8,15 +8,12 @@ Plan: capture how punctuation is treated by asserting `toSnakeCase('Hello World!
 
 <details>
 <summary>Show Me</summary>
-
 <pre><code class="language-javascript">
-it('should handle text with special characters', () =&amp;gt; {
+it('should handle text with special characters', () =&amp;amp;amp;gt; {
   const result = toSnakeCase('Hello World!');
   expect(result).toBe('hello_world!');
 });
 </code></pre>
-
-
 </details>
 
 **Try it:** Add this test. Do special characters get preserved?

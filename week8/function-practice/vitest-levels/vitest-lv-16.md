@@ -8,15 +8,12 @@ Plan: check that `toSnakeCase('')` returns an empty string so blank inputs remai
 
 <details>
 <summary>Show Me</summary>
-
 <pre><code class="language-javascript">
-it('should handle empty string', () =&amp;gt; {
+it('should handle empty string', () =&amp;amp;amp;gt; {
   const result = toSnakeCase('');
   expect(result).toBe('');
 });
 </code></pre>
-
-
 </details>
 
 **Try it:** Add this test to your `toSnakeCase` tests!
