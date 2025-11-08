@@ -25,6 +25,7 @@ This repository contains comprehensive learning materials for a Level 3 React de
 - [Week 4: List Patterns and Data Manipulation](#week-4-list-patterns-and-data-manipulation)
 - [Week 5: Database Integration with Supabase](#week-5-database-integration-with-supabase)
 - [Weeks 6-7: Capstone Project](#weeks-6-7-capstone-project)
+- [Week 8: Testing and Refactoring with Vitest](#week-8-testing-and-refactoring-with-vitest)
 
 ## Course Topics
 
@@ -91,3 +92,19 @@ This repository contains comprehensive learning materials for a Level 3 React de
 #### Capstone Resources
 - 📋 [Capstone Project Requirements](week6/CAPSTONE_REQUIREMENTS.md) - Complete project specifications and technical requirements
 - 📝 [Capstone Planning Guide](week6/CAPSTONE_PLANNING.md) - Step-by-step guide for planning your capstone project
+
+### Week 8: Testing and Refactoring with Vitest
+
+> **Learning Goal:** Strengthen code quality by adopting automated testing workflows and refactoring application logic into pure, testable functions.
+
+> **Technical Focus:** You'll configure Vitest within Vite projects, practice Behavior-Driven Development using expect-style assertions, refactor capstone logic into reusable helpers, and exercise fetch patterns for working with external APIs.
+
+**What You'll Build:** You'll construct a suite of unit tests that validate standalone functions, refactor your capstone project to rely on pure functions, and expand existing fetch-based exercises to render mapped data. The result is a more maintainable codebase with executable documentation.
+
+#### Week 8 Resources
+- 🧭 [Testing Overview](week8/README.md) - Intro to testing philosophy, BDD, and expect-style assertions
+- 🧪 [Vitest Testing Assignment](week8/ASSIGNMENT_VITEST_MOODLE.md) - Guided exploration of Vitest levels and challenges
+- 🧰 [Function Practice Ideas](week8/function-practice/function-ideas.md) - Function prompts for building test suites
+- 🔁 [Mini Project: Refactoring with Pure Functions](week8/ASSIGNMENT_MINI_PROJECT_MOODLE.md) - Refactor your capstone with pure helpers and tests
+- 🔍 [Fetch Kata with Map](week8/ASSIGNMENT_FETCH_KATA_MOODLE.md) - Practice fetch + map for rendering API data
+- ✅ [Project Requirements Checklist](week8/PROJECT_REQUIREMENTS.md) - Checklist for refactoring and testing goals
