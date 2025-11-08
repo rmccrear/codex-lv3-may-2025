@@ -230,6 +230,8 @@ In the next levels we'll lean into this mindset by layering on robust tests that
 
 Let's start by testing what happens when we use zero. Add this test to your `add` function:
 
+Plan: confirm the `add` helper treats zero as neutral by writing a test that checks `add(5, 0)` still returns `5`.
+
 ```javascript
 it('should add zero', () => {
   const result = add(5, 0);
@@ -246,6 +248,8 @@ it('should add zero', () => {
 ## Level 11: Testing with Very Large Numbers
 
 Now let's test with very large numbers to see if our function handles them correctly:
+
+Plan: stress-test `add` with a huge value and ensure it increments without overflow by asserting `add(999999999, 1)` equals `1000000000`.
 
 ```javascript
 it('should add very large numbers', () => {
@@ -264,6 +268,8 @@ it('should add very large numbers', () => {
 
 What about decimal numbers? Let's test that:
 
+Plan: verify `add` handles decimals cleanly by checking `add(3.14, 2.86)` produces the precise total you expect.
+
 ```javascript
 it('should add decimal numbers', () => {
   const result = add(3.14, 2.86);
@@ -280,6 +286,8 @@ it('should add decimal numbers', () => {
 ## Level 13: Testing with Positive and Negative Numbers
 
 Let's test what happens when we add a positive number to a negative number:
+
+Plan: confirm `add` balances signs correctly by asserting `add(10, -5)` results in `5`.
 
 ```javascript
 it('should add positive and negative numbers', () => {
@@ -298,12 +306,19 @@ it('should add positive and negative numbers', () => {
 
 What if the result itself is zero? Let's test that:
 
+Plan: ensure opposite values cancel out by verifying `add(5, -5)` returns `0`.
+
+<details>
+<summary>Show Me</summary>
+
 ```javascript
 it('should add when result is zero', () => {
   const result = add(5, -5);
   expect(result).toBe(0);
 });
 ```
+
+</details>
 
 **Try it:** Add this test and verify it works!
 
@@ -315,12 +330,19 @@ it('should add when result is zero', () => {
 
 When working with decimal numbers like `0.1 + 0.2`, JavaScript's floating point arithmetic can cause tiny rounding errors. We need to use `toBeCloseTo()` instead of `toBe()`:
 
+Plan: demonstrate floating point quirks by expecting `add(0.1, 0.2)` to be close to `0.3` rather than exactly equal.
+
+<details>
+<summary>Show Me</summary>
+
 ```javascript
 it('should add fractions', () => {
   const result = add(0.1, 0.2);
   expect(result).toBeCloseTo(0.3); // Use toBeCloseTo for floating point!
 });
 ```
+
+</details>
 
 **Key Concept:** Use `toBeCloseTo()` when testing decimal numbers because `0.1 + 0.2` doesn't exactly equal `0.3` in JavaScript due to floating point precision.
 
@@ -334,12 +356,19 @@ it('should add fractions', () => {
 
 Now let's move to testing `toSnakeCase`. What happens with an empty string?
 
+Plan: check that `toSnakeCase('')` returns an empty string so blank inputs remain unchanged.
+
+<details>
+<summary>Show Me</summary>
+
 ```javascript
 it('should handle empty string', () => {
   const result = toSnakeCase('');
   expect(result).toBe('');
 });
 ```
+
+</details>
 
 **Try it:** Add this test to your `toSnakeCase` tests!
 
@@ -351,12 +380,19 @@ it('should handle empty string', () => {
 
 What about a single word with no spaces?
 
+Plan: prove `toSnakeCase` lowercases solo words by asserting `toSnakeCase('Hello')` yields `hello`.
+
+<details>
+<summary>Show Me</summary>
+
 ```javascript
 it('should handle single word', () => {
   const result = toSnakeCase('Hello');
   expect(result).toBe('hello');
 });
 ```
+
+</details>
 
 **Try it:** Add this test and run it!
 
@@ -368,12 +404,19 @@ it('should handle single word', () => {
 
 What if there are multiple spaces between words?
 
+Plan: see how repeated whitespace converts by testing `toSnakeCase('Hello   World')` and observing the underscore trio.
+
+<details>
+<summary>Show Me</summary>
+
 ```javascript
 it('should handle multiple spaces', () => {
   const result = toSnakeCase('Hello   World');
   expect(result).toBe('hello___world');
 });
 ```
+
+</details>
 
 **Try it:** Add this test. Notice how multiple spaces become multiple underscores!
 
@@ -385,12 +428,19 @@ it('should handle multiple spaces', () => {
 
 Let's test with a very long sentence:
 
+Plan: validate long strings stay consistent by mapping `"This Is A Very Long Sentence With Many Words"` to the expected snake case version.
+
+<details>
+<summary>Show Me</summary>
+
 ```javascript
 it('should handle very long text', () => {
   const result = toSnakeCase('This Is A Very Long Sentence With Many Words');
   expect(result).toBe('this_is_a_very_long_sentence_with_many_words');
 });
 ```
+
+</details>
 
 **Try it:** Add this test and see if it handles long text correctly!
 
@@ -402,12 +452,19 @@ it('should handle very long text', () => {
 
 What about text with special characters like exclamation marks?
 
+Plan: capture how punctuation is treated by asserting `toSnakeCase('Hello World!')` keeps the exclamation mark intact at the end.
+
+<details>
+<summary>Show Me</summary>
+
 ```javascript
 it('should handle text with special characters', () => {
   const result = toSnakeCase('Hello World!');
   expect(result).toBe('hello_world!');
 });
 ```
+
+</details>
 
 **Try it:** Add this test. Do special characters get preserved?
 
@@ -419,12 +476,19 @@ it('should handle text with special characters', () => {
 
 What if the text contains numbers?
 
+Plan: confirm digits survive conversion by checking `toSnakeCase('Hello 123 World')` preserves `123` between underscores.
+
+<details>
+<summary>Show Me</summary>
+
 ```javascript
 it('should handle numbers in text', () => {
   const result = toSnakeCase('Hello 123 World');
   expect(result).toBe('hello_123_world');
 });
 ```
+
+</details>
 
 **Try it:** Add this test and see how numbers are handled!
 
