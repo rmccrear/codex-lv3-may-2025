@@ -30,7 +30,7 @@ To process any project guide in one command:
 ### Individual Processing Scripts
 - **`bin/split-project-levels.py`** - Splits concatenated guide into individual level files
 - **`bin/add-project-navigation.py`** - Adds navigation links between levels
-- **`capstone/convert-show-me.py`** - Converts "Show Me" sections to collapsible HTML details
+- **`bin/convert-show-me.py`** - Converts "Show Me" sections (markers or `<details>` blocks) into HTML-friendly collapsible details
 
 ### Legacy Scripts (Project-Specific)
 - **`capstone/split-capstone-levels.py`** - Capstone-specific version (legacy)
@@ -75,16 +75,16 @@ python3 bin/add-project-navigation.py
 
 ### 3. Convert Show Me Sections
 ```bash
-python3 capstone/convert-show-me.py [target]
+python3 bin/convert-show-me.py [target]
 ```
 
 **Examples:**
 ```bash
 # Process all files in directory
-python3 capstone/convert-show-me.py mad-libs/mad-libs-levels
+python3 bin/convert-show-me.py mad-libs/mad-libs-levels
 
 # Process specific file
-python3 capstone/convert-show-me.py mad-libs/mad-libs-levels/mad-libs-lv-1.md
+python3 bin/convert-show-me.py mad-libs/mad-libs-levels/mad-libs-lv-1.md
 ```
 
 ## 📋 Input Format Requirements
@@ -122,7 +122,7 @@ Level Navigation: **1** | [2](./capstone-lv-2.md) | [3](./capstone-lv-3.md) | ..
 ```
 
 ### Collapsible Show Me Sections
-"Show Me" sections are converted to HTML details:
+"Show Me" sections are converted to HTML details (supports both the original `Show Me:` markers and pre-existing `<details><summary>Show Me</summary>` blocks):
 
 **Before:**
 ```markdown
