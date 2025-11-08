@@ -711,17 +711,13 @@ Want to test and experiment with regex patterns? Check out [regex101.com](https:
 
 ## Level 32: Adding More Punctuation
 
-What if we want to handle more punctuation? We can just add them to the character class:
+**Exercise:** expand your regex to cover more punctuation.
 
-```javascript
-export function toSnakeCase(text) {
-  return text.replaceAll(' ', '_').replaceAll(/[!?,.;:]/, '_').toLowerCase();
-}
-```
+- Update the character class so it also replaces `.`, `;`, and `:` with underscores.
+- Add a new test (or two) proving the updated `toSnakeCase` handles the extra marks.
+- Rerun your suite and confirm everything still passes.
 
-Now it handles: `!`, `?`, `,`, `.`, `;`, and `:`!
-
-**Try it:** Add a test for one of these new punctuation marks and see if it works!
+*Hint:* revisit Level 31’s breakdown if you need to recall how character classes work.
 
 ---
 
@@ -741,6 +737,7 @@ export function toSnakeCase(text) {
 - `\W` matches any non-word character (punctuation, symbols, etc.)
 - It does NOT match letters, numbers, or underscores
 - This is a shorthand for "everything except word characters"
+- **Mnemonic:** lowercase `\w` stands for word characters; uppercase `\W` flips the meaning to non-word characters.
 
 **Try it:** Update your function and run your tests. They should still pass!
 
@@ -765,16 +762,7 @@ it('should replace multiple punctuation marks', () => {
 
 ### Challenge 2: Test Mixed Punctuation
 
-Write a test with different types of punctuation:
-
-```javascript
-it('should handle mixed punctuation', () => {
-  const result = toSnakeCase('Hello, World! How are you?');
-  expect(result).toBe('hello__world__how_are_you_');
-});
-```
-
-**Try it:** Add this test and see if it works!
+**Exercise:** design a test that mixes commas, exclamation marks, and question marks in the same string, then update `toSnakeCase` if needed so the assertion passes.
 
 ---
 
