@@ -7,6 +7,7 @@
 - [Week 3](#week-3) - React Events
 - Week 4 - Hackathon
 - [Week 5](#week-5) - Databases and Forms
+- [Week 8](#week-8) - Testing and Refactoring with Vitest
 
 ---
 
@@ -566,6 +567,47 @@ A lightweight data format that uses JavaScript-like syntax to represent structur
 ```
 
 **📺 Learn More:** [Understanding JSON](https://www.youtube.com/watch?v=GpOO5iKzOmY&t=163s)  
+
+
+---
+
+## Week 8
+
+### devDependencies
+Packages listed under `devDependencies` in `package.json` are only needed during development. Vitest is installed here because it's used to run tests locally rather than in production builds.
+
+### type: "module"
+Setting `"type": "module"` in `package.json` enables ES module syntax (`import` / `export`) across the project so test files and helpers can use modern JavaScript features.
+
+### npm scripts
+Custom commands defined in the `"scripts"` section of `package.json`. Running `npm run test` executes the configured Vitest command.
+
+### describe / it blocks
+Vitest’s structure for organizing tests. `describe` groups related specs, while each `it` defines a single behavior being asserted.
+
+### expect assertions
+The matcher API used to express outcomes (`expect(value).toBe(…)`, `toEqual(…)`, etc.). Expect-style syntax keeps tests readable and declarative.
+
+### toBeCloseTo
+A matcher for comparing floating-point numbers with precision tolerance—useful when testing calculations like `0.1 + 0.2`.
+
+### watch mode
+Running `vitest --watch` or `npm run test -- --watch` re-runs tests whenever files change, supporting rapid feedback during development.
+
+### Red-Green-Refactor
+Test-Driven Development cycle highlighted in the guide: write a failing test (red), implement just enough code to pass (green), then clean up the implementation (refactor) while keeping tests green.
+
+### Regular Expression character classes
+Patterns like `/[!?,]/` or `\W` used to match groups of characters during string refactoring exercises (e.g., replacing punctuation in `toSnakeCase`).
+
+### replaceAll()
+A modern string method that replaces every occurrence of a substring or regex match, used throughout the string utility levels to keep helper functions pure.
+
+### async useEffect pattern
+React’s `useEffect` cannot accept an `async` callback. Instead, an inner async function (or IIFE) handles awaiting logic, ensuring the effect itself returns either nothing or a cleanup function.
+
+### Unit Test
+A focused test that exercises a single function or module in isolation to verify correct behavior across expected and edge-case inputs. Vitest’s `it` blocks typically represent unit tests.
 
 
 ---
