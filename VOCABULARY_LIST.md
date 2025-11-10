@@ -578,36 +578,46 @@ Packages listed under `devDependencies` in `package.json` are only needed during
 
 ### type: "module"
 Setting `"type": "module"` in `package.json` enables ES module syntax (`import` / `export`) across the project so test files and helpers can use modern JavaScript features.
+**📺 Learn More:** [JavaScript ES Modules Crash Course](https://www.youtube.com/watch?v=cRHQNNcYf6s)
 
 ### npm scripts
 Custom commands defined in the `"scripts"` section of `package.json`. Running `npm run test` executes the configured Vitest command.
+**📺 Learn More:** [npm Scripts Crash Course](https://www.youtube.com/watch?v=4oz0rqoB6VM)
 
 ### describe / it blocks
 Vitest’s structure for organizing tests. `describe` groups related specs, while each `it` defines a single behavior being asserted.
 
 ### expect assertions
 The matcher API used to express outcomes (`expect(value).toBe(…)`, `toEqual(…)`, etc.). Expect-style syntax keeps tests readable and declarative.
+**📺 Learn More:** [JavaScript Unit Testing Tutorial for Beginners](https://www.youtube.com/watch?v=zuKbR4Q428o&t=1184s)
 
 ### toBeCloseTo
 A matcher for comparing floating-point numbers with precision tolerance—useful when testing calculations like `0.1 + 0.2`.
+**🔗 Learn More:** [Vitest expect.toBeCloseTo](https://vitest.dev/api/expect.html#tobecloseto)
 
 ### watch mode
 Running `vitest --watch` or `npm run test -- --watch` re-runs tests whenever files change, supporting rapid feedback during development.
 
 ### Red-Green-Refactor
 Test-Driven Development cycle highlighted in the guide: write a failing test (red), implement just enough code to pass (green), then clean up the implementation (refactor) while keeping tests green.
+**📺 Learn More:** [Test-Driven Development (Red Green Refactor)](https://www.youtube.com/watch?v=OhT0_Xg-vZU)
 
 ### Regular Expression character classes
 Patterns like `/[!?,]/` or `\W` used to match groups of characters during string refactoring exercises (e.g., replacing punctuation in `toSnakeCase`).
+**🔗 Learn More:** [Regex101 Reference](https://regex101.com/)
 
 ### replaceAll()
 A modern string method that replaces every occurrence of a substring or regex match, used throughout the string utility levels to keep helper functions pure.
+**🔗 Learn More:** [MDN – String.prototype.replaceAll()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll)
 
 ### async useEffect pattern
 React’s `useEffect` cannot accept an `async` callback. Instead, an inner async function (or IIFE) handles awaiting logic, ensuring the effect itself returns either nothing or a cleanup function.
+**🔗 Learn More:** [MDN – String.prototype.replaceAll()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll)
+**🔗 Read More:** [Promises, async/await, and useEffect in React](https://medium.com/@finnkumar6/battle-of-the-asyncs-promises-async-await-and-useeffect-in-reactjs-b1c83128d03e)
 
 ### Unit Test
 A focused test that exercises a single function or module in isolation to verify correct behavior across expected and edge-case inputs. Vitest’s `it` blocks typically represent unit tests.
+**📺 Learn More:** [JavaScript Unit Testing Tutorial for Beginners](https://youtu.be/zuKbR4Q428o?si=lrB4J8KsCkjk6qLs&t=1186)
 
 
 ---
@@ -621,7 +631,7 @@ A focused test that exercises a single function or module in isolation to verify
 A keyword that makes a function return a Promise and allows use of `await` inside it.
 
 **📺 Learn More:** [The Async Await Episode I Promised](https://www.youtube.com/watch?v=vn3tm0quoqE)  
-**🔗 Learn More:** [MDN – async](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
+
 
 ### await
 
