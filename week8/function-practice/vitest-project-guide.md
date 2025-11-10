@@ -89,6 +89,12 @@ npm run test
 
 Press `q` to quit the test runner when you're done checking.
 
+#### Key Terms
+
+- [devDependencies](../../VOCABULARY_LIST.md#devdependencies)
+- [type: "module"](../../VOCABULARY_LIST.md#type-module)
+- [npm scripts](../../VOCABULARY_LIST.md#npm-scripts)
+
 ---
 
 <!-- LEVEL_START -->
@@ -151,6 +157,12 @@ describe('toSnakeCase function', () => {
 });
 ```
 
+#### Key Terms
+
+- [describe / it blocks](../../VOCABULARY_LIST.md#describe--it-blocks)
+- [expect assertions](../../VOCABULARY_LIST.md#expect-assertions)
+- [Unit Test](../../VOCABULARY_LIST.md#unit-test)
+
 ---
 
 <!-- LEVEL_START -->
@@ -168,6 +180,11 @@ Or run in watch mode (automatically reruns on file changes):
 ```bash
 npm run test -- --watch
 ```
+
+#### Key Terms
+
+- [npm scripts](../../VOCABULARY_LIST.md#npm-scripts)
+- [watch mode](../../VOCABULARY_LIST.md#watch-mode)
 
 ---
 
@@ -347,6 +364,10 @@ it('should add fractions', () => {
 **Key Concept:** Use `toBeCloseTo()` when testing decimal numbers because `0.1 + 0.2` doesn't exactly equal `0.3` in JavaScript due to floating point precision.
 
 **Try it:** Add this test. Notice we use `toBeCloseTo()` instead of `toBe()`!
+
+#### Key Terms
+
+- [toBeCloseTo](../../VOCABULARY_LIST.md#tobecloseto)
 
 ---
 
@@ -705,6 +726,11 @@ Let's break down the regex pattern `/[!?,]/`:
 **Testing Regex Patterns:**
 Want to test and experiment with regex patterns? Check out [regex101.com](https://regex101.com/) - it's a great tool for testing regex patterns and seeing what they match. You can paste your regex pattern and test it against sample text to see exactly what it matches!
 
+#### Key Terms
+
+- [Regular Expression character classes](../../VOCABULARY_LIST.md#regular-expression-character-classes)
+- [replaceAll()](../../VOCABULARY_LIST.md#replaceall)
+
 ---
 
 <!-- LEVEL_START -->
@@ -740,6 +766,11 @@ export function toSnakeCase(text) {
 - **Mnemonic:** lowercase `\w` stands for word characters; uppercase `\W` flips the meaning to non-word characters.
 
 **Try it:** Update your function and run your tests. They should still pass!
+
+#### Key Terms
+
+- [Regular Expression character classes](../../VOCABULARY_LIST.md#regular-expression-character-classes)
+- [replaceAll()](../../VOCABULARY_LIST.md#replaceall)
 
 ---
 
