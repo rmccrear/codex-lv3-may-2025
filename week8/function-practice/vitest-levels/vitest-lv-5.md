@@ -37,4 +37,16 @@ describe('toSnakeCase function', () => {
 });
 ```
 
+## 🔍 Diving Deeper
+
+- Use **[describe / it blocks](../../VOCABULARY_LIST.md#describe--it-blocks)** to group related assertions and communicate intent. Each `it` should focus on one behavior.
+- Assertions read naturally thanks to **[expect assertions](../../VOCABULARY_LIST.md#expect-assertions)**. Keep matchers expressive so failures point straight to the problem.
+- Treat each **[Unit Test](../../VOCABULARY_LIST.md#unit-test)** as documentation. Short, focused tests make refactors safer later.
+
+#### Key Terms
+
+- [describe / it blocks](../../VOCABULARY_LIST.md#describe--it-blocks)
+- [expect assertions](../../VOCABULARY_LIST.md#expect-assertions)
+- [Unit Test](../../VOCABULARY_LIST.md#unit-test)
+
 ---

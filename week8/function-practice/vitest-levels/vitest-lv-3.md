@@ -56,6 +56,18 @@ Now run the test command to verify Vitest is set up correctly (it will show no t
 npm run test
 ```
 
+## 🔍 Diving Deeper
+
+- **[devDependencies](../../VOCABULARY_LIST.md#devdependencies)** live in your `package.json` so tooling like Vitest is only installed for development, keeping production bundles lean.
+- Setting `"type": "module"` unlocks ES module syntax. See the **[type: "module"](../../VOCABULARY_LIST.md#type-module)** entry for a refresher on why modern bundlers like Vite expect ESM by default.
+- `npm run test` executes the script you defined. Review **[npm scripts](../../VOCABULARY_LIST.md#npm-scripts)** to see how custom commands plug into your workflow.
+
 Press `q` to quit the test runner when you're done checking.
+
+#### Key Terms
+
+- [devDependencies](../../VOCABULARY_LIST.md#devdependencies)
+- [type: "module"](../../VOCABULARY_LIST.md#type-module)
+- [npm scripts](../../VOCABULARY_LIST.md#npm-scripts)
 
 ---

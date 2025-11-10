@@ -9,7 +9,7 @@ Plan: prove `toSnakeCase` lowercases solo words by asserting `toSnakeCase('Hello
 <details>
 <summary>Show Me</summary>
 <pre><code class="language-javascript">
-it('should handle single word', () =&amp;amp;amp;gt; {
+it('should handle single word', () =&amp;gt; {
   const result = toSnakeCase('Hello');
   expect(result).toBe('hello');
 });

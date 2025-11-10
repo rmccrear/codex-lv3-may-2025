@@ -9,7 +9,7 @@ Plan: see how repeated whitespace converts by testing `toSnakeCase('Hello   Worl
 <details>
 <summary>Show Me</summary>
 <pre><code class="language-javascript">
-it('should handle multiple spaces', () =&amp;amp;amp;gt; {
+it('should handle multiple spaces', () =&amp;gt; {
   const result = toSnakeCase('Hello   World');
   expect(result).toBe('hello___world');
 });

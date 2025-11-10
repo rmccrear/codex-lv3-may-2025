@@ -9,15 +9,22 @@ Plan: demonstrate floating point quirks by expecting `add(0.1, 0.2)` to be close
 <details>
 <summary>Show Me</summary>
 <pre><code class="language-javascript">
-it('should add fractions', () =&amp;amp;amp;gt; {
+it('should add fractions', () =&amp;gt; {
   const result = add(0.1, 0.2);
   expect(result).toBeCloseTo(0.3); // Use toBeCloseTo for floating point!
 });
 </code></pre>
 </details>
 
-**Key Concept:** Use `toBeCloseTo()` when testing decimal numbers because `0.1 + 0.2` doesn't exactly equal `0.3` in JavaScript due to floating point precision.
+## 🔍 Diving Deeper
+
+- Floating point math is imprecise (`0.1 + 0.2` becomes `0.30000000000000004`). **[toBeCloseTo](../../VOCABULARY_LIST.md#tobecloseto)** compares with a tolerance so tiny rounding errors don’t break your tests.
+- Need additional precision? Pass a second argument, e.g. `toBeCloseTo(0.3, 5)`, to assert five decimal places.
 
 **Try it:** Add this test. Notice we use `toBeCloseTo()` instead of `toBe()`!
+
+#### Key Terms
+
+- [toBeCloseTo](../../VOCABULARY_LIST.md#tobecloseto)
 
 ---

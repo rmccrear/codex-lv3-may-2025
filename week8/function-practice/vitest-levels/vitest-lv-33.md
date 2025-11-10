@@ -18,4 +18,9 @@ export function toSnakeCase(text) {
 
 **Try it:** Update your function and run your tests. They should still pass!
 
+#### Key Terms
+
+- [Regular Expression character classes](../../VOCABULARY_LIST.md#regular-expression-character-classes)
+- [replaceAll()](../../VOCABULARY_LIST.md#replaceall)
+
 ---

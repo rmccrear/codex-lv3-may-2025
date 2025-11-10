@@ -87,6 +87,12 @@ Now run the test command to verify Vitest is set up correctly (it will show no t
 npm run test
 ```
 
+## 🔍 Diving Deeper
+
+- **[devDependencies](../../VOCABULARY_LIST.md#devdependencies)** live in your `package.json` so tooling like Vitest is only installed for development, keeping production bundles lean.
+- Setting `"type": "module"` unlocks ES module syntax. See the **[type: "module"](../../VOCABULARY_LIST.md#type-module)** entry for a refresher on why modern bundlers like Vite expect ESM by default.
+- `npm run test` executes the script you defined. Review **[npm scripts](../../VOCABULARY_LIST.md#npm-scripts)** to see how custom commands plug into your workflow.
+
 Press `q` to quit the test runner when you're done checking.
 
 #### Key Terms
@@ -157,6 +163,12 @@ describe('toSnakeCase function', () => {
 });
 ```
 
+## 🔍 Diving Deeper
+
+- Use **[describe / it blocks](../../VOCABULARY_LIST.md#describe--it-blocks)** to group related assertions and communicate intent. Each `it` should focus on one behavior.
+- Assertions read naturally thanks to **[expect assertions](../../VOCABULARY_LIST.md#expect-assertions)**. Keep matchers expressive so failures point straight to the problem.
+- Treat each **[Unit Test](../../VOCABULARY_LIST.md#unit-test)** as documentation. Short, focused tests make refactors safer later.
+
 #### Key Terms
 
 - [describe / it blocks](../../VOCABULARY_LIST.md#describe--it-blocks)
@@ -180,6 +192,11 @@ Or run in watch mode (automatically reruns on file changes):
 ```bash
 npm run test -- --watch
 ```
+
+## 🔍 Diving Deeper
+
+- Watch mode keeps Vitest running while you code. Check the **[watch mode](../../VOCABULARY_LIST.md#watch-mode)** entry to see how `vitest --watch` narrows reruns to changed files.
+- Pair watch mode with `console.log` or breakpoints to tighten your feedback loop. When you're done, remember you can press `q` to exit.
 
 #### Key Terms
 
@@ -361,7 +378,10 @@ it('should add fractions', () => {
 
 </details>
 
-**Key Concept:** Use `toBeCloseTo()` when testing decimal numbers because `0.1 + 0.2` doesn't exactly equal `0.3` in JavaScript due to floating point precision.
+## 🔍 Diving Deeper
+
+- Floating point math is imprecise (`0.1 + 0.2` becomes `0.30000000000000004`). **[toBeCloseTo](../../VOCABULARY_LIST.md#tobecloseto)** compares with a tolerance so tiny rounding errors don’t break your tests.
+- Need additional precision? Pass a second argument, e.g. `toBeCloseTo(0.3, 5)`, to assert five decimal places.
 
 **Try it:** Add this test. Notice we use `toBeCloseTo()` instead of `toBe()`!
 

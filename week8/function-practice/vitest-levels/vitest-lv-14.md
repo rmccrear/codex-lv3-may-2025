@@ -9,7 +9,7 @@ Plan: ensure opposite values cancel out by verifying `add(5, -5)` returns `0`.
 <details>
 <summary>Show Me</summary>
 <pre><code class="language-javascript">
-it('should add when result is zero', () =&amp;amp;amp;gt; {
+it('should add when result is zero', () =&amp;gt; {
   const result = add(5, -5);
   expect(result).toBe(0);
 });

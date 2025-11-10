@@ -24,4 +24,9 @@ Let's break down the regex pattern `/[!?,]/`:
 **Testing Regex Patterns:**
 Want to test and experiment with regex patterns? Check out [regex101.com](https://regex101.com/) - it's a great tool for testing regex patterns and seeing what they match. You can paste your regex pattern and test it against sample text to see exactly what it matches!
 
+#### Key Terms
+
+- [Regular Expression character classes](../../VOCABULARY_LIST.md#regular-expression-character-classes)
+- [replaceAll()](../../VOCABULARY_LIST.md#replaceall)
+
 ---

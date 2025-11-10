@@ -573,8 +573,11 @@ A lightweight data format that uses JavaScript-like syntax to represent structur
 
 ## Week 8
 
+Explore these terms in context throughout the [Vitest Project Guide](week8/function-practice/vitest-project-guide.md).
+
 ### devDependencies
 Packages listed under `devDependencies` in `package.json` are only needed during development. Vitest is installed here because it's used to run tests locally rather than in production builds.
+**📺 Learn More:** [DevDependencies vs Dependencies](https://www.youtube.com/watch?v=FS31-9zbcLA)
 
 ### type: "module"
 Setting `"type": "module"` in `package.json` enables ES module syntax (`import` / `export`) across the project so test files and helpers can use modern JavaScript features.
@@ -594,9 +597,11 @@ The matcher API used to express outcomes (`expect(value).toBe(…)`, `toEqual(�
 ### toBeCloseTo
 A matcher for comparing floating-point numbers with precision tolerance—useful when testing calculations like `0.1 + 0.2`.
 **🔗 Learn More:** [Vitest expect.toBeCloseTo](https://vitest.dev/api/expect.html#tobecloseto)
+**🔍 Read More:** [Floating-point arithmetic – all you need to know](https://matloka.com/blog/floating-point-101)
 
 ### watch mode
-Running `vitest --watch` or `npm run test -- --watch` re-runs tests whenever files change, supporting rapid feedback during development.
+Running `vitest --watch` or `npm run test -- --watch` re-runs tests whenever files change, supporting rapid feedback during development. Press `q` to exit the watch runner.
+**🔗 Learn More:** [Vitest Watch Mode](https://vitest.dev/guide/features.html#watch-mode)
 
 ### Red-Green-Refactor
 Test-Driven Development cycle highlighted in the guide: write a failing test (red), implement just enough code to pass (green), then clean up the implementation (refactor) while keeping tests green.
@@ -618,6 +623,10 @@ React’s `useEffect` cannot accept an `async` callback. Instead, an inner async
 ### Unit Test
 A focused test that exercises a single function or module in isolation to verify correct behavior across expected and edge-case inputs. Vitest’s `it` blocks typically represent unit tests.
 **📺 Learn More:** [JavaScript Unit Testing Tutorial for Beginners](https://youtu.be/zuKbR4Q428o?si=lrB4J8KsCkjk6qLs&t=1186)
+
+### Floating-Point Arithmetic
+The IEEE 754 standard describes how computers represent real numbers using binary fractions, leading to rounding quirks like `0.1 + 0.2 !== 0.3`. Understanding floating-point precision helps explain why matchers such as `toBeCloseTo` exist.
+**🔍 Read More:** [Floating-point arithmetic – all you need to know](https://matloka.com/blog/floating-point-101)
 
 
 ---

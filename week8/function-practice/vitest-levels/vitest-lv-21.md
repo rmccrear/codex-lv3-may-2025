@@ -9,7 +9,7 @@ Plan: confirm digits survive conversion by checking `toSnakeCase('Hello 123 Worl
 <details>
 <summary>Show Me</summary>
 <pre><code class="language-javascript">
-it('should handle numbers in text', () =&amp;amp;amp;gt; {
+it('should handle numbers in text', () =&amp;gt; {
   const result = toSnakeCase('Hello 123 World');
   expect(result).toBe('hello_123_world');
 });

@@ -14,4 +14,14 @@ Or run in watch mode (automatically reruns on file changes):
 npm run test -- --watch
 ```
 
+## 🔍 Diving Deeper
+
+- Watch mode keeps Vitest running while you code. Check the **[watch mode](../../VOCABULARY_LIST.md#watch-mode)** entry to see how `vitest --watch` narrows reruns to changed files.
+- Pair watch mode with `console.log` or breakpoints to tighten your feedback loop. When you're done, remember you can press `q` to exit.
+
+#### Key Terms
+
+- [npm scripts](../../VOCABULARY_LIST.md#npm-scripts)
+- [watch mode](../../VOCABULARY_LIST.md#watch-mode)
+
 ---
