@@ -30,6 +30,11 @@ Katas are small, focused coding exercises designed to build muscle memory and re
 ### Intermediate: API Integration (12-17)
 📡 **[Intermediate Katas: API Integration](./INTERMEDIATE_KATAS.md)** - Async/await, fetch API, and list patterns with real data
 
+### Array Method Refactors (18-20)
+18. **[Kata 18: Fruit List with .map()](./kata-18-list-map.md)** - Refactor list rendering with `.map()`
+19. **[Kata 19: Filter Evens with .filter()](./kata-19-filter-numbers-array-method.md)** - Refactor the even-number filter with `.filter()`
+20. **[Kata 20: Search Names with .filter()](./kata-20-filter-search-array-method.md)** - Refactor the search filter with array helpers
+
 ## How to Use These Katas
 
 ### Option 1: In Your Own Project
