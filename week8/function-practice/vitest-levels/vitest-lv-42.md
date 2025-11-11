@@ -2,9 +2,17 @@ Level Navigation: [1](./vitest-lv-1.md) | [(2ℹ️)](./vitest-lv-2.md) | [3](./
 
 ## Level 42: Add Test Coverage
 
-Keeping an eye on test coverage helps you understand which parts of your code are exercised by your suite. Let’s add a convenience script that runs coverage every time you need a detailed report.
+Keeping an eye on test coverage helps you understand which parts of your code are exercised by your suite. Let’s install the coverage peer dependency and add a script that makes running coverage painless.
 
-### Step 1: Add the coverage script
+### Step 1: Install the coverage reporter
+
+Vitest’s coverage command relies on the V8/Istanbul integration shipped in `@vitest/coverage-v8`. Install it as a dev dependency:
+
+```bash
+npm install -D @vitest/coverage-v8
+```
+
+### Step 2: Add the coverage script
 
 Update your `package.json` scripts section so it includes a `test:coverage` command:
 
@@ -17,7 +25,7 @@ Update your `package.json` scripts section so it includes a `test:coverage` comm
 
 > **Tip:** If you already have other scripts (like `"dev"` or `"lint"`), just add this line alongside them—keep the trailing commas consistent with the existing JSON.
 
-### Step 2: Run the coverage report
+### Step 3: Run the coverage report
 
 ```bash
 npm run test:coverage
@@ -25,11 +33,11 @@ npm run test:coverage
 
 Vitest will execute the full suite once and print a table showing statements, branches, functions, and lines covered. The report also lands in the `coverage/` directory if you want to inspect the HTML output.
 
-### Step 3: Review your results
+### Step 4: Review your results
 
 - Look for rows that fall below your target percentage and add tests to improve them
 - Rerun `npm run test:coverage` after writing new tests to confirm the numbers move in the right direction
 
-**Try it:** Add the script, run coverage, and note any functions that still need tests before moving on.
+**Try it:** Install the reporter, add the script, run coverage, and note any functions that still need tests before moving on.
 
 ---
