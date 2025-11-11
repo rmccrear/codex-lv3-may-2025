@@ -1064,9 +1064,8 @@ All files |      50 |      100 |      50 |      50 |
 #### Key Terms
 
 - [code coverage](../../VOCABULARY_LIST.md#code-coverage)
-- [test coverage report](../../VOCABULARY_LIST.md#test-coverage-report)
 - [npm scripts](../../VOCABULARY_LIST.md#npm-scripts)
-- [devDependency](../../VOCABULARY_LIST.md#devdependency)
+- [devDependencies](../../VOCABULARY_LIST.md#devdependencies)
 
 ---
 
