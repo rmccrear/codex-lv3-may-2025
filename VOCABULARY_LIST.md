@@ -579,6 +579,10 @@ Explore these terms in context throughout the [Vitest Project Guide](week8/funct
 Packages listed under `devDependencies` in `package.json` are only needed during development. Vitest is installed here because it's used to run tests locally rather than in production builds.
 **📺 Learn More:** [DevDependencies vs Dependencies](https://www.youtube.com/watch?v=FS31-9zbcLA)
 
+### code coverage
+The percentage of your source code that runs when automated tests execute. Higher coverage can reveal which files or branches lack tests, helping you decide where to add new specs.
+**🔗 Learn More:** [Vitest Coverage Guide](https://vitest.dev/guide/coverage.html)
+
 ### type: "module"
 Setting `"type": "module"` in `package.json` enables ES module syntax (`import` / `export`) across the project so test files and helpers can use modern JavaScript features.
 **📺 Learn More:** [JavaScript ES Modules Crash Course](https://www.youtube.com/watch?v=cRHQNNcYf6s)
