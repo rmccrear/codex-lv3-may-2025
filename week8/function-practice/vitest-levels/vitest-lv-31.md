@@ -2,15 +2,16 @@ Level Navigation: [1](./vitest-lv-1.md) | [(2ℹ️)](./vitest-lv-2.md) | [3](./
 
 ## Level 31: Understanding the Regex Pattern
 
-Let's break down the regex pattern `/[!?,]/`:
+Let's break down the regex pattern `/[!?,]/g`:
 
 ```javascript
-/[!?,]/
-│││││││
-││││││└─ / = end of regex pattern
-│││││└── ] = end of character class (match any of these)
+/[!?,]/g
+││││││││
+│││││││└─ g = global flag (replace every match)
+││││││└── / = end of regex pattern
+│││││└─── ] = end of character class (match any of these)
 ││││└──── , = comma character
-│││└───── ? = question mark character
+││└───── ? = question mark character
 ││└────── ! = exclamation mark character
 │└─────── [ = start of character class (match any of these)
 └──────── / = start of regex pattern
@@ -20,6 +21,7 @@ Let's break down the regex pattern `/[!?,]/`:
 - Instead of three separate `replaceAll()` calls, we have one!
 - Easier to add more punctuation marks later
 - More concise and readable
+- The `g` flag ensures the regex applies globally so `replaceAll()` updates every match
 
 **Testing Regex Patterns:**
 Want to test and experiment with regex patterns? Check out [regex101.com](https://regex101.com/) - it's a great tool for testing regex patterns and seeing what they match. You can paste your regex pattern and test it against sample text to see exactly what it matches!

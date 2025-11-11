@@ -705,16 +705,16 @@ A regex lets us match a pattern of characters. We can use square brackets `[]` t
 
 ```javascript
 export function toSnakeCase(text) {
-  return text.replaceAll(' ', '_').replaceAll(/[!?,]/, '_').toLowerCase();
+  return text.replaceAll(' ', '_').replaceAll(/[!?,]/g, '_').toLowerCase();
 }
 ```
 
 **What does this regex do?**
-- `/[!?,]/` is a regular expression pattern
+- `/[!?,]/g` is a regular expression pattern with the global flag
 - The square brackets `[]` mean "match any of these characters"
 - `!?`, means match exclamation marks, question marks, or commas
 - The forward slashes `/` mark the start and end of the regex pattern
-- `replaceAll()` already replaces all matches, so we don't need the `/g` flag
+- The `g` flag makes the regex global so `replaceAll()` can replace every match
 
 **Try it now:** Update your function with this regex and run your tests. They should all still pass (green)!
 
@@ -724,15 +724,16 @@ export function toSnakeCase(text) {
 
 ## Level 31: Understanding the Regex Pattern
 
-Let's break down the regex pattern `/[!?,]/`:
+Let's break down the regex pattern `/[!?,]/g`:
 
 ```javascript
-/[!?,]/
-│││││││
-││││││└─ / = end of regex pattern
-│││││└── ] = end of character class (match any of these)
+/[!?,]/g
+││││││││
+│││││││└─ g = global flag (replace every match)
+││││││└── / = end of regex pattern
+│││││└─── ] = end of character class (match any of these)
 ││││└──── , = comma character
-│││└───── ? = question mark character
+││└───── ? = question mark character
 ││└────── ! = exclamation mark character
 │└─────── [ = start of character class (match any of these)
 └──────── / = start of regex pattern
@@ -742,6 +743,7 @@ Let's break down the regex pattern `/[!?,]/`:
 - Instead of three separate `replaceAll()` calls, we have one!
 - Easier to add more punctuation marks later
 - More concise and readable
+- The `g` flag ensures the regex applies globally so `replaceAll()` updates every match
 
 **Testing Regex Patterns:**
 Want to test and experiment with regex patterns? Check out [regex101.com](https://regex101.com/) - it's a great tool for testing regex patterns and seeing what they match. You can paste your regex pattern and test it against sample text to see exactly what it matches!
@@ -775,7 +777,7 @@ If we want to replace ALL punctuation (not just specific ones), we can use `\W` 
 
 ```javascript
 export function toSnakeCase(text) {
-  return text.replaceAll(' ', '_').replaceAll(/\W/, '_').toLowerCase();
+  return text.replaceAll(' ', '_').replaceAll(/\W/g, '_').toLowerCase();
 }
 ```
 
@@ -784,6 +786,7 @@ export function toSnakeCase(text) {
 - It does NOT match letters, numbers, or underscores
 - This is a shorthand for "everything except word characters"
 - **Mnemonic:** lowercase `\w` stands for word characters; uppercase `\W` flips the meaning to non-word characters.
+- The `g` flag makes the regex global so every non-word character gets replaced
 
 **Try it:** Update your function and run your tests. They should still pass!
 
@@ -839,13 +842,13 @@ Here are some useful patterns:
 text.replaceAll(' ', '_')
 
 // Replace specific punctuation
-text.replaceAll(/[!?,]/, '_')
+text.replaceAll(/[!?,]/g, '_')
 
 // Replace all punctuation (non-word characters)
-text.replaceAll(/\W/, '_')
+text.replaceAll(/\W/g, '_')
 
 // Replace everything except letters, numbers, and underscores
-text.replaceAll(/[^a-zA-Z0-9_]/, '_')
+text.replaceAll(/[^a-zA-Z0-9_]/g, '_')
 ```
 
 ### Quick Regex Reference for Beginners
@@ -854,16 +857,16 @@ Here are some common regex patterns you might use:
 
 | Pattern | Matches | Example |
 |---------|---------|---------|
-| `[abc]` | Any of these characters (a, b, or c) | `/[abc]/` matches "a", "b", or "c" |
-| `[!?,]` | Any of these punctuation marks | `/[!?,]/` matches "!", "?", or "," |
-| `\W` | Any non-word character (punctuation, symbols) | `/\W/` matches "!", "?", ",", etc. |
-| `\w` | Any word character (letters, numbers, underscore) | `/\w/` matches "a", "1", "_" |
-| `\s` | Any whitespace (spaces, tabs) | `/\s/` matches " " (space) |
-| `\d` | Any digit (0-9) | `/\d/` matches "0" through "9" |
-| `[^abc]` | NOT any of these characters | `/[^abc]/` matches anything except a, b, or c |
-| `+` | One or more of the previous | `/\W+/` matches one or more punctuation marks |
-| `*` | Zero or more of the previous | `/\d*/` matches zero or more digits |
-| `?` | Zero or one of the previous | `/\d?/` matches zero or one digit |
+| `[abc]` | Any of these characters (a, b, or c) | `/[abc]/g` matches "a", "b", or "c" |
+| `[!?,]` | Any of these punctuation marks | `/[!?,]/g` matches "!", "?", or "," |
+| `\W` | Any non-word character (punctuation, symbols) | `/\W/g` matches "!", "?", ",", etc. |
+| `\w` | Any word character (letters, numbers, underscore) | `/\w/g` matches "a", "1", "_" |
+| `\s` | Any whitespace (spaces, tabs) | `/\s/g` matches " " (space) |
+| `\d` | Any digit (0-9) | `/\d/g` matches "0" through "9" |
+| `[^abc]` | NOT any of these characters | `/[^abc]/g` matches anything except a, b, or c |
+| `+` | One or more of the previous | `/\W+/g` matches one or more punctuation marks |
+| `*` | Zero or more of the previous | `/\d*/g` matches zero or more digits |
+| `?` | Zero or one of the previous | `/\d?/g` matches zero or one digit |
 
 **Note:** In JavaScript, regex patterns are written between forward slashes: `/pattern/`
 

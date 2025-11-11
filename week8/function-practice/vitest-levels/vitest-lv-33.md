@@ -6,7 +6,7 @@ If we want to replace ALL punctuation (not just specific ones), we can use `\W` 
 
 ```javascript
 export function toSnakeCase(text) {
-  return text.replaceAll(' ', '_').replaceAll(/\W/, '_').toLowerCase();
+  return text.replaceAll(' ', '_').replaceAll(/\W/g, '_').toLowerCase();
 }
 ```
 
@@ -15,6 +15,7 @@ export function toSnakeCase(text) {
 - It does NOT match letters, numbers, or underscores
 - This is a shorthand for "everything except word characters"
 - **Mnemonic:** lowercase `\w` stands for word characters; uppercase `\W` flips the meaning to non-word characters.
+- The `g` flag makes the regex global so every non-word character gets replaced
 
 **Try it:** Update your function and run your tests. They should still pass!
 

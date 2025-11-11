@@ -8,16 +8,16 @@ A regex lets us match a pattern of characters. We can use square brackets `[]` t
 
 ```javascript
 export function toSnakeCase(text) {
-  return text.replaceAll(' ', '_').replaceAll(/[!?,]/, '_').toLowerCase();
+  return text.replaceAll(' ', '_').replaceAll(/[!?,]/g, '_').toLowerCase();
 }
 ```
 
 **What does this regex do?**
-- `/[!?,]/` is a regular expression pattern
+- `/[!?,]/g` is a regular expression pattern with the global flag
 - The square brackets `[]` mean "match any of these characters"
 - `!?`, means match exclamation marks, question marks, or commas
 - The forward slashes `/` mark the start and end of the regex pattern
-- `replaceAll()` already replaces all matches, so we don't need the `/g` flag
+- The `g` flag makes the regex global so `replaceAll()` can replace every match
 
 **Try it now:** Update your function with this regex and run your tests. They should all still pass (green)!
 

@@ -20,13 +20,13 @@ Here are some useful patterns:
 text.replaceAll(' ', '_')
 
 // Replace specific punctuation
-text.replaceAll(/[!?,]/, '_')
+text.replaceAll(/[!?,]/g, '_')
 
 // Replace all punctuation (non-word characters)
-text.replaceAll(/\W/, '_')
+text.replaceAll(/\W/g, '_')
 
 // Replace everything except letters, numbers, and underscores
-text.replaceAll(/[^a-zA-Z0-9_]/, '_')
+text.replaceAll(/[^a-zA-Z0-9_]/g, '_')
 ```
 
 ### Quick Regex Reference for Beginners
@@ -35,16 +35,16 @@ Here are some common regex patterns you might use:
 
 | Pattern | Matches | Example |
 |---------|---------|---------|
-| `[abc]` | Any of these characters (a, b, or c) | `/[abc]/` matches "a", "b", or "c" |
-| `[!?,]` | Any of these punctuation marks | `/[!?,]/` matches "!", "?", or "," |
-| `\W` | Any non-word character (punctuation, symbols) | `/\W/` matches "!", "?", ",", etc. |
-| `\w` | Any word character (letters, numbers, underscore) | `/\w/` matches "a", "1", "_" |
-| `\s` | Any whitespace (spaces, tabs) | `/\s/` matches " " (space) |
-| `\d` | Any digit (0-9) | `/\d/` matches "0" through "9" |
-| `[^abc]` | NOT any of these characters | `/[^abc]/` matches anything except a, b, or c |
-| `+` | One or more of the previous | `/\W+/` matches one or more punctuation marks |
-| `*` | Zero or more of the previous | `/\d*/` matches zero or more digits |
-| `?` | Zero or one of the previous | `/\d?/` matches zero or one digit |
+| `[abc]` | Any of these characters (a, b, or c) | `/[abc]/g` matches "a", "b", or "c" |
+| `[!?,]` | Any of these punctuation marks | `/[!?,]/g` matches "!", "?", or "," |
+| `\W` | Any non-word character (punctuation, symbols) | `/\W/g` matches "!", "?", ",", etc. |
+| `\w` | Any word character (letters, numbers, underscore) | `/\w/g` matches "a", "1", "_" |
+| `\s` | Any whitespace (spaces, tabs) | `/\s/g` matches " " (space) |
+| `\d` | Any digit (0-9) | `/\d/g` matches "0" through "9" |
+| `[^abc]` | NOT any of these characters | `/[^abc]/g` matches anything except a, b, or c |
+| `+` | One or more of the previous | `/\W+/g` matches one or more punctuation marks |
+| `*` | Zero or more of the previous | `/\d*/g` matches zero or more digits |
+| `?` | Zero or one of the previous | `/\d?/g` matches zero or one digit |
 
 **Note:** In JavaScript, regex patterns are written between forward slashes: `/pattern/`
 
