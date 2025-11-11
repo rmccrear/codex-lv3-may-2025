@@ -15,7 +15,7 @@ Katas are small, focused coding exercises designed to build muscle memory and re
 2. **[Kata 2: Welcome with Props](./kata-02-props.md)** - Props and destructuring
 3. **[Kata 3: Click Counter](./kata-03-counter.md)** - useState and event handling
 4. **[Kata 4: Show/Hide Toggle](./kata-04-toggle.md)** - Boolean state and conditional rendering
-5. **[Kata 5: Fruit List](./kata-05-list.md)** - Array .map() to render lists
+5. **[Kata 5: Fruit List](./kata-05-list.md)** - Array Map Pattern to render lists
 6. **[Kata 6: Name Input](./kata-06-input.md)** - Controlled inputs with state
 
 ### Filter Pattern (7-8)
