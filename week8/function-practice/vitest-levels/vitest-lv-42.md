@@ -33,6 +33,19 @@ npm run test:coverage
 
 Vitest will execute the full suite once and print a table showing statements, branches, functions, and lines covered. The report also lands in the `coverage/` directory if you want to inspect the HTML output.
 
+Example console output:
+
+```
+ % Coverage report from v8
+
+----------|---------|----------|---------|---------|-------------------
+File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+----------|---------|----------|---------|---------|-------------------
+All files |      50 |      100 |      50 |      50 |
+ utils.js |      50 |      100 |      50 |      50 | 2
+----------|---------|----------|---------|---------|-------------------
+```
+
 ### Step 4: Review your results
 
 - Look for rows that fall below your target percentage and add tests to improve them
