@@ -1008,7 +1008,43 @@ function createFullGreeting(name, occasion, from) {
 
 <!-- LEVEL_START -->
 
-## Level 42 (Challenge): Compose Functions - Create Multiple Variations
+## Level 42: Add Test Coverage
+
+Keeping an eye on test coverage helps you understand which parts of your code are exercised by your suite. Let’s add a convenience script that runs coverage every time you need a detailed report.
+
+### Step 1: Add the coverage script
+
+Update your `package.json` scripts section so it includes a `test:coverage` command:
+
+```json
+"scripts": {
+  "test": "vitest",
+  "test:coverage": "vitest run --coverage"
+}
+```
+
+> **Tip:** If you already have other scripts (like `"dev"` or `"lint"`), just add this line alongside them—keep the trailing commas consistent with the existing JSON.
+
+### Step 2: Run the coverage report
+
+```bash
+npm run test:coverage
+```
+
+Vitest will execute the full suite once and print a table showing statements, branches, functions, and lines covered. The report also lands in the `coverage/` directory if you want to inspect the HTML output.
+
+### Step 3: Review your results
+
+- Look for rows that fall below your target percentage and add tests to improve them
+- Rerun `npm run test:coverage` after writing new tests to confirm the numbers move in the right direction
+
+**Try it:** Add the script, run coverage, and note any functions that still need tests before moving on.
+
+---
+
+<!-- LEVEL_START -->
+
+## Level 43 (Challenge): Compose Functions - Create Multiple Variations
 
 Let's create more composed functions that use our building blocks in different ways.
 
@@ -1043,7 +1079,7 @@ createSignedGreeting(name, occasion, from) → string
 
 <!-- LEVEL_START -->
 
-## Level 43 (Challenge): Choose Your Own Function Cluster
+## Level 44 (Challenge): Choose Your Own Function Cluster
 
 Now it's your turn! Choose one of the function clusters from [function-ideas.md](./function-ideas.md) and build them out.
 
@@ -1082,7 +1118,7 @@ function calculateFinalPrice(price, discount, tipPercent) {
 
 <!-- LEVEL_START -->
 
-## Level 44: Key Takeaways
+## Level 45: Key Takeaways
 
 - **Build small functions first** - Start with simple, focused functions
 - **Test each function** - Write tests before implementing
@@ -1094,7 +1130,7 @@ function calculateFinalPrice(price, discount, tipPercent) {
 
 <!-- LEVEL_START -->
 
-## Level 45: Next Steps
+## Level 46: Next Steps
 
 - Try building functions from multiple clusters
 - Create more complex compositions
@@ -1106,7 +1142,7 @@ function calculateFinalPrice(price, discount, tipPercent) {
 <!-- LEVEL_START -->
 <!-- INFORMATIVE_ONLY -->
 
-## Level 46: Resources
+## Level 47: Resources
 
 - **[Vitest Documentation](https://vitest.dev/)** - Official Vitest documentation
 - **[Function Ideas](./function-ideas.md)** - List of function ideas to practice with
