@@ -53,4 +53,11 @@ All files |      50 |      100 |      50 |      50 |
 
 **Try it:** Install the reporter, add the script, run coverage, and note any functions that still need tests before moving on.
 
+#### Key Terms
+
+- [code coverage](../../../VOCABULARY_LIST.md#code-coverage)
+- [test coverage report](../../../VOCABULARY_LIST.md#test-coverage-report)
+- [npm scripts](../../../VOCABULARY_LIST.md#npm-scripts)
+- [devDependency](../../../VOCABULARY_LIST.md#devdependency)
+
 ---
