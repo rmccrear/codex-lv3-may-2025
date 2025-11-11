@@ -103,7 +103,15 @@ if [ $? -ne 0 ]; then
 fi
 echo ""
 
-echo -e "${BLUE}Step 2: Adding navigation between levels...${NC}"
+echo -e "${BLUE}Step 2: Adjusting relative URLs in level files...${NC}"
+python3 bin/fix-image-paths.py "$OUTPUT_DIR"
+if [ $? -ne 0 ]; then
+    echo -e "${RED}❌ Error: Failed to adjust relative URLs${NC}"
+    exit 1
+fi
+echo ""
+
+echo -e "${BLUE}Step 3: Adding navigation between levels...${NC}"
 python3 bin/add-project-navigation.py "$OUTPUT_DIR" "$PROJECT_NAME"
 if [ $? -ne 0 ]; then
     echo -e "${RED}❌ Error: Failed to add navigation${NC}"
@@ -111,18 +119,10 @@ if [ $? -ne 0 ]; then
 fi
 echo ""
 
-echo -e "${BLUE}Step 3: Converting Show Me sections to collapsible details...${NC}"
+echo -e "${BLUE}Step 4: Converting Show Me sections to collapsible details...${NC}"
 python3 bin/convert-show-me.py "$OUTPUT_DIR"
 if [ $? -ne 0 ]; then
     echo -e "${RED}❌ Error: Failed to convert Show Me sections${NC}"
-    exit 1
-fi
-echo ""
-
-echo -e "${BLUE}Step 4: Adjusting relative URLs in level files...${NC}"
-python3 bin/fix-image-paths.py "$OUTPUT_DIR"
-if [ $? -ne 0 ]; then
-    echo -e "${RED}❌ Error: Failed to adjust relative URLs${NC}"
     exit 1
 fi
 echo ""
