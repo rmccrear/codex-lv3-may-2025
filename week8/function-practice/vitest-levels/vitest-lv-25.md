@@ -15,6 +15,25 @@ export function toSnakeCase(text) {
 - `replaceAll('!', '_')` - replaces all exclamation marks with underscores
 - `toLowerCase()` - converts everything to lowercase
 
-**Try it now:** Update your `toSnakeCase` function and run your tests again. The test should pass (green)!
+**Oops! We broke our old test!**
+
+When we add this feature to convert `!` to `_`, we're changing how our function works. Remember that test we wrote back in a previous level? It's going to fail now!
+
+In a previous level, we had a test that expected:
+```javascript
+it('should handle text with special characters', () => {
+  const result = toSnakeCase('Hello World!');
+  expect(result).toBe('hello_world!'); // This expects the ! to be preserved
+});
+```
+
+But now our function converts `!` to `_`, so the result will be `'hello_world_'` instead of `'hello_world!'`. 
+
+**Sometimes we need to change our tests!** When we intentionally change how a function works, we need to update our tests to match the new behavior. Go back to that previous test and update it to expect `'hello_world_'` instead of `'hello_world!'`.
+
+**Try it now:** 
+1. Update your `toSnakeCase` function with the new feature
+2. Update that previous test to expect `'hello_world_'` instead of `'hello_world!'` or just remove it.
+3. Run your tests again. Both the new test and the updated test from the previous level should pass (green)!
 
 ---
