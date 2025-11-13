@@ -591,6 +591,10 @@ Setting `"type": "module"` in `package.json` enables ES module syntax (`import` 
 Custom commands defined in the `"scripts"` section of `package.json`. Running `npm run test` executes the configured Vitest command.
 **📺 Learn More:** [npm Scripts Crash Course](https://www.youtube.com/watch?v=4oz0rqoB6VM)
 
+### npx
+A command-line tool that comes with npm, used to execute packages without installing them globally. `npx` runs packages from the npm registry temporarily, making it perfect for one-time commands or trying out tools without cluttering your system.
+**📺 Learn More:** [What is NPX?](https://www.youtube.com/watch?v=1jHxGCl8Ghs)
+
 ### describe / it blocks
 Vitest’s structure for organizing tests. `describe` groups related specs, while each `it` defines a single behavior being asserted.
 

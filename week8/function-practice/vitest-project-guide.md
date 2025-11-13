@@ -31,7 +31,7 @@ In this guide, you'll learn how to:
 
 ## Level 3: Set up the project
 
-First, initialize your npm project and install Vitest:
+First, initialize your **[npm](../../VOCABULARY_LIST.md#npm)** project and install Vitest:
 
 ```bash
 npm init -y
@@ -52,7 +52,7 @@ Then, update your `package.json` to add the test script and set the module type:
 <details>
 <summary>Show Me: What the full package.json might look like</summary>
 
-When you run `npm init -y`, it creates a basic `package.json`. After adding the `type` and `scripts` fields, your complete `package.json` might look like this:
+When you run `npm init -y`, it creates a basic `package.json` (see **[npm](../../VOCABULARY_LIST.md#npm)** for more on npm commands). After adding the `type` and `scripts` fields, your complete `package.json` might look like this:
 
 ```json
 {
@@ -1033,7 +1033,7 @@ Keeping an eye on test coverage helps you understand which parts of your code ar
 
 ### Step 1: Install the coverage reporter
 
-Vitest’s coverage command relies on the V8/Istanbul integration shipped in `@vitest/coverage-v8`. Install it as a dev dependency:
+Vitest's coverage command relies on the V8/Istanbul integration shipped in `@vitest/coverage-v8`. Install it as a dev dependency using **[npm](../../VOCABULARY_LIST.md#npm)**:
 
 ```bash
 npm install -D @vitest/coverage-v8
