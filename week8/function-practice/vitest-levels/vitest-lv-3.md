@@ -2,7 +2,7 @@ Level Navigation: [1](./vitest-lv-1.md) | [(2ℹ️)](./vitest-lv-2.md) | **3** 
 
 ## Level 3: Set up the project
 
-First, initialize your npm project and install Vitest:
+First, initialize your **[npm](../../../VOCABULARY_LIST.md#npm)** project and install Vitest:
 
 ```bash
 npm init -y
@@ -22,7 +22,7 @@ Then, update your `package.json` to add the test script and set the module type:
 
 <details>
 <summary>Show Me: What the full package.json might look like</summary>
-<p>When you run <code>npm init -y</code>, it creates a basic <code>package.json</code>. After adding the <code>type</code> and <code>scripts</code> fields, your complete <code>package.json</code> might look like this:</p>
+<p>When you run <code>npm init -y</code>, it creates a basic <code>package.json</code> (see <strong>[npm](../../../VOCABULARY_LIST.md#npm)</strong> for more on npm commands). After adding the <code>type</code> and <code>scripts</code> fields, your complete <code>package.json</code> might look like this:</p>
 <pre><code class="language-json">
 {
   "name": "function-practice",

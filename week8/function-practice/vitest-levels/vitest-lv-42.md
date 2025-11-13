@@ -6,7 +6,7 @@ Keeping an eye on test coverage helps you understand which parts of your code ar
 
 ### Step 1: Install the coverage reporter
 
-Vitest’s coverage command relies on the V8/Istanbul integration shipped in `@vitest/coverage-v8`. Install it as a dev dependency:
+Vitest's coverage command relies on the V8/Istanbul integration shipped in `@vitest/coverage-v8`. Install it as a dev dependency using **[npm](../../../VOCABULARY_LIST.md#npm)**:
 
 ```bash
 npm install -D @vitest/coverage-v8
