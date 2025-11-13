@@ -7,5 +7,6 @@ Level Navigation: [1](./vitest-lv-1.md) | [(2ℹ️)](./vitest-lv-2.md) | [3](./
 - **[Vitest Documentation](https://vitest.dev/)** - Official Vitest documentation
 - **[Function Ideas](../function-ideas.md)** - List of function ideas to practice with
 - **[Pure Functions Guide](../../pure-functions.md)** - Learn about pure functions and immutability
+- **[Testing React Components](../bonus-vitest-with-react.md)** - Learn how to test React components with Vitest and React Testing Library
 
 ---
