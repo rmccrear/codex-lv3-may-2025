@@ -1193,6 +1193,7 @@ function calculateFinalPrice(price, discount, tipPercent) {
 - **[Vitest Documentation](https://vitest.dev/)** - Official Vitest documentation
 - **[Function Ideas](./function-ideas.md)** - List of function ideas to practice with
 - **[Pure Functions Guide](../pure-functions.md)** - Learn about pure functions and immutability
+- **[Testing React Components](./bonus-vitest-with-react.md)** - Learn how to test React components with Vitest and React Testing Library
 
 ---
 
